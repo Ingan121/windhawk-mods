@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://windhawk.net/</id>
+    <title>Windhawk Mod Updates</title>
+    <updated>2024-12-10T14:57:10.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://windhawk.net/"/>
+    <subtitle>Updates in the official collection of Windhawk mods</subtitle>
+    <icon>https://windhawk.net/favicon.ico</icon>
+    <rights>Ramen Software</rights>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 Start Menu Styler 1.2]]></title>
+        <id>https://windhawk.net/mods/windows-11-start-menu-styler#8db53b86b7fb576eaf44aaa772c00a53a8933590</id>
+        <link href="https://windhawk.net/mods/windows-11-start-menu-styler"/>
+        <updated>2024-12-10T14:57:10.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>The start menu search (what you see when you click on the start menu search bar) is now styled as well. Most of the search content is a WebView element, and the mod now allows to style it with CSS targets and styles. Refer to the mod description for more details.</li>
+<li>Added the Everblush theme.</li>
+<li>Updated themes: SideBySide2, Fluent2Inspired, Metro10Minimal.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Shadowplay anti-disable 1.0]]></title>
+        <id>https://windhawk.net/mods/shadowplay-do-not-disable#1fd480af6b69fe3339d52712268afa8a87839f7a</id>
+        <link href="https://windhawk.net/mods/shadowplay-do-not-disable"/>
+        <updated>2024-12-09T20:07:54.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="shadowplayantidisable">Shadowplay anti-disable</h1>
+<p>Nvidia ShadowPlay will normally turn off automatically/pause when detecting DRM content playing or when a Window requests to be hidden from screen captures.
+This sucks, because ShadowPlay may just randomly turn off because a random window requests to be hidden from screen captures.
+No more! This mod disables both of these checks.</p>
+<p>Works with both the old "GeForce Experience" as well as the new "NVIDIA App"</p>
+<p><img src="https://i.imgur.com/zdP0nhd.png" alt="Screenshot" /></p>]]></content>
+        <author>
+            <name>Temm</name>
+            <uri>https://github.com/leumasme</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Disable Virtual Desktop Transition Animation 1.0]]></title>
+        <id>https://windhawk.net/mods/disable-virtual-desktop-transition#000110fb95288d15f121807167c826024d9e764e</id>
+        <link href="https://windhawk.net/mods/disable-virtual-desktop-transition"/>
+        <updated>2024-12-09T15:33:53.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="disablevirtualdesktoptransitionanimation">Disable Virtual Desktop Transition Animation</h1>
+<p>This mod disables the animation seen when switching between virtual desktops in Windows 10.</p>
+<h2 id="importantusagenote">⚠ Important usage note ⚠</h2>
+<p>In order to use this mod, you must allow Windhawk to inject into the <strong>dwm.exe</strong> 
+system process. To do so, add it to the process inclusion list in the advanced 
+settings. If you do not do this, it will silently fail to inject.</p>
+<p><img src="https://i.imgur.com/LRhREtJ.png" alt="Advanced settings screenshot" /></p>]]></content>
+        <author>
+            <name>Isabella Lulamoon (kawapure)</name>
+            <uri>https://github.com/kawapure</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Multirow taskbar for Windows 11 1.0]]></title>
+        <id>https://windhawk.net/mods/taskbar-multirow#5e82578b6fd3b234cc853ecce9c6580573bc0b1c</id>
+        <link href="https://windhawk.net/mods/taskbar-multirow"/>
+        <updated>2024-12-07T20:09:23.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="multirowtaskbarforwindows11">Multirow taskbar for Windows 11</h1>
+<p>Span taskbar items across multiple rows, just like it was possible before
+Windows 11.</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The mod doesn't change the taskbar height, it only makes the task list span
+across multiple rows. To change the taskbar height, use the <a href="https://windhawk.net/mods/taskbar-icon-size">Taskbar height
+and icon size</a> mod.</li>
+<li>The mod works best with "Taskbar alignment" set to "Left" in the taskbar
+settings in Windows.</li>
+</ul>
+<p><img src="https://i.imgur.com/ZpzoDXy.png" alt="Screenshot" /></p>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dark mode context menus 1.0]]></title>
+        <id>https://windhawk.net/mods/dark-menus#32a08d93bca7856d61c3bac57491c6a2ff7aaafa</id>
+        <link href="https://windhawk.net/mods/dark-menus"/>
+        <updated>2024-12-06T21:17:05.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="darkmodecontextmenus">Dark mode context menus</h1>
+<p>Forces dark mode for all win32 context menus to create a more consistent UI.</p>
+<h3 id="before">Before:</h3>
+<p><img src="https://i.imgur.com/bGRVJz8.png" alt="Before" /></p>
+<h3 id="after">After:</h3>
+<p><img src="https://i.imgur.com/BURKEki.png" alt="After" /></p>]]></content>
+        <author>
+            <name>Mgg Sk</name>
+            <uri>https://github.com/MGGSK</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Better file sizes in Explorer details 1.4.5]]></title>
+        <id>https://windhawk.net/mods/explorer-details-better-file-sizes#1c07c82111a8cfb4c2a1757f702e598172570193</id>
+        <link href="https://windhawk.net/mods/explorer-details-better-file-sizes"/>
+        <updated>2024-12-04T14:18:49.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed Explorer hanging when Open Path is used in Everything.</li>
+<li>Excluded Plex Media Server which is incompatible, a proper fix will be implemented later.</li>
+<li>Added support for older Windows 10 versions.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar Labels for Windows 11 1.3.3]]></title>
+        <id>https://windhawk.net/mods/taskbar-labels#b0179b2e31ee74e302077bfb2de1b7cdfc6092d7</id>
+        <link href="https://windhawk.net/mods/taskbar-labels"/>
+        <updated>2024-12-04T13:58:49.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>The "Minimum taskbar item width" option can now be set to any value. Only 44 or larger values were previously supported.</li>
+<li>Fixed a crash which could occur in some cases due to an incorrect running indicator width calculation.</li>
+<li>Fixed taskbar settings (the "Combine taskbar buttons and hide labels" option) affecting some of the taskbar behavior, such as left click on combined items.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Click on empty taskbar space 1.8]]></title>
+        <id>https://windhawk.net/mods/taskbar-empty-space-clicks#10dd219bec0369013eeeb9a3c0bee7efc3987f41</id>
+        <link href="https://windhawk.net/mods/taskbar-empty-space-clicks"/>
+        <updated>2024-12-02T17:23:58.000Z</updated>
+        <content type="html"><![CDATA[<p>Added fallback method to open Start menu when Start button was not found on the taskbar (e.g. was hidden via other Windhawk mod) - temporary hotfix for https://github.com/m1lhaus/windhawk-mods/issues/21.</p>]]></content>
+        <author>
+            <name>m1lhaus</name>
+            <uri>https://github.com/m1lhaus</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar Clock Customization 1.4]]></title>
+        <id>https://windhawk.net/mods/taskbar-clock-customization#6082c60100929675fc56d995c9f9a6ae7b221c9e</id>
+        <link href="https://windhawk.net/mods/taskbar-clock-customization"/>
+        <updated>2024-12-01T18:44:49.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added support for the new "Show abbreviated time and date" Windows 11 option.</li>
+<li>Added a way to specify multiple date/time formats. It can be useful for things such as showing hours and minutes in different lines.</li>
+<li>Added an option for the clock max width (Windows 11 only).</li>
+<li>Added the <code>%dayofyear%</code> pattern - the day of year starting from January 1st.</li>
+<li>Added the <code>%newline%</code> pattern - a newline.</li>
+<li>Web content is now updated right away after resuming the computer from sleep.</li>
+<li>Added support for the ExplorerPatcher taskbar.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Balloon Sound Fix 1.0.0]]></title>
+        <id>https://windhawk.net/mods/balloon-sound-fix#b676789d78e5fd70e166d24c775bed520eb3fb3d</id>
+        <link href="https://windhawk.net/mods/balloon-sound-fix"/>
+        <updated>2024-11-25T15:35:16.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="balloonsoundfix">Balloon Sound Fix</h1>
+<p>Windows XP played a sound when showing balloon notifications. However, this
+functionality has been broken since Windows Vista. This mod fixes that issue in
+Windows 10. This mod will <em>not</em> work on Windows 11's new taskbar, as that does
+not support legacy balloons.</p>
+<p>To enable the balloons, create the registry value
+<code>HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer\EnableLegacyBalloonNotifications</code>
+as a DWORD, set it to 1, and restart Explorer (or sign out and sign in).</p>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Click on empty taskbar space 1.7]]></title>
+        <id>https://windhawk.net/mods/taskbar-empty-space-clicks#2e30970216e691be9103eb6693f557e63eb39e45</id>
+        <link href="https://windhawk.net/mods/taskbar-empty-space-clicks"/>
+        <updated>2024-11-23T16:47:30.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Start menu now opens on the same monitor where the taskbar was clicked - fixes https://github.com/m1lhaus/windhawk-mods/issues/19</li>
+<li>Show Desktop feature fixes for Explorer Patcher taskbar - fixes https://github.com/m1lhaus/windhawk-mods/issues/10</li>
+</ul>]]></content>
+        <author>
+            <name>m1lhaus</name>
+            <uri>https://github.com/m1lhaus</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Click on empty taskbar space 1.6]]></title>
+        <id>https://windhawk.net/mods/taskbar-empty-space-clicks#5e8a177134d706049012b8451736c782c753b1c0</id>
+        <link href="https://windhawk.net/mods/taskbar-empty-space-clicks"/>
+        <updated>2024-11-23T14:44:06.000Z</updated>
+        <content type="html"><![CDATA[<p>Double tap on touch screens is now much more benevolent in terms of click position on the screen. It takes into account screen DPI since in hi-res screens (like my 14'' 4k laptop) the position diffs between clicks when performing double tap can be significant. Also, since middle mouse button click is not possible with touch and detecting touch gesture is quite cumbersome (to work reliably across both Windows 10 and Windows 11 taskbars), I implemented support for triple tap which activates middle mouse click action. Fixes https://github.com/m1lhaus/windhawk-mods/issues/11</p>]]></content>
+        <author>
+            <name>m1lhaus</name>
+            <uri>https://github.com/m1lhaus</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TortoiseGit progress animation background fix for classic dark theme 1.0.0]]></title>
+        <id>https://windhawk.net/mods/tortoisegit-progress-animation-background-fix#23d47eaa50c0dd34b1bd7b843c4652f684198f14</id>
+        <link href="https://windhawk.net/mods/tortoisegit-progress-animation-background-fix"/>
+        <updated>2024-11-22T18:05:25.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="tortoisegitprogressanimationbackgroundfixforclassicdarktheme">TortoiseGit progress animation background fix for classic dark theme</h1>
+<p>Under classic dark theme, TortoiseGit progress animation has a white background, thus looking as if something is broken.</p>
+<p>This mod fixes the progress animation background in classic dark theme by replacing the white background with a classic button face colour.</p>
+<p>Before:</p>
+<p><img src="https://raw.githubusercontent.com/levitation-opensource/my-windhawk-mods/main/screenshots/before-tortoisegit-progress-animation-background.png" alt="Before" /></p>
+<p>After:</p>
+<p><img src="https://raw.githubusercontent.com/levitation-opensource/my-windhawk-mods/main/screenshots/after-tortoisegit-progress-animation-background.png" alt="After" /> </p>
+<h2 id="knownlimitations">Known limitations</h2>
+<p>There is still a brief flash of a white coloured box before the progress animation starts. I have tried various ways, but have been unable to get rid of that. If you have an idea how to fix that, please let me know!</p>]]></content>
+        <author>
+            <name>Roland Pihlakas</name>
+            <uri>https://github.com/levitation</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Visual Studio Anti-Rich-Header 1.0.3]]></title>
+        <id>https://windhawk.net/mods/visual-studio-anti-rich-header#5c2c1aee4460b052b77496e4cbb4f00bddba510b</id>
+        <link href="https://windhawk.net/mods/visual-studio-anti-rich-header"/>
+        <updated>2024-11-22T00:42:56.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added support for a newer version of link.exe which comes with Visual Studio 2022 version 17.12.1.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chrome/Edge scroll tabs with mouse wheel 1.1]]></title>
+        <id>https://windhawk.net/mods/chrome-wheel-scroll-tabs#7fb455e856a1d5067bae96a727cd1e27a6af9ff3</id>
+        <link href="https://windhawk.net/mods/chrome-wheel-scroll-tabs"/>
+        <updated>2024-11-21T19:38:27.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added an option to switch between tabs when the mouse's horizontal scroll wheel is tilted or rotated.</li>
+<li>Fixed the border around the web content in Edge triggering the tab scrolling.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fix browsers for Windows Classic theme 1.2.1]]></title>
+        <id>https://windhawk.net/mods/classic-browser-fix#f646116532b0fbd44766c91c0c4d9ca824647ee6</id>
+        <link href="https://windhawk.net/mods/classic-browser-fix"/>
+        <updated>2024-11-21T11:02:33.000Z</updated>
+        <content type="html"><![CDATA[<p>Add Chatgpt app.</p>]]></content>
+        <author>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Primary taskbar on secondary monitor 1.0]]></title>
+        <id>https://windhawk.net/mods/taskbar-primary-on-secondary-monitor#799488e7933b684caa77565ce1df5698833139ac</id>
+        <link href="https://windhawk.net/mods/taskbar-primary-on-secondary-monitor"/>
+        <updated>2024-11-16T21:19:48.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="primarytaskbaronsecondarymonitor">Primary taskbar on secondary monitor</h1>
+<p>Move the primary taskbar, including the tray icons, notifications, action
+center, etc. to another monitor.</p>
+<p><img src="https://i.imgur.com/hFU9oyK.gif" alt="Demonstration" /></p>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Customize Windows notifications placement 1.0.2]]></title>
+        <id>https://windhawk.net/mods/notifications-placement#19f3806e71b16183c5217ec05500791bbd400896</id>
+        <link href="https://windhawk.net/mods/notifications-placement"/>
+        <updated>2024-11-16T13:39:31.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Add an option to show notifications on the monitor where the mouse cursor is located.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Custom Desktop Watermark 1.0.2]]></title>
+        <id>https://windhawk.net/mods/custom-desktop-watermark#3205ff7547c8429f0d5b7141231a8733c18d123d</id>
+        <link href="https://windhawk.net/mods/custom-desktop-watermark"/>
+        <updated>2024-11-16T00:41:37.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fix resource leak</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fix Basic Caption Text 1.1.1]]></title>
+        <id>https://windhawk.net/mods/fix-basic-caption-text#2613791dbe45f4777ff658a06d3cb430e8b26285</id>
+        <link href="https://windhawk.net/mods/fix-basic-caption-text"/>
+        <updated>2024-11-15T07:36:59.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Make behavior accurate to Windows 7; custom frames (e.g. UIRibbon) will always show active color when composition is enabled</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+</feed>
