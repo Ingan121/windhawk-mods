@@ -2,22 +2,98 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2024-12-13T14:44:50.000Z</updated>
+    <updated>2024-12-16T22:17:12.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
+        <title type="html"><![CDATA[Taskbar tray icon spacing 1.1.1]]></title>
+        <id>https://windhawk.net/mods/taskbar-notification-icon-spacing#9c2f0424b09b758e4e82b06da5b4d94e206e05a4</id>
+        <link href="https://windhawk.net/mods/taskbar-notification-icon-spacing"/>
+        <updated>2024-12-16T22:17:12.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed buggy tray overflow placement when it's shown at the first time after system startup.</li>
+<li>Fixed tray overflow styles not being restored on mod unload.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Better file sizes in Explorer details 1.4.6]]></title>
+        <id>https://windhawk.net/mods/explorer-details-better-file-sizes#4daa0db637b47f3da820ad7d1cdcc64236068d12</id>
+        <link href="https://windhawk.net/mods/explorer-details-better-file-sizes"/>
+        <updated>2024-12-16T18:27:30.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>"Everything" integration for folder sizes: Added support for the new Everything SDK3. With "Everything" version 1.5.0.1384a or newer, the folder size query is much faster now (can be around 20x faster).</li>
+<li>"Everything" integration for folder sizes: Folder junctions no longer have a size (zero size was shown before).</li>
+<li>Fixed sorting folders by size when the "Mix files and folders when sorting by size" option is disabled.</li>
+<li>Folder sizes are now displayed in more places, including "Library" folders and the details pane.</li>
+<li>Fixed a rare mod hang on unload.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Win+D per monitor 1.0.20241214]]></title>
+        <id>https://windhawk.net/mods/win-d-per-monitor#3527a69c3e55a8acdc4e8d4255af0cd3d5e1566a</id>
+        <link href="https://windhawk.net/mods/win-d-per-monitor"/>
+        <updated>2024-12-16T17:28:15.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="windpermonitor">Win+D per monitor</h1>
+<p>When you press win+d, it only minimizes/restores the windows on the monitor
+where the mouse cursor is located.</p>
+<p>按下win+d时,只最小化/还原鼠标所在监视器上的窗口</p>]]></content>
+        <author>
+            <name>easyatm</name>
+            <uri>https://github.com/easyatm</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Click on empty taskbar space 1.9]]></title>
+        <id>https://windhawk.net/mods/taskbar-empty-space-clicks#c18f329132507d6ed1a7517e5c1906d194e2bb34</id>
+        <link href="https://windhawk.net/mods/taskbar-empty-space-clicks"/>
+        <updated>2024-12-15T13:06:35.000Z</updated>
+        <content type="html"><![CDATA[<p>Fixed explorer.exe freeze on Windows 24H2 when the combine taskbar buttons option changed - https://github.com/m1lhaus/windhawk-mods/issues/23.</p>]]></content>
+        <author>
+            <name>m1lhaus</name>
+            <uri>https://github.com/m1lhaus</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[CEF/Spotify Titlebar Enabler 0.1]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#854612b12c6ceefb7ae9c9ad40ecf469e7b704f1</id>
+        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#1c42a261bb552580949476c51ff569b15070ad6e</id>
         <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2024-12-13T14:44:50.000Z</updated>
-        <content type="html"><![CDATA[<p>Update cef-titlebar-enabler-universal.wh.cpp</p>
+        <updated>2024-12-13T19:01:56.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="ceftitlebarenabler">CEF Titlebar Enabler</h1>
 <ul>
-<li>Support and test more versions, now no missed versions between 90.4 and 132</li>
-<li>Support both x86 and x86-64 in all versions</li>
-<li>Add calling convention</li>
+<li>Force native frames and title bars for CEF apps, such as Spotify</li>
+<li>Only works on apps using native CEF top-level windows<ul>
+<li>Steam uses SDL for its top-level windows (except DevTools), so this mod doesn't work with Steam</li></ul></li>
+<li>Electron apps are NOT supported! Just patch asar to override <code>frame: false</code> to true in BrowserWindow creation</li>
+<li>Supported CEF versions: 90.4 to 132<ul>
+<li>This mod won't work with versions before 90.4</li>
+<li>Versions after 132 may work but are not tested</li>
+<li>Variant of this mod using copy-pasted CEF structs instead of hardcoded offsets is available at <a href="https://github.com/Ingan121/files/tree/master/cte">here</a></li>
+<li>Copy required structs/definitions from your wanted CEF version (available <a href="https://cef-builds.spotifycdn.com/index.html">here</a>) and paste them to the above variant to calculate the offsets</li>
+<li>Testing with cefclient: <code>cefclient.exe --use-views --hide-frame --hide-controls</code></li></ul></li>
+<li>Supported Spotify versions: 1.1.60 to 1.2.52 (newer versions may work)</li>
+<li>Spotify notes:<ul>
+<li>Old releases are available <a href="https://docs.google.com/spreadsheets/d/1wztO1L4zvNykBRw7X4jxP8pvo11oQjT0O5DvZ_-S4Ok/edit?pli=1&gid=803394557#gid=803394557">here</a></li>
+<li>1.1.60-1.1.67: Use <a href="https://github.com/JulienMaille/SpotifyNoControl">SpotifyNoControl</a> to remove the window controls</li>
+<li>1.1.68-1.1.70: Window control hiding doesn't work yet</li>
+<li>1.1.74: Last version to support proper DWM window controls</li>
+<li>Native DWM window controls are invisible since 1.1.75 as it began hooking window messages to support Windows 11 maximize button hover menu</li>
+<li>1.1.85: Last version to support proper non-DWM window controls</li>
+<li>They are still visible after 1.1.85, but they don't respond to clicks</li>
+<li>1.2.7: First version to use Library X UI by default</li>
+<li>1.2.13: Last version to have the old UI</li>
+<li>1.2.45: Last version to support disabling the global navbar</li>
+<li>Try toggling hardware acceleration multiple times (both in window menu and preferences) if you want a proper window icon. It may work on recent-ish versions</li></ul></li>
 </ul>]]></content>
         <author>
             <name>Ingan121</name>
@@ -54,28 +130,6 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[CEF/Spotify Titlebar Enabler 0.1]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#c25759dfb3891a6fc1ba072cf94cae08ba87ed2c</id>
-        <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2024-12-12T09:43:00.000Z</updated>
-        <content type="html"><![CDATA[<p>Misc optimization</p>]]></content>
-        <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CEF/Spotify Titlebar Enabler 0.1]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#d559fac9044d3f0add97d1c6eed6108843071d3c</id>
-        <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2024-12-12T08:50:59.000Z</updated>
-        <content type="html"><![CDATA[<p>Update cef-titlebar-enabler-universal.wh.cpp</p>]]></content>
-        <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[CTRL+SHIFT+C quotes remover 1.0]]></title>
         <id>https://windhawk.net/mods/remove-quotes-from-ctrl-shift-c#03e48ec11ead99e4fff7a66162d13dcd90dca4b7</id>
         <link href="https://windhawk.net/mods/remove-quotes-from-ctrl-shift-c"/>
@@ -92,41 +146,6 @@
         <author>
             <name>draxas</name>
             <uri>https://github.com/draxas</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CEF/Spotify Titlebar Enabler 0.1]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler#65b57e67051253f7a657da8f5426d17a7f936cd5</id>
-        <link href="https://windhawk.net/mods/cef-titlebar-enabler"/>
-        <updated>2024-12-11T14:47:48.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="ceftitlebarenabler">CEF Titlebar Enabler</h1>
-<ul>
-<li>Force native frames and title bars for CEF apps, such as Spotify</li>
-<li>Only works on apps using native CEF top-level windows<ul>
-<li>Steam uses SDL for its top-level windows (except DevTools), so this mod doesn't work with Steam</li></ul></li>
-<li>Electron apps are NOT supported! Just patch asar to override <code>frame: false</code> to true in BrowserWindow creation</li>
-<li>Supported CEF versions: 90, 91, 94-101, 102-106, 120, 124-132<ul>
-<li>Versions between the listed versions, and versions before 90, are likely not to work</li>
-<li>Versions after 132 may work but are not tested</li>
-<li>Only x86-64 is supported on CEF 120 and newer</li>
-<li>This mod relies on hardcoded offsets, so it may not work on versions not listed here (yet)</li>
-<li>Variant of this mod using copy-pasted CEF structs instead of hardcoded offsets is available at <a href="https://github.com/Ingan121/files/tree/master/cte">here</a></li>
-<li>Copy required structs/definitions from your wanted CEF version (available <a href="https://cef-builds.spotifycdn.com/index.html">here</a>) and paste them to the above variant to calculate the offsets</li></ul></li>
-<li>Supported Spotify versions: 1.1.60-1.1.97, 1.2.30, 1.2.38-1.2.52</li>
-<li>Spotify notes:<ul>
-<li>1.1.60-1.1.67: Use SpotifyNoControls mod to remove the window controls</li>
-<li>1.1.68-1.1.70: Window control hiding doesn't work yet</li>
-<li>1.1.74: Last version to support proper DWM window controls</li>
-<li>Native DWM window controls are invisible since 1.1.75 as it began hooking window messages to support Windows 11 maximize button hover menu</li>
-<li>1.1.85: Last version to support proper non-DWM window controls</li>
-<li>They are still visible after 1.1.85, but they don't respond to clicks</li>
-<li>1.2.30: Only x86-64 is supported from this version</li>
-<li>1.2.45: Last version to support disabling the global navbar</li>
-<li>Try toggling hardware acceleration multiple times (both in window menu and preferences) if you want a proper window icon. It may work on recent-ish versions</li></ul></li>
-</ul>]]></content>
-        <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
         </author>
     </entry>
     <entry>
@@ -316,25 +335,6 @@ as a DWORD, set it to 1, and restart Explorer (or sign out and sign in).</p>]]><
         <author>
             <name>m1lhaus</name>
             <uri>https://github.com/m1lhaus</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[TortoiseGit progress animation background fix for classic dark theme 1.0.0]]></title>
-        <id>https://windhawk.net/mods/tortoisegit-progress-animation-background-fix#23d47eaa50c0dd34b1bd7b843c4652f684198f14</id>
-        <link href="https://windhawk.net/mods/tortoisegit-progress-animation-background-fix"/>
-        <updated>2024-11-22T18:05:25.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="tortoisegitprogressanimationbackgroundfixforclassicdarktheme">TortoiseGit progress animation background fix for classic dark theme</h1>
-<p>Under classic dark theme, TortoiseGit progress animation has a white background, thus looking as if something is broken.</p>
-<p>This mod fixes the progress animation background in classic dark theme by replacing the white background with a classic button face colour.</p>
-<p>Before:</p>
-<p><img src="https://raw.githubusercontent.com/levitation-opensource/my-windhawk-mods/main/screenshots/before-tortoisegit-progress-animation-background.png" alt="Before" /></p>
-<p>After:</p>
-<p><img src="https://raw.githubusercontent.com/levitation-opensource/my-windhawk-mods/main/screenshots/after-tortoisegit-progress-animation-background.png" alt="After" /> </p>
-<h2 id="knownlimitations">Known limitations</h2>
-<p>There is still a brief flash of a white coloured box before the progress animation starts. I have tried various ways, but have been unable to get rid of that. If you have an idea how to fix that, please let me know!</p>]]></content>
-        <author>
-            <name>Roland Pihlakas</name>
-            <uri>https://github.com/levitation</uri>
         </author>
     </entry>
 </feed>
