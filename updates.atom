@@ -2,18 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2024-12-18T12:05:47.000Z</updated>
+    <updated>2024-12-18T14:13:18.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
+        <title type="html"><![CDATA[Better file sizes in Explorer details 1.4.7]]></title>
+        <id>https://windhawk.net/mods/explorer-details-better-file-sizes#28f831fb2eb390551fac6fa88ca6bf6c590fac01</id>
+        <link href="https://windhawk.net/mods/explorer-details-better-file-sizes"/>
+        <updated>2024-12-18T14:13:18.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>"Everything" integration for folder sizes: Added support for folder junctions.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[CEF/Spotify Titlebar Enabler 0.2]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#3da562b7f14b31c6ad0b39f975eed64ba493b0b7</id>
+        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#d9e7075dc68171e319427778e094cf9945dbe4a9</id>
         <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2024-12-18T12:05:47.000Z</updated>
-        <content type="html"><![CDATA[<p>CEF/Spotify Titlebar Enabler 0.2</p>]]></content>
+        <updated>2024-12-18T12:28:35.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Now supports proper native window controls on all supported versions. DWM, Basic, and Classic are all supported.</li>
+<li>Fix show menu option not working properly when logging is disabled</li>
+<li>Fix Basic/Classic frames turning black in some cases (upstream Chromium issue)</li>
+<li>Add an option to ignore the minimum size set by Spotify</li>
+</ul>]]></content>
         <author>
             <name>Ingan121</name>
             <uri>https://github.com/Ingan121</uri>
@@ -321,20 +339,6 @@ as a DWORD, set it to 1, and restart Explorer (or sign out and sign in).</p>]]><
         <author>
             <name>aubymori</name>
             <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Click on empty taskbar space 1.7]]></title>
-        <id>https://windhawk.net/mods/taskbar-empty-space-clicks#2e30970216e691be9103eb6693f557e63eb39e45</id>
-        <link href="https://windhawk.net/mods/taskbar-empty-space-clicks"/>
-        <updated>2024-11-23T16:47:30.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Start menu now opens on the same monitor where the taskbar was clicked - fixes https://github.com/m1lhaus/windhawk-mods/issues/19</li>
-<li>Show Desktop feature fixes for Explorer Patcher taskbar - fixes https://github.com/m1lhaus/windhawk-mods/issues/10</li>
-</ul>]]></content>
-        <author>
-            <name>m1lhaus</name>
-            <uri>https://github.com/m1lhaus</uri>
         </author>
     </entry>
 </feed>
