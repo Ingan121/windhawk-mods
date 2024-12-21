@@ -1,3 +1,7 @@
+## 0.3 ([Dec 21, 2024](https://github.com/ramensoftware/windhawk-mods/blob/dde6616aec891faa9488b48590337e4c4fe5d036/mods/cef-titlebar-enabler-universal.wh.cpp))
+
+Update cef-titlebar-enabler-universal.wh.cpp
+
 ## 0.2 ([Dec 18, 2024](https://github.com/ramensoftware/windhawk-mods/blob/d9e7075dc68171e319427778e094cf9945dbe4a9/mods/cef-titlebar-enabler-universal.wh.cpp))
 
 * Now supports proper native window controls on all supported versions. DWM, Basic, and Classic are all supported.
