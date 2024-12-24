@@ -1,6 +1,13 @@
-## 0.3 ([Dec 21, 2024](https://github.com/ramensoftware/windhawk-mods/blob/dde6616aec891faa9488b48590337e4c4fe5d036/mods/cef-titlebar-enabler-universal.wh.cpp))
+## 0.4 ([Dec 24, 2024](https://github.com/ramensoftware/windhawk-mods/blob/ba6f764b430eec03c531930fbbab64e9663291e7/mods/cef-titlebar-enabler-universal.wh.cpp))
 
 Update cef-titlebar-enabler-universal.wh.cpp
+
+## 0.3 ([Dec 21, 2024](https://github.com/ramensoftware/windhawk-mods/blob/e1dedbdcf972be80fa02d122d7379f9ca91e7582/mods/cef-titlebar-enabler-universal.wh.cpp))
+
+* Add support for Spotify 1.2.53
+* The ignore minimum size option now works without having to enable the native frames option
+* Add an option to enable native frames on non-main windows (miniplayer, DevTools, etc.)
+* WM_NCPAINT fix now works on non-Spotify CEF applications
 
 ## 0.2 ([Dec 18, 2024](https://github.com/ramensoftware/windhawk-mods/blob/d9e7075dc68171e319427778e094cf9945dbe4a9/mods/cef-titlebar-enabler-universal.wh.cpp))
 
