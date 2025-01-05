@@ -2,18 +2,74 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2024-12-25T13:44:29.000Z</updated>
+    <updated>2025-01-05T05:38:31.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
+        <title type="html"><![CDATA[Chromium Frame Blackout Fix 0.1]]></title>
+        <id>https://windhawk.net/mods/chromium-ncpaint-fix#5abe9a4187a77c9ef143dcb1d91b0cae83e8ed05</id>
+        <link href="https://windhawk.net/mods/chromium-ncpaint-fix"/>
+        <updated>2025-01-05T05:38:31.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="chromiumframeblackoutfix">Chromium Frame Blackout Fix</h1>
+<ul>
+<li>Fix Basic/Classic frames going black in Chromium/Electron/CEF apps</li>
+</ul>]]></content>
+        <author>
+            <name>Ingan121</name>
+            <uri>https://github.com/Ingan121</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hide Action Center icon 1.0.1]]></title>
+        <id>https://windhawk.net/mods/hide-action-center-icon#754cfb4e6257c90fb4729c169f08deba96227bc4</id>
+        <link href="https://windhawk.net/mods/hide-action-center-icon"/>
+        <updated>2025-01-03T12:07:57.000Z</updated>
+        <content type="html"><![CDATA[<p>Will not stop working in the future as the Win10 taskbar will not get any changes.</p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Primary taskbar on secondary monitor 1.1]]></title>
+        <id>https://windhawk.net/mods/taskbar-primary-on-secondary-monitor#4db829a377d9b5b497da107523171d2d785042c7</id>
+        <link href="https://windhawk.net/mods/taskbar-primary-on-secondary-monitor"/>
+        <updated>2024-12-31T17:51:03.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added the "Monitor interface name" option which can be used instead of the monitor number. Can be useful if the monitor numbers change often.</li>
+<li>Fixed the Action Center (Win+A) always opening on primary monitor on Windows 11 version 24H2.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Customize Windows notifications placement 1.1]]></title>
+        <id>https://windhawk.net/mods/notifications-placement#d8232bbf9fd4b173e4848587d1b9604acc359453</id>
+        <link href="https://windhawk.net/mods/notifications-placement"/>
+        <updated>2024-12-31T17:39:14.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added the "Monitor interface name" option which can be used instead of the monitor number. Can be useful if the monitor numbers change often.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[CEF/Spotify Titlebar Enabler 0.5]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#46e026f6acef894387ad012157b63b913fcd2584</id>
+        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#d25beeb3c894c97d36c4fe7b52e67a3505ad78e2</id>
         <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2024-12-25T13:44:29.000Z</updated>
-        <content type="html"><![CDATA[<p>Update cef-titlebar-enabler-universal.wh.cpp</p>]]></content>
+        <updated>2024-12-25T15:25:49.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Support making Spotify's custom window controls transparent</li>
+<li>Try to avoid crashes on untested newer releases of CEF/Spotify</li>
+<li>Support using DWM backgrounds with MicaForEveryone (requires hex patching <code>Spotify.exe</code>; see the mod details for instructions)</li>
+</ul>]]></content>
         <author>
             <name>Ingan121</name>
             <uri>https://github.com/Ingan121</uri>
@@ -262,76 +318,6 @@ No more! This mod disables both of these checks.</p>
         <author>
             <name>Temm</name>
             <uri>https://github.com/leumasme</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Disable Virtual Desktop Transition Animation 1.0]]></title>
-        <id>https://windhawk.net/mods/disable-virtual-desktop-transition#000110fb95288d15f121807167c826024d9e764e</id>
-        <link href="https://windhawk.net/mods/disable-virtual-desktop-transition"/>
-        <updated>2024-12-09T15:33:53.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="disablevirtualdesktoptransitionanimation">Disable Virtual Desktop Transition Animation</h1>
-<p>This mod disables the animation seen when switching between virtual desktops in Windows 10.</p>
-<h2 id="importantusagenote">⚠ Important usage note ⚠</h2>
-<p>In order to use this mod, you must allow Windhawk to inject into the <strong>dwm.exe</strong> 
-system process. To do so, add it to the process inclusion list in the advanced 
-settings. If you do not do this, it will silently fail to inject.</p>
-<p><img src="https://i.imgur.com/LRhREtJ.png" alt="Advanced settings screenshot" /></p>]]></content>
-        <author>
-            <name>Isabella Lulamoon (kawapure)</name>
-            <uri>https://github.com/kawapure</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Multirow taskbar for Windows 11 1.0]]></title>
-        <id>https://windhawk.net/mods/taskbar-multirow#5e82578b6fd3b234cc853ecce9c6580573bc0b1c</id>
-        <link href="https://windhawk.net/mods/taskbar-multirow"/>
-        <updated>2024-12-07T20:09:23.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="multirowtaskbarforwindows11">Multirow taskbar for Windows 11</h1>
-<p>Span taskbar items across multiple rows, just like it was possible before
-Windows 11.</p>
-<h2 id="notes">Notes</h2>
-<ul>
-<li>The mod doesn't change the taskbar height, it only makes the task list span
-across multiple rows. To change the taskbar height, use the <a href="https://windhawk.net/mods/taskbar-icon-size">Taskbar height
-and icon size</a> mod.</li>
-<li>The mod works best with "Taskbar alignment" set to "Left" in the taskbar
-settings in Windows.</li>
-</ul>
-<p><img src="https://i.imgur.com/ZpzoDXy.png" alt="Screenshot" /></p>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dark mode context menus 1.0]]></title>
-        <id>https://windhawk.net/mods/dark-menus#32a08d93bca7856d61c3bac57491c6a2ff7aaafa</id>
-        <link href="https://windhawk.net/mods/dark-menus"/>
-        <updated>2024-12-06T21:17:05.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="darkmodecontextmenus">Dark mode context menus</h1>
-<p>Forces dark mode for all win32 context menus to create a more consistent UI.</p>
-<h3 id="before">Before:</h3>
-<p><img src="https://i.imgur.com/bGRVJz8.png" alt="Before" /></p>
-<h3 id="after">After:</h3>
-<p><img src="https://i.imgur.com/BURKEki.png" alt="After" /></p>]]></content>
-        <author>
-            <name>Mgg Sk</name>
-            <uri>https://github.com/MGGSK</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Better file sizes in Explorer details 1.4.5]]></title>
-        <id>https://windhawk.net/mods/explorer-details-better-file-sizes#1c07c82111a8cfb4c2a1757f702e598172570193</id>
-        <link href="https://windhawk.net/mods/explorer-details-better-file-sizes"/>
-        <updated>2024-12-04T14:18:49.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed Explorer hanging when Open Path is used in Everything.</li>
-<li>Excluded Plex Media Server which is incompatible, a proper fix will be implemented later.</li>
-<li>Added support for older Windows 10 versions.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
         </author>
     </entry>
 </feed>
