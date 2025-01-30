@@ -1,3 +1,7 @@
+## 0.6 ([Jan 30, 2025](https://github.com/ramensoftware/windhawk-mods/blob/bc90fed73ef5dad8644319c9842634a9b69b98f3/mods/cef-titlebar-enabler-universal.wh.cpp))
+
+Update cef-titlebar-enabler-universal.wh.cpp
+
 ## 0.5 ([Dec 25, 2024](https://github.com/ramensoftware/windhawk-mods/blob/d25beeb3c894c97d36c4fe7b52e67a3505ad78e2/mods/cef-titlebar-enabler-universal.wh.cpp))
 
 * Support making Spotify's custom window controls transparent

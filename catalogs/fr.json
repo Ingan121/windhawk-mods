@@ -121,6 +121,30 @@
                 "version": "1.0.2"
             }
         },
+        "alt-tab-delayer": {
+            "details": {
+                "defaultSorting": 1080,
+                "published": 1737657431000,
+                "rating": 10,
+                "ratingUsers": 5,
+                "updated": 1737657431000,
+                "users": 108
+            },
+            "metadata": {
+                "architecture": [
+                    "x86-64"
+                ],
+                "author": "L3r0y",
+                "compilerOptions": "-lversion",
+                "description": "Delays the appearance of the Alt+Tab window, preventing flickering and reducing distractions during fast app switching",
+                "github": "https://github.com/L3r0yThingz",
+                "include": [
+                    "explorer.exe"
+                ],
+                "name": "Alt+Tab window delayer",
+                "version": "1.0.0"
+            }
+        },
         "alt-tab-per-monitor": {
             "details": {
                 "defaultSorting": 7720,
@@ -222,22 +246,22 @@
                 "published": 1734116516000,
                 "rating": 10,
                 "ratingUsers": 6,
-                "updated": 1735140349000,
+                "updated": 1738216994000,
                 "users": 179
             },
             "metadata": {
                 "author": "Ingan121",
-                "compilerOptions": "-lcomctl32 -luxtheme",
-                "description": "Force native frames and title bars for CEF apps",
+                "compilerOptions": "-lcomctl32 -luxtheme -ldwmapi",
+                "description": "Various tweaks for Spotify, including native frames, transparent windows, and more",
                 "github": "https://github.com/Ingan121",
                 "homepage": "https://www.ingan121.com/",
                 "include": [
                     "spotify.exe",
                     "cefclient.exe"
                 ],
-                "name": "CEF/Spotify Titlebar Enabler",
+                "name": "CEF/Spotify Tweaks",
                 "twitter": "https://twitter.com/Ingan121",
-                "version": "0.5"
+                "version": "0.6"
             }
         },
         "center-titlebar": {
@@ -337,10 +361,10 @@
         "chromium-ncpaint-fix": {
             "details": {
                 "defaultSorting": 704,
-                "published": 1736055511000,
+                "published": 1736070368000,
                 "rating": 8,
                 "ratingUsers": 2,
-                "updated": 1736055511000,
+                "updated": 1736070368000,
                 "users": 88
             },
             "metadata": {
@@ -363,7 +387,7 @@
                 "published": 1706897392000,
                 "rating": 0,
                 "ratingUsers": 0,
-                "updated": 1732186953000,
+                "updated": 1736247128000,
                 "users": 82
             },
             "metadata": {
@@ -381,7 +405,7 @@
                     "chatgpt.exe"
                 ],
                 "name": "Fix browsers for Windows Classic theme",
-                "version": "1.2.1"
+                "version": "1.2.2"
             }
         },
         "classic-clock-button-behavior": {
@@ -459,7 +483,7 @@
                 "published": 1708354597000,
                 "rating": 10,
                 "ratingUsers": 2,
-                "updated": 1728740886000,
+                "updated": 1736864594000,
                 "users": 354
             },
             "metadata": {
@@ -474,7 +498,7 @@
                     "explorer.exe"
                 ],
                 "name": "Classic Explorer Treeview",
-                "version": "1.1.2"
+                "version": "1.1.3"
             }
         },
         "classic-file-picker-dialog": {
@@ -572,6 +596,26 @@
                 "version": "1.1.0"
             }
         },
+        "classic-start-menu-folders-icon": {
+            "details": {
+                "defaultSorting": 0,
+                "published": 1738189438000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1738189438000,
+                "users": 0
+            },
+            "metadata": {
+                "author": "xalejandro",
+                "description": "Change the default icon of Start Menu folders like Windows XP and before",
+                "github": "https://github.com/tetawaves",
+                "include": [
+                    "*"
+                ],
+                "name": "Classic Start Menu Folders Icon",
+                "version": "1.0"
+            }
+        },
         "classic-taskbar-background-fix": {
             "details": {
                 "defaultSorting": 450,
@@ -600,7 +644,7 @@
                 "published": 1708239757000,
                 "rating": 10,
                 "ratingUsers": 1,
-                "updated": 1723930010000,
+                "updated": 1737801083000,
                 "users": 131
             },
             "metadata": {
@@ -612,7 +656,7 @@
                     "explorer.exe"
                 ],
                 "name": "Classic Taskbar 3D buttons Lite",
-                "version": "1.3"
+                "version": "1.3.1"
             }
         },
         "classic-taskbar-buttons-lite-vs-without-spacing": {
@@ -862,7 +906,7 @@
                 "published": 1733519825000,
                 "rating": 9,
                 "ratingUsers": 26,
-                "updated": 1733519825000,
+                "updated": 1737403027000,
                 "users": 1860
             },
             "metadata": {
@@ -873,7 +917,7 @@
                     "*"
                 ],
                 "name": "Dark mode context menus",
-                "version": "1.0"
+                "version": "1.2"
             }
         },
         "desktop-icons-view": {
@@ -1694,7 +1738,7 @@
                 "published": 1723297622000,
                 "rating": 10,
                 "ratingUsers": 1,
-                "updated": 1731113738000,
+                "updated": 1736441410000,
                 "users": 85
             },
             "metadata": {
@@ -1705,7 +1749,7 @@
                     "explorer.exe"
                 ],
                 "name": "Legacy Alt+Tab dialog",
-                "version": "1.0.1"
+                "version": "1.0.2"
             }
         },
         "legacy-file-copy": {
@@ -1920,6 +1964,28 @@
                 "name": "Logon, Logoff & Shutdown Sounds Restored",
                 "twitter": "https://twitter.com/TorutheRedFox",
                 "version": "1.0.2"
+            }
+        },
+        "magnifier-mod": {
+            "details": {
+                "defaultSorting": 27,
+                "published": 1737058005000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1737493649000,
+                "users": 3
+            },
+            "metadata": {
+                "author": "00face",
+                "compilerOptions": "-lgdi32 -lcomdlg32 -luxtheme -lgdiplus",
+                "description": "Adds a magnifier window you can customize and dock at the top, bottom, left, or right of your screen and more.",
+                "github": "https://github.com/00face",
+                "homepage": "https://hyaenahyaena.com",
+                "include": [
+                    "explorer.exe"
+                ],
+                "name": "Taskbar Magnifier M🔍d",
+                "version": "0.5.4"
             }
         },
         "maintain-flux-colour-temperature": {
@@ -2259,7 +2325,7 @@
                 "published": 1731512140000,
                 "rating": 0,
                 "ratingUsers": 0,
-                "updated": 1731512140000,
+                "updated": 1737653134000,
                 "users": 56
             },
             "metadata": {
@@ -2275,7 +2341,7 @@
                     "*"
                 ],
                 "name": "Per-app Language Preferences",
-                "version": "1.0"
+                "version": "1.1"
             }
         },
         "pinned-items-double-click": {
@@ -2590,7 +2656,7 @@
                 "published": 1647604671000,
                 "rating": 10,
                 "ratingUsers": 19,
-                "updated": 1699302173000,
+                "updated": 1738177318000,
                 "users": 2658
             },
             "metadata": {
@@ -2606,7 +2672,7 @@
                 ],
                 "name": "Show all apps by default in start menu",
                 "twitter": "https://twitter.com/m417z",
-                "version": "1.0.2"
+                "version": "1.0.3"
             }
         },
         "suppress-run-box-error-message": {
@@ -3112,7 +3178,7 @@
                 "published": 1728056002000,
                 "rating": 10,
                 "ratingUsers": 46,
-                "updated": 1730593288000,
+                "updated": 1738190541000,
                 "users": 3035
             },
             "metadata": {
@@ -3129,7 +3195,7 @@
                 ],
                 "name": "Taskbar on top for Windows 11",
                 "twitter": "https://twitter.com/m417z",
-                "version": "1.0.5"
+                "version": "1.1"
             }
         },
         "taskbar-primary-on-secondary-monitor": {
@@ -3295,7 +3361,7 @@
                 "published": 1718190574000,
                 "rating": 10,
                 "ratingUsers": 74,
-                "updated": 1729708789000,
+                "updated": 1738185710000,
                 "users": 3837
             },
             "metadata": {
@@ -3304,7 +3370,7 @@
                 ],
                 "author": "m417z",
                 "compilerOptions": "-DWINVER=0x0A00 -lole32 -loleaut32 -lruntimeobject -lshcore",
-                "description": "Finally, the missing vertical taskbar option for Windows 11!",
+                "description": "Finally, the missing vertical taskbar option for Windows 11! Move the taskbar to the left or right side of the screen.",
                 "github": "https://github.com/m417z",
                 "homepage": "https://m417z.com/",
                 "include": [
@@ -3316,7 +3382,7 @@
                 ],
                 "name": "Vertical Taskbar for Windows 11",
                 "twitter": "https://twitter.com/m417z",
-                "version": "1.3"
+                "version": "1.3.2"
             }
         },
         "taskbar-volume-control": {
@@ -3900,7 +3966,7 @@
                 "published": 1715436273000,
                 "rating": 10,
                 "ratingUsers": 208,
-                "updated": 1729940627000,
+                "updated": 1736107333000,
                 "users": 28461
             },
             "metadata": {
@@ -3918,7 +3984,7 @@
                 ],
                 "name": "Windows 11 Notification Center Styler",
                 "twitter": "https://twitter.com/m417z",
-                "version": "1.1.4"
+                "version": "1.1.5"
             }
         },
         "windows-11-start-menu-styler": {
