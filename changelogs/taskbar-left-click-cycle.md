@@ -1,3 +1,11 @@
+## 1.1.3 ([Mar 22, 2025](https://github.com/ramensoftware/windhawk-mods/blob/7f2b9d2f53250388d0b9417ede518d0c13f4a1a5/mods/taskbar-left-click-cycle.wh.cpp))
+
+* Fixed an incompatibility with recent Windows 11 preview builds.
+
+## 1.1.2 ([Mar 2, 2025](https://github.com/ramensoftware/windhawk-mods/blob/e98421129e3e78e3b6f7b5305e8c0ff9301c157a/mods/taskbar-left-click-cycle.wh.cpp))
+
+* Added support for the new thumbnail previews implementation in Windows 11.
+
 ## 1.1.1 ([Oct 22, 2024](https://github.com/ramensoftware/windhawk-mods/blob/c04dfbc63407803920ca0699c8b2a160e23d757b/mods/taskbar-left-click-cycle.wh.cpp))
 
 * Fixed initialization with the ExplorerPatcher taskbar. ExplorerPatcher 66.7 or newer is supported.

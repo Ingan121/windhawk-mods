@@ -1,3 +1,14 @@
+## 1.1.2 ([Mar 22, 2025](https://github.com/ramensoftware/windhawk-mods/blob/7a9a61a0563a031b366c70f4e4620f7c97a371b4/mods/taskbar-on-top.wh.cpp))
+
+* Fixed an incompatibility with recent Windows 11 preview builds.
+* Fixed context menus of taskbar items being covered by the overflow popup.
+* Fixed thumbnail preview tooltips covering the close button on hover.
+* Fixed thumbnail preview positions when a touch screen is used.
+
+## 1.1.1 ([Feb 8, 2025](https://github.com/ramensoftware/windhawk-mods/blob/33d869f823bca2613379a3ce5664cc27b0e9471d/mods/taskbar-on-top.wh.cpp))
+
+* Added support for the new thumbnail previews implementation in Windows.
+
 ## 1.1 ([Jan 29, 2025](https://github.com/ramensoftware/windhawk-mods/blob/124523bc261918872e9ca412c587f832519d7a01/mods/taskbar-on-top.wh.cpp))
 
 * Added an option to show running indicators above the taskbar icons.

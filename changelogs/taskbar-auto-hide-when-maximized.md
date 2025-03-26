@@ -1,3 +1,22 @@
+## 1.2.2 ([Mar 22, 2025](https://github.com/ramensoftware/windhawk-mods/blob/c2a94e3b3f0465445cf6d789a48b2cd561fb8242/mods/taskbar-auto-hide-when-maximized.wh.cpp))
+
+* Hide the taskbar for fullscreen windows for the "Auto-hide only when a window is maximized" mode.
+* Fixed taskbar thumbnails causing the taskbar to hide and then show up again right away (the fix in v1.2.1 wasn't complete).
+
+## 1.2.1 ([Mar 1, 2025](https://github.com/ramensoftware/windhawk-mods/blob/2a980f110766e76fe0095140c9010f8933f3918d/mods/taskbar-auto-hide-when-maximized.wh.cpp))
+
+* Fixed taskbar thumbnails causing the taskbar to hide and then show up again right away.
+* Made the "Never auto-hide" mode work with the "Primary monitor only" option.
+* Improved performance and fixed the taskbar becoming stuck in some cases.
+
+## 1.2 ([Feb 19, 2025](https://github.com/ramensoftware/windhawk-mods/blob/be73d3a4f2e28c78c621a1bb6f3de212d01c9514/mods/taskbar-auto-hide-when-maximized.wh.cpp))
+
+* It's no longer necessary to enable auto-hide in the taskbar properties for the mod to work, the mod does that automatically.
+* Added an option to apply the auto-hide logic only to foreground window.
+* Added an option to exclude programs from the auto-hide logic, can be useful for programs which act as taskbar widgets or for buggy programs.
+* Added an option to apply the mod only to the primary monitor taskbar.
+* The "Auto-hide only when a window is maximized" mode was improved to hide the taskbar for fullscreen windows and snapped windows as well.
+
 ## 1.1.2 ([Nov 9, 2024](https://github.com/ramensoftware/windhawk-mods/blob/699e3b8e67452ab1f163ddc7bd9376549364e4db/mods/taskbar-auto-hide-when-maximized.wh.cpp))
 
 * Fixed the mod not applying on startup in some cases.

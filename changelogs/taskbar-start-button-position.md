@@ -1,3 +1,12 @@
+## 1.2.2 ([Mar 22, 2025](https://github.com/ramensoftware/windhawk-mods/blob/c57c0a2cb008722765cf652cd24c207fe8818e82/mods/taskbar-start-button-position.wh.cpp))
+
+* Fixed an incompatibility with recent Windows 11 preview builds.
+
+## 1.2.1 ([Feb 8, 2025](https://github.com/ramensoftware/windhawk-mods/blob/65167d91ff632f8defcde31939d90f391e43c155/mods/taskbar-start-button-position.wh.cpp))
+
+* Improved start menu positioning.
+* Fixed the start menu width option not applying until restart in some cases.
+
 ## 1.2 ([Nov 1, 2024](https://github.com/ramensoftware/windhawk-mods/blob/f44455ff44bcaa2a31f0d6aca46b8bd22fe2dae1/mods/taskbar-start-button-position.wh.cpp))
 
 * Fixed the jumpy animation that occurred when the taskbar is animated.

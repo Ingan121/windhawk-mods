@@ -1,3 +1,19 @@
+## 1.1.9 ([Mar 25, 2025](https://github.com/ramensoftware/windhawk-mods/blob/09b9d5016d082de95fdcbedcfd9e5ce8d0d19738/mods/taskbar-wheel-cycle.wh.cpp))
+
+* Made mouse wheel cycling and keyboard shortcuts optional, so that only one of them can be selected and used.
+* Improved compatibility with status bar programs such as YASB and Zebar.
+* Added an option to customize the old taskbar on Windows 11.
+
+## 1.1.8 ([Mar 22, 2025](https://github.com/ramensoftware/windhawk-mods/blob/bcd78f44d6de1412a8326190d1ddde140078505e/mods/taskbar-wheel-cycle.wh.cpp))
+
+* Fixed an incompatibility with recent Windows 11 preview builds.
+
+## 1.1.7 ([Feb 18, 2025](https://github.com/ramensoftware/windhawk-mods/blob/6e4b3344875e80a12fc86756547813f61cb60810/mods/taskbar-wheel-cycle.wh.cpp))
+
+* Added support for Windows 10.
+* Added support for the ExplorerPatcher taskbar.
+* Fixed keyboard shortcut registering on startup in some cases.
+
 ## 1.1.6 ([Oct 12, 2024](https://github.com/ramensoftware/windhawk-mods/blob/02ba0666ef1b78f2462215089a2a29834143aecf/mods/taskbar-wheel-cycle.wh.cpp))
 
 * Added a workaround for keyboard shortcuts not working after sleep.
