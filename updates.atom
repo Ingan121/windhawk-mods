@@ -2,12 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2025-04-19T15:56:10.000Z</updated>
+    <updated>2025-04-20T14:23:25.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
+    <entry>
+        <title type="html"><![CDATA[CEF/Spotify Tweaks 0.9]]></title>
+        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#d5e50965f43ca7bd30a4efbf456de751648e40a2</id>
+        <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
+        <updated>2025-04-20T14:23:25.000Z</updated>
+        <content type="html"><![CDATA[<p>Update cef-titlebar-enabler-universal.wh.cpp</p>]]></content>
+        <author>
+            <name>Ingan121</name>
+            <uri>https://github.com/Ingan121</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Chinese IME fixed mode 1.0.4]]></title>
         <id>https://windhawk.net/mods/chinese-ime-fixed-mode#52dd9956bf33a98494b675899e959a6aaf4f16ce</id>
@@ -301,18 +312,6 @@ of Windows which is the same language as what you currently have installed for d
         <author>
             <name>aubymori</name>
             <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Disable Virtual Desktop Transition Animation 1.1]]></title>
-        <id>https://windhawk.net/mods/disable-virtual-desktop-transition#bcc31d6dbb7a99877da5ddf191dbe9737f49e0f6</id>
-        <link href="https://windhawk.net/mods/disable-virtual-desktop-transition"/>
-        <updated>2025-03-31T11:14:07.000Z</updated>
-        <content type="html"><![CDATA[<p>This update adds support for Windows 11. I tested on <code>10.0.22631.2428</code>, but the Windows 11 approach is general enough that it should work for all versions.</p>
-<p>In Windows 11, they moved the animation to reside in <code>TWinUI.PCShell.dll</code>, which is loaded into the main shell process <code>explorer.exe</code>. In Windows 10, it resided in <code>uDWM.dll</code> which ran in <code>dwm.exe</code>.</p>]]></content>
-        <author>
-            <name>Isabella Lulamoon (kawapure)</name>
-            <uri>https://github.com/kawapure</uri>
         </author>
     </entry>
 </feed>

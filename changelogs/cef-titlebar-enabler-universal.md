@@ -1,3 +1,7 @@
+## 0.9 ([Apr 20, 2025](https://github.com/ramensoftware/windhawk-mods/blob/d5e50965f43ca7bd30a4efbf456de751648e40a2/mods/cef-titlebar-enabler-universal.wh.cpp))
+
+Update cef-titlebar-enabler-universal.wh.cpp
+
 ## 0.8 ([Mar 26, 2025](https://github.com/ramensoftware/windhawk-mods/blob/e3cf3ac434db56bfb98c39e23f2215a8c4106600/mods/cef-titlebar-enabler-universal.wh.cpp))
 
 * Fixed Aero Glass not working and showing a white background instead in some cases
