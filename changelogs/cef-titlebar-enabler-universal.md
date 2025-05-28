@@ -1,6 +1,10 @@
-## 0.9 ([Apr 20, 2025](https://github.com/ramensoftware/windhawk-mods/blob/d5e50965f43ca7bd30a4efbf456de751648e40a2/mods/cef-titlebar-enabler-universal.wh.cpp))
+## 0.9 ([Apr 20, 2025](https://github.com/ramensoftware/windhawk-mods/blob/1d248fdd4964e037fc00cb9799cd5fb55fe92f77/mods/cef-titlebar-enabler-universal.wh.cpp))
 
-Update cef-titlebar-enabler-universal.wh.cpp
+* Add support for Spotify 1.2.62
+* Fix the `query()` API function not getting the latest option changes
+* Now this mod uses a more proper way of changing the minimum window size
+  * JavaScript `window.resizeTo()` should work fine for smaller sizes, and the resize cursor should always be shown when hovering over window borders
+  * As a result, this feature no longer works on Spotify versions older than 1.1.71
 
 ## 0.8 ([Mar 26, 2025](https://github.com/ramensoftware/windhawk-mods/blob/e3cf3ac434db56bfb98c39e23f2215a8c4106600/mods/cef-titlebar-enabler-universal.wh.cpp))
 

@@ -2,58 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2025-04-20T14:23:25.000Z</updated>
+    <updated>2025-05-27T17:38:56.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
-        <title type="html"><![CDATA[CEF/Spotify Tweaks 0.9]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#d5e50965f43ca7bd30a4efbf456de751648e40a2</id>
-        <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2025-04-20T14:23:25.000Z</updated>
-        <content type="html"><![CDATA[<p>Update cef-titlebar-enabler-universal.wh.cpp</p>]]></content>
-        <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Chinese IME fixed mode 1.0.4]]></title>
-        <id>https://windhawk.net/mods/chinese-ime-fixed-mode#52dd9956bf33a98494b675899e959a6aaf4f16ce</id>
-        <link href="https://windhawk.net/mods/chinese-ime-fixed-mode"/>
-        <updated>2025-04-19T15:56:10.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="forcechineseimemode">Force Chinese IME Mode | 强制中文输入法</h1>
-<h2 id="baseonhttpswindhawknetmodsforcechineseimev101">base on https://windhawk.net/mods/force-chinese-ime v1.0.1</h2>
-<p>set<em>IME</em>mode trigger by MSUIM.Msg.Private</p>
-<h2 id="feature">Feature | 功能</h2>
-<p>This mod forces the Microsoft Pinyin IME to stay in Chinese input mode, preventing unwanted mode switches.<br />
-这个 mod 强制微软拼音输入法保持在中文输入模式，防止出现不必要的模式切换。</p>
-<h3 id="before">Before | 使用前</h3>
-<p>The input mode often switches irregular while using Microsoft Pinyin IME.<br />
-使用微软拼音输入法时输入模式经常无规则切换。</p>
-<h3 id="after">After | 使用后</h3>
-<p>It can ensure that when using the Microsoft Pinyin IME, English will never be entered using the input box.<br />
-可以确保在微软拼音输入法的时候，使用输入框永远不会输入英文。</p>]]></content>
-        <author>
-            <name>barry</name>
-            <uri>https://github.com/barrypp</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Better file sizes in Explorer details 1.4.9]]></title>
-        <id>https://windhawk.net/mods/explorer-details-better-file-sizes#7ae6bca49f773eef9966ceedc8e9e2495f896463</id>
-        <link href="https://windhawk.net/mods/explorer-details-better-file-sizes"/>
-        <updated>2025-04-15T20:43:57.000Z</updated>
+        <title type="html"><![CDATA[Auto Theme Switcher 1.0.4]]></title>
+        <id>https://windhawk.net/mods/auto-theme-switcher#15e5d9838349e4b927ed8ac5433e9894ff6cda28</id>
+        <link href="https://windhawk.net/mods/auto-theme-switcher"/>
+        <updated>2025-05-27T17:38:56.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Added support for long paths.</li>
-<li>Reduced footprint for processes which never use a file list control.</li>
-<li>Reduced footprint if "Everything" 1.4 isn't used. That's yet another reason to switch to "<a href="https://www.voidtools.com/forum/viewtopic.php?t=9787">Everything" 1.5 Alpha</a>, which is also about 20x faster at size query operations. Despite the "Alpha" label, it's stable for daily use according to users' feedback and my own experience.</li>
-<li>Fixed a crash in 32-bit programs when the "Use IEC terms" option is enabled and the "Use MB/GB for large files" option isn't enabled.</li>
-<li>Fixed Everything hanging in some cases if its executable name is Everything64.exe and not Everything.exe.</li>
-<li>Fixed slow file list loading when browsing slow network share folders.</li>
-<li>Fixed Explorer showing incorrect operation sizes in some cases, such as when extracting files from a 7-Zip archive.</li>
+<li>Fixed switching after waking up from sleep</li>
+<li>Improved checking if theme is applied</li>
+<li>Added mode selection (Appearance, appearance + wallpapers, themes)</li>
+</ul>]]></content>
+        <author>
+            <name>tinodin</name>
+            <uri>https://github.com/tinodin</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Disable Windows Ink modifier tooltips 1.0.0]]></title>
+        <id>https://windhawk.net/mods/no-windows-ink-tooltips#9eae2396a7de07045cc575c3428eac37b3069e9d</id>
+        <link href="https://windhawk.net/mods/no-windows-ink-tooltips"/>
+        <updated>2025-05-27T14:29:26.000Z</updated>
+        <content type="html"><![CDATA[<p>This mod removes the tooltip that appears next to the cursor when any of the
+modifier keys are pressed while using a Windows Ink tablet by preventing the
+tooltip window from being created and updated.</p>
+<p><img src="https://i.imgur.com/zT6C8o3.png" alt="Comparison" /></p>
+<p>This mod requires injecting into DWM, which is a critical system process.
+To use it, you should allow Windhawk to inject to DWM by adding <code>dwm.exe</code>
+to the process inclusion list in the program's advanced settings.</p>
+<p><img src="https://i.imgur.com/LRhREtJ.png" alt="Advanced settings screenshot" /></p>]]></content>
+        <author>
+            <name>wily-coyote</name>
+            <uri>https://github.com/wily-coyote</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chrome/Edge scroll tabs with mouse wheel 1.2]]></title>
+        <id>https://windhawk.net/mods/chrome-wheel-scroll-tabs#d24cd9074413004acff7f87f7e9d6cab89210938</id>
+        <link href="https://windhawk.net/mods/chrome-wheel-scroll-tabs"/>
+        <updated>2025-05-26T18:34:20.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added options to limit the scroll area, which can be useful in case the mod incorrectly overrides the mouse wheel scrolling in areas where it shouldn't, e.g. in the page content area.</li>
+<li>Added support for Yandex Browser.</li>
 </ul>]]></content>
         <author>
             <name>m417z</name>
@@ -61,200 +56,56 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Windows 7/8.x Alt+Tab Loader 2.1.0]]></title>
-        <id>https://windhawk.net/mods/win7-alttab-loader#c3ac7043865e3f5ae95949ebe5d1b3ce81db8cde</id>
-        <link href="https://windhawk.net/mods/win7-alttab-loader"/>
-        <updated>2025-04-15T07:38:32.000Z</updated>
+        <title type="html"><![CDATA[Auto Theme Switcher 1.0.3]]></title>
+        <id>https://windhawk.net/mods/auto-theme-switcher#4a12f25a8fd9ce15834bd2b9c29a34fda8d0a05f</id>
+        <link href="https://windhawk.net/mods/auto-theme-switcher"/>
+        <updated>2025-05-26T17:39:17.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Remove the <code>LoadStringW</code> hook hack. Users must now supply an MUI file.</li>
-<li>Add error message boxes for AltTab.dll or its string resources failing to load.</li>
-<li>Support Windows 8.x's AltTab.dll</li>
-<li>Change mod name to reflect this</li>
-<li>Slightly revise README to be more clear and accurate</li>
+<li>Add functionality to run custom scripts on switch with -light/-dark argument</li>
 </ul>]]></content>
+        <author>
+            <name>tinodin</name>
+            <uri>https://github.com/tinodin</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 95/NT 4.0 Menubars 1.0.0]]></title>
+        <id>https://windhawk.net/mods/win95-nt4-menubars#7d3ab99de6fc6d927ff1c124336bdd6e9283d56e</id>
+        <link href="https://windhawk.net/mods/win95-nt4-menubars"/>
+        <updated>2025-05-26T17:33:11.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="windows95nt40menubars">Windows 95/NT 4.0 Menubars</h1>
+<p>This mod restores the appearance of menubars from Windows 95/NT 4.0, in which
+they had no hover effect, and changed to the selection color while selected.</p>
+<p>This mod will only work with the classic theme.</p>
+<p><strong>Before</strong>:</p>
+<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/win95-nt4-menubars-before.png" alt="Before" /></p>
+<p><strong>After</strong>:</p>
+<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/win95-nt4-menubars-after.png" alt="After" /></p>]]></content>
         <author>
             <name>aubymori</name>
             <uri>https://github.com/aubymori</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Translucent Windows 1.4.2]]></title>
-        <id>https://windhawk.net/mods/translucent-windows#afa6754ba136a6adbf459f0386bc7f13c68a707c</id>
-        <link href="https://windhawk.net/mods/translucent-windows"/>
-        <updated>2025-04-14T23:17:02.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Apply a workaround solution for background effects in windows Game Bar transparent overlay </li>
-<li>Limit mod unloading to appropriate windows, fixes a bug during BlurBehind effect unloading</li>
-</ul>]]></content>
-        <author>
-            <name>Undisputed00x</name>
-            <uri>https://github.com/Undisputed00x</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[File Explorer Toolbar Links Item 1.1.1]]></title>
-        <id>https://windhawk.net/mods/explorer-toolbar-links-item#5e2643ce30dbd3e7f47f4b9f68693bc8b125cd93</id>
-        <link href="https://windhawk.net/mods/explorer-toolbar-links-item"/>
-        <updated>2025-04-11T02:41:49.000Z</updated>
-        <content type="html"><![CDATA[<p>Injection broke in a patch update to 26100. 26100 RTM, as well as all prior Windows 11 builds, are just fine.</p>
-<p>The method <code>CShellBrowser::_OnViewMenuPopup</code>, as well as its sole caller <code>_OnInitMenuPopup</code>, were inlined into the sole caller <code>WndProcBS</code>. As an easy workaround, I simply hooked the window procedure and checked the arguments in the same way as would result in calling <code>_OnInitMenuPopup</code>, which produces the same effect.</p>
-<p>No other changes were made for this update.</p>]]></content>
-        <author>
-            <name>Isabella Lulamoon (kawapure)</name>
-            <uri>https://github.com/kawapure</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Translucent Windows 1.4.1]]></title>
-        <id>https://windhawk.net/mods/translucent-windows#6d80a4ec94be318d3dfafdf9ef0b0f0b80185222</id>
-        <link href="https://windhawk.net/mods/translucent-windows"/>
-        <updated>2025-04-10T21:09:01.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fix bug where previously both window states colors were needed to apply color effects</li>
-<li>Added a workaround solution for unloading the BlurBehind effect</li>
-<li>Added default color option support</li>
-</ul>]]></content>
-        <author>
-            <name>Undisputed00x</name>
-            <uri>https://github.com/Undisputed00x</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Translucent Windows 1.4]]></title>
-        <id>https://windhawk.net/mods/translucent-windows#3af9d8212ade28ef23003557cbd9ad77db77acf2</id>
-        <link href="https://windhawk.net/mods/translucent-windows"/>
-        <updated>2025-04-10T11:01:04.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added color options for active and inactive window states</li>
-<li>Merge taskbar thumbnails border coloring with classic context menus setting</li>
-</ul>]]></content>
-        <author>
-            <name>Undisputed00x</name>
-            <uri>https://github.com/Undisputed00x</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Favorites in Navigation Pane 1.0.1]]></title>
-        <id>https://windhawk.net/mods/favorites-in-navpane#10f1463d8bd2609b6278c5c548c58a1ed8ffcd98</id>
-        <link href="https://windhawk.net/mods/favorites-in-navpane"/>
-        <updated>2025-04-07T16:23:33.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fix memory leak</li>
-<li>Make sure to close registry key</li>
-</ul>]]></content>
+        <title type="html"><![CDATA[Classic Explorer Menubar 1.0]]></title>
+        <id>https://windhawk.net/mods/classic-explorer-menubar#2a52a4e03dea43390da0c465a83b44b4fd957367</id>
+        <link href="https://windhawk.net/mods/classic-explorer-menubar"/>
+        <updated>2025-05-26T16:42:41.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="classicexplorermenubar">Classic Explorer Menubar</h1>
+<p>Turns off theming for Explorer menu bar, making it use system colors, like in Windows XP.</p>
+<p><img src="https://i.imgur.com/yAyegLY.png" alt="Before / After" /></p>]]></content>
         <author>
             <name>xalejandro</name>
             <uri>https://github.com/tetawaves</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[File Explorer Toolbar Links Item 1.1]]></title>
-        <id>https://windhawk.net/mods/explorer-toolbar-links-item#94bda638328d60ba4b4d259215bf791a9b69108d</id>
-        <link href="https://windhawk.net/mods/explorer-toolbar-links-item"/>
-        <updated>2025-04-07T10:45:06.000Z</updated>
-        <content type="html"><![CDATA[<p>This update adds support for WoW64 (unfortunately, 32-bit Windows 10 seems
-to ignore the symbol hooks), fixes a crash in Windows 11, and improves the
-user experience.</p>
-<p>The Links toolbar can now be enabled through "Options" dropdown in the View
-tab when using the Ribbon UI, like other toolbars can:</p>
-<p>https://raw.githubusercontent.com/kawapure/images/refs/heads/main/linksbar_ribbon.png</p>
-<p>Additionally, the toolbars menu now always appears in the views menu of the
-menu bar when the classic Explorer interface is enabled:</p>
-<p>https://raw.githubusercontent.com/kawapure/images/refs/heads/main/linksbar<em>views</em>menu.png</p>
-<p>All in all, these changes make the necessarily-hacky menu item show up in
-all the right places and behave just the same as any other toolbar option
-does.</p>]]></content>
-        <author>
-            <name>Isabella Lulamoon (kawapure)</name>
-            <uri>https://github.com/kawapure</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Translucent Windows 1.3]]></title>
-        <id>https://windhawk.net/mods/translucent-windows#901ab88551bbba9ff79f8e1b8e7e5aeb29edb982</id>
-        <link href="https://windhawk.net/mods/translucent-windows"/>
-        <updated>2025-04-07T10:33:36.000Z</updated>
+        <title type="html"><![CDATA[Classic Desktop Icons 1.4.2]]></title>
+        <id>https://windhawk.net/mods/classic-desktop-icons#bdad626e964738691119d2a07104bd58983957c0</id>
+        <link href="https://windhawk.net/mods/classic-desktop-icons"/>
+        <updated>2025-05-26T16:36:28.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Add rules for processes</li>
-<li>Fix Control Panel title bar text color not being applied when using Acrylic Blur Behind</li>
-<li>Fix Snipping Tool not being affected by mod</li>
-</ul>]]></content>
-        <author>
-            <name>Undisputed00x</name>
-            <uri>https://github.com/Undisputed00x</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[File Explorer Toolbar Links Item 1.0.1]]></title>
-        <id>https://windhawk.net/mods/explorer-toolbar-links-item#a432147b52de3b822a673d6750654548de8d2f92</id>
-        <link href="https://windhawk.net/mods/explorer-toolbar-links-item"/>
-        <updated>2025-04-06T08:16:04.000Z</updated>
-        <content type="html"><![CDATA[<p>Fixed a minor injection issue that some users may experience.</p>]]></content>
-        <author>
-            <name>Isabella Lulamoon (kawapure)</name>
-            <uri>https://github.com/kawapure</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[File Explorer Toolbar Links Item 1.0]]></title>
-        <id>https://windhawk.net/mods/explorer-toolbar-links-item#d4f6575790261ab1b1d13b62ca3fc879a42a4776</id>
-        <link href="https://windhawk.net/mods/explorer-toolbar-links-item"/>
-        <updated>2025-04-05T19:58:51.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="fileexplorertoolbarlinksitem">File Explorer Toolbar Links Item</h1>
-<p>This mod restores the ability to display the "Links" toolbar, hidden since Windows Vista, in Windows 10 and 11.</p>
-<p>The links toolbar can be used to provide a custom set of quick links that the user can access across the top of
-any File Explorer window.</p>
-<p><img src="https://raw.githubusercontent.com/kawapure/images/refs/heads/main/linksbar.png" alt="Preview image" /></p>
-<h2 id="whatsthedifferencebetweenthisandsomeregistrypatch">What's the difference between this and some registry patch?</h2>
-<p>This restores the actual hidden Links toolbar with all of its special handlers. <strong>It functions perfectly</strong>, just like
-it did in Windows 98, 2000, and XP. For a technical explanation, <a href="https://winclassic.net/thread/2913/explorer-toolbar-funtional-modern-windows">please see this thread on WinClassic.</a></p>
-<p>Adding the CLSID for the toolbar will install it as an external toolbar, which has a few bugs. You cannot reorder
-items, or drag items into it, and its vertical height was uncapped so it was prone to looking visually broken.</p>]]></content>
-        <author>
-            <name>Isabella Lulamoon (kawapure)</name>
-            <uri>https://github.com/kawapure</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[System Properties "General" Tab 1.1]]></title>
-        <id>https://windhawk.net/mods/sysdm-general-tab#9d6927c8478d7af98c180d73cbe4fec020df474a</id>
-        <link href="https://windhawk.net/mods/sysdm-general-tab"/>
-        <updated>2025-04-02T15:19:40.000Z</updated>
-        <content type="html"><![CDATA[<p>This update makes process creation abide by the contract Windhawk sets.</p>
-<p>It is not guaranteed for process-creation hooks to be installed during the execution of Wh<em>ModInit. Sometimes they are available, but the contract states that they should only be considered as available starting from Wh</em>ModAfterInit.</p>
-<p>https://github.com/ramensoftware/windhawk/wiki/Mod-lifetime</p>]]></content>
-        <author>
-            <name>Isabella Lulamoon (kawapure)</name>
-            <uri>https://github.com/kawapure</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[System Properties "General" Tab 1.0]]></title>
-        <id>https://windhawk.net/mods/sysdm-general-tab#61e7bed5c756991ab03e58a4542c71d8d864b5a4</id>
-        <link href="https://windhawk.net/mods/sysdm-general-tab"/>
-        <updated>2025-04-02T14:01:30.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="systempropertiesgeneraltab">System Properties "General" Tab</h1>
-<p>This mod restores the "General" tab displaying system information in the system properties
-Control Panel applet (<code>sysdm.cpl</code>).</p>
-<h1 id="previewimagehttpsrawgithubusercontentcomkawapureimagesrefsheadsmaine784a1e9a18cpng"><img src="https://raw.githubusercontent.com/kawapure/images/refs/heads/main/%E7%84%A1%E9%A1%8C.png" alt="Preview image" /></h1>
-<h2 id="requiredsetupsteps">⚠ Required setup steps</h2>
-<p><strong>You need to retrieve a copy of <code>sysdm.cpl</code> from Windows XP or Windows 2000 in order for the
-dialog to show up correctly.</strong> This mod requires resources available only in those binaries,
-and those cannot be redistributed. It is recommended that you retrieve the files from a version
-of Windows which is the same language as what you currently have installed for display consistency.</p>]]></content>
-        <author>
-            <name>Isabella Lulamoon (kawapure)</name>
-            <uri>https://github.com/kawapure</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[DWM Unextend Frames 1.3.1]]></title>
-        <id>https://windhawk.net/mods/dwm-unextend-frames#114e00141dacdebaa58ddc47ac1f33fba4ba20ab</id>
-        <link href="https://windhawk.net/mods/dwm-unextend-frames"/>
-        <updated>2025-04-02T10:58:20.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Revise <code>LoadComCtlModule</code> to not use registry caching</li>
-<li>Revise <code>Wh_ModInit</code> to match standards</li>
+<li>Fix bug with multiprocess Explorer</li>
 </ul>]]></content>
         <author>
             <name>aubymori</name>
@@ -262,56 +113,242 @@ of Windows which is the same language as what you currently have installed for d
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Translucent Windows 1.2]]></title>
-        <id>https://windhawk.net/mods/translucent-windows#193118c7ae5451a3536bf39e1f029b4c701e7c76</id>
-        <link href="https://windhawk.net/mods/translucent-windows"/>
-        <updated>2025-04-02T02:00:27.000Z</updated>
+        <title type="html"><![CDATA[Auto Theme Switcher 1.0.2]]></title>
+        <id>https://windhawk.net/mods/auto-theme-switcher#e31c921ed966e1c1f729016e4345cb20b57dd945</id>
+        <link href="https://windhawk.net/mods/auto-theme-switcher"/>
+        <updated>2025-05-24T17:29:02.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Added support for windows caption text color modification</li>
-<li>Added toggle button for classic context menu border colorization</li>
-<li>Added transparent border color support</li>
-<li>Added accent color support</li>
+<li>Fixed lock screen wallpaper not applying by injecting into explorer instead of windhawk</li>
 </ul>]]></content>
         <author>
-            <name>Undisputed00x</name>
-            <uri>https://github.com/Undisputed00x</uri>
+            <name>tinodin</name>
+            <uri>https://github.com/tinodin</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Classic List Group Fix 1.1.1]]></title>
-        <id>https://windhawk.net/mods/classic-list-group-fix#37479b14fd4a35d62fdb2fec9d9e0d66f8978c57</id>
-        <link href="https://windhawk.net/mods/classic-list-group-fix"/>
-        <updated>2025-04-02T01:23:36.000Z</updated>
-        <content type="html"><![CDATA[<p>Revise <code>LoadComCtlModule</code> to not use registry caching</p>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Translucent Windows 1.1]]></title>
-        <id>https://windhawk.net/mods/translucent-windows#f37b34243dbc6240ffb8bc7fe459f1b87556878a</id>
-        <link href="https://windhawk.net/mods/translucent-windows"/>
-        <updated>2025-04-01T09:05:04.000Z</updated>
+        <title type="html"><![CDATA[Auto Theme Switcher 1.0.1]]></title>
+        <id>https://windhawk.net/mods/auto-theme-switcher#b7fcaa082c1c749bb3cdd7ab92ac6b677eab2697</id>
+        <link href="https://windhawk.net/mods/auto-theme-switcher"/>
+        <updated>2025-05-23T23:35:44.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Added windows border color setting</li>
-<li>Added windows titlebar color setting</li>
-<li>Added recommendation for users to use black/dark themes like Rectify11</li>
+<li>Fixed changing theme not instantly updating the taskbar background</li>
 </ul>]]></content>
         <author>
-            <name>Undisputed00x</name>
-            <uri>https://github.com/Undisputed00x</uri>
+            <name>tinodin</name>
+            <uri>https://github.com/tinodin</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Restore Button Pulse Animation 1.0.1]]></title>
-        <id>https://windhawk.net/mods/restore-button-pulse-anim#af9b479b58a7d3977aa9e2a83cbd8f886a5ef0eb</id>
-        <link href="https://windhawk.net/mods/restore-button-pulse-anim"/>
-        <updated>2025-03-31T17:21:28.000Z</updated>
-        <content type="html"><![CDATA[<p>Revise <code>LoadComCtlModule</code> to not use registry caching</p>]]></content>
+        <title type="html"><![CDATA[Auto Theme Switcher 1.0]]></title>
+        <id>https://windhawk.net/mods/auto-theme-switcher#3afd45f99c7c92b201a434255d5532ba6cd225df</id>
+        <link href="https://windhawk.net/mods/auto-theme-switcher"/>
+        <updated>2025-05-23T22:22:46.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="autothemeswitcher">Auto Theme Switcher</h1>
+<p>Configure the schedule for light and dark mode/theme under settings<br />
+  (By default: <code>07:00</code> for light, <code>19:00</code> for dark)</p>
+<p>Provide paths to your desired <code>.theme</code> files<br />
+  (By default: <code>aero.theme</code> for light, <code>dark.theme</code> for dark)</p>
+<ul>
+<li><p>Themes shipped with Windows are located in:<br />
+<code>C:\Windows\Resources\Themes</code></p></li>
+<li><p>Saved or imported themes are located in:<br />
+<code>%LOCALAPPDATA%\Microsoft\Windows\Themes</code></p></li>
+<li><p>If no <code>.theme</code> file is provided, the mod will default to only changing the appearance</p></li>
+<li><p>To create custom <code>.theme</code> files, use the Personalization settings in Windows<br />
+<a href="https://www.youtube.com/watch?v=-QWR6NQZAUg">Video guide</a></p></li>
+</ul>
+<p>If you do not want the wallpaper to be applied to the lock screen, disable <em>Apply Wallpaper to Lock screen</em> under settings</p>]]></content>
         <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
+            <name>tinodin</name>
+            <uri>https://github.com/tinodin</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar Labels for Windows 11 1.4.1]]></title>
+        <id>https://windhawk.net/mods/taskbar-labels#5e41b17208d957cf8b3dbfcc837c24ceb2e2eaa7</id>
+        <link href="https://windhawk.net/mods/taskbar-labels"/>
+        <updated>2025-05-10T16:03:38.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added an option for customizing text trimming (ellipsis/clip).</li>
+<li>Added an option to hide the running indicator by setting the running indicator height to -1.</li>
+<li>Improved compatibility with the "Taskbar height and icon size" mod.</li>
+<li>Fixed the mod not applying on startup in some cases.</li>
+<li>Improved compatibility with status bar programs such as YASB and Zebar.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar Thumbnail Size 1.0]]></title>
+        <id>https://windhawk.net/mods/taskbar-thumbnail-size#c9b1f1bef25be1607f4960ec5b156d8ab661ec66</id>
+        <link href="https://windhawk.net/mods/taskbar-thumbnail-size"/>
+        <updated>2025-05-10T11:51:39.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="taskbarthumbnailsize">Taskbar Thumbnail Size</h1>
+<p>Customize the size of the new taskbar thumbnails in Windows 11.</p>
+<p>For older Windows versions, the size of taskbar thumbnails can be changed via the registry:</p>
+<ul>
+<li><a href="https://www.elevenforum.com/t/change-size-of-taskbar-thumbnail-previews-in-windows-11.6340/">Change Size of Taskbar Thumbnail Previews in Windows
+11</a>
+(before Windows 11 version 24H2)</li>
+<li><a href="https://www.tenforums.com/tutorials/26105-change-size-taskbar-thumbnails-windows-10-a.html">How to Change the Size of Taskbar Thumbnails in Windows
+10</a></li>
+</ul>
+<p><img src="https://i.imgur.com/nGxrBYG.png" alt="Demonstration" /></p>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 File Explorer Styler 1.1]]></title>
+        <id>https://windhawk.net/mods/windows-11-file-explorer-styler#d01044de4128b7fafc768e340b116b2c129b660a</id>
+        <link href="https://windhawk.net/mods/windows-11-file-explorer-styler"/>
+        <updated>2025-05-09T19:36:04.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added style constants which can be defined once and used in multiple styles.</li>
+<li>Improved handling of commented targets and styles (starting with <code>//</code>), and added details about this in the mod's description.</li>
+<li>Added the first theme: Minimal Explorer11!</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 Notification Center Styler 1.2]]></title>
+        <id>https://windhawk.net/mods/windows-11-notification-center-styler#c34430995b5cd76960f30692a94afba87a2f4215</id>
+        <link href="https://windhawk.net/mods/windows-11-notification-center-styler"/>
+        <updated>2025-05-09T18:11:51.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added style constants which can be defined once and used in multiple styles.</li>
+<li>Improved handling of commented targets and styles (starting with <code>//</code>), and added details about this in the mod's description.</li>
+<li>Added the Matter theme.</li>
+<li>Updated the TranslucentShell theme.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar auto-hide when maximized 1.2.3]]></title>
+        <id>https://windhawk.net/mods/taskbar-auto-hide-when-maximized#f8c259486b46a48a4fd3d8ddc0dee2ee98a4b4e1</id>
+        <link href="https://windhawk.net/mods/taskbar-auto-hide-when-maximized"/>
+        <updated>2025-05-09T16:50:12.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>The mod no longer permanently changes the system auto-hide settings.</li>
+<li>Improved compatibility with status bar programs such as YASB and Zebar.</li>
+<li>Fixed a possible crash on Windows startup (only observed in Windows 10).</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 Taskbar Styler 1.4]]></title>
+        <id>https://windhawk.net/mods/windows-11-taskbar-styler#29917c376199d3312e355f1b001dc3108040b7ca</id>
+        <link href="https://windhawk.net/mods/windows-11-taskbar-styler"/>
+        <updated>2025-05-09T12:01:52.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added style constants which can be defined once and used in multiple styles.</li>
+<li>Added a built-in blur brush object, <code>WindhawkBlur</code>, which supports the <code>BlurAmount</code> and <code>TintColor</code> properties. For example: <code>Fill:=&lt;WindhawkBlur BlurAmount="10" TintColor="#80FF00FF"/&gt;</code>.</li>
+<li>Improved handling of commented targets and styles (starting with <code>//</code>), and added details about this in the mod's description.</li>
+<li>Added themes: BottomDensy, TaskbarXII, xdark.</li>
+<li>Updated themes: DockLike, 21996Taskbar.</li>
+<li>The DockLike theme now applies correctly when a new monitor is attached.</li>
+<li>Improved compatibility with status bar programs such as YASB and Zebar.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Alt+Tab window delayer 1.2.0]]></title>
+        <id>https://windhawk.net/mods/alt-tab-delayer#b07c7e0d65abbbf7d10547608004595ce07189e0</id>
+        <link href="https://windhawk.net/mods/alt-tab-delayer"/>
+        <updated>2025-05-04T17:19:46.000Z</updated>
+        <content type="html"><![CDATA[<p>Add ARM64 support</p>]]></content>
+        <author>
+            <name>L3r0y</name>
+            <uri>https://github.com/L3r0yThingz</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Make Task Manager Tabs Taller 1.0]]></title>
+        <id>https://windhawk.net/mods/taskmgr-taller-tab#24151daab7de419190f5ee8645cd99e36ac2bba7</id>
+        <link href="https://windhawk.net/mods/taskmgr-taller-tab"/>
+        <updated>2025-05-04T08:34:12.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="maketaskmanagertabstaller">Make Task Manager Tabs Taller</h1>
+<p>This mod makes the tab labels in Windows 10 Task Manager taller on high DPI screens, improving clickability.</p>
+<p>"An awesome ~~MobileSubstrate~~ WindHawk tweak!!"</p>
+<p><img src="https://raw.githubusercontent.com/JoeYe-233/images/refs/heads/main/taskmgr-taller-tab-before-after.png" alt="Before-And-After" /></p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Increases the height of the tab labels in Task Manager.</li>
+<li>Enhances the clickability of the tab labels on high DPI screens.</li>
+<li>Retains the original functionality of Task Manager.</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>Compile and inject this mod into the Task Manager process.</li>
+<li>Run Task Manager and observe the taller tab labels.</li>
+</ol>
+<ul>
+<li>No options to configure, simply install and use.</li>
+</ul>
+<h2 id="author">Author</h2>
+<p>Joe Ye</p>]]></content>
+        <author>
+            <name>Joe Ye</name>
+            <uri>https://github.com/JoeYe-233</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fix browser and Teams text colors in dark mode 1.0]]></title>
+        <id>https://windhawk.net/mods/dark-theme-browser-colors-fix#f0a0be743d492524840adb9bbd51b3b56ae901f2</id>
+        <link href="https://windhawk.net/mods/dark-theme-browser-colors-fix"/>
+        <updated>2025-05-04T07:49:53.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="fixbrowsertextcolorsaswellasteamsdocumentviewertextcolorsunderdarktheme">Fix browser text colors as well as Teams document viewer text colors under dark theme</h1>
+<p>Install this mod when you use dark theme in Windows and have occasionally problems with unreadable text color in your browser or Teams document viewer, such as bright text on white background or black text on dark background. </p>
+<p>This mod does not force color change on websites that specify their own colors. Only badly implemented web sites that accidentally (and inconsistently) try to use Windows colors will be adjusted. </p>
+<h2 id="howitworks">How it works</h2>
+<p>The odd-looking web sites that are unreadable under dark theme are that way because they try to use Windows colors, but do so inconsistently. Additionally, these sites assume that the Windows colors use bright theme. These sites are not dark theme aware.</p>
+<p>The mod works by emulating bright Windows 10 default color scheme for these web sites, to match their assumptions.</p>
+<p>The color adjustments made by this mod generally do not affect the browsers' or Teams main frame appearance. The mod might affect the Firefox menu highlight color in some computers. Additionally, the mod detects calls from file picker and does not replace the colors there.</p>
+<h2 id="installation">Installation</h2>
+<p>You may need to restart your browser after installing this mod for the adjustments to take effect, though some web sites in some browsers will be fixed immediately.</p>
+<p>Currently supported browsers are: Brave, Chrome, Chromium, Edge, Firefox, and Opera. And additionally Teams document viewer.</p>
+<p>Under mod's settings there is an option to apply color adjustments to all <code>msedgewebview*.exe</code> processes, not only to the ones related to <strong>Teams</strong>. This option is off by default. Browser colors are always adjusted regardless of this setting.</p>
+<h2 id="examplesofwhereitisuseful">Examples of where it is useful</h2>
+<p>You can test the following web sites before and after installing the mod: </p>
+<ul>
+<li>You can test Chromium-based browsers (Brave, Chrome, Edge, Opera) by opening Word documents under Sharepoint folders while "View -&gt; Dark Mode" button is off in the Online Word app toolbar.</li>
+<li>You can test Firefox by opening for example <a href="https://www.hexamail.com/about">https://www.hexamail.com/about</a> or <a href="https://transformer-circuits.pub/2025/april-update/index.html">https://transformer-circuits.pub/2025/april-update/index.html</a></li>
+<li>You can test Teams by opening Sharepoint office documents inside Teams document viewer.</li>
+</ul>
+<p>For some reason, these problems do not manifest in all computers with dark color scheme. I have multiple computers with similar setups, and in a few computer-and-browser combinations the issue did not manifest. But all targeted browsers have the problem in general.</p>
+<h2 id="notice">Notice</h2>
+<p>Unloading this mod while a browser is running is not recommended. Unloading the mod may crash these browser tabs that used default Windows colors. Though rest of the tabs will be probably fine.</p>]]></content>
+        <author>
+            <name>Roland Pihlakas</name>
+            <uri>https://github.com/levitation</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show all apps by default in start menu 1.0.4]]></title>
+        <id>https://windhawk.net/mods/start-menu-all-apps#f911ce31938d67ff8b6182ddbef99d6a8048b77f</id>
+        <link href="https://windhawk.net/mods/start-menu-all-apps"/>
+        <updated>2025-05-02T14:39:21.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed compatibility with update KB5055627 for Windows 11 version 24H2.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
         </author>
     </entry>
 </feed>
