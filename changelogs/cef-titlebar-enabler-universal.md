@@ -1,3 +1,7 @@
+## 1.1 ([Jun 3, 2025](https://github.com/ramensoftware/windhawk-mods/blob/7db2b768a025ad0d12a693fa2e843980df8cf674/mods/cef-titlebar-enabler-universal.wh.cpp))
+
+Update cef-titlebar-enabler-universal.wh.cpp
+
 ## 1.0 ([May 29, 2025](https://github.com/ramensoftware/windhawk-mods/blob/363a9ab160fe2975c2fc1a7c359b488bbd43cc88/mods/cef-titlebar-enabler-universal.wh.cpp))
 
 * Added a standalone playback speed changer in the Windhawk mod settings page
