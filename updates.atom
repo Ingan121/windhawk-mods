@@ -2,18 +2,90 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2025-06-03T10:53:41.000Z</updated>
+    <updated>2025-06-04T05:56:13.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
+        <title type="html"><![CDATA[Touhou Keyboard Binds 1.0.0]]></title>
+        <id>https://windhawk.net/mods/touhou-kbd-binds#72a6608e9b6608a0a067f2b54148a6c59724a8e1</id>
+        <link href="https://windhawk.net/mods/touhou-kbd-binds"/>
+        <updated>2025-06-04T05:56:13.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="touhoukeyboardbinds">Touhou Keyboard Binds</h1>
+<p>From Touhou 6 to Touhou 17, keyboard bindings were unable to be changed within
+the game. This mod lets you set your own bindings.</p>
+<h2 id="importantusagenote">⚠️ Important usage note ⚠️</h2>
+<p>Windhawk may not inject into the game due to it being in a common game directory.
+If this occurs, add the game's executable to the process inclusion list in the advanced 
+settings.</p>
+<p><img src="https://i.imgur.com/LRhREtJ.png" alt="Advanced settings screenshot" /></p>
+<h2 id="keyformat">Key format</h2>
+<p>The key options can either be a single character, or one of the following keywords:</p>
+<p>None, Space, Up, Down, Left, Right, LCTRL, RCTRL, LControl, RControl, LAlt, RAlt, LShift,
+RShift, Tab, CapsLock, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, Numpad0, Numpad1,
+Numpad2, Numpad3, Numpad4, Numpad5, Numpad6, Numpad7, Numpad8, Numpad9</p>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Middle click to close on the taskbar 1.0.8]]></title>
+        <id>https://windhawk.net/mods/taskbar-button-click#78fc318a181cfb5299fab5beaf42a8726ebe5f9e</id>
+        <link href="https://windhawk.net/mods/taskbar-button-click"/>
+        <updated>2025-06-03T22:23:31.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added support for ARM64.</li>
+<li>The "Customize the old taskbar on Windows 11" option no longer needs to be enabled for the mod to work with the ExplorerPatcher taskbar.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chrome/Edge scroll tabs with mouse wheel 1.2.1]]></title>
+        <id>https://windhawk.net/mods/chrome-wheel-scroll-tabs#451a0a24c7e026a0c86c10adfb44b8681ab24bb6</id>
+        <link href="https://windhawk.net/mods/chrome-wheel-scroll-tabs"/>
+        <updated>2025-06-03T20:29:55.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed the recently-added options to limit the scroll area, which worked only for maximized windows.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Explorer Double Click Up 1.0.0]]></title>
+        <id>https://windhawk.net/mods/explorer-double-click-up#40afd947107997d91d611a3dc0f73daefebd27b6</id>
+        <link href="https://windhawk.net/mods/explorer-double-click-up"/>
+        <updated>2025-06-03T18:56:41.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="explorerdoubleclickup">Explorer Double Click Up</h1>
+<p>Double click empty space to go up a folder</p>
+<h2 id="windowsversionsupport">Windows version support</h2>
+<p>Will not work on anything older than Windows 10 due to use of WinRT.</p>]]></content>
+        <author>
+            <name>wrldspawn</name>
+            <uri>https://github.com/wrldspawn</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[CEF/Spotify Tweaks 1.1]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#7db2b768a025ad0d12a693fa2e843980df8cf674</id>
+        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#5a9dafdec518bcd45686bc0e87f61858f7ce5d01</id>
         <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2025-06-03T10:53:41.000Z</updated>
-        <content type="html"><![CDATA[<p>Update cef-titlebar-enabler-universal.wh.cpp</p>]]></content>
+        <updated>2025-06-03T11:53:21.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Finally implemented proper transparency support for frameless windows<ul>
+<li>In frameless mode, this mod is not compatible with the <a href="https://windhawk.net/mods/translucent-windows">Translucent Windows</a> mod, due to the mod interfering with how this mod works around <a href="https://source.chromium.org/chromium/chromium/src/+/main:ui/views/win/hwnd_message_handler.cc;drc=339fea7fafdc1ba5b16e7b2fa6f9d996b65348a3;l=616">Chromium's weird code</a></li>
+<li>Please use <a href="https://github.com/MicaForEveryone/MicaForEveryone">MicaForEveryone</a> instead in frameless mode</li>
+<li>This does not apply when the native frame option is enabled. Translucent Windows will work fine in this mode</li></ul></li>
+<li>Prevent bad memory scan results with zero match persisting as a cached count value</li>
+<li>Prevent various time-consuming memory patch operations from running on known incompatible versions</li>
+<li>Added support for disabling the forced dark mode in Spotify versions between 1.2.21 and 1.2.25</li>
+</ul>]]></content>
         <author>
             <name>Ingan121</name>
             <uri>https://github.com/Ingan121</uri>
@@ -242,84 +314,6 @@ they had no hover effect, and changed to the selection color while selected.</p>
         <author>
             <name>tinodin</name>
             <uri>https://github.com/tinodin</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Auto Theme Switcher 1.0]]></title>
-        <id>https://windhawk.net/mods/auto-theme-switcher#3afd45f99c7c92b201a434255d5532ba6cd225df</id>
-        <link href="https://windhawk.net/mods/auto-theme-switcher"/>
-        <updated>2025-05-23T22:22:46.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="autothemeswitcher">Auto Theme Switcher</h1>
-<p>Configure the schedule for light and dark mode/theme under settings<br />
-  (By default: <code>07:00</code> for light, <code>19:00</code> for dark)</p>
-<p>Provide paths to your desired <code>.theme</code> files<br />
-  (By default: <code>aero.theme</code> for light, <code>dark.theme</code> for dark)</p>
-<ul>
-<li><p>Themes shipped with Windows are located in:<br />
-<code>C:\Windows\Resources\Themes</code></p></li>
-<li><p>Saved or imported themes are located in:<br />
-<code>%LOCALAPPDATA%\Microsoft\Windows\Themes</code></p></li>
-<li><p>If no <code>.theme</code> file is provided, the mod will default to only changing the appearance</p></li>
-<li><p>To create custom <code>.theme</code> files, use the Personalization settings in Windows<br />
-<a href="https://www.youtube.com/watch?v=-QWR6NQZAUg">Video guide</a></p></li>
-</ul>
-<p>If you do not want the wallpaper to be applied to the lock screen, disable <em>Apply Wallpaper to Lock screen</em> under settings</p>]]></content>
-        <author>
-            <name>tinodin</name>
-            <uri>https://github.com/tinodin</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar Labels for Windows 11 1.4.1]]></title>
-        <id>https://windhawk.net/mods/taskbar-labels#5e41b17208d957cf8b3dbfcc837c24ceb2e2eaa7</id>
-        <link href="https://windhawk.net/mods/taskbar-labels"/>
-        <updated>2025-05-10T16:03:38.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added an option for customizing text trimming (ellipsis/clip).</li>
-<li>Added an option to hide the running indicator by setting the running indicator height to -1.</li>
-<li>Improved compatibility with the "Taskbar height and icon size" mod.</li>
-<li>Fixed the mod not applying on startup in some cases.</li>
-<li>Improved compatibility with status bar programs such as YASB and Zebar.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar Thumbnail Size 1.0]]></title>
-        <id>https://windhawk.net/mods/taskbar-thumbnail-size#c9b1f1bef25be1607f4960ec5b156d8ab661ec66</id>
-        <link href="https://windhawk.net/mods/taskbar-thumbnail-size"/>
-        <updated>2025-05-10T11:51:39.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="taskbarthumbnailsize">Taskbar Thumbnail Size</h1>
-<p>Customize the size of the new taskbar thumbnails in Windows 11.</p>
-<p>For older Windows versions, the size of taskbar thumbnails can be changed via the registry:</p>
-<ul>
-<li><a href="https://www.elevenforum.com/t/change-size-of-taskbar-thumbnail-previews-in-windows-11.6340/">Change Size of Taskbar Thumbnail Previews in Windows
-11</a>
-(before Windows 11 version 24H2)</li>
-<li><a href="https://www.tenforums.com/tutorials/26105-change-size-taskbar-thumbnails-windows-10-a.html">How to Change the Size of Taskbar Thumbnails in Windows
-10</a></li>
-</ul>
-<p><img src="https://i.imgur.com/nGxrBYG.png" alt="Demonstration" /></p>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11 File Explorer Styler 1.1]]></title>
-        <id>https://windhawk.net/mods/windows-11-file-explorer-styler#d01044de4128b7fafc768e340b116b2c129b660a</id>
-        <link href="https://windhawk.net/mods/windows-11-file-explorer-styler"/>
-        <updated>2025-05-09T19:36:04.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added style constants which can be defined once and used in multiple styles.</li>
-<li>Improved handling of commented targets and styles (starting with <code>//</code>), and added details about this in the mod's description.</li>
-<li>Added the first theme: Minimal Explorer11!</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
         </author>
     </entry>
 </feed>

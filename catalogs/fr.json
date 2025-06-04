@@ -267,7 +267,7 @@
                 "published": 1734116516000,
                 "rating": 10,
                 "ratingUsers": 26,
-                "updated": 1748948021000,
+                "updated": 1748951601000,
                 "users": 1709
             },
             "metadata": {
@@ -379,7 +379,7 @@
                 "published": 1646604429000,
                 "rating": 10,
                 "ratingUsers": 122,
-                "updated": 1748284460000,
+                "updated": 1748982595000,
                 "users": 9004
             },
             "featured": true,
@@ -398,7 +398,7 @@
                 ],
                 "name": "Chrome/Edge scroll tabs with mouse wheel",
                 "twitter": "https://twitter.com/m417z",
-                "version": "1.2"
+                "version": "1.2.1"
             }
         },
         "chromium-native-titlebar": {
@@ -1489,6 +1489,30 @@
                 "name": "Better file sizes in Explorer details",
                 "twitter": "https://twitter.com/m417z",
                 "version": "1.4.9"
+            }
+        },
+        "explorer-double-click-up": {
+            "details": {
+                "defaultSorting": 0,
+                "published": 1748977001000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1748977001000,
+                "users": 0
+            },
+            "metadata": {
+                "architecture": [
+                    "x86-64"
+                ],
+                "author": "wrldspawn",
+                "compilerOptions": "-lcomctl32 -loleaut32 -lole32",
+                "description": "Double click empty space to go up a folder",
+                "github": "https://github.com/wrldspawn",
+                "include": [
+                    "explorer.exe"
+                ],
+                "name": "Explorer Double Click Up",
+                "version": "1.0.0"
             }
         },
         "explorer-frame-classic": {
@@ -3272,7 +3296,7 @@
                 "published": 1646604429000,
                 "rating": 10,
                 "ratingUsers": 196,
-                "updated": 1728681415000,
+                "updated": 1748989411000,
                 "users": 16136
             },
             "featured": true,
@@ -3281,7 +3305,7 @@
                     "x86-64"
                 ],
                 "author": "m417z",
-                "compilerOptions": "-lversion -lwininet",
+                "compilerOptions": "-lversion",
                 "description": "Close programs with a middle click on the taskbar instead of creating a new instance",
                 "github": "https://github.com/m417z",
                 "homepage": "https://m417z.com/",
@@ -3290,7 +3314,7 @@
                 ],
                 "name": "Middle click to close on the taskbar",
                 "twitter": "https://twitter.com/m417z",
-                "version": "1.0.7"
+                "version": "1.0.8"
             }
         },
         "taskbar-button-scroll": {
@@ -4090,6 +4114,41 @@
                     "TortoiseGitProc.exe"
                 ],
                 "name": "TortoiseGit progress animation background fix for classic dark theme",
+                "version": "1.0.0"
+            }
+        },
+        "touhou-kbd-binds": {
+            "details": {
+                "defaultSorting": 0,
+                "published": 1749016573000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1749016573000,
+                "users": 0
+            },
+            "metadata": {
+                "architecture": [
+                    "x86"
+                ],
+                "author": "aubymori",
+                "description": "Allows you to change keyboard binds in Touhou",
+                "github": "https://github.com/aubymori",
+                "include": [
+                    "東方紅魔郷.exe",
+                    "“Œ•ûg–‚‹½.exe",
+                    "th07.exe",
+                    "th08.exe",
+                    "th09.exe",
+                    "th10.exe",
+                    "th11.exe",
+                    "th12.exe",
+                    "th13.exe",
+                    "th14.exe",
+                    "th15.exe",
+                    "th16.exe",
+                    "th17.exe"
+                ],
+                "name": "Touhou Keyboard Binds",
                 "version": "1.0.0"
             }
         },
