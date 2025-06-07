@@ -267,7 +267,7 @@
                 "published": 1734116516000,
                 "rating": 10,
                 "ratingUsers": 24,
-                "updated": 1749120275000,
+                "updated": 1749123646000,
                 "users": 1748
             },
             "metadata": {
@@ -526,7 +526,7 @@
                 "published": 1694937060000,
                 "rating": 10,
                 "ratingUsers": 5,
-                "updated": 1748277388000,
+                "updated": 1749162486000,
                 "users": 822
             },
             "metadata": {
@@ -541,7 +541,7 @@
                     "explorer.exe"
                 ],
                 "name": "Classic Desktop Icons",
-                "version": "1.4.2"
+                "version": "1.4.3"
             }
         },
         "classic-explorer-menubar": {
@@ -927,7 +927,7 @@
                 "published": 1708969659000,
                 "rating": 0,
                 "ratingUsers": 0,
-                "updated": 1720265473000,
+                "updated": 1749127896000,
                 "users": 227
             },
             "metadata": {
@@ -938,7 +938,7 @@
                     "*"
                 ],
                 "name": "Clientedge Everywhere",
-                "version": "1.1.0"
+                "version": "1.2.0"
             }
         },
         "console-error-to-ding": {
@@ -4518,6 +4518,30 @@
                 ],
                 "name": "Enable Win10 taskbar on Win11 24H2",
                 "version": "0.1.1"
+            }
+        },
+        "win11-accent-border": {
+            "details": {
+                "defaultSorting": 18,
+                "published": 1749228741000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1749228741000,
+                "users": 2
+            },
+            "metadata": {
+                "author": "Guerra24",
+                "compilerOptions": "-ldwmapi -luser32",
+                "description": "Show the accent color on the border but not on the titlebar",
+                "exclude": [
+                    "devenv.exe"
+                ],
+                "github": "https://github.com/Guerra24",
+                "include": [
+                    "*"
+                ],
+                "name": "Windows 11 Accent Window Border",
+                "version": "1.0.0"
             }
         },
         "win32-tray-clock-experience": {

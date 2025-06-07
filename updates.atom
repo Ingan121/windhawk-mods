@@ -2,18 +2,67 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2025-06-05T10:44:35.000Z</updated>
+    <updated>2025-06-06T16:52:21.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
+        <title type="html"><![CDATA[Windows 11 Accent Window Border 1.0.0]]></title>
+        <id>https://windhawk.net/mods/win11-accent-border#1927abe816b6ff1d930fce7dc46ac527167bfd25</id>
+        <link href="https://windhawk.net/mods/win11-accent-border"/>
+        <updated>2025-06-06T16:52:21.000Z</updated>
+        <content type="html"><![CDATA[<p>Mimics the behavior the <em>Show accent color on title bars and window borders</em> setting had in Windows 11 Build 22000.</p>
+<p>When it was enabled in build 22000 the accent color appeared behind the Mica effect but in 22621 and newer it appears on top and it doesn't look that great. This mod restores the former behavior.</p>
+<p><strong>Make sure <em>Show accent color on title bars and window borders</em> is disabled as it conflicts with this mod!</strong></p>
+<p>Before:
+<img src="https://i.imgur.com/LnPyxkb.png" alt="image" /></p>
+<p>After:
+<img src="https://i.imgur.com/TpGSX6X.png" alt="image" /></p>
+<h1 id="colors">Colors</h1>
+<p>The focused color is always the accent color.</p>
+<p>You can use <code>AccentColorInactive</code> in <code>HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM</code> to change the inactive color. This is a HEX value in BGR format.</p>]]></content>
+        <author>
+            <name>Guerra24</name>
+            <uri>https://github.com/Guerra24</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Classic Desktop Icons 1.4.3]]></title>
+        <id>https://windhawk.net/mods/classic-desktop-icons#bdeebf8bd041100629066e24ee8cbb49bcc2bd1a</id>
+        <link href="https://windhawk.net/mods/classic-desktop-icons"/>
+        <updated>2025-06-05T22:28:06.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Improve desktop finding method</li>
+<li>Improve label background setting method</li>
+<li>Redo readme images, add Vista-style image</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Clientedge Everywhere 1.2.0]]></title>
+        <id>https://windhawk.net/mods/clientedge-in-apps#39f44c80c3c3557af96195e67589e8b399d40e7a</id>
+        <link href="https://windhawk.net/mods/clientedge-in-apps"/>
+        <updated>2025-06-05T12:51:36.000Z</updated>
+        <content type="html"><![CDATA[<p>Exclude Mathematica's toolboxes</p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[CEF/Spotify Tweaks 1.2]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#8a9919848738a0eb2ce5efeb64dcabe771726fa3</id>
+        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#4341502030118d63157c4bc43d74f199aa667e19</id>
         <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2025-06-05T10:44:35.000Z</updated>
-        <content type="html"><![CDATA[<p>Update cef-titlebar-enabler-universal.wh.cpp</p>]]></content>
+        <updated>2025-06-05T11:40:46.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed compatibility with the Translucent Windows mod<ul>
+<li>At least version 1.5 of the Translucent Windows mod is required. 1.4 and below are still not supported when the native frames are disabled</li></ul></li>
+</ul>]]></content>
         <author>
             <name>Ingan121</name>
             <uri>https://github.com/Ingan121</uri>
@@ -275,50 +324,6 @@ to the process inclusion list in the program's advanced settings.</p>
         <author>
             <name>tinodin</name>
             <uri>https://github.com/tinodin</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 95/NT 4.0 Menubars 1.0.0]]></title>
-        <id>https://windhawk.net/mods/win95-nt4-menubars#7d3ab99de6fc6d927ff1c124336bdd6e9283d56e</id>
-        <link href="https://windhawk.net/mods/win95-nt4-menubars"/>
-        <updated>2025-05-26T17:33:11.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="windows95nt40menubars">Windows 95/NT 4.0 Menubars</h1>
-<p>This mod restores the appearance of menubars from Windows 95/NT 4.0, in which
-they had no hover effect, and changed to the selection color while selected.</p>
-<p>This mod will only work with the classic theme.</p>
-<p><strong>Before</strong>:</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/win95-nt4-menubars-before.png" alt="Before" /></p>
-<p><strong>After</strong>:</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/win95-nt4-menubars-after.png" alt="After" /></p>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Classic Explorer Menubar 1.0]]></title>
-        <id>https://windhawk.net/mods/classic-explorer-menubar#2a52a4e03dea43390da0c465a83b44b4fd957367</id>
-        <link href="https://windhawk.net/mods/classic-explorer-menubar"/>
-        <updated>2025-05-26T16:42:41.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="classicexplorermenubar">Classic Explorer Menubar</h1>
-<p>Turns off theming for Explorer menu bar, making it use system colors, like in Windows XP.</p>
-<p><img src="https://i.imgur.com/yAyegLY.png" alt="Before / After" /></p>]]></content>
-        <author>
-            <name>xalejandro</name>
-            <uri>https://github.com/tetawaves</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Classic Desktop Icons 1.4.2]]></title>
-        <id>https://windhawk.net/mods/classic-desktop-icons#bdad626e964738691119d2a07104bd58983957c0</id>
-        <link href="https://windhawk.net/mods/classic-desktop-icons"/>
-        <updated>2025-05-26T16:36:28.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fix bug with multiprocess Explorer</li>
-</ul>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
         </author>
     </entry>
 </feed>
