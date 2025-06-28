@@ -2,12 +2,335 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2025-06-06T16:52:21.000Z</updated>
+    <updated>2025-06-28T23:26:38.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
+    <entry>
+        <title type="html"><![CDATA[Titlebar For Everyone 0.2]]></title>
+        <id>https://windhawk.net/mods/titlebar-for-everyone#149d0ac046c591049b2031d90cfb283dda2cf44c</id>
+        <link href="https://windhawk.net/mods/titlebar-for-everyone"/>
+        <updated>2025-06-28T23:26:38.000Z</updated>
+        <content type="html"><![CDATA[<p>Update titlebar-for-everyone.wh.cpp</p>]]></content>
+        <author>
+            <name>Ingan121</name>
+            <uri>https://github.com/Ingan121</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Clientedge Everywhere 1.4.0]]></title>
+        <id>https://windhawk.net/mods/clientedge-in-apps#afbc62ee034d63d1a2513594de420ae3eee1a97f</id>
+        <link href="https://windhawk.net/mods/clientedge-in-apps"/>
+        <updated>2025-06-28T23:04:01.000Z</updated>
+        <content type="html"><![CDATA[<p>The issue with Regedit was caused by another mod, whose fixed version is to be submitted soon. As such, it is not needed anymore.</p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Favorites in Navigation Pane 1.0.2]]></title>
+        <id>https://windhawk.net/mods/favorites-in-navpane#fbc0cc8ab7e9e12ef8b1dd6d64d8dca38c30957d</id>
+        <link href="https://windhawk.net/mods/favorites-in-navpane"/>
+        <updated>2025-06-28T22:37:19.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Use LoadLibraryEx with LOAD<em>LIBRARY</em>SEARCH_SYSTEM32 #2063</li>
+</ul>]]></content>
+        <author>
+            <name>xalejandro</name>
+            <uri>https://github.com/tetawaves</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Better file sizes in Explorer details 1.4.10]]></title>
+        <id>https://windhawk.net/mods/explorer-details-better-file-sizes#f0a4fe87b2b24a0e9f9a685f7dfd90968a2cf132</id>
+        <link href="https://windhawk.net/mods/explorer-details-better-file-sizes"/>
+        <updated>2025-06-28T22:12:08.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed querying Everything v1.4 when custom macros named "folder" or "wfn" are configured.</li>
+<li>Fixed querying Everything v1.5 when the <strong>alpha_instance</strong> option is set to false.</li>
+<li>Libraries are now loaded with the <code>LOAD_LIBRARY_SEARCH_SYSTEM32</code> flag to prevent malicious or accidental dll hijacking.</li>
+<li>Excluded the search menu process due to a reported incompatibility which is still being investigated. Several other processes, such as the start menu and the lock screen, were excluded as well. These processes never use the explorer details control, so this mod isn't useful for them anyway.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Classic Start Menu Folders Icon 1.0.1]]></title>
+        <id>https://windhawk.net/mods/classic-start-menu-folders-icon#77c508575c2e3eb18494bc5f6c2dc6b942b626c0</id>
+        <link href="https://windhawk.net/mods/classic-start-menu-folders-icon"/>
+        <updated>2025-06-28T22:01:09.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Use LoadLibraryEx with LOAD<em>LIBRARY</em>SEARCH_SYSTEM32 #2063</li>
+<li>Fix 32-bit symbols</li>
+<li>Code cleanup</li>
+</ul>]]></content>
+        <author>
+            <name>xalejandro</name>
+            <uri>https://github.com/tetawaves</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Classic theme transparency fix 1.1]]></title>
+        <id>https://windhawk.net/mods/classic-theme-transparency-fix#aaf906578b278f95bd23e745832c4e30719e185e</id>
+        <link href="https://windhawk.net/mods/classic-theme-transparency-fix"/>
+        <updated>2025-06-28T21:45:33.000Z</updated>
+        <content type="html"><![CDATA[<p>Fix LoadLibrary https://github.com/ramensoftware/windhawk-mods/issues/2063</p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fix Classic Theme Maximized Windows 2.2]]></title>
+        <id>https://windhawk.net/mods/classic-maximized-windows-fix#b345471bbc41410cb7e0d74396157090a0ddf2b5</id>
+        <link href="https://windhawk.net/mods/classic-maximized-windows-fix"/>
+        <updated>2025-06-28T17:38:42.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>LoadLibrary -&gt; LoadLibraryEx limited to System32 for UxTheme load</li>
+</ul>]]></content>
+        <author>
+            <name>ephemeralViolette</name>
+            <uri>https://github.com/ephemeralViolette</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Resource Redirect 1.2.1]]></title>
+        <id>https://windhawk.net/mods/icon-resource-redirect#88473fba37aafef3009f3b609ca35bd55218e9bc</id>
+        <link href="https://windhawk.net/mods/icon-resource-redirect"/>
+        <updated>2025-06-27T19:39:56.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed an error when launching programs without a visual style manifest.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Resource Redirect 1.2]]></title>
+        <id>https://windhawk.net/mods/icon-resource-redirect#9ee749979a3dfa668f4a16432d449f77ffb4fce9</id>
+        <link href="https://windhawk.net/mods/icon-resource-redirect"/>
+        <updated>2025-06-27T18:17:51.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Icon themes can now be selected in the mod settings. A selected theme is automatically downloaded, extracted, and applied. A prompt is shown to optionally clear the icon cache and restart Explorer.</li>
+<li>A theme path can now specify the ini file itself, not only the theme folder with the theme.ini file.</li>
+<li>Multiple theme paths can now be specified.</li>
+</ul>
+<p>Windhawk v1.6 or newer is required for this version of the mod.</p>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Classic List Group Fix 1.1.2]]></title>
+        <id>https://windhawk.net/mods/classic-list-group-fix#061b5aa25434ac42184f72fb76f85f8c222f299b</id>
+        <link href="https://windhawk.net/mods/classic-list-group-fix"/>
+        <updated>2025-06-27T10:10:59.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Update <code>LoadComCtlModule</code> to reject version 5.82</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Aerexplorer 1.7.1]]></title>
+        <id>https://windhawk.net/mods/aerexplorer#7f4839438dad587631cb7478c5c122417f3a5e95</id>
+        <link href="https://windhawk.net/mods/aerexplorer"/>
+        <updated>2025-06-23T19:13:31.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fix a crash caused by a missing null terminator in the navbar theme class name</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Aerexplorer 1.7.0]]></title>
+        <id>https://windhawk.net/mods/aerexplorer#ea7ae610c721354ed1390a538ed1f03d39dd7b5a</id>
+        <link href="https://windhawk.net/mods/aerexplorer"/>
+        <updated>2025-06-23T16:40:58.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Introduce option for Windows 8 beta navigation bar background</li>
+<li>The logic to draw the background this way is not present in modern Windows.
+Previously, a hack in themes allowed this navbar background, but also interfered with Internet Explorer.</li>
+<li>Fix a bug where glass would apply on ribbon visibility change with the option disabled</li>
+<li>Change the names of most hook function arguments and class members (macros) to match the names from
+private debug symbols</li>
+<li>Completely rewrite init function to use macros, it is now less repetitive</li>
+<li>Modify some of the option descriptions to be clearer</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Custom Desktop Watermark 1.1.0]]></title>
+        <id>https://windhawk.net/mods/custom-desktop-watermark#d5b48dbb461bd68125950069d6c124ee5b15bff0</id>
+        <link href="https://windhawk.net/mods/custom-desktop-watermark"/>
+        <updated>2025-06-18T19:06:11.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Add notice to README about empty lines</li>
+<li>Add option to force a specific line to be bold</li>
+<li>Add option to change the horizontal alignment of a specific line</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Accent Color Sync 1.6]]></title>
+        <id>https://windhawk.net/mods/accent-color-sync#83686a2c455d411a2b1a2e2f853984859ef71647</id>
+        <link href="https://windhawk.net/mods/accent-color-sync"/>
+        <updated>2025-06-17T07:23:43.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added option to replicate Windows Vista's Aero shader (experimental).</li>
+<li>Partially updated translations</li>
+</ul>]]></content>
+        <author>
+            <name>CatmanFan / Mr._Lechkar</name>
+            <uri>https://github.com/CatmanFan</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dark mode context menus 1.3]]></title>
+        <id>https://windhawk.net/mods/dark-menus#be51bf799c93646016dd5d2ea74043cf4f132b91</id>
+        <link href="https://windhawk.net/mods/dark-menus"/>
+        <updated>2025-06-15T13:34:02.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added feedback links to the readme</li>
+<li>Added menubar screenshots to the readme</li>
+<li>Added support for menubar</li>
+<li>Added a German translation</li>
+<li>Code cleanup</li>
+</ul>]]></content>
+        <author>
+            <name>Mgg Sk</name>
+            <uri>https://github.com/MGGSK</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Restore Button Pulse Animation 1.0.2]]></title>
+        <id>https://windhawk.net/mods/restore-button-pulse-anim#fa00bc7317f1d0bf94eea92249503fd3b4570b68</id>
+        <link href="https://windhawk.net/mods/restore-button-pulse-anim"/>
+        <updated>2025-06-08T17:14:01.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Update <code>LoadComCtlModule</code> to reject comctl32.dll version 5.82</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Clientedge Everywhere 1.3.0]]></title>
+        <id>https://windhawk.net/mods/clientedge-in-apps#18e33a9aefed371e0a4899da5e0fd7cb69cc2487</id>
+        <link href="https://windhawk.net/mods/clientedge-in-apps"/>
+        <updated>2025-06-08T15:08:53.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Regedit (need for newer builds)</li>
+</ul>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 Start Menu Styler 1.3]]></title>
+        <id>https://windhawk.net/mods/windows-11-start-menu-styler#4579380d42e30aea8898e502106df234cade7b3c</id>
+        <link href="https://windhawk.net/mods/windows-11-start-menu-styler"/>
+        <updated>2025-06-07T19:50:40.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added an option to disable the new start menu layout. Recent Windows updates introduced some changes which broke some of the themes. The themes will be adapted to these changes in the future, but for now, this option can be used to temporarily revert them.</li>
+<li>Added themes: Windows10 (Minimal), LegacyFluent, OnlySearch.</li>
+<li>Updated themes: SideBySideMinimal, TranslucentStartMenu.</li>
+<li>Added style constants which can be defined once and used in multiple styles.</li>
+<li>Improved handling of commented targets and styles (starting with <code>//</code>), and added details about this in the mod's description.</li>
+<li>Added a built-in blur brush object, <code>WindhawkBlur</code>, which supports the <code>BlurAmount</code> and <code>TintColor</code> properties. For example: <code>Fill:=&lt;WindhawkBlur BlurAmount="10" TintColor="#80FF00FF"/&gt;</code>.</li>
+<li>Added support for the new WebView2 search menu.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Titlebar For Everyone 0.1]]></title>
+        <id>https://windhawk.net/mods/titlebar-for-everyone#e5a2544f6e7d9b999509256d7f6a2ce7c3527501</id>
+        <link href="https://windhawk.net/mods/titlebar-for-everyone"/>
+        <updated>2025-06-07T14:28:44.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="titlebarforeveryone">Titlebar For Everyone</h1>
+<ul>
+<li>Force native title bars and frames for various programs</li>
+</ul>
+<h2 id="supportedprograms">Supported programs</h2>
+<ul>
+<li>Chromium browsers<ul>
+<li>Chrome</li>
+<li>Edge</li>
+<li>Supermium</li>
+<li>Etc. (not tested)</li>
+<li>Enabling the DWM mode (Aero/Mica) is recommended if you can. This will also remove the duplicate window controls</li>
+<li>Also provides an option to use the classic button face color in the DWM extended area for Classic theme users</li></ul></li>
+<li>Steam (non-VGUI)<ul>
+<li>Known issues: In the Basic style, the window control hover effects do not show</li></ul></li>
+<li>WinUI apps<ul>
+<li>PowerToys apps</li>
+<li>New Photos app</li>
+<li>Known issues: Some WinUI apps may show visual artifacts in their custom title bar area</li></ul></li>
+<li>WPF apps<ul>
+<li>Visual Studio (tested: 2022)</li>
+<li>PowerToys Workspaces</li></ul></li>
+<li>Office apps<ul>
+<li>Word, Excel, PowerPoint, OneNote, Access, Outlook, and Publisher</li>
+<li>Tested: 2010 and LTSC 2021 (Win10 mode)</li>
+<li>Known issues: on LTSC 2021, only Classic frames are shown (neither Basic nor DWM)</li></ul></li>
+<li>Some WebView2 apps<ul>
+<li>New Outlook</li>
+<li>Microsoft 365 Copilot</li></ul></li>
+<li>Hangul Word Processor<ul>
+<li>Tested: 2010 (using the system style is recommended)</li>
+<li>This mod also fixes the WM_NCACTIVATE bug present in the system style</li></ul></li>
+<li>Electron apps and CEF apps using <code>cef_window_create_top_level</code><ul>
+<li>Not included by default, but adding them manually to the inclusion list should work</li>
+<li>However, using this mod against those is not recommended</li>
+<li>For CEF apps using <code>cef_window_create_top_level</code>: use <a href="https://windhawk.net/mods/cef-titlebar-enabler-universal">CEF/Spotify Tweaks</a> instead. Add to the inclusion list manually for anything other than Spotify</li>
+<li>For Electron apps: try finding a built-in option to enable native frames first. If missing, patch files in <code>resources\app(.asar)</code> to override <code>frame: false</code> or <code>titleBarStyle: 'hidden'</code> to <code>frame: true</code> or <code>titleBarStyle: 'default'</code></li>
+<li>1Password: add <code>"appearance.useCustomTitleBar": false</code> to <code>%localappdata%\1Password\settings\settings.json</code></li>
+<li>VSCode &amp; forks (including Windhawk UI): Press F1, search and click <code>Preferences: Open Settings (UI)</code>, find <code>Window: Title Bar Style</code>, and set it to <code>native</code></li></ul></li>
+</ul>
+<h2 id="notsupportedprograms">Not supported programs</h2>
+<ul>
+<li>UWP apps<ul>
+<li>Use <a href="https://winclassic.net/thread/2041/remove-windows-10s-uwp-titlebars">this mod</a> instead</li></ul></li>
+<li>VMware Workstation/Player 16+<ul>
+<li>Use <a href="https://winclassic.net/thread/1568/change-vmware-titlebar-native-windows">this patch</a> instead</li></ul></li>
+<li>Firefox and derivatives<ul>
+<li>Just enable the title bar option in the customize page, or disable <code>browser.tabs.inTitlebar</code> in <code>about:config</code></li></ul></li>
+<li>NVIDIA apps<ul>
+<li>In the executable folder, look for <code>&lt;exe name without extension&gt;.json</code> (usually in the same directory or in <code>\Resources</code>), and change <code>nv-custom-black-window=true</code> to false</li></ul></li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>This mod does not deal with visual inconsistencies (e.g. duplicate window controls)</li>
+<li>Forcing the addition of your program to the inclusion list may work even if it's missing from the default list if it falls within the categories above (e.g., Chromium, WinUI)</li>
+<li>For other apps, you'll need to try adjusting the subclassing logic to get your target window to be subclassed properly</li>
+</ul>]]></content>
+        <author>
+            <name>Ingan121</name>
+            <uri>https://github.com/Ingan121</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Windows 11 Accent Window Border 1.0.0]]></title>
         <id>https://windhawk.net/mods/win11-accent-border#1927abe816b6ff1d930fce7dc46ac527167bfd25</id>
@@ -26,304 +349,6 @@
         <author>
             <name>Guerra24</name>
             <uri>https://github.com/Guerra24</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Classic Desktop Icons 1.4.3]]></title>
-        <id>https://windhawk.net/mods/classic-desktop-icons#bdeebf8bd041100629066e24ee8cbb49bcc2bd1a</id>
-        <link href="https://windhawk.net/mods/classic-desktop-icons"/>
-        <updated>2025-06-05T22:28:06.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Improve desktop finding method</li>
-<li>Improve label background setting method</li>
-<li>Redo readme images, add Vista-style image</li>
-</ul>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Clientedge Everywhere 1.2.0]]></title>
-        <id>https://windhawk.net/mods/clientedge-in-apps#39f44c80c3c3557af96195e67589e8b399d40e7a</id>
-        <link href="https://windhawk.net/mods/clientedge-in-apps"/>
-        <updated>2025-06-05T12:51:36.000Z</updated>
-        <content type="html"><![CDATA[<p>Exclude Mathematica's toolboxes</p>]]></content>
-        <author>
-            <name>anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CEF/Spotify Tweaks 1.2]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#4341502030118d63157c4bc43d74f199aa667e19</id>
-        <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2025-06-05T11:40:46.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed compatibility with the Translucent Windows mod<ul>
-<li>At least version 1.5 of the Translucent Windows mod is required. 1.4 and below are still not supported when the native frames are disabled</li></ul></li>
-</ul>]]></content>
-        <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Translucent Windows 1.5.0]]></title>
-        <id>https://windhawk.net/mods/translucent-windows#0c981a8ec576c27ec33fcc70480c25083aecbb50</id>
-        <link href="https://windhawk.net/mods/translucent-windows"/>
-        <updated>2025-06-04T21:33:18.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added Rainbow effect</li>
-<li>Additional windows theme parts are modified</li>
-<li>Added text alpha blending</li>
-<li>Changed BlurBehind to AccentBlurBehind</li>
-<li>Added DWMAPI immersive darkmode setting option</li>
-<li>Added window corner type setting option</li>
-<li>Fixed conflicting bugs with steamwebhelper.exe and firefox.exe programs</li>
-<li>Fixed conflicting bug with Slick Window Arrangement mod</li>
-</ul>]]></content>
-        <author>
-            <name>Undisputed00x</name>
-            <uri>https://github.com/Undisputed00x</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Touhou Keyboard Binds 1.0.0]]></title>
-        <id>https://windhawk.net/mods/touhou-kbd-binds#72a6608e9b6608a0a067f2b54148a6c59724a8e1</id>
-        <link href="https://windhawk.net/mods/touhou-kbd-binds"/>
-        <updated>2025-06-04T05:56:13.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="touhoukeyboardbinds">Touhou Keyboard Binds</h1>
-<p>From Touhou 6 to Touhou 17, keyboard bindings were unable to be changed within
-the game. This mod lets you set your own bindings.</p>
-<h2 id="importantusagenote">⚠️ Important usage note ⚠️</h2>
-<p>Windhawk may not inject into the game due to it being in a common game directory.
-If this occurs, add the game's executable to the process inclusion list in the advanced 
-settings.</p>
-<p><img src="https://i.imgur.com/LRhREtJ.png" alt="Advanced settings screenshot" /></p>
-<h2 id="keyformat">Key format</h2>
-<p>The key options can either be a single character, or one of the following keywords:</p>
-<p>None, Space, Up, Down, Left, Right, LCTRL, RCTRL, LControl, RControl, LAlt, RAlt, LShift,
-RShift, Tab, CapsLock, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, Numpad0, Numpad1,
-Numpad2, Numpad3, Numpad4, Numpad5, Numpad6, Numpad7, Numpad8, Numpad9</p>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Middle click to close on the taskbar 1.0.8]]></title>
-        <id>https://windhawk.net/mods/taskbar-button-click#78fc318a181cfb5299fab5beaf42a8726ebe5f9e</id>
-        <link href="https://windhawk.net/mods/taskbar-button-click"/>
-        <updated>2025-06-03T22:23:31.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added support for ARM64.</li>
-<li>The "Customize the old taskbar on Windows 11" option no longer needs to be enabled for the mod to work with the ExplorerPatcher taskbar.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Chrome/Edge scroll tabs with mouse wheel 1.2.1]]></title>
-        <id>https://windhawk.net/mods/chrome-wheel-scroll-tabs#451a0a24c7e026a0c86c10adfb44b8681ab24bb6</id>
-        <link href="https://windhawk.net/mods/chrome-wheel-scroll-tabs"/>
-        <updated>2025-06-03T20:29:55.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed the recently-added options to limit the scroll area, which worked only for maximized windows.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Explorer Double Click Up 1.0.0]]></title>
-        <id>https://windhawk.net/mods/explorer-double-click-up#40afd947107997d91d611a3dc0f73daefebd27b6</id>
-        <link href="https://windhawk.net/mods/explorer-double-click-up"/>
-        <updated>2025-06-03T18:56:41.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="explorerdoubleclickup">Explorer Double Click Up</h1>
-<p>Double click empty space to go up a folder</p>
-<h2 id="windowsversionsupport">Windows version support</h2>
-<p>Will not work on anything older than Windows 10 due to use of WinRT.</p>]]></content>
-        <author>
-            <name>wrldspawn</name>
-            <uri>https://github.com/wrldspawn</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CEF/Spotify Tweaks 1.1]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#5a9dafdec518bcd45686bc0e87f61858f7ce5d01</id>
-        <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2025-06-03T11:53:21.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Finally implemented proper transparency support for frameless windows<ul>
-<li>In frameless mode, this mod is not compatible with the <a href="https://windhawk.net/mods/translucent-windows">Translucent Windows</a> mod, due to the mod interfering with how this mod works around <a href="https://source.chromium.org/chromium/chromium/src/+/main:ui/views/win/hwnd_message_handler.cc;drc=339fea7fafdc1ba5b16e7b2fa6f9d996b65348a3;l=616">Chromium's weird code</a></li>
-<li>Please use <a href="https://github.com/MicaForEveryone/MicaForEveryone">MicaForEveryone</a> instead in frameless mode</li>
-<li>This does not apply when the native frame option is enabled. Translucent Windows will work fine in this mode</li></ul></li>
-<li>Prevent bad memory scan results with zero match persisting as a cached count value</li>
-<li>Prevent various time-consuming memory patch operations from running on known incompatible versions</li>
-<li>Added support for disabling the forced dark mode in Spotify versions between 1.2.21 and 1.2.25</li>
-</ul>]]></content>
-        <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Turn off change file extension warning 1.0.1]]></title>
-        <id>https://windhawk.net/mods/extension-change-no-warning#d6357847b9752c88e29c23c31cdecc9757c4941c</id>
-        <link href="https://windhawk.net/mods/extension-change-no-warning"/>
-        <updated>2025-06-02T20:02:59.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Improved compatibility with recent Windows updates.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 10 Colorization Tweaks 1.1.0]]></title>
-        <id>https://windhawk.net/mods/win10-colored-borders#4720593a6f529636dcb4d1b9c5dca96fda239c00</id>
-        <link href="https://windhawk.net/mods/win10-colored-borders"/>
-        <updated>2025-06-02T17:13:22.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Add the ability to force windows to use either light or dark theme always</li>
-<li>Rename the mod from "Windows 10 Colored Borders" to "Windows 10 Colorization Tweaks"</li>
-</ul>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Winver Custom Text 1.0]]></title>
-        <id>https://windhawk.net/mods/winver-custom-text#9bf09a6887aed316e6503ca39ad5ef07298f3722</id>
-        <link href="https://windhawk.net/mods/winver-custom-text"/>
-        <updated>2025-06-02T12:10:27.000Z</updated>
-        <content type="html"><![CDATA[<p>Allows you to set the text displayed in winver.exe.</p>
-<p>If you dont know what winver is, its a file built in to Windows that simply displays info about your system:
-<img src="https://i.imgur.com/6XvNlWj.png" alt="winver.exe" /><br>
-This mod allows you to customize that.</p>]]></content>
-        <author>
-            <name>Thomas Shrader</name>
-            <uri>https://github.com/ilikecoding-197</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11 File Explorer Styler 1.2]]></title>
-        <id>https://windhawk.net/mods/windows-11-file-explorer-styler#c08d8c4047fd99859a2d1449a2126ec56f20ec2d</id>
-        <link href="https://windhawk.net/mods/windows-11-file-explorer-styler"/>
-        <updated>2025-05-31T20:04:47.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added a built-in blur brush object, <code>WindhawkBlur</code>, which supports the <code>BlurAmount</code> and <code>TintColor</code> properties. For example: <code>Fill:=&lt;WindhawkBlur BlurAmount="10" TintColor="#80FF00FF"/&gt;</code>.</li>
-<li>Added themes: Tabless, NoCommandBar, MicaBar.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar on top for Windows 11 1.1.3]]></title>
-        <id>https://windhawk.net/mods/taskbar-on-top#f696c21820a69cca5815ca7deca1f0a91675b5c0</id>
-        <link href="https://windhawk.net/mods/taskbar-on-top"/>
-        <updated>2025-05-31T17:20:22.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed tooltips covering the tray icons in the first row of the overflow popup.</li>
-<li>Fixed the placement of thumbnail previews in recent Windows builds.</li>
-<li>Improved the placement of thumbnail preview tooltips.</li>
-<li>The task view popup is now shown at the top of the screen and not no the bottom.</li>
-<li>Improved compatibility with status bar programs such as YASB and Zebar.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CEF/Spotify Tweaks 1.0]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#363a9ab160fe2975c2fc1a7c359b488bbd43cc88</id>
-        <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2025-05-29T10:41:39.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added a standalone playback speed changer in the Windhawk mod settings page</li>
-<li>Previously, this feature was only available via the JavaScript API</li>
-<li>Added support for Spotify 1.2.63 and 1.2.64, including the playback speed mod</li>
-<li>Added caching for memory patch offsets to improve the startup speed</li>
-<li>Added support for Windows 7 running older versions of the Spotify client (1.2.5 and below)</li>
-<li><code>--no-sandbox</code> is not required when running those older versions</li>
-<li>Note that non-DWM mode might look broken due to Chromium's classic custom frames. It is recommended to enable Aero and then use a basic themer for using the Basic/Classic frames</li>
-<li>You'll still need <code>--no-sandbox</code> when running newer versions with VxKex</li>
-<li>Fixed memory leaks in the renderer process caused by improperly managed V8 value memories</li>
-<li>Fixed the GPU acceleration status being detected wrongly and causing rendering issues when the hardware acceleration is enabled but unavailable</li>
-<li>Improved security by limiting the IPC pipe connection to the most recently spawned renderer</li>
-</ul>]]></content>
-        <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Auto Theme Switcher 1.0.4]]></title>
-        <id>https://windhawk.net/mods/auto-theme-switcher#15e5d9838349e4b927ed8ac5433e9894ff6cda28</id>
-        <link href="https://windhawk.net/mods/auto-theme-switcher"/>
-        <updated>2025-05-27T17:38:56.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed switching after waking up from sleep</li>
-<li>Improved checking if theme is applied</li>
-<li>Added mode selection (Appearance, appearance + wallpapers, themes)</li>
-</ul>]]></content>
-        <author>
-            <name>tinodin</name>
-            <uri>https://github.com/tinodin</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Disable Windows Ink modifier tooltips 1.0.0]]></title>
-        <id>https://windhawk.net/mods/no-windows-ink-tooltips#9eae2396a7de07045cc575c3428eac37b3069e9d</id>
-        <link href="https://windhawk.net/mods/no-windows-ink-tooltips"/>
-        <updated>2025-05-27T14:29:26.000Z</updated>
-        <content type="html"><![CDATA[<p>This mod removes the tooltip that appears next to the cursor when any of the
-modifier keys are pressed while using a Windows Ink tablet by preventing the
-tooltip window from being created and updated.</p>
-<p><img src="https://i.imgur.com/zT6C8o3.png" alt="Comparison" /></p>
-<p>This mod requires injecting into DWM, which is a critical system process.
-To use it, you should allow Windhawk to inject to DWM by adding <code>dwm.exe</code>
-to the process inclusion list in the program's advanced settings.</p>
-<p><img src="https://i.imgur.com/LRhREtJ.png" alt="Advanced settings screenshot" /></p>]]></content>
-        <author>
-            <name>wily-coyote</name>
-            <uri>https://github.com/wily-coyote</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Chrome/Edge scroll tabs with mouse wheel 1.2]]></title>
-        <id>https://windhawk.net/mods/chrome-wheel-scroll-tabs#d24cd9074413004acff7f87f7e9d6cab89210938</id>
-        <link href="https://windhawk.net/mods/chrome-wheel-scroll-tabs"/>
-        <updated>2025-05-26T18:34:20.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added options to limit the scroll area, which can be useful in case the mod incorrectly overrides the mouse wheel scrolling in areas where it shouldn't, e.g. in the page content area.</li>
-<li>Added support for Yandex Browser.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Auto Theme Switcher 1.0.3]]></title>
-        <id>https://windhawk.net/mods/auto-theme-switcher#4a12f25a8fd9ce15834bd2b9c29a34fda8d0a05f</id>
-        <link href="https://windhawk.net/mods/auto-theme-switcher"/>
-        <updated>2025-05-26T17:39:17.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Add functionality to run custom scripts on switch with -light/-dark argument</li>
-</ul>]]></content>
-        <author>
-            <name>tinodin</name>
-            <uri>https://github.com/tinodin</uri>
         </author>
     </entry>
 </feed>

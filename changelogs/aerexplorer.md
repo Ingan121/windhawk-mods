@@ -1,3 +1,18 @@
+## 1.7.1 ([Jun 23, 2025](https://github.com/ramensoftware/windhawk-mods/blob/7f4839438dad587631cb7478c5c122417f3a5e95/mods/aerexplorer.wh.cpp))
+
+- Fix a crash caused by a missing null terminator in the navbar theme class name
+
+## 1.7.0 ([Jun 23, 2025](https://github.com/ramensoftware/windhawk-mods/blob/ea7ae610c721354ed1390a538ed1f03d39dd7b5a/mods/aerexplorer.wh.cpp))
+
+- Introduce option for Windows 8 beta navigation bar background
+  - The logic to draw the background this way is not present in modern Windows.
+    Previously, a hack in themes allowed this navbar background, but also interfered with Internet Explorer.
+- Fix a bug where glass would apply on ribbon visibility change with the option disabled
+- Change the names of most hook function arguments and class members (macros) to match the names from
+  private debug symbols
+- Completely rewrite init function to use macros, it is now less repetitive
+- Modify some of the option descriptions to be clearer
+
 ## 1.6.5 ([Mar 31, 2025](https://github.com/ramensoftware/windhawk-mods/blob/ca9dd8c687a23f9d2ff185604e937009269aea4e/mods/aerexplorer.wh.cpp))
 
 Revise `LoadComCtlModule` to not use registry caching
