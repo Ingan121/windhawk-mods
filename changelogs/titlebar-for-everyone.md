@@ -1,6 +1,12 @@
-## 0.3 ([Jul 30, 2025](https://github.com/ramensoftware/windhawk-mods/blob/4a6151a8462eef90cdc6b356a5e8b76e4e9abbee/mods/titlebar-for-everyone.wh.cpp))
+## 0.4 ([Aug 7, 2025](https://github.com/ramensoftware/windhawk-mods/blob/f8551b4faee84c6f4763d57438b61406dcc33117/mods/titlebar-for-everyone.wh.cpp))
 
 Update titlebar-for-everyone.wh.cpp
+
+## 0.3 ([Jul 30, 2025](https://github.com/ramensoftware/windhawk-mods/blob/226d5af2bcff4c184875285a0f775e81242969fb/mods/titlebar-for-everyone.wh.cpp))
+
+* Fix the "Show/Hide debug targets" window being invisible, and thus making the whole window unusable, in Visual Studio
+* Add support for the new Microsoft Teams app
+* Add support for hiding the broken custom window controls in WinUI apps (PowerToys, Photos), and the new Teams app
 
 ## 0.2 ([Jun 29, 2025](https://github.com/ramensoftware/windhawk-mods/blob/c013224f458297a3e51bacd1d096f00a3acc6fec/mods/titlebar-for-everyone.wh.cpp))
 

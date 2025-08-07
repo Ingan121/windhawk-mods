@@ -2,18 +2,248 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2025-07-30T11:20:43.000Z</updated>
+    <updated>2025-08-07T14:13:50.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
-        <title type="html"><![CDATA[Titlebar For Everyone 0.3]]></title>
-        <id>https://windhawk.net/mods/titlebar-for-everyone#4a6151a8462eef90cdc6b356a5e8b76e4e9abbee</id>
+        <title type="html"><![CDATA[Titlebar For Everyone 0.4]]></title>
+        <id>https://windhawk.net/mods/titlebar-for-everyone#f8551b4faee84c6f4763d57438b61406dcc33117</id>
         <link href="https://windhawk.net/mods/titlebar-for-everyone"/>
-        <updated>2025-07-30T11:20:43.000Z</updated>
+        <updated>2025-08-07T14:13:50.000Z</updated>
         <content type="html"><![CDATA[<p>Update titlebar-for-everyone.wh.cpp</p>]]></content>
+        <author>
+            <name>Ingan121</name>
+            <uri>https://github.com/Ingan121</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Explorer Unlocked Toolbars Fix (WINAPI) 1.0.0]]></title>
+        <id>https://windhawk.net/mods/explorer-no-toolbars-bottom-gripper#5a4f307b5cdc11476b5378306d074f44de6ff65f</id>
+        <link href="https://windhawk.net/mods/explorer-no-toolbars-bottom-gripper"/>
+        <updated>2025-08-07T11:12:12.000Z</updated>
+        <content type="html"><![CDATA[<p>This mod does the same as the mod <code>Explorer Unlocked Toolbars Fix</code> but does so by hooking only a WINAPI function, 
+so does not need the download of the debugging symbols.</p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Translucent Windows 1.6.2]]></title>
+        <id>https://windhawk.net/mods/translucent-windows#79eae3a6c6eedc3c5c77b7eedaaf2121ddfa71e9</id>
+        <link href="https://windhawk.net/mods/translucent-windows"/>
+        <updated>2025-08-07T01:36:02.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed ExplorerPatcher taskbar theme bugs</li>
+</ul>]]></content>
+        <author>
+            <name>Undisputed00x</name>
+            <uri>https://github.com/Undisputed00x</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enable Win10 taskbar on Win11 24H2 0.1.2]]></title>
+        <id>https://windhawk.net/mods/win10-taskbar-on-win11-24h2#54dde4e2305ee64046cb84ffb2520f83dfe26f4f</id>
+        <link href="https://windhawk.net/mods/win10-taskbar-on-win11-24h2"/>
+        <updated>2025-08-05T22:15:42.000Z</updated>
+        <content type="html"><![CDATA[<p>Update readme</p>]]></content>
+        <author>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Translucent Windows 1.6.1]]></title>
+        <id>https://windhawk.net/mods/translucent-windows#a735c640a09ff65801f32dbe9e3b5f872380df19</id>
+        <link href="https://windhawk.net/mods/translucent-windows"/>
+        <updated>2025-08-05T19:49:12.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Custom painted theme parts made DPI aware</li>
+<li>Use system's accent palette for accent colorizer</li>
+</ul>]]></content>
+        <author>
+            <name>Undisputed00x</name>
+            <uri>https://github.com/Undisputed00x</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 Old Task Manager 1.0.1]]></title>
+        <id>https://windhawk.net/mods/win11-old-taskmgr#4f32b2163d3b8938660000bb6cf62634e022635c</id>
+        <link href="https://windhawk.net/mods/win11-old-taskmgr"/>
+        <updated>2025-08-04T23:22:45.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fix dark mode being partially enabled</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 File Explorer Styler 1.2.1]]></title>
+        <id>https://windhawk.net/mods/windows-11-file-explorer-styler#9bf555a229d798630345d558c6f1c30ffbc500ce</id>
+        <link href="https://windhawk.net/mods/windows-11-file-explorer-styler"/>
+        <updated>2025-08-04T10:14:57.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added the Translucent Explorer11 theme.</li>
+<li>Added ThemeResource support to WindhawkBlur.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Translucent Windows 1.6.0]]></title>
+        <id>https://windhawk.net/mods/translucent-windows#87d392a2bf39e964f6ffdce92a6c68d5776f01a3</id>
+        <link href="https://windhawk.net/mods/translucent-windows"/>
+        <updated>2025-08-04T08:03:21.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Introduce custom painted windows theme parts using the Direct2D API</li>
+<li>Fix window flickering</li>
+</ul>]]></content>
+        <author>
+            <name>Undisputed00x</name>
+            <uri>https://github.com/Undisputed00x</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Firefox border fix for Classic theme 1.0.1]]></title>
+        <id>https://windhawk.net/mods/firefox-border-fix#f4cec6b62fcdf7eccf828a499a94fb69b4e99c23</id>
+        <link href="https://windhawk.net/mods/firefox-border-fix"/>
+        <updated>2025-08-03T13:34:16.000Z</updated>
+        <content type="html"><![CDATA[<p>A little optimization</p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Firefox border fix for Classic theme 1.0.0]]></title>
+        <id>https://windhawk.net/mods/firefox-border-fix#c5d2a985d6361f13519bce620d2c599212cf565c</id>
+        <link href="https://windhawk.net/mods/firefox-border-fix"/>
+        <updated>2025-08-02T15:30:34.000Z</updated>
+        <content type="html"><![CDATA[<p>Workaround for the Firefox bug <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1950145">1950145</a> (glitched window borders in Classic theme).
+It affects Firefox builds <code>129.0a1</code> and above.</p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Legacy (Win32) clock flyout (Win11-friendly) 1.0.0]]></title>
+        <id>https://windhawk.net/mods/legacy-clock-flyout#a7e5954b6215ccfd2cfc95a3b8c5062fea86e2cb</id>
+        <link href="https://windhawk.net/mods/legacy-clock-flyout"/>
+        <updated>2025-08-02T14:03:04.000Z</updated>
+        <content type="html"><![CDATA[<p>This mod restores the Win32 tray clock flyout on Windows 10 taskbar which may run under Windows 10 or Windows 11.
+I tried to push this as an update to the mod <code>Win32 Tray Clock Experience</code> but received no response from the author.
+The differences between this mod and the other one are as follows:</p>
+<ul>
+<li>This mod is is compatible with a Win10 taskbar running under Windows 11.</li>
+<li>This mod hooks only a Win API function, thus does not need the download of the symbols.</li>
+<li>This mod is closer to the original code from Explorer Patcher.</li>
+</ul>
+<p><img src="https://i.imgur.com/FLSsrbt.png" alt="Legacy tray clock flyout" /></p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Legacy (Win32) power flyout 1.0.0]]></title>
+        <id>https://windhawk.net/mods/legacy-power-flyout#fb3820028a4d97abf5bf64440eb7857c71bb1f7b</id>
+        <link href="https://windhawk.net/mods/legacy-power-flyout"/>
+        <updated>2025-08-02T09:19:03.000Z</updated>
+        <content type="html"><![CDATA[<p>Enables legacy power flyout on Windows 10 taskbar (running under either Windows 10 or Windows 11).</p>]]></content>
+        <author>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Legacy (Win32) sound volume flyout 1.0.0]]></title>
+        <id>https://windhawk.net/mods/legacy-sound-flyout#4121e230d3bc5efef7f372c7f64c487a4341d61f</id>
+        <link href="https://windhawk.net/mods/legacy-sound-flyout"/>
+        <updated>2025-08-02T09:18:51.000Z</updated>
+        <content type="html"><![CDATA[<p>Enables legacy sound volume flyout on Windows 10 taskbar (running under either Windows 10 or Windows 11).</p>]]></content>
+        <author>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Aerexplorer 1.8.1]]></title>
+        <id>https://windhawk.net/mods/aerexplorer#35441a23d1531df1b1c756e76b67091a71e3e020</id>
+        <link href="https://windhawk.net/mods/aerexplorer"/>
+        <updated>2025-08-01T18:54:16.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Hook <code>ExplorerFrame.dll</code> symbols <em>after</em> checking its version</li>
+<li>Fix the "Open" command for EXE files not having an icon with the Command bar icons option enabled</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Aerexplorer 1.8.0]]></title>
+        <id>https://windhawk.net/mods/aerexplorer#6944547fe6da8b6465a3cc6d1d000458e0fe0dd7</id>
+        <link href="https://windhawk.net/mods/aerexplorer"/>
+        <updated>2025-08-01T17:06:43.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixes for classic theme</li>
+<li>NOTE: Arrows not showing on the navigation pane is a bug in comctl32.dll that will probably be fixed in a separate mod at another time.</li>
+<li>Use <code>LoadLibraryExW</code> with <code>LOAD_LIBRARY_SEARCH_SYSTEM32</code> (#2063)</li>
+<li>Option for "Views" dropdown on left like Windows Vista</li>
+<li>Option for icons on all command bar items like Windows Vista</li>
+<li>Reject ExplorerFrame.dll with a build number higher than 21332 (#1618)</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[UXTheme hook 1.4]]></title>
+        <id>https://windhawk.net/mods/uxtheme-hook#24c3603d57434f17cfbe74185eaf7326852d4121</id>
+        <link href="https://windhawk.net/mods/uxtheme-hook"/>
+        <updated>2025-07-31T19:07:53.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>fix arm64 support</li>
+<li>remove buggy DUI control panel header fix</li>
+</ul>]]></content>
+        <author>
+            <name>rounk-ctrl</name>
+            <uri>https://github.com/rounk-ctrl</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Classic Winver 1.1.0]]></title>
+        <id>https://windhawk.net/mods/classic-winver#08e6aef365b0d283169ceff6c0c030ad2a02a3ef</id>
+        <link href="https://windhawk.net/mods/classic-winver"/>
+        <updated>2025-07-30T19:00:49.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Improve detection for 95/98/NT4 to account for IE4 desktop update shell32.dll</li>
+<li>This unfortunately means that users must enter the version text for 95 and 98, as distinction between the two is impossible</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Titlebar For Everyone 0.3]]></title>
+        <id>https://windhawk.net/mods/titlebar-for-everyone#226d5af2bcff4c184875285a0f775e81242969fb</id>
+        <link href="https://windhawk.net/mods/titlebar-for-everyone"/>
+        <updated>2025-07-30T11:32:53.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fix the "Show/Hide debug targets" window being invisible, and thus making the whole window unusable, in Visual Studio</li>
+<li>Add support for the new Microsoft Teams app</li>
+<li>Add support for hiding the broken custom window controls in WinUI apps (PowerToys, Photos), and the new Teams app</li>
+</ul>]]></content>
         <author>
             <name>Ingan121</name>
             <uri>https://github.com/Ingan121</uri>
@@ -46,309 +276,6 @@ and not other instances of <code>ShellAbout</code>.</p>
 especially needed since <code>BrandingLoadImage</code> is seemingly broken
 outside of <code>winver.exe</code> in recent Windows 11 builds</li>
 </ul>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Classic Winver 1.0.0]]></title>
-        <id>https://windhawk.net/mods/classic-winver#7968fb15fba2d062946d129a5d2a1e489e676c75</id>
-        <link href="https://windhawk.net/mods/classic-winver"/>
-        <updated>2025-07-30T02:49:54.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="classicwinver">Classic Winver</h1>
-<p>This mod allows you to replace the Winver dialog with one from an older version of Windows
-and to customize certain things inside of it.</p>
-<h2 id="howtouse">How to use</h2>
-<p>You will need a copy of shell32.dll from the Windows version which you want to restore the about
-dialog from, and if you are using a version from Windows Vista or above, you will also need its MUI
-file (e.g. <code>en-US\shell32.dll.mui</code>). The following versions will also need extra files:</p>
-<ul>
-<li><strong>Windows XP SP1+</strong> needs <code>xpsp1res.dll</code> for the updated dialog layout. Otherwise, the layout from
-Windows XP RTM will be used.</li>
-<li><strong>Windows XP Professional x64 Edition</strong> and <strong>Windows Server 2003</strong> need <code>msgina.dll</code> for branding
-bitmaps. Otherwise, the dialog will fail to display.</li>
-</ul>
-<p>Once you have the necessary files, enter their paths into the mod's settings. From here you can
-configure the other options to your liking.</p>
-<h2 id="windows9xdialog">Windows 9x dialog</h2>
-<p>This mod replaces the dialog opened by the <code>ShellAbout</code> API, which is what Windows NT's <code>winver.exe</code> calls.
-If you want the Windows 9x Winver applet like the image below, you may use <a href="https://github.com/aubymori/winver9x">winver9x</a>
-alongside this mod.</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/winver9x/refs/heads/main/screenshot.png" alt="winver9x" /></p>
-<h2 id="brandingforvista">Branding for Vista+</h2>
-<p>If you are using a Vista+ dialog, and want to change the branding, this is the recommended method:</p>
-<ol>
-<li>Make sure you have the System CPL from Brawllux's <a href="https://winclassic.net/thread/1779/restoring-control-panel-pages-links">Control Panel Restoration Pack</a>,
-otherwise the System CPL page will be broken.</li>
-<li>Replace the following files with their counterparts from the version you want:</li>
-</ol>
-<ul>
-<li>The entire <code>%SystemRoot%\Branding</code> folder</li>
-<li><code>%SystemRoot%\System32\winbrand.dll</code></li>
-<li><code>%SystemRoot%\SysWOW64\winbrand.dll</code></li>
-</ul>
-<p><strong>NOTE</strong>: winbrand.dll from certain beta builds may fail to load, and in that case, you should instead
-use it from an adjacent retail build.</p>
-<h2 id="previews">Previews</h2>
-<p>| <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/win95.png" alt="Windows 95" /> | <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/winnt4.png" alt="Windows NT 4.0" /> |
-|-|-|
-| <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/winme.png" alt="Windows Me" /> | <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/win2k.png" alt="Windows 2000" /> |
-| <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/winxp.png" alt="Windows XP" /> | <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/winsrv03.png" alt="Windows Server 2003" /> |
-| <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/winvista.png" alt="Windows Vista" /> | <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/win7.png" alt="Windows 7" /> |
-| <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/win8dp.png" alt="Windows 8 Developer Preview" /> | <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/win81.png" alt="Windows 8.1" /> |
-| <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/win10_1507.png" alt="Windows 10 1507" /> | <img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-winver/win10_1809.png" alt="Windows 10 1809" /> |</p>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11 Accent Window Border 1.0.1]]></title>
-        <id>https://windhawk.net/mods/win11-accent-border#8b3ae1b62a9a0eb64e21503f00ee2592631de301</id>
-        <link href="https://windhawk.net/mods/win11-accent-border"/>
-        <updated>2025-07-29T04:28:44.000Z</updated>
-        <content type="html"><![CDATA[<p>React to accent color changes and target border-only windows.</p>]]></content>
-        <author>
-            <name>Guerra24</name>
-            <uri>https://github.com/Guerra24</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Basic/Classic Theme Ribbon Fix 1.0.1]]></title>
-        <id>https://windhawk.net/mods/basic-classic-theme-ribbon-fix#9ba0fe243b66980020f35fd47cb302f63e03c09a</id>
-        <link href="https://windhawk.net/mods/basic-classic-theme-ribbon-fix"/>
-        <updated>2025-07-28T21:19:59.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fix for x86-32 (thanks @kawapure)</li>
-</ul>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11 Old Task Manager 1.0.0]]></title>
-        <id>https://windhawk.net/mods/win11-old-taskmgr#dfe8ee05c26b08a9084dcfe02b03b0f75aab3008</id>
-        <link href="https://windhawk.net/mods/win11-old-taskmgr"/>
-        <updated>2025-07-28T18:05:28.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="windows11oldtaskmanager">Windows 11 Old Task Manager</h1>
-<p>This mod restores the old Task Manager UI from Windows 8/10 in Windows 11.</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/win11-old-taskmgr.png" alt="Preview" /></p>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Classic Explorer Menubar 1.0.1]]></title>
-        <id>https://windhawk.net/mods/classic-explorer-menubar#a7488204cb7a2af7cbd92665f8c710c3138cc6bd</id>
-        <link href="https://windhawk.net/mods/classic-explorer-menubar"/>
-        <updated>2025-07-27T17:49:01.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Make sure it only affects explorer windows</li>
-</ul>]]></content>
-        <author>
-            <name>xalejandro</name>
-            <uri>https://github.com/tetawaves</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hide Network UNC Paths in Explorer 1.0.5]]></title>
-        <id>https://windhawk.net/mods/hide-unc#3f6d76d5ce038d14686a9f41bff709df45d7b4f7</id>
-        <link href="https://windhawk.net/mods/hide-unc"/>
-        <updated>2025-07-26T23:03:41.000Z</updated>
-        <content type="html"><![CDATA[<p>UNC (Universal Naming Convention) paths are standardized formats for accessing network resources in Windows, typically starting with \ (e.g., \server\share\file).
-They specify the server, share, and file location without relying on local drive letters.</p>
-<p>This mod hides the UNC paths (e.g., <code>(\\\server\\share)</code>) from network drive labels in Windows Explorer, file open/save dialogs, and other UI elements.</p>
-<p>It keeps the display clean by showing only the drive name or letter, reducing visual clutter in File Explorer and dialogs, making navigation faster and less overwhelming.
-Improved Usability for Cryptomator: Hides lengthy encrypted vault paths (e.g., simplifying "\\vault-network-drive\Vault\encrypted" to just "Vault (Z:)"), enhancing readability during file access or backups.</p>]]></content>
-        <author>
-            <name>@danalec</name>
-            <uri>https://github.com/danalec</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Separators around File Explorer toolbars 1.0.0]]></title>
-        <id>https://windhawk.net/mods/explorer-toolbars-separators#3326875811c957ae1eb55fe8c57bd218c464aa90</id>
-        <link href="https://windhawk.net/mods/explorer-toolbars-separators"/>
-        <updated>2025-07-26T22:21:04.000Z</updated>
-        <content type="html"><![CDATA[<p>Adds separators around File Explorer toolbars, as in Windows 98 or Windows 2000 </p>
-<p>Before:</p>
-<p><img src="https://i.imgur.com/MqcVeUW.png" alt="Before" /></p>
-<p>After:</p>
-<p><img src="https://i.imgur.com/Xyzj4X2.png" alt="After" /></p>]]></content>
-        <author>
-            <name>anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[3D buttons on Quick Launch bar 1.0.0]]></title>
-        <id>https://windhawk.net/mods/quicklaunch-3dbuttons#41aa3a0f7aa0ba89de805c012943f9295c042a69</id>
-        <link href="https://windhawk.net/mods/quicklaunch-3dbuttons"/>
-        <updated>2025-07-26T20:35:26.000Z</updated>
-        <content type="html"><![CDATA[<p>Makes the buttons on the Quick Launch bar 3-dimensional, as it was the case in Windows 95 Beta.</p>
-<p>Before:</p>
-<p><img src="https://i.imgur.com/4ccDO6y.png" alt="Before" /></p>
-<p>After:</p>
-<p><img src="https://i.imgur.com/LbrokEc.png" alt="After" /></p>]]></content>
-        <author>
-            <name>anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Classic Theme Explorer Search Fix 1.0.0]]></title>
-        <id>https://windhawk.net/mods/classic-theme-explorer-search-fix#dfdd41d6b0c84e75c65896510c3ae1a38252647e</id>
-        <link href="https://windhawk.net/mods/classic-theme-explorer-search-fix"/>
-        <updated>2025-07-24T18:34:46.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="classicthemeexplorersearchfix">Classic Theme Explorer Search Fix</h1>
-<p>When using classic theme in Windows 7 and up, the colors of the placeholder
-text in Explorer's search box are hardcoded. This mod makes it use system
-colors instead.</p>
-<p><strong>Before</strong>:</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-theme-explorer-search-fix/before.png" alt="Before" /></p>
-<p><strong>After</strong>:</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/classic-theme-explorer-search-fix/after.png" alt="After" /></p>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Classic Explorer Drag/Drop 1.0]]></title>
-        <id>https://windhawk.net/mods/classic-explorer-dragdrop#8eb3648fa55fd8328b19f05998ce537a0269cbbe</id>
-        <link href="https://windhawk.net/mods/classic-explorer-dragdrop"/>
-        <updated>2025-07-24T05:47:15.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="classicexplorerdragdrop">Classic Explorer Drag/Drop</h1>
-<p>Forces the classic drag/drop image resembling the list view item itself to be used in File Explorer,
-and fixes a bug introduced in Windows 7 whereby the drag/drop image will not be displayed in classic
-theme.</p>
-<h2 id="caveats">Caveats</h2>
-<p>This does not work with the DirectUI list view used since Windows 7. In such cases, the Windows Vista
-style will always be used.</p>]]></content>
-        <author>
-            <name>Isabella Lulamoon (kawapure)</name>
-            <uri>https://github.com/kawapure</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar tray system icon tweaks 1.2.3]]></title>
-        <id>https://windhawk.net/mods/taskbar-tray-system-icon-tweaks#0ceec46962865fdd3e2d7d83a83330ea1a3c1ca8</id>
-        <link href="https://windhawk.net/mods/taskbar-tray-system-icon-tweaks"/>
-        <updated>2025-07-23T23:00:15.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added an option to hide the Studio Effects icon.</li>
-<li>Fixed the mod options not applying unless explorer is restarted in Windows 11 build 26100.4770 or newer.</li>
-<li>Improved compatibility with status bar programs such as YASB and Zebar.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Disable Tray Icons 1.0.0]]></title>
-        <id>https://windhawk.net/mods/disable-tray-icons#0355f5cc9a0b4128d95945a6fdc2045ce853abaf</id>
-        <link href="https://windhawk.net/mods/disable-tray-icons"/>
-        <updated>2025-07-23T22:15:20.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="disabletrayicons">Disable Tray Icons</h1>
-<p>This mod will disable all tray icons for a specific application.</p>
-<h2 id="howtouse">How to use</h2>
-<ol>
-<li>Go to the "Advanced" tab of this mod</li>
-<li>Find the "Custom process inclusion list"</li>
-<li>Add the name of the EXE you want to disable tray icons for.</li>
-</ol>
-<ul>
-<li>If you don't know the name of the EXE, you can find it using 
- Task Manager.</li>
-</ul>
-<ol>
-<li>Click Save, and if the program is open already, restart it.</li>
-</ol>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar height and icon size 1.3.5]]></title>
-        <id>https://windhawk.net/mods/taskbar-icon-size#41660d0eb32800704d23663f91959e543fe6fb5f</id>
-        <link href="https://windhawk.net/mods/taskbar-icon-size"/>
-        <updated>2025-07-23T20:58:03.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed the weather widget not being affected by the mod for Windows 11 builds with the dynamic icon sizes option.</li>
-<li>Fixed badge icons being displayed as dots when icons with size 16 are used.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Start button always on the left 1.2.3]]></title>
-        <id>https://windhawk.net/mods/taskbar-start-button-position#5c7369abff574388214084b4d8ac46fa78e11279</id>
-        <link href="https://windhawk.net/mods/taskbar-start-button-position"/>
-        <updated>2025-07-23T20:49:44.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed the mod options not applying unless explorer is restarted in Windows 11 build 26100.4770 or newer.</li>
-<li>Improved compatibility with status bar programs such as YASB and Zebar.</li>
-<li>Fixed start menu layout becoming broken when settings are changed in some cases.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Multirow taskbar for Windows 11 1.1.2]]></title>
-        <id>https://windhawk.net/mods/taskbar-multirow#d1838a84bcfebc3c645250ae9dac8fdb7aa55e21</id>
-        <link href="https://windhawk.net/mods/taskbar-multirow"/>
-        <updated>2025-07-23T17:15:14.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed the mod options not applying unless explorer is restarted in Windows 11 build 26100.4770 or newer.</li>
-<li>Added a note about the "Taskbar tray icon spacing and grid" mod for having multiple rows of tray icons.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar tray icon spacing and grid 1.2]]></title>
-        <id>https://windhawk.net/mods/taskbar-notification-icon-spacing#9d0606f5ffee0316c36fe9b2c5e3a780b8f40ab8</id>
-        <link href="https://windhawk.net/mods/taskbar-notification-icon-spacing"/>
-        <updated>2025-07-23T16:43:22.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added an option to have a grid of tray icons. This was a frequently requested option for <strong>Vertical Taskbar for Windows 11</strong> and <strong>Multirow taskbar for Windows 11</strong>. This mod can now be used together with those other mods for the tray icons grid option.</li>
-<li>Fixed the mod options not applying unless explorer is restarted in Windows 11 build 26100.4770 or newer.</li>
-<li>Improved compatibility with status bar programs such as YASB and Zebar.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Basic/Classic Theme Ribbon Fix 1.0.0]]></title>
-        <id>https://windhawk.net/mods/basic-classic-theme-ribbon-fix#e8dd2fc1044b1bc14cdd5c78dc3203d62b52c4f8</id>
-        <link href="https://windhawk.net/mods/basic-classic-theme-ribbon-fix"/>
-        <updated>2025-07-23T16:11:12.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="basicclassicthemeribbonfix">Basic/Classic Theme Ribbon Fix</h1>
-<p>Starting with Windows 8, UIRibbon does not consider DWM being off (basic/classic theme)
-and will always add a vertical spacer for the DWM titlebar. This mod removes that and
-makes UIRibbon look nice on basic/classic again.</p>
-<h2 id="notice">Notice</h2>
-<p>This mod injects into Windows Explorer, Paint, WordPad, Windows Style Builder, and the
-Windows Live 2012 Essentials by default, which should cover most cases. If you use 
-another application that uses the built-in UIRibbon framework, go to this mod's Advanced
-tab and add it to the Custom process inclusion list.</p>
-<p><strong>Before</strong>:</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/basic-classic-theme-ribbon-fix/before.png" alt="Before" /></p>
-<p><strong>After</strong>:</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/basic-classic-theme-ribbon-fix/after.png" alt="After" /></p>]]></content>
         <author>
             <name>aubymori</name>
             <uri>https://github.com/aubymori</uri>

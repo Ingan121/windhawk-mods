@@ -57,7 +57,7 @@
                 "published": 1713177639000,
                 "rating": 10,
                 "ratingUsers": 29,
-                "updated": 1750706011000,
+                "updated": 1754074456000,
                 "users": 1573
             },
             "metadata": {
@@ -69,7 +69,7 @@
                     "*"
                 ],
                 "name": "Aerexplorer",
-                "version": "1.7.1"
+                "version": "1.8.1"
             }
         },
         "aero-flyout-fix": {
@@ -1019,7 +1019,7 @@
                 "published": 1753843794000,
                 "rating": 10,
                 "ratingUsers": 1,
-                "updated": 1753844643000,
+                "updated": 1753902049000,
                 "users": 68
             },
             "metadata": {
@@ -1031,7 +1031,7 @@
                     "*"
                 ],
                 "name": "Classic Winver",
-                "version": "1.0.1"
+                "version": "1.1.0"
             }
         },
         "clientedge-in-apps": {
@@ -1701,6 +1701,27 @@
                 "version": "1.0"
             }
         },
+        "explorer-no-toolbars-bottom-gripper": {
+            "details": {
+                "defaultSorting": 0,
+                "published": 1754565132000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1754565132000,
+                "users": 0
+            },
+            "metadata": {
+                "author": "anixx",
+                "compilerOptions": "-lcomctl32",
+                "description": "Removes bottom gripper from unlocked Explorer toolbars without the need to download symbols",
+                "github": "https://github.com/Anixx",
+                "include": [
+                    "explorer.exe"
+                ],
+                "name": "Explorer Unlocked Toolbars Fix (WINAPI)",
+                "version": "1.0.0"
+            }
+        },
         "explorer-toolbar-links-item": {
             "details": {
                 "defaultSorting": 1674,
@@ -1902,6 +1923,26 @@
                 "name": "Remove File Explorer Suffixes",
                 "twitter": "https://twitter.com/m417z",
                 "version": "1.0"
+            }
+        },
+        "firefox-border-fix": {
+            "details": {
+                "defaultSorting": 144,
+                "published": 1754148634000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1754228056000,
+                "users": 16
+            },
+            "metadata": {
+                "author": "anixx",
+                "description": "Mitigates Firefox bug 1950145 (glitched window borders in Classic theme)",
+                "github": "https://github.com/Anixx",
+                "include": [
+                    "firefox.exe"
+                ],
+                "name": "Firefox border fix for Classic theme",
+                "version": "1.0.1"
             }
         },
         "fix-basic-caption-text": {
@@ -2285,6 +2326,27 @@
                 "version": "1.0.2"
             }
         },
+        "legacy-clock-flyout": {
+            "details": {
+                "defaultSorting": 96,
+                "published": 1754143384000,
+                "rating": 8,
+                "ratingUsers": 1,
+                "updated": 1754143384000,
+                "users": 12
+            },
+            "metadata": {
+                "author": "anixx",
+                "compilerOptions": "-lcomctl32 -lole32",
+                "description": "Restores the Win32 tray clock flyout.",
+                "github": "https://github.com/Anixx",
+                "include": [
+                    "explorer.exe"
+                ],
+                "name": "Legacy (Win32) clock flyout (Win11-friendly)",
+                "version": "1.0.0"
+            }
+        },
         "legacy-file-copy": {
             "details": {
                 "defaultSorting": 18290,
@@ -2306,6 +2368,26 @@
                     "explorer.exe"
                 ],
                 "name": "Legacy File Copy",
+                "version": "1.0.0"
+            }
+        },
+        "legacy-power-flyout": {
+            "details": {
+                "defaultSorting": 63,
+                "published": 1754126343000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1754126343000,
+                "users": 7
+            },
+            "metadata": {
+                "author": "Anixx",
+                "description": "Enables legacy power flyout on Win10 taskbar",
+                "github": "https://github.com/Anixx",
+                "include": [
+                    "explorer.exe"
+                ],
+                "name": "Legacy (Win32) power flyout",
                 "version": "1.0.0"
             }
         },
@@ -2348,6 +2430,26 @@
                 ],
                 "name": "Legacy Shell Message Boxes",
                 "version": "1.0.1"
+            }
+        },
+        "legacy-sound-flyout": {
+            "details": {
+                "defaultSorting": 126,
+                "published": 1754126331000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1754126331000,
+                "users": 14
+            },
+            "metadata": {
+                "author": "Anixx",
+                "description": "Enables legacy sound volume flyout on Win10 taskbar",
+                "github": "https://github.com/Anixx",
+                "include": [
+                    "explorer.exe"
+                ],
+                "name": "Legacy (Win32) sound volume flyout",
+                "version": "1.0.0"
             }
         },
         "lines-in-mmc": {
@@ -4479,7 +4581,7 @@
                 "published": 1749306524000,
                 "rating": 10,
                 "ratingUsers": 3,
-                "updated": 1753874443000,
+                "updated": 1754576030000,
                 "users": 164
             },
             "metadata": {
@@ -4516,7 +4618,7 @@
                 ],
                 "name": "Titlebar For Everyone",
                 "twitter": "https://twitter.com/Ingan121",
-                "version": "0.3"
+                "version": "0.4"
             }
         },
         "tortoisegit-progress-animation-background-fix": {
@@ -4582,19 +4684,19 @@
                 "published": 1743352526000,
                 "rating": 9,
                 "ratingUsers": 136,
-                "updated": 1751312504000,
+                "updated": 1754530562000,
                 "users": 12278
             },
             "metadata": {
                 "author": "Undisputed00x",
-                "compilerOptions": "-ldwmapi -luxtheme -lcomctl32 -lgdi32",
+                "compilerOptions": "-ldwmapi -luxtheme -lcomctl32 -lgdi32 -ld2d1 -lmsimg32 -lshcore",
                 "description": "Enables native translucent effects in Windows 11",
                 "github": "https://github.com/Undisputed00x",
                 "include": [
                     "*"
                 ],
                 "name": "Translucent Windows",
-                "version": "1.5.1"
+                "version": "1.6.2"
             }
         },
         "transparent-screensaver-fix": {
@@ -4716,12 +4818,12 @@
                 "published": 1720341593000,
                 "rating": 10,
                 "ratingUsers": 24,
-                "updated": 1745395884000,
+                "updated": 1753988873000,
                 "users": 2823
             },
             "metadata": {
                 "author": "rounk-ctrl",
-                "compilerOptions": "-luxtheme -lgdi32 -lole32",
+                "compilerOptions": "-lole32",
                 "description": "Allows you to apply custom themes",
                 "github": "https://github.com/rounk-ctrl",
                 "include": [
@@ -4732,7 +4834,7 @@
                     "rundll32.exe"
                 ],
                 "name": "UXTheme hook",
-                "version": "1.3"
+                "version": "1.4"
             }
         },
         "version-spoof": {
@@ -4972,7 +5074,7 @@
                 "published": 1725446830000,
                 "rating": 10,
                 "ratingUsers": 1,
-                "updated": 1731157978000,
+                "updated": 1754432142000,
                 "users": 258
             },
             "metadata": {
@@ -4987,7 +5089,7 @@
                     "userinit.exe"
                 ],
                 "name": "Enable Win10 taskbar on Win11 24H2",
-                "version": "0.1.1"
+                "version": "0.1.2"
             }
         },
         "win11-accent-border": {
@@ -5020,7 +5122,7 @@
                 "published": 1753725928000,
                 "rating": 0,
                 "ratingUsers": 0,
-                "updated": 1753725928000,
+                "updated": 1754349765000,
                 "users": 51
             },
             "metadata": {
@@ -5034,7 +5136,7 @@
                     "taskmgr.exe"
                 ],
                 "name": "Windows 11 Old Task Manager",
-                "version": "1.0.0"
+                "version": "1.0.1"
             }
         },
         "win32-tray-clock-experience": {
@@ -5177,7 +5279,7 @@
                 "published": 1746117865000,
                 "rating": 10,
                 "ratingUsers": 105,
-                "updated": 1748721887000,
+                "updated": 1754302497000,
                 "users": 10133
             },
             "metadata": {
@@ -5194,7 +5296,7 @@
                 ],
                 "name": "Windows 11 File Explorer Styler",
                 "twitter": "https://twitter.com/m417z",
-                "version": "1.2"
+                "version": "1.2.1"
             }
         },
         "windows-11-notification-center-styler": {

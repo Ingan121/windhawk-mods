@@ -1,3 +1,17 @@
+## 1.6.2 ([Aug 7, 2025](https://github.com/ramensoftware/windhawk-mods/blob/79eae3a6c6eedc3c5c77b7eedaaf2121ddfa71e9/mods/translucent-windows.wh.cpp))
+
+* Fixed ExplorerPatcher taskbar theme bugs
+
+## 1.6.1 ([Aug 5, 2025](https://github.com/ramensoftware/windhawk-mods/blob/a735c640a09ff65801f32dbe9e3b5f872380df19/mods/translucent-windows.wh.cpp))
+
+* Custom painted theme parts made DPI aware
+* Use system's accent palette for accent colorizer
+
+## 1.6.0 ([Aug 4, 2025](https://github.com/ramensoftware/windhawk-mods/blob/87d392a2bf39e964f6ffdce92a6c68d5776f01a3/mods/translucent-windows.wh.cpp))
+
+* Introduce custom painted windows theme parts using the Direct2D API
+* Fix window flickering
+
 ## 1.5.1 ([Jun 30, 2025](https://github.com/ramensoftware/windhawk-mods/blob/e8d7c07e86637230df1c386a05f184da5b96f2d7/mods/translucent-windows.wh.cpp))
 
 * Libraries are now loaded with the LOAD_LIBRARY_SEARCH_SYSTEM32 flag to prevent malicious or accidental dll hijacking. https://github.com/ramensoftware/windhawk-mods/issues/2063
