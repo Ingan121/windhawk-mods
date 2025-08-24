@@ -1,6 +1,6 @@
-## 0.4 ([Aug 7, 2025](https://github.com/ramensoftware/windhawk-mods/blob/f8551b4faee84c6f4763d57438b61406dcc33117/mods/titlebar-for-everyone.wh.cpp))
+## 0.4 ([Aug 7, 2025](https://github.com/ramensoftware/windhawk-mods/blob/bc652e3d04758de30858d999319b89858cc629e6/mods/titlebar-for-everyone.wh.cpp))
 
-Update titlebar-for-everyone.wh.cpp
+Fix the regression with Visual Studio
 
 ## 0.3 ([Jul 30, 2025](https://github.com/ramensoftware/windhawk-mods/blob/226d5af2bcff4c184875285a0f775e81242969fb/mods/titlebar-for-everyone.wh.cpp))
 

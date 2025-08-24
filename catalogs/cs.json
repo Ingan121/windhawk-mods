@@ -295,12 +295,12 @@
                 "published": 1734116516000,
                 "rating": 10,
                 "ratingUsers": 30,
-                "updated": 1749123646000,
+                "updated": 1756021383000,
                 "users": 3066
             },
             "metadata": {
                 "author": "Ingan121",
-                "compilerOptions": "-lcomctl32 -luxtheme -ldwmapi -lgdi32",
+                "compilerOptions": "-lcomctl32 -luxtheme -ldwmapi -lgdi32 -lversion",
                 "description": "Various tweaks for Spotify, including native frames, transparent windows, and more",
                 "github": "https://github.com/Ingan121",
                 "homepage": "https://www.ingan121.com/",
@@ -310,7 +310,7 @@
                 ],
                 "name": "CEF/Spotify Tweaks",
                 "twitter": "https://twitter.com/Ingan121",
-                "version": "1.2"
+                "version": "1.3"
             }
         },
         "center-titlebar": {
@@ -532,7 +532,7 @@
                 "published": 1697883443000,
                 "rating": 0,
                 "ratingUsers": 0,
-                "updated": 1723931998000,
+                "updated": 1755865779000,
                 "users": 259
             },
             "metadata": {
@@ -544,8 +544,8 @@
                     "*",
                     "conhost.exe"
                 ],
-                "name": "Classic Conhost",
-                "version": "1.0.3"
+                "name": "Classic Conhost [Deprecated]",
+                "version": "1.0.4"
             }
         },
         "classic-desktop-icons": {
@@ -591,6 +591,27 @@
                 ],
                 "name": "Classic Explorer Drag/Drop",
                 "twitter": "https://twitter.com/kawaipure",
+                "version": "1.0"
+            }
+        },
+        "classic-explorer-dragdrop-lite": {
+            "details": {
+                "defaultSorting": 342,
+                "published": 1754628630000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1754628630000,
+                "users": 38
+            },
+            "metadata": {
+                "author": "anixx",
+                "compilerOptions": "-luxtheme",
+                "description": "Restores Drag & Drop image from Win 95 or Win XP in Classic theme",
+                "github": "https://github.com/Anixx",
+                "include": [
+                    "*"
+                ],
+                "name": "Classic Explorer Drag-n-Drop Lite",
                 "version": "1.0"
             }
         },
@@ -1105,7 +1126,7 @@
                 "published": 1699159361000,
                 "rating": 10,
                 "ratingUsers": 2,
-                "updated": 1731264428000,
+                "updated": 1755454222000,
                 "users": 305
             },
             "metadata": {
@@ -1119,7 +1140,7 @@
                     "explorer.exe"
                 ],
                 "name": "Custom Shutdown Dialog",
-                "version": "1.1.1"
+                "version": "1.2.0"
             }
         },
         "dark-menus": {
@@ -1128,19 +1149,22 @@
                 "published": 1733519825000,
                 "rating": 10,
                 "ratingUsers": 129,
-                "updated": 1749994442000,
+                "updated": 1754599412000,
                 "users": 13814
             },
             "metadata": {
                 "author": "Mgg Sk",
                 "compilerOptions": "-lUxTheme -lGdi32",
                 "description": "Enables dark mode for all win32 menus.",
+                "exclude": [
+                    "firefox.exe"
+                ],
                 "github": "https://github.com/MGGSK",
                 "include": [
                     "*"
                 ],
                 "name": "Dark mode context menus",
-                "version": "1.3"
+                "version": "1.3.1"
             }
         },
         "dark-theme-browser-colors-fix": {
@@ -1722,6 +1746,27 @@
                 "version": "1.0.0"
             }
         },
+        "explorer-tabs-session-saver": {
+            "details": {
+                "defaultSorting": 380,
+                "published": 1755630528000,
+                "rating": 10,
+                "ratingUsers": 1,
+                "updated": 1755630528000,
+                "users": 38
+            },
+            "metadata": {
+                "author": "noX1st",
+                "compilerOptions": "-lshlwapi -lole32 -loleaut32 -lshell32 -luuid",
+                "description": "Saves and restores Explorer tabs when reopening",
+                "github": "https://github.com/noX1st",
+                "include": [
+                    "explorer.exe"
+                ],
+                "name": "Explorer Tabs Session Saver",
+                "version": "1.0.0"
+            }
+        },
         "explorer-toolbar-links-item": {
             "details": {
                 "defaultSorting": 1548,
@@ -1985,6 +2030,27 @@
                 ],
                 "name": "Fix Darkmode ListViews",
                 "version": "1.0"
+            }
+        },
+        "fix-explorer-white-flash": {
+            "details": {
+                "defaultSorting": 3660,
+                "published": 1754930019000,
+                "rating": 10,
+                "ratingUsers": 20,
+                "updated": 1755607072000,
+                "users": 366
+            },
+            "metadata": {
+                "author": "Mgg Sk",
+                "compilerOptions": "-lGdi32",
+                "description": "Fixes white flashes when creating new tabs in \"This PC\".",
+                "github": "https://github.com/MGGSK",
+                "include": [
+                    "explorer.exe"
+                ],
+                "name": "Fix white flashes in explorer",
+                "version": "1.1"
             }
         },
         "fix-qt-scrollbar-grippers": {
@@ -2992,6 +3058,36 @@
                 "version": "1.1"
             }
         },
+        "office-ui-reverter": {
+            "details": {
+                "defaultSorting": 81,
+                "published": 1755871037000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1755871037000,
+                "users": 9
+            },
+            "metadata": {
+                "architecture": [
+                    "x86-64"
+                ],
+                "author": "Amrsatrio",
+                "description": "Reverts Office 2022+/365 UI to Office 2016/2019",
+                "github": "https://github.com/Amrsatrio",
+                "include": [
+                    "WINWORD.EXE",
+                    "EXCEL.EXE",
+                    "POWERPNT.EXE",
+                    "OUTLOOK.EXE",
+                    "ONENOTE.EXE",
+                    "MSPUB.EXE",
+                    "MSACCESS.EXE"
+                ],
+                "name": "Office UI Reverter",
+                "twitter": "https://twitter.com/amrsatrio",
+                "version": "1.0.0"
+            }
+        },
         "old-auto-colorization": {
             "details": {
                 "defaultSorting": 1520,
@@ -3215,6 +3311,28 @@
                 ],
                 "name": "Remove Command Bar",
                 "version": "1.0.1"
+            }
+        },
+        "remove-fullscreen-popup-chrome": {
+            "details": {
+                "defaultSorting": 72,
+                "published": 1755892774000,
+                "rating": 0,
+                "ratingUsers": 0,
+                "updated": 1755892774000,
+                "users": 8
+            },
+            "metadata": {
+                "author": "lorenzoc01",
+                "compilerOptions": "-lgdi32",
+                "description": "Removes “TO EXIT FULLSCREEN PRESS ESC/F11” popup in Chrome/Opera/OperaGX",
+                "github": "https://github.com/lorenzoc01",
+                "include": [
+                    "opera.exe",
+                    "chrome.exe"
+                ],
+                "name": "Remove \"Exit Fullscreen\" popup in Chrome",
+                "version": "1.1"
             }
         },
         "remove-ms-store-open-with": {
@@ -3852,7 +3970,7 @@
                 "published": 1646604429000,
                 "rating": 10,
                 "ratingUsers": 585,
-                "updated": 1742574983000,
+                "updated": 1755285321000,
                 "users": 38226
             },
             "featured": true,
@@ -3861,8 +3979,8 @@
                     "x86-64"
                 ],
                 "author": "m417z",
-                "compilerOptions": "-D__USE_MINGW_ANSI_STDIO=0 -lole32 -loleaut32 -lruntimeobject -lversion -lwininet",
-                "description": "Customize the taskbar clock: define a custom date/time format, add a news feed, customize fonts and colors, and more",
+                "compilerOptions": "-lole32 -loleaut32 -lpdh -lruntimeobject -lshlwapi -lversion -lwininet",
+                "description": "Custom date/time format, news feed, weather, performance metrics (upload/download speed, CPU, RAM), custom fonts and colors, and more",
                 "github": "https://github.com/m417z",
                 "homepage": "https://m417z.com/",
                 "include": [
@@ -3870,7 +3988,7 @@
                 ],
                 "name": "Taskbar Clock Customization",
                 "twitter": "https://twitter.com/m417z",
-                "version": "1.5.2"
+                "version": "1.6.2"
             }
         },
         "taskbar-disappearing-icon-fix-win11": {
@@ -3924,7 +4042,7 @@
                 "published": 1646604429000,
                 "rating": 10,
                 "ratingUsers": 310,
-                "updated": 1746104535000,
+                "updated": 1755849039000,
                 "users": 14655
             },
             "featured": true,
@@ -3933,7 +4051,7 @@
                     "x86-64"
                 ],
                 "author": "m417z",
-                "compilerOptions": "-D__USE_MINGW_ANSI_STDIO=0 -lcomctl32 -lole32 -loleaut32 -lshlwapi -lversion",
+                "compilerOptions": "-lcomctl32 -lole32 -loleaut32 -lshlwapi -lversion",
                 "description": "Causes a separate button to be created on the taskbar for each new window",
                 "github": "https://github.com/m417z",
                 "homepage": "https://m417z.com/",
@@ -3942,7 +4060,7 @@
                 ],
                 "name": "Disable grouping on the taskbar",
                 "twitter": "https://twitter.com/m417z",
-                "version": "1.3.9"
+                "version": "1.3.10"
             }
         },
         "taskbar-hung-rearrangement-fix": {
@@ -4581,7 +4699,7 @@
                 "published": 1749306524000,
                 "rating": 10,
                 "ratingUsers": 3,
-                "updated": 1754576030000,
+                "updated": 1754581652000,
                 "users": 175
             },
             "metadata": {
@@ -4684,7 +4802,7 @@
                 "published": 1743352526000,
                 "rating": 9,
                 "ratingUsers": 173,
-                "updated": 1754530562000,
+                "updated": 1755846589000,
                 "users": 14783
             },
             "metadata": {
@@ -4696,7 +4814,7 @@
                     "*"
                 ],
                 "name": "Translucent Windows",
-                "version": "1.6.2"
+                "version": "1.6.3"
             }
         },
         "transparent-screensaver-fix": {
@@ -5010,7 +5128,7 @@
                 "published": 1734370095000,
                 "rating": 10,
                 "ratingUsers": 28,
-                "updated": 1734370095000,
+                "updated": 1754905659000,
                 "users": 1704
             },
             "metadata": {
@@ -5021,8 +5139,8 @@
                 "include": [
                     "explorer.exe"
                 ],
-                "name": "Win+D per monitor",
-                "version": "1.0.20241214"
+                "name": "Win+D per monitor(show desktop)",
+                "version": "1.1.20250811"
             }
         },
         "win10-colored-borders": {
@@ -5098,7 +5216,7 @@
                 "published": 1749228741000,
                 "rating": 10,
                 "ratingUsers": 9,
-                "updated": 1753763324000,
+                "updated": 1756016742000,
                 "users": 1201
             },
             "metadata": {
@@ -5113,7 +5231,7 @@
                     "*"
                 ],
                 "name": "Windows 11 Accent Window Border",
-                "version": "1.0.1"
+                "version": "1.0.2"
             }
         },
         "win11-old-taskmgr": {

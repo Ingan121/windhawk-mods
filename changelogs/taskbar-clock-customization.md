@@ -1,3 +1,28 @@
+## 1.6.2 ([Aug 15, 2025](https://github.com/ramensoftware/windhawk-mods/blob/725fd582986a072d0dc02c11281a56d30c3c2576/mods/taskbar-clock-customization.wh.cpp))
+
+* Fixed performance metrics (upload/download speed) always showing zero values on non-English systems. The fix in version 1.6.1 was incomplete.
+
+## 1.6.1 ([Aug 15, 2025](https://github.com/ramensoftware/windhawk-mods/blob/7068e6957690dc8bb1c1d1449041593fc34ff51e/mods/taskbar-clock-customization.wh.cpp))
+
+* Added an option to customize the weather units (USCS/SI).
+* Improved performance metrics formatting to reduce text width changes:
+  * CPU and RAM show 0-99 values, and single digit values are padded with spaces.
+  * Upload/download speeds always show MB/s in a way that keeps the width constant for most values. Also, the current locale decimal separator is used (e.g. 12.3 or 12,3).
+* Switched to a more accurate RAM usage calculation method.
+* Fixed performance metrics (upload/download speed, CPU, RAM) always showing zero values on non-English systems.
+
+## 1.6 ([Aug 9, 2025](https://github.com/ramensoftware/windhawk-mods/blob/8eb638d7f86c52bde93c6050ca3232bdf7baa5ef/mods/taskbar-clock-customization.wh.cpp))
+
+* Added patterns for realtime system performance metrics:
+  * `%upload_speed%` - system-wide upload transfer rate.
+  * `%download_speed%` - system-wide download transfer rate.
+  * `%cpu%` - CPU usage.
+  * `%ram%` - RAM usage.
+* Added the `%weather%` pattern for weather information, powered by [wttr.in](https://wttr.in/).
+* Added the content mode option to web content items, which can be used to strip/decode HTML and XML tags.
+* Added the content search/replace option to web content items to apply regular expression-based search and replace operations to the extracted content.
+* Improved compatibility with status bar programs such as YASB and Zebar.
+
 ## 1.5.2 ([Mar 21, 2025](https://github.com/ramensoftware/windhawk-mods/blob/a2cd3cd75b7491b7f38a2ea3cf51ae71f164f119/mods/taskbar-clock-customization.wh.cpp))
 
 * Fixed an incompatibility with recent Windows 11 preview builds.

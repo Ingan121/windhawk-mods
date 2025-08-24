@@ -1,3 +1,7 @@
+## 1.3 ([Aug 24, 2025](https://github.com/ramensoftware/windhawk-mods/blob/8374c0bb906d35a94b2a742e57fb43fa50589c3f/mods/cef-titlebar-enabler-universal.wh.cpp))
+
+Update cef-titlebar-enabler-universal.wh.cpp
+
 ## 1.2 ([Jun 5, 2025](https://github.com/ramensoftware/windhawk-mods/blob/4341502030118d63157c4bc43d74f199aa667e19/mods/cef-titlebar-enabler-universal.wh.cpp))
 
 * Fixed compatibility with the Translucent Windows mod
