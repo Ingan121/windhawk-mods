@@ -2,106 +2,231 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2025-08-24T07:43:03.000Z</updated>
+    <updated>2025-10-05T11:10:43.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
-        <title type="html"><![CDATA[CEF/Spotify Tweaks 1.3]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#8374c0bb906d35a94b2a742e57fb43fa50589c3f</id>
+        <title type="html"><![CDATA[CEF/Spotify Tweaks 1.4]]></title>
+        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#18386b2919a118f37354895e6e164adb29d37956</id>
         <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2025-08-24T07:43:03.000Z</updated>
-        <content type="html"><![CDATA[<p>Update cef-titlebar-enabler-universal.wh.cpp</p>]]></content>
+        <updated>2025-10-05T11:10:43.000Z</updated>
+        <content type="html"><![CDATA[<p>CEF/Spotify Tweaks 1.4</p>
+<p>Updated version number and supported Spotify versions. Added block automatic updates feature.</p>]]></content>
         <author>
             <name>Ingan121</name>
             <uri>https://github.com/Ingan121</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Windows 11 Accent Window Border 1.0.2]]></title>
-        <id>https://windhawk.net/mods/win11-accent-border#f251191b1143234f2924240a3cca66f31a0e4947</id>
-        <link href="https://windhawk.net/mods/win11-accent-border"/>
-        <updated>2025-08-24T06:25:42.000Z</updated>
-        <content type="html"><![CDATA[<p>Fixes #2348</p>
-<p>Something appears to be messing with DWM registry keys in WinAppSDK MSIX packaged apps that make them not update in sync. This also affects DWM APIs and messages. Explorer's keys appear to behave correctly and update in sync with everything else and contain the same value so use those instead.</p>]]></content>
+        <title type="html"><![CDATA[Dropbox: Reduce Explorer CPU usage on sync 1.1]]></title>
+        <id>https://windhawk.net/mods/dropbox-reduce-explorer-cpu-usage#9f8f3cb9fec63cfe3c8922800eb4fa1e4942c9b2</id>
+        <link href="https://windhawk.net/mods/dropbox-reduce-explorer-cpu-usage"/>
+        <updated>2025-10-05T08:26:46.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="dropboxreduceexplorercpuusageonsync">Dropbox: Reduce Explorer CPU usage on sync</h1>
+<p>Dropbox can spam Explorer with <code>SHChangeNotify</code> while syncing many files, which may cause UI lag and high CPU usage by Explorer from constant overlay/icon updates.</p>
+<p>This mod hooks <code>SHChangeNotify</code> <strong>inside Dropbox.exe only</strong> and turns it into a no-op.</p>
+<p><strong>Trade-off:</strong> Explorer won’t receive live overlay updates from Dropbox; press <strong>F5</strong> (Refresh) in a folder view to see updated sync icons.</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Only affects Dropbox’s own calls to <code>SHChangeNotify</code>. Syncing and file I/O are unaffected, but updating the sync state indication in Explorer requires a manual refresh.</li>
+<li>Disable or uninstall the mod to restore normal behavior.</li>
+</ul>]]></content>
         <author>
-            <name>Guerra24</name>
-            <uri>https://github.com/Guerra24</uri>
+            <name>David Trapp (CherryDT)</name>
+            <uri>https://github.com/CherryDT</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Remove "Exit Fullscreen" popup in Chrome 1.1]]></title>
-        <id>https://windhawk.net/mods/remove-fullscreen-popup-chrome#332fbde670638a896bcbf760f8a2648bf572f6f2</id>
+        <title type="html"><![CDATA[Control Discord's Registered Games 1.0]]></title>
+        <id>https://windhawk.net/mods/xs-discord-control-registered-games#b8df6eec6983634e5ba6bca3d01997a481302a82</id>
+        <link href="https://windhawk.net/mods/xs-discord-control-registered-games"/>
+        <updated>2025-10-05T05:20:40.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="synopsis">Synopsis</h2>
+<p>This mod lets you effectively disable or control which games Discord can see and add to its <strong>Registered Games</strong> list.</p>
+<h2 id="background">Background</h2>
+<p>Discord publishes games you run to your friends via the Registered Games feature. The built-in controls are awkward:</p>
+<ul>
+<li>Disabling <strong>Share my activity</strong> prevents Discord from announcing your activity, but Discord still scans and adds games to Registered Games.</li>
+<li>To hide a single game while keeping <strong>Share my activity</strong> enabled, you currently must:</li>
+</ul>
+<ol>
+<li>Disable <strong>Share my activity</strong>.</li>
+<li>Run the game and wait for it to appear in Registered Games (Discord scans every 5 seconds).</li>
+<li>Toggle detection off for the game in Registered Games.</li>
+<li>Re-enable <strong>Share my activity</strong>.</li>
+</ol>
+<p>Discord identifies games by executable name but doesn't let you pre-add any.</p>
+<h2 id="howdiscorddetectsgames">How Discord detects games</h2>
+<p>Discord takes a snapshot of running processes every 5 seconds, filters process names against its known-game list, and then adds matches to Registered Games.</p>
+<p>This cannot be disabled.</p>
+<h2 id="whatthismoddoes">What this mod does</h2>
+<p>The mod hooks the process-snapshot function and either:</p>
+<ul>
+<li>reports no running processes, or</li>
+<li>returns only the process names explicitly allowed by you.</li>
+</ul>
+<h2 id="settingprocessallowlist">Setting: Process Allow List</h2>
+<p>Contains executable names (including extension) that Discord is allowed to see.</p>
+<ul>
+<li>Default: <em>empty</em> (Discord sees no running processes).</li>
+<li>Example: add <code>UNDERTALE.exe</code> and save → Discord will be able to detect Undertale.</li>
+</ul>
+<p>When the list is empty the mod has a slightly smaller footprint because no pre-filtering is needed.</p>
+<h2 id="personalnote">Personal note</h2>
+<p>I find <strong>Registered Games</strong> unnecessary: most launchers already provide richer friend/game integration.
+I've never used Discord’s Registered Games other than to disable things on there.</p>]]></content>
+        <author>
+            <name>Xetrill</name>
+            <uri>https://github.com/Xetrill</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Winver Custom Text 1.0.1]]></title>
+        <id>https://windhawk.net/mods/winver-custom-text#33693f48afb4a91bd46553f4b0e3adb280585f48</id>
+        <link href="https://windhawk.net/mods/winver-custom-text"/>
+        <updated>2025-10-05T05:02:54.000Z</updated>
+        <content type="html"><![CDATA[<p>Fixed README, and fixed up some other things</p>]]></content>
+        <author>
+            <name>Thomas Shrader</name>
+            <uri>https://github.com/ilikecoding-197</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Control Panel Color Fix 1.0]]></title>
+        <id>https://windhawk.net/mods/control-panel-color-fix#b78d9f04997ec0b281fd2cdf88224bfbe50fb737</id>
+        <link href="https://windhawk.net/mods/control-panel-color-fix"/>
+        <updated>2025-09-28T15:12:54.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="controlpanelcolorfix">Control Panel Color Fix</h1>
+<p>Restores dark styling to the hardcoded white header and sidebar that can appear when applying a custom dark theme.</p>
+<p>Only works on Windows 11.</p>
+<p>Based on earlier uxtheme-hook versions by rounk-ctrl.</p>]]></content>
+        <author>
+            <name>chip33</name>
+            <uri>https://github.com/chip33</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[No Properties Icon 1.0.2]]></title>
+        <id>https://windhawk.net/mods/no-properties-icon#0463072820d46c7cdb6ef91b5d8c90b0c9ab3877</id>
+        <link href="https://windhawk.net/mods/no-properties-icon"/>
+        <updated>2025-09-26T22:11:04.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fix issue with icon of control panel applets not showing in classic Alt+Tab</li>
+<li>Fix issue with System Properties forcing the window to show on the taskbar</li>
+</ul>]]></content>
+        <author>
+            <name>xalejandro</name>
+            <uri>https://github.com/tetawaves</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Firefox border fix for Classic theme 1.5]]></title>
+        <id>https://windhawk.net/mods/firefox-border-fix#2c6f8bb4ea57eb331bb7fd98c818473e13c0c93c</id>
+        <link href="https://windhawk.net/mods/firefox-border-fix"/>
+        <updated>2025-09-26T13:39:32.000Z</updated>
+        <content type="html"><![CDATA[<p>Tested this for a few days, works well. Avoid heavy ThemeChanged message.</p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Aerexplorer 1.8.2]]></title>
+        <id>https://windhawk.net/mods/aerexplorer#3a8449ff632ea8c696a4648a3e77db303edfa501</id>
+        <link href="https://windhawk.net/mods/aerexplorer"/>
+        <updated>2025-09-25T00:05:21.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Rewrite drive group localization retrieval function</li>
+</ul>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Select filename extension on double F2 1]]></title>
+        <id>https://windhawk.net/mods/explorer-double-f2-rename-extension#a4e2bd7298358892902bf017b51a62de9037121b</id>
+        <link href="https://windhawk.net/mods/explorer-double-f2-rename-extension"/>
+        <updated>2025-09-24T20:14:05.000Z</updated>
+        <content type="html"><![CDATA[<p>QTTabbar and some other tools provide a feature where double-pressing F2 to
+rename a file first selects the entire name (existing Explorer behavior) but the
+second press selects just the extension. That's handy to e.g. rename a zip file
+to a cbz file. This mod implements that same feature: double-press F2
+in Explorer to rename a file's extension.</p>
+<p>This mod works great together with
+<a href="https://windhawk.net/mods/extension-change-no-warning">extension-change-no-warning</a>.</p>]]></content>
+        <author>
+            <name>Marnes &lt;leaumar@sent.com&gt;</name>
+            <uri>https://github.com/leaumar</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Firefox border fix for Classic theme 1.4]]></title>
+        <id>https://windhawk.net/mods/firefox-border-fix#68b80910a3c64d0989e1549863941a8c68596aa3</id>
+        <link href="https://windhawk.net/mods/firefox-border-fix"/>
+        <updated>2025-09-23T04:20:01.000Z</updated>
+        <content type="html"><![CDATA[<p>Restore the check for window visibility</p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Magnifier Headless Mode 0.7.0]]></title>
+        <id>https://windhawk.net/mods/magnifier-headless#4b4007eafe60bd25a02d29acac4dd03eca7aaba5</id>
+        <link href="https://windhawk.net/mods/magnifier-headless"/>
+        <updated>2025-09-22T16:33:12.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="magnifierheadlessmode">Magnifier Headless Mode</h1>
+<p>This mod blocks the Magnifier window from ever appearing, while keeping the zoom functionality (Win + <code>-</code> and Win + <code>+</code>) available. It also prevents the Magnifier from showing up in the taskbar.</p>
+<p>This is achieved by hooking several Windows API functions (<code>CreateWindowExW</code>, <code>ShowWindow</code>, <code>SetWindowPos</code>, and <code>SetWindowLongPtrW</code>) to intercept any attempts to create, show, or change the style of the Magnifier window.</p>]]></content>
+        <author>
+            <name>BCRTVKCS</name>
+            <uri>https://github.com/bcrtvkcs</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Firefox border fix for Classic theme 1.3]]></title>
+        <id>https://windhawk.net/mods/firefox-border-fix#3973e5f426a7fb4016a8b0d769dbd6ea4f6ad696</id>
+        <link href="https://windhawk.net/mods/firefox-border-fix"/>
+        <updated>2025-09-22T13:39:09.000Z</updated>
+        <content type="html"><![CDATA[<p>Previous change broke effect on main window, this seemingly fixes</p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Firefox border fix for Classic theme 1.2]]></title>
+        <id>https://windhawk.net/mods/firefox-border-fix#2da705bb7dbd2d339729b962a9aec9be12440538</id>
+        <link href="https://windhawk.net/mods/firefox-border-fix"/>
+        <updated>2025-09-22T05:14:04.000Z</updated>
+        <content type="html"><![CDATA[<p>Improve reliability and avoid glitches</p>]]></content>
+        <author>
+            <name>anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Remove "Exit Fullscreen" popup in Chrome 1.2]]></title>
+        <id>https://windhawk.net/mods/remove-fullscreen-popup-chrome#b77c09aa3af21e4de54f95fed3ad545ffee97448</id>
         <link href="https://windhawk.net/mods/remove-fullscreen-popup-chrome"/>
-        <updated>2025-08-22T19:59:34.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="removeexitfullscreenpopupinchromeoperaoperagx">Remove "Exit Fullscreen" popup in Chrome/Opera/OperaGX</h1>
-<p>A simple mod to remove the annoying “TO EXIT FULLSCREEN PRESS ESC/F11” popup in Chrome, Opera and OperaGX.</p>
-<p><img src="https://raw.githubusercontent.com/lorenzoc01/remove-chrome-fullscreen-popup/main/screenshots/chrome.png" alt="Chrome" />
-<img src="https://raw.githubusercontent.com/lorenzoc01/remove-chrome-fullscreen-popup/main/screenshots/operagx.png" alt="OperaGX" /></p>
-<h2 id="important">⚠ Important</h2>
-<p>Based on testing, the mod works as intended. However, it <strong>may also hide other windows</strong> that share similar properties with the popup.</p>
-<p>Check the <a href="https://github.com/lorenzoc01/remove-chrome-fullscreen-popup">Github Repo</a> for more details.</p>]]></content>
+        <updated>2025-09-20T19:32:08.000Z</updated>
+        <content type="html"><![CDATA[<p>Add support for Brave and Edge browsers</p>]]></content>
         <author>
             <name>lorenzoc01</name>
             <uri>https://github.com/lorenzoc01</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Office UI Reverter 1.0.0]]></title>
-        <id>https://windhawk.net/mods/office-ui-reverter#831a104114b7c9b8afab89247e83a17f99694eb4</id>
-        <link href="https://windhawk.net/mods/office-ui-reverter"/>
-        <updated>2025-08-22T13:57:17.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="officeuireverter">Office UI Reverter</h1>
-<p>Reverts the <strong>Office 2022+/Microsoft 365 UI</strong> back to the look of <strong>Office 2019</strong> or <strong>Office 2016</strong>.</p>
-<p>Some users prefer the older, less rounded, less visually distracting, and more compact Ribbon UI. This mod lets you force Office to render with those styles.</p>
-<h2 id="features">Features</h2>
-<ul>
-<li>Choose between:</li>
-<li><strong>Default</strong> (no modifications)</li>
-<li><strong>Office 2019</strong></li>
-<li><strong>Office 2016</strong></li>
-<li>Works with multiple Office apps (Word, Excel, PowerPoint, Outlook, OneNote, Publisher, Access).</li>
-<li>UI style patching is permanent throughout the lifetime of the process; mod loading/unloading won't result in unexpected behavior and crashes.</li>
-</ul>
-<h2 id="screenshots">Screenshots</h2>
-<h3 id="office2016">Office 2016</h3>
-<p><img src="https://i.imgur.com/PaxRT8T.png" alt="Office 2016 style preview" /></p>
-<h3 id="office2019">Office 2019</h3>
-<p><img src="https://i.imgur.com/9gOgYxY.png" alt="Office 2019 style preview" /></p>
-<h2 id="note">⚠️ Note</h2>
-<ul>
-<li>Early injection to Office processes is required to patch the UI style. This means the process used to launch Office must not be excluded from Windhawk injection.</li>
-<li>Please close all windows of an Office program and relaunch it to apply the new style.</li>
-<li>Older styles may lack icons for new features such as <em>Copilot</em>. Those are not covered by this mod.</li>
-<li>Be advised that Microsoft can remove the older styles anytime in the future. When that happens, I do not plan on resurrecting the older styles.</li>
-</ul>
-<h2 id="technicaldetails">Technical Details</h2>
-<ul>
-<li>Hooks <code>LoadLibraryExW</code> to detect when <code>mso40uiWin32Client.dll</code> is loaded.</li>
-<li>Locates and patches the internal <code>VisualVersion::GetVisualStyleForSurface()</code> function.</li>
-<li>Replaces the return value with your selected style.</li>
-</ul>
-<h2 id="compatibility">Compatibility</h2>
-<ul>
-<li>Works with <strong>Office 2022+ perpetual</strong> and <strong>Microsoft 365 desktop apps</strong>. Office 2019 and older are <strong>not</strong> supported.</li>
-<li>Supports x64 and ARM64 builds. 32-bit x86 is <strong>not</strong> supported.</li>
-<li>Tested on <strong>Windows 11 23H2 and 24H2</strong>, should also work on <strong>Windows 10</strong> with latest Office builds.</li>
-</ul>]]></content>
-        <author>
-            <name>Amrsatrio</name>
-            <uri>https://github.com/Amrsatrio</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Classic Conhost [Deprecated] 1.0.4]]></title>
-        <id>https://windhawk.net/mods/classic-conhost#df270512478c2bfbca51404953790687d18bdc52</id>
-        <link href="https://windhawk.net/mods/classic-conhost"/>
-        <updated>2025-08-22T12:29:39.000Z</updated>
+        <title type="html"><![CDATA[Old Regedit Tree Icons 1.0.1]]></title>
+        <id>https://windhawk.net/mods/old-regedit-tree-icons#ef91bc164a6e483c54e1796c80d328ece473f582</id>
+        <link href="https://windhawk.net/mods/old-regedit-tree-icons"/>
+        <updated>2025-09-16T18:18:54.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Remove erroneous <code>SetPriorityClass</code> call</li>
-<li>Update mod title and README to make deprecation more clear</li>
+<li>Support Windows 7</li>
 </ul>]]></content>
         <author>
             <name>aubymori</name>
@@ -109,86 +234,33 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Disable grouping on the taskbar 1.3.10]]></title>
-        <id>https://windhawk.net/mods/taskbar-grouping#33da2cbc03614b05db6da7fbcaf009ca7060e2e6</id>
-        <link href="https://windhawk.net/mods/taskbar-grouping"/>
-        <updated>2025-08-22T07:50:39.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>The "Place ungrouped items together" option can now be applied only for non-pinned items.</li>
-<li>Fixed the mod not applying on boot when used with ExplorerPatcher.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Translucent Windows 1.6.3]]></title>
-        <id>https://windhawk.net/mods/translucent-windows#796ddb18e418ccf836aff5de138b2e5fdd783320</id>
-        <link href="https://windhawk.net/mods/translucent-windows"/>
-        <updated>2025-08-22T07:09:49.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed text alpha blending method, which now affects all texts rendered from GDI</li>
-<li>Fixed bug in a symbol signature resulting in a prolonged symbol fetching popup window</li>
-<li>Minor custom theme tweaks</li>
-</ul>]]></content>
-        <author>
-            <name>Undisputed00x</name>
-            <uri>https://github.com/Undisputed00x</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Explorer Tabs Session Saver 1.0.0]]></title>
-        <id>https://windhawk.net/mods/explorer-tabs-session-saver#d68af8498ecee1053d17b0deffc195638d859df2</id>
-        <link href="https://windhawk.net/mods/explorer-tabs-session-saver"/>
-        <updated>2025-08-19T19:08:48.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="explorertabssessionsaver">Explorer Tabs Session Saver</h1>
-<p>This mod saves open Explorer tabs and automatically restores them when Explorer restarts.</p>
-<p><img src="https://i.imgur.com/5ehPFaL.gif" alt="Demonstration" /></p>
-<p>It works independently of the built-in Windows feature "Restore previous folder windows at logon".</p>
-<p>Tab session save path - C:\Users\"User"\AppData\Roaming\WindhawkModsData\explorer-tabs-session-saver\LastExplorerTabs.txt</p>
-<p><strong>NOTE:</strong> To restore tabs into a single Explorer window, the <a href="https://github.com/w4po/ExplorerTabUtility">Explorer Tab Utility</a> program is required with its "Window Hook" feature enabled (or any similar program with such functionality). Otherwise, each tab will be restored in its own separate window.</p>
-<p><em>Tested on Windows 11 24H2 26100.4946.</em></p>]]></content>
-        <author>
-            <name>noX1st</name>
-            <uri>https://github.com/noX1st</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fix white flashes in explorer 1.1]]></title>
-        <id>https://windhawk.net/mods/fix-explorer-white-flash#ad4983dc8113ccf21e2bc5aecc5fadec6b58965e</id>
-        <link href="https://windhawk.net/mods/fix-explorer-white-flash"/>
-        <updated>2025-08-19T12:37:52.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Bug fixes</li>
-<li>Code cleanup</li>
-</ul>]]></content>
-        <author>
-            <name>Mgg Sk</name>
-            <uri>https://github.com/MGGSK</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Custom Shutdown Dialog 1.2.0]]></title>
-        <id>https://windhawk.net/mods/custom-shutdown-dialog#cf2747a1e098e6c5840eadc398ae88f1b87271cc</id>
-        <link href="https://windhawk.net/mods/custom-shutdown-dialog"/>
-        <updated>2025-08-17T18:10:22.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Don't rely on symbol hooks for shutdown dialog</li>
-<li>Allow user to replace disconnect dialog</li>
-</ul>]]></content>
+        <title type="html"><![CDATA[Old Regedit Tree Icons 1.0.0]]></title>
+        <id>https://windhawk.net/mods/old-regedit-tree-icons#cef63c833694e83e1be21b120e64b507a28c5db7</id>
+        <link href="https://windhawk.net/mods/old-regedit-tree-icons"/>
+        <updated>2025-09-15T18:18:14.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="oldregedittreeicons">Old Regedit Tree Icons</h1>
+<p>In Windows XP and before, the Registry Editor's tree view had its own icons
+instead of using system icons. This mod reverts that behavior and makes it use
+its own icons again.</p>
+<h2 id="configuration">Configuration</h2>
+<p>You will need a copy of regedit.exe from Windows XP or before for its icons. Once
+you have this, provide the path to it in the mod options.</p>
+<p><strong>Before</strong>:</p>
+<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/old-regedit-tree-icons/before.png" alt="Before" /></p>
+<p><strong>After</strong>:</p>
+<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/old-regedit-tree-icons/after.png" alt="After" /></p>]]></content>
         <author>
             <name>aubymori</name>
             <uri>https://github.com/aubymori</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Taskbar Clock Customization 1.6.2]]></title>
-        <id>https://windhawk.net/mods/taskbar-clock-customization#725fd582986a072d0dc02c11281a56d30c3c2576</id>
-        <link href="https://windhawk.net/mods/taskbar-clock-customization"/>
-        <updated>2025-08-15T19:15:21.000Z</updated>
+        <title type="html"><![CDATA[Classic Explorer navigation bar 1.0.8]]></title>
+        <id>https://windhawk.net/mods/explorer-frame-classic#6f51e042633377e716a98ab8daae0c62f03cbbe7</id>
+        <link href="https://windhawk.net/mods/explorer-frame-classic"/>
+        <updated>2025-09-13T00:55:08.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Fixed performance metrics (upload/download speed) always showing zero values on non-English systems. The fix in version 1.6.1 was incomplete.</li>
+<li>Fixed compatibility with a recent Windows 11 update. You may need to restart Explorer after updating the mod to apply the fix.</li>
 </ul>]]></content>
         <author>
             <name>m417z</name>
@@ -196,17 +268,30 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Taskbar Clock Customization 1.6.1]]></title>
-        <id>https://windhawk.net/mods/taskbar-clock-customization#7068e6957690dc8bb1c1d1449041593fc34ff51e</id>
-        <link href="https://windhawk.net/mods/taskbar-clock-customization"/>
-        <updated>2025-08-15T17:09:53.000Z</updated>
+        <title type="html"><![CDATA[Shadowplay anti-disable 1.1]]></title>
+        <id>https://windhawk.net/mods/shadowplay-do-not-disable#fb5aa7b3d86de82a02b608d181be01def5c0afec</id>
+        <link href="https://windhawk.net/mods/shadowplay-do-not-disable"/>
+        <updated>2025-09-03T23:21:57.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Added an option to customize the weather units (USCS/SI).</li>
-<li>Improved performance metrics formatting to reduce text width changes:</li>
-<li>CPU and RAM show 0-99 values, and single digit values are padded with spaces.</li>
-<li>Upload/download speeds always show MB/s in a way that keeps the width constant for most values. Also, the current locale decimal separator is used (e.g. 12.3 or 12,3).</li>
-<li>Switched to a more accurate RAM usage calculation method.</li>
-<li>Fixed performance metrics (upload/download speed, CPU, RAM) always showing zero values on non-English systems.</li>
+<li>Patch check regarding Widevine L1 Hardware-DRM</li>
+<li>Fixes audio and video playback caused by a Chrome Update</li>
+<li>Fixes ShadowPlay sometimes disabling when opening edge and immediately opening a tab playing DRM video</li>
+</ul>]]></content>
+        <author>
+            <name>Temm</name>
+            <uri>https://github.com/leumasme</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 Taskbar Styler 1.5.1]]></title>
+        <id>https://windhawk.net/mods/windows-11-taskbar-styler#423d9610b97bf4c6b11590948ca171b9b56a3c81</id>
+        <link href="https://windhawk.net/mods/windows-11-taskbar-styler"/>
+        <updated>2025-09-01T21:04:11.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Updated themes: TranslucentTaskbar, Windows7.</li>
+<li>Added themes: Plasma, WindowGlass, BottomDensy (NoInd).</li>
+<li>Added ThemeResource support to WindhawkBlur.</li>
+<li>Fixed the mod having no effect on the keyboard layout popup dialog.</li>
 </ul>]]></content>
         <author>
             <name>m417z</name>
@@ -214,129 +299,16 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Fix white flashes in explorer 1.0]]></title>
-        <id>https://windhawk.net/mods/fix-explorer-white-flash#8ea73ccb7d2ede7776bda2e243360a34201e6552</id>
+        <title type="html"><![CDATA[Fix white flashes in explorer 1.2]]></title>
+        <id>https://windhawk.net/mods/fix-explorer-white-flash#d52cfd08d6535f2b921a39b202e23039744e912b</id>
         <link href="https://windhawk.net/mods/fix-explorer-white-flash"/>
-        <updated>2025-08-11T16:33:39.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="fixwhiteflashesinexplorer">Fix white flashes in explorer</h1>
-<p>Fixes white flashes when creating new tabs in "This PC".</p>
-<h3 id="before">Before</h3>
-<p><img src="https://raw.githubusercontent.com/MGGSK/MGGSK/refs/heads/main/WindhawkModReadmeImages/fix-explorer-white-flash-before.png" alt="Before" /></p>
-<h3 id="after">After</h3>
-<p><img src="https://raw.githubusercontent.com/MGGSK/MGGSK/refs/heads/main/WindhawkModReadmeImages/fix-explorer-white-flash-after.png" alt="After" /></p>]]></content>
-        <author>
-            <name>Mgg Sk</name>
-            <uri>https://github.com/MGGSK</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Win+D per monitor(show desktop) 1.1.20250811]]></title>
-        <id>https://windhawk.net/mods/win-d-per-monitor#1e6e18f3884de1bcaecd5eeb0db5a4ced8155e93</id>
-        <link href="https://windhawk.net/mods/win-d-per-monitor"/>
-        <updated>2025-08-11T09:47:39.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="newfeatures">New Features</h3>
-<ul>
-<li>Add option to ignore topmost tool windows</li>
-<li>Add configurable minimum window size</li>
-<li>Optimize window switching to prevent taskbar flashing</li>
-</ul>
-<h3 id="fixes">Fixes</h3>
-<ul>
-<li>https://github.com/ramensoftware/windhawk/discussions/597</li>
-<li>https://github.com/ramensoftware/windhawk-mods/issues/2056</li>
-</ul>]]></content>
-        <author>
-            <name>easyatm</name>
-            <uri>https://github.com/easyatm</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar Clock Customization 1.6]]></title>
-        <id>https://windhawk.net/mods/taskbar-clock-customization#8eb638d7f86c52bde93c6050ca3232bdf7baa5ef</id>
-        <link href="https://windhawk.net/mods/taskbar-clock-customization"/>
-        <updated>2025-08-09T17:12:17.000Z</updated>
+        <updated>2025-08-31T10:58:57.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Added patterns for realtime system performance metrics:</li>
-<li><code>%upload_speed%</code> - system-wide upload transfer rate.</li>
-<li><code>%download_speed%</code> - system-wide download transfer rate.</li>
-<li><code>%cpu%</code> - CPU usage.</li>
-<li><code>%ram%</code> - RAM usage.</li>
-<li>Added the <code>%weather%</code> pattern for weather information, powered by <a href="https://wttr.in/">wttr.in</a>.</li>
-<li>Added the content mode option to web content items, which can be used to strip/decode HTML and XML tags.</li>
-<li>Added the content search/replace option to web content items to apply regular expression-based search and replace operations to the extracted content.</li>
-<li>Improved compatibility with status bar programs such as YASB and Zebar.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Classic Explorer Drag-n-Drop Lite 1.0]]></title>
-        <id>https://windhawk.net/mods/classic-explorer-dragdrop-lite#8a1dacf7d8056396f8ffab60509942a8e9817a6d</id>
-        <link href="https://windhawk.net/mods/classic-explorer-dragdrop-lite"/>
-        <updated>2025-08-08T04:50:30.000Z</updated>
-        <content type="html"><![CDATA[<p>This is a maximally stripped down version of the mod "Classic Explorer Drag/Drop" by Isabella Lulamoon (@kawapure).
-It is intended for restoring the Drag &amp; Drop image of the items being dragged the way it was in Win 95 - Win XP.</p>
-<p>The differences with the original mod are as follows:</p>
-<ul>
-<li><p>This mod does not download the debug symbols</p></li>
-<li><p>This mod hooks only a WinAPI function, thus architecture-independent (can work on ARM, for instance)</p></li>
-<li><p>From the user's perspective this mod enables effect of dragged items in cases where the original mod suppresses. 
-So, expect visibility of the dragged items in more use cases.</p></li>
-</ul>]]></content>
-        <author>
-            <name>anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dark mode context menus 1.3.1]]></title>
-        <id>https://windhawk.net/mods/dark-menus#ca342adbf51da6ba433036de9b0704c95d010b08</id>
-        <link href="https://windhawk.net/mods/dark-menus"/>
-        <updated>2025-08-07T20:43:32.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fix crashes in Firefox as reported in <a href="https://github.com/MGGSK/DarkMenus/issues/9">this issue</a>.</li>
+<li>The mod is now compatible with light mode (https://github.com/ramensoftware/windhawk-mods/issues/2378)</li>
 </ul>]]></content>
         <author>
             <name>Mgg Sk</name>
             <uri>https://github.com/MGGSK</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Titlebar For Everyone 0.4]]></title>
-        <id>https://windhawk.net/mods/titlebar-for-everyone#bc652e3d04758de30858d999319b89858cc629e6</id>
-        <link href="https://windhawk.net/mods/titlebar-for-everyone"/>
-        <updated>2025-08-07T15:47:32.000Z</updated>
-        <content type="html"><![CDATA[<p>Fix the regression with Visual Studio</p>]]></content>
-        <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Explorer Unlocked Toolbars Fix (WINAPI) 1.0.0]]></title>
-        <id>https://windhawk.net/mods/explorer-no-toolbars-bottom-gripper#5a4f307b5cdc11476b5378306d074f44de6ff65f</id>
-        <link href="https://windhawk.net/mods/explorer-no-toolbars-bottom-gripper"/>
-        <updated>2025-08-07T11:12:12.000Z</updated>
-        <content type="html"><![CDATA[<p>This mod does the same as the mod <code>Explorer Unlocked Toolbars Fix</code> but does so by hooking only a WINAPI function, 
-so does not need the download of the debugging symbols.</p>]]></content>
-        <author>
-            <name>anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Translucent Windows 1.6.2]]></title>
-        <id>https://windhawk.net/mods/translucent-windows#79eae3a6c6eedc3c5c77b7eedaaf2121ddfa71e9</id>
-        <link href="https://windhawk.net/mods/translucent-windows"/>
-        <updated>2025-08-07T01:36:02.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed ExplorerPatcher taskbar theme bugs</li>
-</ul>]]></content>
-        <author>
-            <name>Undisputed00x</name>
-            <uri>https://github.com/Undisputed00x</uri>
         </author>
     </entry>
 </feed>

@@ -1,6 +1,14 @@
-## 1.3 ([Aug 24, 2025](https://github.com/ramensoftware/windhawk-mods/blob/8374c0bb906d35a94b2a742e57fb43fa50589c3f/mods/cef-titlebar-enabler-universal.wh.cpp))
+## 1.4 ([Oct 5, 2025](https://github.com/ramensoftware/windhawk-mods/blob/18386b2919a118f37354895e6e164adb29d37956/mods/cef-titlebar-enabler-universal.wh.cpp))
 
-Update cef-titlebar-enabler-universal.wh.cpp
+CEF/Spotify Tweaks 1.4
+
+Updated version number and supported Spotify versions. Added block automatic updates feature.
+
+## 1.3 ([Aug 24, 2025](https://github.com/ramensoftware/windhawk-mods/blob/bdd9ada4189479dd475c3db41ee033f5ef190a17/mods/cef-titlebar-enabler-universal.wh.cpp))
+
+* Add support for Spotify 1.2.66-1.2.71
+* Changing the playback speed is no longer supported on Spotify 1.2.67 and higher due to Spotify blocking the way this mod changed it
+* Fix basic frames being drawn wrongly when entering and exiting the full-screen mode, when the native frames are disabled
 
 ## 1.2 ([Jun 5, 2025](https://github.com/ramensoftware/windhawk-mods/blob/4341502030118d63157c4bc43d74f199aa667e19/mods/cef-titlebar-enabler-universal.wh.cpp))
 
