@@ -1,3 +1,33 @@
+## 1.3.9 ([Dec 23, 2025](https://github.com/ramensoftware/windhawk-mods/blob/8d55be3283a54c65186cc221e3502adb27413d04/mods/taskbar-vertical.wh.cpp))
+
+* Fixed gap between the taskbar and the Start menu when the taskbar is on the right.
+* Improved Start menu handling, especially when opened on a different monitor.
+
+## 1.3.8 ([Dec 19, 2025](https://github.com/ramensoftware/windhawk-mods/blob/bfba1b55ec10ecd3f7b78009533838598191141d/mods/taskbar-vertical.wh.cpp))
+
+* Fixed drag and drop for tray icons.
+* Fixed secondary taskbar clock rotation on startup.
+* Fixed badge orientation for taskbar icons (contribution by Lubomir Stanko).
+* Fixed notification center being shown on the primary monitor when clicking on the secondary monitor clock.
+* Fixed labels vertical alignment when using small icons.
+* Fixed the start menu sliding over the taskbar with the "Adjust Start menu animation" option.
+* Improved start menu handling with multiple monitors.
+* Fixed broken share picker UI layout.
+
+## 1.3.7 ([Oct 25, 2025](https://github.com/ramensoftware/windhawk-mods/blob/7f2f2a00bede1e5e55dc49331996d18ed88547cd/mods/taskbar-vertical.wh.cpp))
+
+* Made the start menu animation adjustment optional and off by default, since it's incompatible with the Phone Link sidebar and with some Start Menu Styler themes.
+
+## 1.3.6 ([Oct 25, 2025](https://github.com/ramensoftware/windhawk-mods/blob/150cfc38691f0f7f36e548fd8bc6e41e5c74dcf0/mods/taskbar-vertical.wh.cpp))
+
+* Reworked Start menu positioning:
+  * The [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) is now supported.
+  * The "Start menu width" option has been removed, as it's no longer necessary.
+  * The Start menu now animates from the taskbar side using a technique discovered by [SandTechStuff](https://github.com/SandTechStuff) (not available for the redesigned Start menu).
+  * The account card at the bottom of the Start menu is no longer truncated.
+* Improved support for the new battery percentage option.
+* Settings now apply to tray elements automatically. Previously, the mod had to be reloaded in some cases.
+
 ## 1.3.5 ([Jul 16, 2025](https://github.com/ramensoftware/windhawk-mods/blob/97c72fa2c85a13393590bdf73464db7c6d19e8ae/mods/taskbar-vertical.wh.cpp))
 
 * Fixed misplaced thumbnail previews after a recent Windows 11 update.

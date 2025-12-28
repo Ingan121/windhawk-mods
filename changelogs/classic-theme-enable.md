@@ -1,3 +1,19 @@
+## 1.0.8 ([Dec 12, 2025](https://github.com/ramensoftware/windhawk-mods/blob/e130982f86c22bf23884a66f4a59510d2fb6b99d/mods/classic-theme-enable.wh.cpp))
+
+Add Classic Theme UIFILE Fix
+
+## 1.0.7 ([Dec 6, 2025](https://github.com/ramensoftware/windhawk-mods/blob/6a6219103e4213f15f2495a07651fa165653ee38/mods/classic-theme-enable.wh.cpp))
+
+Update the tutorial for WH v. 1.7
+
+## 1.0.6 ([Nov 16, 2025](https://github.com/ramensoftware/windhawk-mods/blob/99d558b204a080b3f1974b47289ae94c205571e9/mods/classic-theme-enable.wh.cpp))
+
+Update the tutotial.
+
+## 1.0.5 ([Oct 12, 2025](https://github.com/ramensoftware/windhawk-mods/blob/ae58112e761ebb39d2885a8a108f4bbb626b532a/mods/classic-theme-enable.wh.cpp))
+
+Improve readme.
+
 ## 1.0.4 ([Nov 9, 2024](https://github.com/ramensoftware/windhawk-mods/blob/93a4f6716925c46ae06d6f8d074d01fbede704c1/mods/classic-theme-enable.wh.cpp))
 
 Update readme

@@ -1,3 +1,28 @@
+## 1.4.1 ([Dec 23, 2025](https://github.com/ramensoftware/windhawk-mods/blob/4301dbfbb94e430a66f346b5454ce0d7e03b77e3/mods/dark-menus.wh.cpp))
+
+- Fixed: Firefox crashes after update 1.4 (https://github.com/MGGSK/DarkMenus/issues/19)
+
+## 1.4 ([Dec 22, 2025](https://github.com/ramensoftware/windhawk-mods/blob/35fe88158b7b0b747cb24906a09716b9bb2e15d6/mods/dark-menus.wh.cpp))
+
+- Fixed: The white outline problem in the latest version (https://github.com/MGGSK/DarkMenus/issues/18)
+- Added support for mdi windows
+- Code cleanup
+- Improved readme
+
+## 1.3.4 ([Dec 21, 2025](https://github.com/ramensoftware/windhawk-mods/blob/334e79cea972761014dadc9cc0b5118eb18d0521/mods/dark-menus.wh.cpp))
+
+- Fixed: Outline in right click menu (https://github.com/MGGSK/DarkMenus/issues/17)
+
+## 1.3.3 ([Dec 20, 2025](https://github.com/ramensoftware/windhawk-mods/blob/5af46458a081fc5d471092dc08018f377125d915/mods/dark-menus.wh.cpp))
+
+- Fixed: Input Director v2.3 (https://github.com/MGGSK/DarkMenus/issues/16)
+- Fixed: Black screen/Rendering failure in Electron apps (Jellyfin, RStudio) due to GDI painting conflict (https://github.com/MGGSK/DarkMenus/issues/14)
+
+## 1.3.2 ([Dec 7, 2025](https://github.com/ramensoftware/windhawk-mods/blob/3dbcdc2e02dfec61723b97eeb3d9300523e759f4/mods/dark-menus.wh.cpp))
+
+- A better fix for https://github.com/MGGSK/DarkMenus/issues/9
+- Code cleanup
+
 ## 1.3.1 ([Aug 7, 2025](https://github.com/ramensoftware/windhawk-mods/blob/ca342adbf51da6ba433036de9b0704c95d010b08/mods/dark-menus.wh.cpp))
 
 - Fix crashes in Firefox as reported in [this issue](https://github.com/MGGSK/DarkMenus/issues/9).
