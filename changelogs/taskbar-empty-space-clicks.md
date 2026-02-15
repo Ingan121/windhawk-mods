@@ -1,3 +1,25 @@
+## 2.6 ([Feb 9, 2026](https://github.com/ramensoftware/windhawk-mods/blob/eef7822727b2191233f4019a9c6f69128d083c4e/mods/taskbar-empty-space-clicks.wh.cpp))
+
+- implemented env variable resolution in "Open application, ..." action
+
+## 2.5 ([Jan 17, 2026](https://github.com/ramensoftware/windhawk-mods/blob/4878131bb6c969504ba404f7b38437d7d0eb5209/mods/taskbar-empty-space-clicks.wh.cpp))
+
+- added "Example presets" chapter to mod's description
+- extended "Troubleshooting and Hints" chapters in mod's description
+- Ctrl+Alt+Tab action reworked - now supports consecutive triggers without window constantly re-opening
+- added new action "Switch virtual desktop"
+- bugfixed file logger for Onedrive users
+- bugfixed touch/tap detection on Windows 10 taskbar
+
+## 2.4 ([Dec 28, 2025](https://github.com/ramensoftware/windhawk-mods/blob/d5d60e47eb69f50bfa9ea4dd394d884e95eaf823/mods/taskbar-empty-space-clicks.wh.cpp))
+
+- Implemented support for mouse side buttons (mouse4 and mouse5 buttons) - https://github.com/m1lhaus/windhawk-mods/issues/50
+- Added new actions for media playback control - pause, next track, prev track - https://github.com/m1lhaus/windhawk-mods/issues/51
+- Added Hints section to mod's description
+- Start application action reworked - users can now open URLs and paths in Explorer - https://github.com/m1lhaus/windhawk-mods/issues/53
+- Started applications will now try to start on currently active monitor - https://github.com/m1lhaus/windhawk-mods/issues/52
+- Default keyboard modifiers (all selected) are now ignored - https://github.com/ramensoftware/windhawk-mods/issues/2745#issuecomment-3591791526
+
 ## 2.3 ([Dec 24, 2025](https://github.com/ramensoftware/windhawk-mods/blob/37d5bb9775479a78c2fd5bbfbfd2d04216c42a66/mods/taskbar-empty-space-clicks.wh.cpp))
 
 - send virtual key press to the last active window with `focusPreviousWindow` option - https://github.com/m1lhaus/windhawk-mods/issues/34

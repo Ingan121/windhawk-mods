@@ -2,333 +2,520 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2025-12-28T06:29:32.000Z</updated>
+    <updated>2026-02-15T12:53:40.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
-        <title type="html"><![CDATA[CEF/Spotify Tweaks 1.6]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#27d0559e0c61c89530be8ba21dc6623daac5a23d</id>
-        <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2025-12-28T06:29:32.000Z</updated>
-        <content type="html"><![CDATA[<p>CEF/Spotify Tweaks 1.6</p>]]></content>
+        <title type="html"><![CDATA[Old Login Fade 1.0]]></title>
+        <id>https://windhawk.net/mods/win7-login-fade#05b797cb65b0ea71c099307a5bbe904ce751ee6e</id>
+        <link href="https://windhawk.net/mods/win7-login-fade"/>
+        <updated>2026-02-15T12:53:40.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="oldloginfade">Old Login Fade</h1>
+<ul>
+<li>This mod brings back the old login screen fade effect in Windows 7 and earlier.</li>
+<li>The fade effect is implemented by changing the screen brightness using the <code>SetDeviceGammaRamp</code> function, which is the same method used by the original fade effect.</li>
+<li>You need to set the <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ICM\GdiIcmGammaRange</code> registry value to <code>0x100</code> (DWORD, 256) to allow brightness values below the normal level, which is required for the fade effect to work naturally.</li>
+</ul>]]></content>
         <author>
             <name>Ingan121</name>
             <uri>https://github.com/Ingan121</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Taskbar Clock Customization 1.7]]></title>
-        <id>https://windhawk.net/mods/taskbar-clock-customization#f5c9e38460918ba1fa4b643dedab4ecf42faf03c</id>
-        <link href="https://windhawk.net/mods/taskbar-clock-customization"/>
-        <updated>2025-12-26T23:32:00.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added new system performance metrics patterns:</li>
-<li><code>%total_speed%</code> - combined upload and download transfer rate.</li>
-<li><code>%disk_read%</code> - disk read speed.</li>
-<li><code>%disk_write%</code> - disk write speed.</li>
-<li><code>%disk_total%</code> - combined disk read and write speed.</li>
-<li><code>%gpu%</code> - GPU usage.</li>
-<li><code>%battery%</code> - battery level percentage.</li>
-<li><code>%battery_time%</code> - battery time remaining (charging/discharging time left).</li>
-<li><code>%power%</code> - battery power in watts (negative when discharging, positive when charging).</li>
-<li>Added media player info patterns, based on the work contributed by trashpanda (<a href="https://github.com/kaoshipaws">kaoshipaws</a>):</li>
-<li><code>%media_title%</code> - currently playing media title.</li>
-<li><code>%media_artist%</code> - currently playing media artist.</li>
-<li><code>%media_album%</code> - currently playing media album.</li>
-<li><code>%media_status%</code> - media playback status icon (⏯, ⏸, ⏹).</li>
-<li><code>%media_info%</code> - combined media info (Artist - Title), truncated with ellipsis.</li>
-<li>Added tooltip line mode option to replace the default tooltip instead of appending to it.</li>
-<li>Added network adapter name filter for upload/download metrics.</li>
-<li>Added "single space padding" option for percentage format (useful for monospaced fonts).</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Click on empty taskbar space 2.3]]></title>
-        <id>https://windhawk.net/mods/taskbar-empty-space-clicks#37d5bb9775479a78c2fd5bbfbfd2d04216c42a66</id>
-        <link href="https://windhawk.net/mods/taskbar-empty-space-clicks"/>
-        <updated>2025-12-24T11:57:10.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>send virtual key press to the last active window with <code>focusPreviousWindow</code> option - https://github.com/m1lhaus/windhawk-mods/issues/34</li>
-<li>added new action <code>Toggle Taskbar alignment</code> to toggle between <code>Left</code> and <code>Center</code> taskbar icons alignment - https://github.com/m1lhaus/windhawk-mods/issues/31</li>
-<li>implemented autodetection of ExplorerPatcher - https://github.com/m1lhaus/windhawk-mods/issues/46</li>
-<li>added taskbar type (primary/secondary) as a new condition to action trigger - https://github.com/m1lhaus/windhawk-mods/issues/45</li>
-</ul>]]></content>
-        <author>
-            <name>m1lhaus</name>
-            <uri>https://github.com/m1lhaus</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Virtual Desktop Helper 2.1.0]]></title>
-        <id>https://windhawk.net/mods/virtual-desktop-helper#bf674013e9b1ad958972eb0c5cc632aa1674f17e</id>
-        <link href="https://windhawk.net/mods/virtual-desktop-helper"/>
-        <updated>2025-12-24T10:31:42.000Z</updated>
-        <content type="html"><![CDATA[<p>Add X (alongside E, N, Z) key option for "Switch to Next Desktop" hotkey, which cycles through virtual desktops in a wrap-around manner (1→2→3→…→1)</p>]]></content>
-        <author>
-            <name>u2x1</name>
-            <uri>https://github.com/u2x1</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dark mode context menus 1.4.1]]></title>
-        <id>https://windhawk.net/mods/dark-menus#4301dbfbb94e430a66f346b5454ce0d7e03b77e3</id>
-        <link href="https://windhawk.net/mods/dark-menus"/>
-        <updated>2025-12-23T10:34:48.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed: Firefox crashes after update 1.4 (https://github.com/MGGSK/DarkMenus/issues/19)</li>
-</ul>]]></content>
-        <author>
-            <name>Mgg Sk</name>
-            <uri>https://github.com/MGGSK</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Vertical Taskbar for Windows 11 1.3.9]]></title>
-        <id>https://windhawk.net/mods/taskbar-vertical#8d55be3283a54c65186cc221e3502adb27413d04</id>
-        <link href="https://windhawk.net/mods/taskbar-vertical"/>
-        <updated>2025-12-23T08:29:33.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed gap between the taskbar and the Start menu when the taskbar is on the right.</li>
-<li>Improved Start menu handling, especially when opened on a different monitor.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dark mode context menus 1.4]]></title>
-        <id>https://windhawk.net/mods/dark-menus#35fe88158b7b0b747cb24906a09716b9bb2e15d6</id>
-        <link href="https://windhawk.net/mods/dark-menus"/>
-        <updated>2025-12-22T22:53:28.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed: The white outline problem in the latest version (https://github.com/MGGSK/DarkMenus/issues/18)</li>
-<li>Added support for mdi windows</li>
-<li>Code cleanup</li>
-<li>Improved readme</li>
-</ul>]]></content>
-        <author>
-            <name>Mgg Sk</name>
-            <uri>https://github.com/MGGSK</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar auto-hide per monitor 1.0.1]]></title>
-        <id>https://windhawk.net/mods/taskbar-auto-hide-per-monitor#15a49670add29c0521d1825dc0e7cb263d053989</id>
-        <link href="https://windhawk.net/mods/taskbar-auto-hide-per-monitor"/>
-        <updated>2025-12-22T17:40:15.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed secondary taskbars being invisible on system start when auto-hide is disabled for them.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dark mode context menus 1.3.4]]></title>
-        <id>https://windhawk.net/mods/dark-menus#334e79cea972761014dadc9cc0b5118eb18d0521</id>
-        <link href="https://windhawk.net/mods/dark-menus"/>
-        <updated>2025-12-21T08:23:10.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed: Outline in right click menu (https://github.com/MGGSK/DarkMenus/issues/17)</li>
-</ul>]]></content>
-        <author>
-            <name>Mgg Sk</name>
-            <uri>https://github.com/MGGSK</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Customize Windows notifications placement 1.2]]></title>
-        <id>https://windhawk.net/mods/notifications-placement#1748376b3e34dedbc9f685ce8c5804ba5aec7bd7</id>
-        <link href="https://windhawk.net/mods/notifications-placement"/>
-        <updated>2025-12-20T21:39:02.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added an option to control the notification appearance animation direction.</li>
-<li>Fixed the notification content being cut off if the DPI of the target monitor is different than the primary monitor.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dark mode context menus 1.3.3]]></title>
-        <id>https://windhawk.net/mods/dark-menus#5af46458a081fc5d471092dc08018f377125d915</id>
-        <link href="https://windhawk.net/mods/dark-menus"/>
-        <updated>2025-12-20T21:38:08.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed: Input Director v2.3 (https://github.com/MGGSK/DarkMenus/issues/16)</li>
-<li>Fixed: Black screen/Rendering failure in Electron apps (Jellyfin, RStudio) due to GDI painting conflict (https://github.com/MGGSK/DarkMenus/issues/14)</li>
-</ul>]]></content>
-        <author>
-            <name>Mgg Sk</name>
-            <uri>https://github.com/MGGSK</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Classic Explorer Drag/Drop 1.1]]></title>
-        <id>https://windhawk.net/mods/classic-explorer-dragdrop#707610439857bfad6e1a83486ee595bf0f67f540</id>
-        <link href="https://windhawk.net/mods/classic-explorer-dragdrop"/>
-        <updated>2025-12-20T20:36:53.000Z</updated>
-        <content type="html"><![CDATA[<p>Refactor and bug fixes</p>]]></content>
-        <author>
-            <name>Isabella Lulamoon (kawapure)</name>
-            <uri>https://github.com/kawapure</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar on top for Windows 11 1.1.6]]></title>
-        <id>https://windhawk.net/mods/taskbar-on-top#de4cfd5ea752b671743eb99a1dd9abeba39e413f</id>
-        <link href="https://windhawk.net/mods/taskbar-on-top"/>
-        <updated>2025-12-20T17:03:04.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Implemented basic support for taskbar auto-hide.</li>
-<li>Fixed incorrect Alt+Tab window position with multiple monitors in some cases.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Vertical Taskbar for Windows 11 1.3.8]]></title>
-        <id>https://windhawk.net/mods/taskbar-vertical#bfba1b55ec10ecd3f7b78009533838598191141d</id>
-        <link href="https://windhawk.net/mods/taskbar-vertical"/>
-        <updated>2025-12-19T22:21:22.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed drag and drop for tray icons.</li>
-<li>Fixed secondary taskbar clock rotation on startup.</li>
-<li>Fixed badge orientation for taskbar icons (contribution by Lubomir Stanko).</li>
-<li>Fixed notification center being shown on the primary monitor when clicking on the secondary monitor clock.</li>
-<li>Fixed labels vertical alignment when using small icons.</li>
-<li>Fixed the start menu sliding over the taskbar with the "Adjust Start menu animation" option.</li>
-<li>Improved start menu handling with multiple monitors.</li>
-<li>Fixed broken share picker UI layout.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Virtual Desktop Helper 2.0.0]]></title>
-        <id>https://windhawk.net/mods/virtual-desktop-helper#c504a465dcdc607b3caff5c1852a1ef752f200ee</id>
-        <link href="https://windhawk.net/mods/virtual-desktop-helper"/>
-        <updated>2025-12-19T17:44:52.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Add window tiling (manually triggered by hotkey)</li>
-<li>Add window pinning to all desktops</li>
-<li>Add previous desktop toggle</li>
-<li>Add per-desktop focus/layout memory</li>
-</ul>]]></content>
-        <author>
-            <name>u2x1</name>
-            <uri>https://github.com/u2x1</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar auto-hide per monitor 1.0]]></title>
-        <id>https://windhawk.net/mods/taskbar-auto-hide-per-monitor#b21301f26f2a4daba74aa302fa7d81cb059ccaf1</id>
-        <link href="https://windhawk.net/mods/taskbar-auto-hide-per-monitor"/>
-        <updated>2025-12-19T16:08:56.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="taskbarautohidepermonitor">Taskbar auto-hide per monitor</h1>
-<p>By default, Windows uses the same auto-hide setting for all monitors. This mod
-allows setting different auto-hide settings for each monitor.</p>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar Music Lounge 3.0]]></title>
-        <id>https://windhawk.net/mods/taskbar-music-lounge#2eddf6953b7aaee9ad5eb050bb329e135f4c7798</id>
-        <link href="https://windhawk.net/mods/taskbar-music-lounge"/>
-        <updated>2025-12-17T14:43:31.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="taskbarmusiclounge">Taskbar Music Lounge</h1>
-<p>A media controller that uses Windows 11 native DWM styling for a seamless look.</p>
-<h2 id="features">✨ Features</h2>
+        <title type="html"><![CDATA[HotCorner Hotkeys 1.9]]></title>
+        <id>https://windhawk.net/mods/hotcorner-hotkeys#db7dfb73775465f201b6535f9d4e6dbd39e825dd</id>
+        <link href="https://windhawk.net/mods/hotcorner-hotkeys"/>
+        <updated>2026-02-14T23:08:31.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="hotcornerhotkeys">HotCorner Hotkeys</h1>
+<p>This mod assigns global keyboard shortcuts to Windows actions.
+Each shortcut is registered once per unique key combination. When triggered,
+the current cursor position is sampled and used to dispatch the action mapped
+to the active screen zone (corner, edge). </p>
+<p>A single hotkey may execute different actions depending on cursor location. If no zone is selected hotkey is consumed nothing happens. If you were hoping for the hotkey to function globally without a zone selection check out 
+<a href="https://windhawk.net/mods/keyboard-shortcut-actions">keyboard-shortcut-actions</a> instead.</p>
+<h2 id="architecture">Architecture</h2>
+<h3 id="registrationvsdispatch">Registration vs. dispatch</h3>
 <ul>
-<li><strong>Universal Support:</strong> Works with any media player via GSMTC.</li>
-<li><strong>Album Art:</strong> Displays current track cover art.</li>
-<li><strong>Native Look:</strong> Uses Windows 11 hardware-accelerated rounding and acrylic blur.</li>
-<li><strong>Controls:</strong> Play/Pause, Next, Previous.</li>
-<li><strong>Volume:</strong> Scroll over widget to adjust volume.</li>
+<li><strong>Registration</strong>: Each unique key combination is registered exactly once
+as a global hotkey.</li>
+<li><strong>Dispatch</strong>: On <code>WM_HOTKEY</code>, the cursor zone is computed and the
+<code>(hotkey, zone)</code> mapping is resolved and executed.</li>
 </ul>
-<h2 id="requirements">⚠️ Requirements</h2>
+<h3 id="rules">Rules</h3>
 <ul>
-<li><strong>Disable Widgets:</strong> Taskbar Settings -&gt; Widgets -&gt; Off.</li>
-<li><strong>Windows 11:</strong> Required for rounded corners.</li>
-</ul>]]></content>
-        <author>
-            <name>Hashah2311</name>
-            <uri>https://github.com/Hashah2311</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11 Taskbar Styler 1.5.2]]></title>
-        <id>https://windhawk.net/mods/windows-11-taskbar-styler#9345ef955e6053e4e564c66a511146e60e4470dc</id>
-        <link href="https://windhawk.net/mods/windows-11-taskbar-styler"/>
-        <updated>2025-12-16T22:59:27.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added new themes: SunValley, Surface, Oversimplified&amp;Accentuated, Luminosity.</li>
-<li>Updated themes: SimplyTransparent, Squircle, Matter, WinXP, TaskbarXII, Windows7, WindowGlass.</li>
-<li>Renamed the 21996Taskbar theme to SunValley (Legacy).</li>
-<li>For themes using images from http(s) sources, the mod now retries loading once an internet connection is available.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Change Qt App Icon 1.0.0]]></title>
-        <id>https://windhawk.net/mods/change-qt-app-icon#f1782d79034f62b166dcd88871f4f323284fe0b0</id>
-        <link href="https://windhawk.net/mods/change-qt-app-icon"/>
-        <updated>2025-12-15T01:54:27.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="changeqtappicon">Change Qt App Icon</h1>
-<p>This mod allows you to change the window icon of all windows for a Qt
-application. Due to the way Qt stores resources, it is difficult to
-differentiate icons, and as such, you may only set one icon to be
-used at all times for an application.</p>
-<p><strong>Example</strong>: <em>IDA 9.2 with its pre-6.0 icon</em></p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/change-qt-app-icon-example.png" alt="Example: IDA 9.2 with its pre-6.0 icon" /></p>
-<h2 id="howtouse">How to use</h2>
+<li>Action identity is <code>(hotkey, zone)</code></li>
+<li>Zones are used only during dispatch</li>
+<li>A hotkey may map to multiple actions across different zones</li>
+<li>Duplicate <code>(hotkey, zone)</code> mappings are invalid and rejected at load time</li>
+<li>Each key combination is registered once globally</li>
+<li>If no action exists for the active cursor zone:</li>
+<li>No action is executed</li>
+<li>The hotkey is still consumed </li>
+</ul>
+<h2 id="zones">Zones</h2>
+<p>Zones are computed from the active monitor bounds using <code>GatePx</code>
+(pixel thickness).</p>
+<p>Corner zones take precedence over edge zones when regions overlap.</p>
+<p>Supported values:</p>
+<p><code>NONE, LEFT, TOP_LEFT, TOP, TOP_RIGHT, RIGHT, BOTTOM_RIGHT, BOTTOM, BOTTOM_LEFT</code></p>
+<p><code>NONE</code> matches only when the cursor is outside all edge and corner gate regions.</p>
+<h2 id="supportedactions">Supported actions</h2>
 <ol>
-<li>Go to the "Advanced" tab of this mod.</li>
-<li>Find the "Custom process inclusion list" option.</li>
-<li>Add the name of the EXE you want to change window icons for.</li>
+<li><p><strong>Show desktop</strong><br />
+Toggle desktop visibility</p></li>
+<li><p><strong>Ctrl+Alt+Tab</strong><br />
+Open the Ctrl+Alt+Tab dialog</p></li>
+<li><p><strong>Task Manager</strong><br />
+Open Windows Task Manager</p></li>
+<li><p><strong>Mute system volume</strong><br />
+Toggle system-wide mute</p></li>
+<li><p><strong>Taskbar auto-hide</strong><br />
+Toggle taskbar auto-hide</p></li>
+<li><p><strong>Win+Tab</strong><br />
+Open Task View</p></li>
+<li><p><strong>Hide desktop icons</strong><br />
+Toggle visibility of all desktop icons</p></li>
+<li><p><strong>Combine taskbar buttons</strong><br />
+Toggle taskbar button grouping between two states</p></li>
+<li><p><strong>Toggle taskbar alignment</strong><br />
+Toggle taskbar icon alignment (left/center, Windows 11 only)</p></li>
+<li><p><strong>Open Start menu</strong><br />
+Send the Win key</p></li>
+<li><p><strong>Virtual key press</strong><br />
+Send a virtual key sequence</p></li>
+<li><p><strong>Open application, path, or URL</strong><br />
+Launch an executable, open a path, or open a URL</p></li>
+<li><p><strong>Media Play/Pause</strong></p></li>
+<li><p><strong>Media Next Track</strong></p></li>
+<li><p><strong>Media Previous Track</strong></p></li>
 </ol>
+<h2 id="hotkeyformat">Hotkey format</h2>
+<p>Hotkeys use the form:</p>
+<p><code>Modifier+Modifier+Key</code></p>
+<h3 id="modifiers">Modifiers</h3>
+<p><code>Alt</code>, <code>Ctrl</code>, <code>Shift</code>, <code>Win</code></p>
+<h3 id="keys">Keys</h3>
 <ul>
-<li>If you don't know the name of the EXE, you can find it using 
- Task Manager.</li>
+<li>Letters: <code>A–Z</code></li>
+<li>Numbers: <code>0–9</code></li>
+<li>Function keys: <code>F1–F24</code></li>
+<li>Navigation: <code>Home</code>, <code>End</code>, <code>PageUp</code>, <code>PageDown</code>, <code>Insert</code>, <code>Delete</code>,
+<code>Left</code>, <code>Right</code>, <code>Up</code>, <code>Down</code></li>
+<li>Common: <code>Enter</code>, <code>Tab</code>, <code>Space</code>, <code>Backspace</code>, <code>Escape</code> (<code>Esc</code>),
+<code>CapsLock</code>, <code>PrintScreen</code>, <code>Pause</code></li>
+<li>Numpad: <code>Numpad0–Numpad9</code> (<code>Num0–Num9</code>), <code>NumLock</code>,
+<code>Add</code>, <code>Subtract</code>, <code>Multiply</code>, <code>Divide</code>, <code>Decimal</code></li>
+<li>Media: <code>VolumeMute</code>, <code>VolumeUp</code>, <code>VolumeDown</code>,
+<code>MediaPlayPause</code>, <code>MediaNext</code>, <code>MediaPrev</code>, <code>MediaStop</code></li>
+<li>Modifier keys (Virtual Key Press only):
+<code>LWin</code>, <code>RWin</code>, <code>LShift</code>, <code>RShift</code>,
+<code>LCtrl</code>, <code>RCtrl</code>, <code>LAlt</code>, <code>RAlt</code></li>
+<li>Selected <code>VK_*</code> virtual-key codes (numeric forms accepted where supported)</li>
 </ul>
+<h3 id="examples">Examples</h3>
+<ul>
+<li><code>Ctrl+Alt+D</code></li>
+<li><code>Ctrl+Shift+F1</code></li>
+<li><code>Alt+Home</code></li>
+<li><code>Win+Numpad1</code></li>
+</ul>
+<h2 id="additionalarguments">Additional arguments</h2>
+<p>Only actions <strong>8</strong>, <strong>11</strong>, and <strong>12</strong> accept <code>AdditionalArgs</code>.
+Arguments are separated by semicolons.</p>
+<h3 id="8combinetaskbarbuttons">8. Combine taskbar buttons</h3>
+<p><code>priState1;priState2;secState1;secState2</code></p>
+<p>States:</p>
+<ul>
+<li><code>COMBINE_ALWAYS</code></li>
+<li><code>COMBINE_WHEN_FULL</code></li>
+<li><code>COMBINE_NEVER</code></li>
+</ul>
+<p>Example:
+<code>COMBINE_ALWAYS;COMBINE_NEVER;COMBINE_ALWAYS;COMBINE_NEVER</code></p>
+<h3 id="11virtualkeypress">11. Virtual key press</h3>
+<p><code>key1;key2;...;keyN</code><br />
+or<br />
+<code>Modifier+Key</code></p>
+<p>Notes:</p>
+<ul>
+<li>Each key may be a key name (<code>A</code>, <code>Enter</code>, <code>VK_OEM_3</code>)
+or a chord (<code>Ctrl+Shift+Escape</code>)</li>
+<li>Multi-key sequences press keys in order, then release</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><code>Win+E</code></li>
+<li><code>Ctrl+Shift+Escape</code></li>
+<li><code>LCtrl;C</code></li>
+</ul>
+<h3 id="12openapplicationpathorurl">12. Open application, path, or URL</h3>
+<p><code>command</code></p>
+<p>Notes:</p>
+<ul>
+<li>Starts an executable (with optional arguments),
+opens a filesystem path, or opens a URL</li>
+<li>Prefix with <code>uac;</code> to request elevation</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><code>notepad.exe</code></li>
+<li><code>"C:\Program Files\App\app.exe" --arg</code></li>
+<li><code>https://example.com</code></li>
+<li><code>uac;C:\Windows\System32\cmd.exe</code></li>
+</ul>
+<h2 id="credits">Credits</h2>
+<h2 id="credits-1">Credits</h2>
+<p>The actions in this mod are based on
+<a href="https://windhawk.net/mods/taskbar-empty-space-clicks">Click on empty taskbar space</a>
+by <a href="https://github.com/m1lhaus">m1lhaus</a>.</p>
+<p>The global hotkey triggering mechanism is based on 
+<a href="https://windhawk.net/mods/keyboard-shortcut-actions">keyboard-shortcut-actions</a>
+by <a href="https://github.com/m417z">m417z</a>.</p>]]></content>
+        <author>
+            <name>webberlv</name>
+            <uri>https://github.com/webberLV</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Volume control open location 1.0]]></title>
+        <id>https://windhawk.net/mods/volume-control-open-location#37553a08c7b7c274c04b883d8149c9ceab51b752</id>
+        <link href="https://windhawk.net/mods/volume-control-open-location"/>
+        <updated>2026-02-14T22:49:45.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="volumecontrolopenlocation">Volume control open location</h1>
+<p>Shows the volume control on the monitor where the mouse cursor is located, or
+on a custom monitor of choice.</p>
+<h2 id="selectingamonitor">Selecting a monitor</h2>
+<p>You can select a monitor by its number or by its interface name in the mod
+settings.</p>
+<h3 id="bymonitornumber">By monitor number</h3>
+<p>Set the <strong>Monitor</strong> setting to the desired monitor number (1, 2, 3, etc.). Note
+that this number may differ from the monitor number shown in Windows Display
+Settings.</p>
+<p>Set the <strong>Monitor</strong> setting to 0 to use the monitor where the mouse cursor is
+currently located.</p>
+<h3 id="byinterfacename">By interface name</h3>
+<p>If monitor numbers change frequently (e.g., after locking your PC or
+restarting), you can use the monitor's interface name instead. To find the
+interface name:</p>
 <ol>
-<li>Click Save.</li>
-<li>Configure the mod as you want it to be.</li>
-<li>If the program is open already, restart it.</li>
-</ol>]]></content>
+<li>Go to the mod's <strong>Advanced</strong> tab.</li>
+<li>Set <strong>Debug logging</strong> to <strong>Mod logs</strong>.</li>
+<li>Click on <strong>Show log output</strong>.</li>
+<li>In the mod settings, enter any text (e.g., <code>TEST</code>) in the <strong>Monitor interface
+name</strong> field.</li>
+<li>Change the volume to trigger the mod's logic.</li>
+<li>In the log output, look for lines containing <code>Found display device</code>. You will
+see one line per monitor, for example:</li>
+</ol>
+<pre><code>   Found display device \\.\DISPLAY1, interface name: \\?\DISPLAY#DELA1D2#5&amp;abc123#0#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+   Found display device \\.\DISPLAY2, interface name: \\?\DISPLAY#GSM5B09#4&amp;def456#0#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+</code></pre>
+<p>Use the interface name that follows the "interface name:" text. You may need
+   to experiment to determine which interface name corresponds to which physical
+   monitor.</p>
+<ol start="7">
+<li>Copy the relevant interface name (or a unique substring of it) into the
+<strong>Monitor interface name</strong> setting.</li>
+<li>Set <strong>Debug logging</strong> back to <strong>None</strong> when done.</li>
+</ol>
+<p>The <strong>Monitor interface name</strong> setting takes priority over the <strong>Monitor</strong>
+number when both are configured.</p>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Primary taskbar on secondary monitor 1.2]]></title>
+        <id>https://windhawk.net/mods/taskbar-primary-on-secondary-monitor#5d4844394ed3a8fc048dee7e2721c49be96dc87e</id>
+        <link href="https://windhawk.net/mods/taskbar-primary-on-secondary-monitor"/>
+        <updated>2026-02-14T21:13:10.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added an option to switch the primary taskbar by clicking on its empty space.</li>
+<li>Added an option to move additional elements to the target monitor, such as desktop icons.</li>
+<li>Improved overall compatibility with various parts of Windows, including the lock screen (should no longer be affected by the mod), the Start menu, and the volume indicator.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Icon Customizer 0.1]]></title>
+        <id>https://windhawk.net/mods/icon-customizer#50a31f627be5eb196a8a2ba6f57cdde4d1abba35</id>
+        <link href="https://windhawk.net/mods/icon-customizer"/>
+        <updated>2026-02-14T20:31:40.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="iconcustomizer">Icon Customizer</h1>
+<p>Allows you to override almost 100 Windows icons to anything you like.</p>
+<h2 id="overrideanicon">Override an icon</h2>
+<p>To change an icon, open the mod settings and change the icons you like by entering the path to an ICO, EXE, or DLL file.
+Optionally you can also specify an index, for example:</p>
+<pre><code>C:\Windows\System32\shell32.dll,32
+</code></pre>
+<h2 id="howitworks">How it works</h2>
+<p>This mod adds a hook for <code>SHGetStockIconInfo</code>, which Windows apps call whenever they need to retrieve a stock icon. It then
+ checks if the icon for the specified ID is overriden and gives Windows the new icon.</p>
+<h2 id="note">Note</h2>
+<p>This mod will only work on apps that load icons themselves, and will not work on built-in Windows dialogs such as message boxes.
+This is because those dialogs do not utilize the <code>SHGetStockIconInfo</code> function.</p>]]></content>
+        <author>
+            <name>FireBlade</name>
+            <uri>https://github.com/FireBlade211</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Restore AutoRun Icon in Drive Properties 1.0]]></title>
+        <id>https://windhawk.net/mods/restore-autorun-icon-in-drive-properties#e5f406613139e1f02cee75a96e0d20c4c30f9410</id>
+        <link href="https://windhawk.net/mods/restore-autorun-icon-in-drive-properties"/>
+        <updated>2026-02-14T18:19:32.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="restoreautoruniconindriveproperties">Restore AutoRun Icon in Drive Properties</h1>
+<p>Since Windows 2000, the drive properties dialog never displays the AutoRun icon
+on the General tab, leaving a blank space.</p>
+<p>This mod restores the AutoRun icon back where it belongs.</p>
+<p>| Before | After |
+| :----: | :---: |
+| <img src="https://raw.githubusercontent.com/AromaKitsune/My-Windhawk-Mods/main/screenshots/restore-autorun-icon-in-drive-properties_before.png" alt="" /> | <img src="https://raw.githubusercontent.com/AromaKitsune/My-Windhawk-Mods/main/screenshots/restore-autorun-icon-in-drive-properties_after.png" alt="" /> |</p>
+<h2 id="compatibilitywithothermods">Compatibility with other mods</h2>
+<p>Any other mods that hook the <code>DrawPie</code> function will conflict with this mod and
+prevent it from functioning.</p>
+<h3 id="conflictingmods">Conflicting mods</h3>
+<ul>
+<li><a href="https://windhawk.net/mods/disk-usage-bar-in-drive-properties">Disk Usage Bar in Drive Properties</a>
+by me</li>
+<li><a href="https://windhawk.net/mods/disk-pie-chart">Disk Pie Chart</a>
+by <strong>aubymori</strong></li>
+</ul>
+<p><strong>Note:</strong> The "Disk Usage Bar in Drive Properties" mod already has the AutoRun
+icon restoration code integrated, so you don't need to use both mods together.</p>
+<h2 id="supportedwindowsversions">Supported Windows versions</h2>
+<ul>
+<li>Windows 11</li>
+<li>Windows 10</li>
+<li>Windows 8.1</li>
+</ul>]]></content>
+        <author>
+            <name>Kitsune</name>
+            <uri>https://github.com/AromaKitsune</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Start Menu Size 1.0.1]]></title>
+        <id>https://windhawk.net/mods/start-menu-size#4636d9d145e6aa1858d4955fc422f816aac37b39</id>
+        <link href="https://windhawk.net/mods/start-menu-size"/>
+        <updated>2026-02-14T01:22:16.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed compatibility with the classic Start menu in some cases.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar tray auto-hide (show on hover) 1.0]]></title>
+        <id>https://windhawk.net/mods/taskbar-tray-show-on-hover#cf80b958c9c974090ce99d1da49af302b5e614ba</id>
+        <link href="https://windhawk.net/mods/taskbar-tray-show-on-hover"/>
+        <updated>2026-02-14T00:20:40.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="taskbartrayautohideshowonhover">Taskbar tray auto-hide (show on hover)</h1>
+<p>Hide the taskbar tray area when not in use, and show it when hovering the mouse
+over it.</p>
+<p><img src="https://i.imgur.com/uGReVFB.gif" alt="Demonstration" /></p>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar Auto-Hide Instant Show 2.1]]></title>
+        <id>https://windhawk.net/mods/taskbar-autohide-instant-show#9fddc7f33e424cabfaca200627b002cff2cd24b4</id>
+        <link href="https://windhawk.net/mods/taskbar-autohide-instant-show"/>
+        <updated>2026-02-13T20:20:52.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fix fade cleanup flash on hide (alpha set before removing WS<em>EX</em>LAYERED)</li>
+<li>Add animation cancellation to prevent state corruption on rapid show/hide</li>
+<li>Suppress pre-animation flash by updating TrayUI state while window is hidden</li>
+<li>Add mouse edge detection thread for monitors with no visible windows</li>
+</ul>]]></content>
+        <author>
+            <name>Bo0ii</name>
+            <uri>https://github.com/Bo0ii</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar auto-hide custom activation area 1.0]]></title>
+        <id>https://windhawk.net/mods/taskbar-auto-hide-custom-activation-area#dc75ec6a3d28698d3b605f12582e0286c0f1588d</id>
+        <link href="https://windhawk.net/mods/taskbar-auto-hide-custom-activation-area"/>
+        <updated>2026-02-13T19:26:14.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="taskbarautohidecustomactivationarea">Taskbar auto-hide custom activation area</h1>
+<p>Customize the taskbar auto-hide activation area, allowing to limit mouse
+unhiding to specific regions.</p>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Disk Usage Bar in Drive Properties 1.0]]></title>
+        <id>https://windhawk.net/mods/disk-usage-bar-in-drive-properties#c2e624b0ebeb3c649073ec5656655b1bebc65089</id>
+        <link href="https://windhawk.net/mods/disk-usage-bar-in-drive-properties"/>
+        <updated>2026-02-13T17:22:37.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="diskusagebarindriveproperties">Disk Usage Bar in Drive Properties</h1>
+<p>This mod replaces the disk usage pie/donut chart in the drive properties dialog
+with a usage bar.</p>
+<p><img src="https://raw.githubusercontent.com/AromaKitsune/My-Windhawk-Mods/main/screenshots/disk-usage-bar-in-drive-properties.png" alt="" /></p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Replaces the pie/donut chart with a blue usage bar, like in "This PC".</li>
+<li>Switches the bar color to red when the disk is almost full.</li>
+<li>Displays the usage percentage text below the bar.</li>
+</ul>
+<h2 id="supportedwindowsversions">Supported Windows versions</h2>
+<ul>
+<li>Windows 11</li>
+<li>Windows 10</li>
+<li>Windows 8.1</li>
+</ul>
+<h2 id="configuration">Configuration</h2>
+<p>You can enable the option to switch the usage bar color to red when disk usage
+exceeds 90%.</p>
+<hr />
+<p>Based on the "<a href="https://windhawk.net/mods/disk-pie-chart">Disk Pie Chart</a>" mod by
+<strong>aubymori</strong>.</p>]]></content>
+        <author>
+            <name>Kitsune</name>
+            <uri>https://github.com/AromaKitsune</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Start Menu Size 1.0]]></title>
+        <id>https://windhawk.net/mods/start-menu-size#90a82d22fb69981ef683bcc34b726f2933dc98f1</id>
+        <link href="https://windhawk.net/mods/start-menu-size"/>
+        <updated>2026-02-13T15:56:05.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="startmenusize">Start Menu Size</h1>
+<p>Set a custom size for the Start menu on Windows 11.</p>
+<p>Allows you to override the default width and height of the Start menu.</p>
+<p><img src="https://i.imgur.com/FoFSFOV.png" alt="Screenshot" /><br />
+<em>Example for making the Start menu smaller</em></p>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Shell Flyout Positions 1.2]]></title>
+        <id>https://windhawk.net/mods/shell-flyout-positions#c46e11f8c2f0d701fd60bad7b3eef653bafd0b32</id>
+        <link href="https://windhawk.net/mods/shell-flyout-positions"/>
+        <updated>2026-02-13T14:20:30.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added options for customizing the position of the Start menu.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Disable Thumbnail Minimum Size 1.3]]></title>
+        <id>https://windhawk.net/mods/disable-thumbnail-minimum-size#2bf8a1c7d42abb42256127bf697e4f2425b1e77e</id>
+        <link href="https://windhawk.net/mods/disable-thumbnail-minimum-size"/>
+        <updated>2026-02-13T12:50:35.000Z</updated>
+        <content type="html"><![CDATA[<p>Fix Windows 11 compatibility</p>]]></content>
+        <author>
+            <name>Leymonaide</name>
+            <uri>https://github.com/Leymonaide</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Remove Unwanted Context Menu Items (Classic Menu Only) 1.6.0]]></title>
+        <id>https://windhawk.net/mods/remove-context-menu-items#41174bcacc1725f58fc074b2fed9863e5d0a27c6</id>
+        <link href="https://windhawk.net/mods/remove-context-menu-items"/>
+        <updated>2026-02-13T10:35:18.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added German language support (thanks to <a href="https://github.com/Schleifenkratzer">Schleifenkratzer</a>)</li>
+<li>Added 3 new menu items (<code>Pin to Quick access</code>, <code>Extract All...</code>, <code>WinRAR</code>)</li>
+</ul>]]></content>
+        <author>
+            <name>Armaninyow</name>
+            <uri>https://github.com/armaninyow</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Internet Status Indicator 0.8.2]]></title>
+        <id>https://windhawk.net/mods/internet-status-indicator#6e80e7cab1bfd36a5bcf7fd8a6fa0d225d40e483</id>
+        <link href="https://windhawk.net/mods/internet-status-indicator"/>
+        <updated>2026-02-11T21:40:04.000Z</updated>
+        <content type="html"><![CDATA[<p>boot up bug fix</p>]]></content>
+        <author>
+            <name>ALMAS CP</name>
+            <uri>https://github.com/almas-cp</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Remove Taskbar Window Suffixes 1.1.1]]></title>
+        <id>https://windhawk.net/mods/file-explorer-remove-suffixes#df279b7963c3e46e98eea4734d1506c6b3568dd7</id>
+        <link href="https://windhawk.net/mods/file-explorer-remove-suffixes"/>
+        <updated>2026-02-11T20:57:25.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed suffixes being removed twice for explorer windows in universal mode.</li>
+<li>Titles on the taskbar are now updated right away when the mod is enabled and when settings are changed (universal mode and custom rules only).</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Menu/Tooltip Slide Animation 1.0.1]]></title>
+        <id>https://windhawk.net/mods/menu-tooltip-slide-animation#f00b63e81fa59fd1553ccecb247430b3c7a661dd</id>
+        <link href="https://windhawk.net/mods/menu-tooltip-slide-animation"/>
+        <updated>2026-02-11T20:00:00.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Don't use slide animation when UI effects are disabled</li>
+</ul>]]></content>
         <author>
             <name>aubymori</name>
             <uri>https://github.com/aubymori</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Classic Theme 1.0.8]]></title>
-        <id>https://windhawk.net/mods/classic-theme-enable#e130982f86c22bf23884a66f4a59510d2fb6b99d</id>
-        <link href="https://windhawk.net/mods/classic-theme-enable"/>
-        <updated>2025-12-12T16:08:32.000Z</updated>
-        <content type="html"><![CDATA[<p>Add Classic Theme UIFILE Fix</p>]]></content>
+        <title type="html"><![CDATA[Custom Desktop Watermark 1.2.0]]></title>
+        <id>https://windhawk.net/mods/custom-desktop-watermark#4a61d4185a09f270883f3cb72a8da7d22acec204</id>
+        <link href="https://windhawk.net/mods/custom-desktop-watermark"/>
+        <updated>2026-02-11T00:34:53.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Refresh desktop whenever necessary to make changes show immediately</li>
+<li>Support for Windows 8.1 and Windows 11 24H2</li>
+</ul>]]></content>
         <author>
-            <name>Anixx</name>
-            <uri>https://github.com/Anixx</uri>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Menu/Tooltip Slide Animation 1.0.0]]></title>
+        <id>https://windhawk.net/mods/menu-tooltip-slide-animation#f3ca1c0c198f597b44116db8bced26e1abe60aaf</id>
+        <link href="https://windhawk.net/mods/menu-tooltip-slide-animation"/>
+        <updated>2026-02-10T13:35:50.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="menutooltipslideanimation">Menu/Tooltip Slide Animation</h1>
+<p>From Windows 98 through Windows XP, you could make menus and tooltips use a
+slide/scroll animation. This mod restores those animations to modern versions
+of Windows.</p>
+<h2 id="captionbuttontooltips">Caption button tooltips</h2>
+<p>The tooltips you see when hovering a window's caption buttons (Close, Maximize, Minimize)
+are implemented by the kernel-mode component of NTUSER. <strong>It is impossible to make them
+have a slide animation without issues.</strong></p>
+<p><strong>Tooltips</strong>:</p>
+<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/menu-tooltip-slide-animation/tooltip.gif" alt="Tooltips" /></p>
+<p><strong>Menus (Windows 98/Me)</strong>:</p>
+<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/menu-tooltip-slide-animation/menu-9x.gif" alt="Menus (Windows 98/Me)" /></p>
+<p><strong>Menus (Windows 2000/XP)</strong>:</p>
+<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/menu-tooltip-slide-animation/menu-nt.gif" alt="Menus (Windows 2000/XP)" /></p>]]></content>
+        <author>
+            <name>aubymori</name>
+            <uri>https://github.com/aubymori</uri>
         </author>
     </entry>
 </feed>

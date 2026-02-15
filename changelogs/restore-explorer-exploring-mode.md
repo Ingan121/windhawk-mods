@@ -1,0 +1,25 @@
+## 1.2.0 ([Feb 1, 2026](https://github.com/ramensoftware/windhawk-mods/blob/5bbc958c7b7eecab54f74848a2e771922773376a/mods/restore-explorer-exploring-mode.wh.cpp))
+
+- Introduce accurate tree view open state behavior
+
+## 1.1.0 ([Jan 27, 2026](https://github.com/ramensoftware/windhawk-mods/blob/d2dfdeae3d10a9c1e78857810635f08061fa3afc/mods/restore-explorer-exploring-mode.wh.cpp))
+
+- Implement accurate new window behavior for "Open" and "Explore" verbs on folders
+- Clean up some of the settings' descriptions
+
+## 1.0.3 ([Jan 9, 2026](https://github.com/ramensoftware/windhawk-mods/blob/7946c3ffec884c0c0323ebb020749f5226985114/mods/restore-explorer-exploring-mode.wh.cpp))
+
+- Fix bugs with ExplorerEx
+- Fix infinite uninitializing
+
+## 1.0.2 ([Jan 1, 2026](https://github.com/ramensoftware/windhawk-mods/blob/f828d309ee213355f5bf325f0312eeaa1ce2ae1c/mods/restore-explorer-exploring-mode.wh.cpp))
+
+- Make "Explorer icon" option functional
+
+## 1.0.1 ([Dec 31, 2025](https://github.com/ramensoftware/windhawk-mods/blob/798fa042e8f36906125f320199412b3027c075ac/mods/restore-explorer-exploring-mode.wh.cpp))
+
+- Fix large Explorer window icon using the small image
+
+## 1.0.0 ([Dec 31, 2025](https://github.com/ramensoftware/windhawk-mods/blob/eb29cd883ae3c6f30829d3f3e2dae0c433d5ce64/mods/restore-explorer-exploring-mode.wh.cpp))
+
+Initial release.

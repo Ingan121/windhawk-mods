@@ -1,3 +1,11 @@
+## 1.2.1 ([Feb 1, 2026](https://github.com/ramensoftware/windhawk-mods/blob/06bdb896036376323a3edb138ff87804e6db2eee/mods/classic-theme-enable.wh.cpp))
+
+Reduced retry delay from 500ms to 100ms.
+
+## 1.2.0 ([Feb 1, 2026](https://github.com/ramensoftware/windhawk-mods/blob/76f5120f16f038378993d244a9db848bed3afeca/mods/classic-theme-enable.wh.cpp))
+
+Make several attempts if unsuccessful.
+
 ## 1.0.8 ([Dec 12, 2025](https://github.com/ramensoftware/windhawk-mods/blob/e130982f86c22bf23884a66f4a59510d2fb6b99d/mods/classic-theme-enable.wh.cpp))
 
 Add Classic Theme UIFILE Fix
