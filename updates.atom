@@ -2,22 +2,202 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2026-02-15T12:53:40.000Z</updated>
+    <updated>2026-02-17T18:01:27.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
-        <title type="html"><![CDATA[Old Login Fade 1.0]]></title>
-        <id>https://windhawk.net/mods/win7-login-fade#05b797cb65b0ea71c099307a5bbe904ce751ee6e</id>
+        <title type="html"><![CDATA[Old Logon Fade 1.1]]></title>
+        <id>https://windhawk.net/mods/win7-login-fade#3a51e8fef9e752c5664b1483edae35ea06b79feb</id>
         <link href="https://windhawk.net/mods/win7-login-fade"/>
-        <updated>2026-02-15T12:53:40.000Z</updated>
+        <updated>2026-02-17T18:01:27.000Z</updated>
+        <content type="html"><![CDATA[<p>Old Logon Fade 1.1</p>]]></content>
+        <author>
+            <name>Ingan121</name>
+            <uri>https://github.com/Ingan121</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar Volume Control 1.3]]></title>
+        <id>https://windhawk.net/mods/taskbar-volume-control#7514df4a76170d6b3cd9075791227880f2068fb4</id>
+        <link href="https://windhawk.net/mods/taskbar-volume-control"/>
+        <updated>2026-02-16T20:14:11.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added an option to scroll anywhere on the screen while holding a configurable combination of modifier keys to change the system volume.</li>
+<li>Added an option to scroll at the taskbar position even when a full screen window covers the taskbar.</li>
+<li>Added an option for custom regions along the taskbar where scrolling will control the system volume. For example, "100-200" (pixels) or "20%-50%" (percentage of taskbar length).</li>
+<li>Improved the volume change step option, which is now compatible with all volume indicators.</li>
+<li>Improved the "No automatic mute toggle" option, which is now compatible with all volume indicators.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Keyboard Shortcut Actions 1.0.1]]></title>
+        <id>https://windhawk.net/mods/keyboard-shortcut-actions#8265d3ad06d1ad81e736feadea2264f6b3fa4329</id>
+        <link href="https://windhawk.net/mods/keyboard-shortcut-actions"/>
+        <updated>2026-02-16T18:58:17.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed the mod not initializing properly on system start.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Virtual Desktop Helper 2.3.0]]></title>
+        <id>https://windhawk.net/mods/virtual-desktop-helper#8df200d486cea8f11c582b906f87689e371a7bc8</id>
+        <link href="https://windhawk.net/mods/virtual-desktop-helper"/>
+        <updated>2026-02-16T18:29:55.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li><p>Removed tiling functionality and all related settings/hotkeys; the mod now focuses only on virtual desktop switching, moving, and pinning.</p></li>
+<li><p>Added “Previous Desktop (Index)” behavior and hotkey handling, plus documentation updates for previous/next/last terminology.</p></li>
+</ul>]]></content>
+        <author>
+            <name>u2x1</name>
+            <uri>https://github.com/u2x1</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tiling Helper 1.0.0]]></title>
+        <id>https://windhawk.net/mods/tiling-helper#85e4a6e8b5ce29cc1c26d9da6f343b03e20927ae</id>
+        <link href="https://windhawk.net/mods/tiling-helper"/>
+        <updated>2026-02-16T18:29:34.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="tilinghelper">Tiling Helper</h1>
+<p>A focused window tiling tool for Windows 10/11. Tile windows on the current monitor, cycle layouts, and keep
+resize-adjusted ratios per virtual desktop.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Manual tiling hotkey</li>
+<li>Layout cycle hotkey</li>
+<li>6 layouts: Master+Stack (Vertical/Horizontal), Columns, Rows, BSP, Monocle</li>
+<li>Adjustable margin, gap, and master size</li>
+<li>Remembers resize adjustments per virtual desktop + monitor (auto-retile can be disabled)</li>
+<li>Optional capture of current window sizes when tiling (useful if auto-retile is off)</li>
+</ul>
+<h2 id="defaulthotkeys">Default Hotkeys</h2>
+<ul>
+<li>Tile windows: Alt + D</li>
+<li>Cycle layout: Alt + L</li>
+<li>Toggle retile-on-resize + reset memory: Alt + R</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The layout selection is global (one current layout), while the tiling state (ratios/weights) is stored per
+virtual desktop and monitor.</li>
+<li>If Virtual Desktop APIs are unavailable, tiling still works but per-desktop memory is disabled.</li>
+</ul>]]></content>
+        <author>
+            <name>u2x1</name>
+            <uri>https://github.com/u2x1</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Translucent Windows 1.7.4]]></title>
+        <id>https://windhawk.net/mods/translucent-windows#3dc62307b1a820cc2e7646d056d30ef495651ffa</id>
+        <link href="https://windhawk.net/mods/translucent-windows"/>
+        <updated>2026-02-16T18:09:49.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fix black background system colors in some programs (e.g. Office) using mods process ruled settings</li>
+<li>Minor custom theme additions</li>
+</ul>]]></content>
+        <author>
+            <name>Undisputed00x</name>
+            <uri>https://github.com/Undisputed00x</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Caffeine 0.7]]></title>
+        <id>https://windhawk.net/mods/caffeine#4ff0d3c579524082f13600af1a613b893ffe9193</id>
+        <link href="https://windhawk.net/mods/caffeine"/>
+        <updated>2026-02-16T08:39:30.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="caffeine">Caffeine</h1>
+<p>A lightweight system tray utility that prevents your computer from sleeping
+or turning off the display. Toggle it on and off with a single click on the
+tray icon, or right-click to choose a timed duration.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>One-click toggle</strong>: Left-click the tray icon to activate/deactivate</li>
+<li><strong>Timed activation</strong>: Right-click for duration options (15 min to 4 hours, or indefinite)</li>
+<li><strong>Countdown display</strong>: Tooltip shows remaining time when using timed mode</li>
+<li><strong>Prevent sleep</strong>: Keeps your system from entering sleep mode</li>
+<li><strong>Prevent display off</strong>: Stops the monitor from turning off due to inactivity</li>
+<li><strong>Visual indicators</strong>: Distinct colors for active (caffeinated) and inactive states</li>
+<li><strong>Customizable appearance</strong>: Choose colors, shapes, and icon size</li>
+<li><strong>Auto-start option</strong>: Optionally start in active state when the mod loads</li>
+<li><strong>Lightweight</strong>: Uses the proper Windows API (<code>SetThreadExecutionState</code>) — no fake keypresses</li>
+</ul>
+<h2 id="howitworks">How it works</h2>
+<p>When activated, the mod calls <code>SetThreadExecutionState</code> with
+<code>ES_CONTINUOUS | ES_SYSTEM_REQUIRED | ES_DISPLAY_REQUIRED</code> to tell Windows
+that the system and display should stay on. When deactivated, it clears
+these flags.</p>
+<h2 id="controls">Controls</h2>
+<ul>
+<li><strong>Left-click</strong>: Quick toggle — activates indefinitely if off, deactivates if on</li>
+<li><strong>Right-click</strong>: Context menu with duration options:</li>
+<li>Indefinite (keeps awake forever)</li>
+<li>15 Minutes</li>
+<li>30 Minutes</li>
+<li>1 Hour</li>
+<li>2 Hours</li>
+<li>4 Hours</li>
+<li>Activate / Deactivate (shown based on current state)</li>
+</ul>
+<h2 id="visualindicators">Visual Indicators</h2>
+<ul>
+<li><strong>Active (Caffeinated)</strong>: Bright icon (default: amber/orange ☕)</li>
+<li><strong>Inactive</strong>: Dim icon (default: gray)</li>
+</ul>]]></content>
+        <author>
+            <name>ALMAS CP</name>
+            <uri>https://github.com/almas-cp</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[HotCorner Hotkeys 2.0]]></title>
+        <id>https://windhawk.net/mods/hotcorner-hotkeys#8c9ca28522ced27a2e22342a20ed6041f6ec0a47</id>
+        <link href="https://windhawk.net/mods/hotcorner-hotkeys"/>
+        <updated>2026-02-16T08:37:08.000Z</updated>
+        <content type="html"><![CDATA[<p>Add @description metadata to HotCorner Hotkeys mod</p>]]></content>
+        <author>
+            <name>webberlv</name>
+            <uri>https://github.com/webberLV</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Disable Firefox Picture-in-Picture Always on Top 1.0]]></title>
+        <id>https://windhawk.net/mods/firefox-pip-disable-always-on-top#f05440843ea6ba8697a21144c1ee93b428f4db1a</id>
+        <link href="https://windhawk.net/mods/firefox-pip-disable-always-on-top"/>
+        <updated>2026-02-15T21:32:28.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="firefoxpipdisablealwaysontop">Firefox PiP - Disable Always on Top</h1>
+<p>Prevents ONLY Firefox Picture-in-Picture windows from staying always on top.
+Uses hook + async verification for precision without blocking.</p>]]></content>
+        <author>
+            <name>ViNSaNiTY24</name>
+            <uri>https://github.com/ViNSaNiTY24</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Old Login Fade 1.0]]></title>
+        <id>https://windhawk.net/mods/win7-login-fade#bf283bac8816ef3cd5ce8dd68e8d12c3058a8340</id>
+        <link href="https://windhawk.net/mods/win7-login-fade"/>
+        <updated>2026-02-15T21:24:35.000Z</updated>
         <content type="html"><![CDATA[<h1 id="oldloginfade">Old Login Fade</h1>
 <ul>
-<li>This mod brings back the old login screen fade effect in Windows 7 and earlier.</li>
-<li>The fade effect is implemented by changing the screen brightness using the <code>SetDeviceGammaRamp</code> function, which is the same method used by the original fade effect.</li>
-<li>You need to set the <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ICM\GdiIcmGammaRange</code> registry value to <code>0x100</code> (DWORD, 256) to allow brightness values below the normal level, which is required for the fade effect to work naturally.</li>
+<li>This mod restores the old login screen fade effect found in Windows 7 and earlier.</li>
+<li>The fade effect is implemented by adjusting the screen brightness using the SetDeviceGammaRamp function, the same method used by the original fade effect.</li>
+<li>You need to set the <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ICM\GdiIcmGammaRange</code> registry value to <code>0x100</code> (DWORD, 256 in decimal) to allow brightness values below the normal level, which is required for the fade effect to work naturally.</li>
+<li>Will not work with Microsoft Basic Display Adapter, VMware SVGA 3D, and some other display drivers that do not support gamma adjustment.</li>
+</ul>
+<h2 id="knownissues">Known issues</h2>
+<ul>
+<li>The fade animation may look broken on early boot when using the auto-login feature.</li>
 </ul>]]></content>
         <author>
             <name>Ingan121</name>
@@ -387,135 +567,6 @@ exceeds 90%.</p>
         <author>
             <name>Kitsune</name>
             <uri>https://github.com/AromaKitsune</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Start Menu Size 1.0]]></title>
-        <id>https://windhawk.net/mods/start-menu-size#90a82d22fb69981ef683bcc34b726f2933dc98f1</id>
-        <link href="https://windhawk.net/mods/start-menu-size"/>
-        <updated>2026-02-13T15:56:05.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="startmenusize">Start Menu Size</h1>
-<p>Set a custom size for the Start menu on Windows 11.</p>
-<p>Allows you to override the default width and height of the Start menu.</p>
-<p><img src="https://i.imgur.com/FoFSFOV.png" alt="Screenshot" /><br />
-<em>Example for making the Start menu smaller</em></p>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Shell Flyout Positions 1.2]]></title>
-        <id>https://windhawk.net/mods/shell-flyout-positions#c46e11f8c2f0d701fd60bad7b3eef653bafd0b32</id>
-        <link href="https://windhawk.net/mods/shell-flyout-positions"/>
-        <updated>2026-02-13T14:20:30.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added options for customizing the position of the Start menu.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Disable Thumbnail Minimum Size 1.3]]></title>
-        <id>https://windhawk.net/mods/disable-thumbnail-minimum-size#2bf8a1c7d42abb42256127bf697e4f2425b1e77e</id>
-        <link href="https://windhawk.net/mods/disable-thumbnail-minimum-size"/>
-        <updated>2026-02-13T12:50:35.000Z</updated>
-        <content type="html"><![CDATA[<p>Fix Windows 11 compatibility</p>]]></content>
-        <author>
-            <name>Leymonaide</name>
-            <uri>https://github.com/Leymonaide</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Remove Unwanted Context Menu Items (Classic Menu Only) 1.6.0]]></title>
-        <id>https://windhawk.net/mods/remove-context-menu-items#41174bcacc1725f58fc074b2fed9863e5d0a27c6</id>
-        <link href="https://windhawk.net/mods/remove-context-menu-items"/>
-        <updated>2026-02-13T10:35:18.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added German language support (thanks to <a href="https://github.com/Schleifenkratzer">Schleifenkratzer</a>)</li>
-<li>Added 3 new menu items (<code>Pin to Quick access</code>, <code>Extract All...</code>, <code>WinRAR</code>)</li>
-</ul>]]></content>
-        <author>
-            <name>Armaninyow</name>
-            <uri>https://github.com/armaninyow</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Internet Status Indicator 0.8.2]]></title>
-        <id>https://windhawk.net/mods/internet-status-indicator#6e80e7cab1bfd36a5bcf7fd8a6fa0d225d40e483</id>
-        <link href="https://windhawk.net/mods/internet-status-indicator"/>
-        <updated>2026-02-11T21:40:04.000Z</updated>
-        <content type="html"><![CDATA[<p>boot up bug fix</p>]]></content>
-        <author>
-            <name>ALMAS CP</name>
-            <uri>https://github.com/almas-cp</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Remove Taskbar Window Suffixes 1.1.1]]></title>
-        <id>https://windhawk.net/mods/file-explorer-remove-suffixes#df279b7963c3e46e98eea4734d1506c6b3568dd7</id>
-        <link href="https://windhawk.net/mods/file-explorer-remove-suffixes"/>
-        <updated>2026-02-11T20:57:25.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed suffixes being removed twice for explorer windows in universal mode.</li>
-<li>Titles on the taskbar are now updated right away when the mod is enabled and when settings are changed (universal mode and custom rules only).</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Menu/Tooltip Slide Animation 1.0.1]]></title>
-        <id>https://windhawk.net/mods/menu-tooltip-slide-animation#f00b63e81fa59fd1553ccecb247430b3c7a661dd</id>
-        <link href="https://windhawk.net/mods/menu-tooltip-slide-animation"/>
-        <updated>2026-02-11T20:00:00.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Don't use slide animation when UI effects are disabled</li>
-</ul>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Custom Desktop Watermark 1.2.0]]></title>
-        <id>https://windhawk.net/mods/custom-desktop-watermark#4a61d4185a09f270883f3cb72a8da7d22acec204</id>
-        <link href="https://windhawk.net/mods/custom-desktop-watermark"/>
-        <updated>2026-02-11T00:34:53.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Refresh desktop whenever necessary to make changes show immediately</li>
-<li>Support for Windows 8.1 and Windows 11 24H2</li>
-</ul>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Menu/Tooltip Slide Animation 1.0.0]]></title>
-        <id>https://windhawk.net/mods/menu-tooltip-slide-animation#f3ca1c0c198f597b44116db8bced26e1abe60aaf</id>
-        <link href="https://windhawk.net/mods/menu-tooltip-slide-animation"/>
-        <updated>2026-02-10T13:35:50.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="menutooltipslideanimation">Menu/Tooltip Slide Animation</h1>
-<p>From Windows 98 through Windows XP, you could make menus and tooltips use a
-slide/scroll animation. This mod restores those animations to modern versions
-of Windows.</p>
-<h2 id="captionbuttontooltips">Caption button tooltips</h2>
-<p>The tooltips you see when hovering a window's caption buttons (Close, Maximize, Minimize)
-are implemented by the kernel-mode component of NTUSER. <strong>It is impossible to make them
-have a slide animation without issues.</strong></p>
-<p><strong>Tooltips</strong>:</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/menu-tooltip-slide-animation/tooltip.gif" alt="Tooltips" /></p>
-<p><strong>Menus (Windows 98/Me)</strong>:</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/menu-tooltip-slide-animation/menu-9x.gif" alt="Menus (Windows 98/Me)" /></p>
-<p><strong>Menus (Windows 2000/XP)</strong>:</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/menu-tooltip-slide-animation/menu-nt.gif" alt="Menus (Windows 2000/XP)" /></p>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
         </author>
     </entry>
 </feed>
