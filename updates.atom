@@ -2,21 +2,132 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2026-02-17T18:01:27.000Z</updated>
+    <updated>2026-02-19T23:10:39.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
+        <title type="html"><![CDATA[Taskbar Dock Animation 1.9.2]]></title>
+        <id>https://windhawk.net/mods/taskbar-dock-animation#d23ad55f18703e56934a130555304dbdb78b4dee</id>
+        <link href="https://windhawk.net/mods/taskbar-dock-animation"/>
+        <updated>2026-02-19T23:10:39.000Z</updated>
+        <content type="html"><![CDATA[<p>Added an option to disable animation for system taskbar buttons (Start, Widgets, Task View, Search).</p>
+<p>Added multilingual support.</p>
+<p>Added a smoothing (lerp) setting for the animation (not to be confused with the animation curve types).</p>
+<p>Added dirty-checking to prevent expensive repeated scans of the Windows UI element tree.</p>]]></content>
+        <author>
+            <name>Ph0en1x-dev</name>
+            <uri>https://github.com/Ph0en1x-dev</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Word Local AutoSave 1.8]]></title>
+        <id>https://windhawk.net/mods/word-local-autosave#95b4e5915b916a947210f4b89c88e15674d81f25</id>
+        <link href="https://windhawk.net/mods/word-local-autosave"/>
+        <updated>2026-02-19T05:44:47.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Version bumped to 1.8</li>
+<li><strong>Fixed dead code</strong>: Ctrl+Shift+Z check was unreachable - now Ctrl+Z handles both undo and redo (with/without Shift)</li>
+<li><strong>Fixed data loss</strong>: <code>minTimeBetweenSaves</code> skip no longer loses changes - now calculates remaining time and schedules deferred save</li>
+<li><strong>Fixed crash risk</strong>: Hook now returns TRUE instead of FALSE when <code>g_originalTranslateMessage</code> is null</li>
+<li><strong>Fixed race condition</strong>: <code>Wh_ModSettingsChanged()</code> now calls <code>ResetAllTimers()</code> before loading new settings</li>
+<li><strong>Removed unused variable</strong>: <code>g_initialized</code> was declared but never used</li>
+<li><strong>Added navigation keys check</strong>: Home, End, Page Up (VK<em>PRIOR), Page Down (VK</em>NEXT)</li>
+<li><strong>Removed redundant checks</strong>: Eliminated double <code>AreAnyKeysPressed()</code> calls in TrySave → SendCtrlS flow</li>
+<li><strong>Added upper limit for <code>minTimeBetweenSaves</code></strong>: MAX<em>MIN</em>TIME<em>BETWEEN</em>SAVES = 300000 (5 minutes)</li>
+<li><strong>Changed <code>ScheduleRetry()</code> return type</strong>: Now returns void instead of ignored bool</li>
+<li><strong>Fixed <code>Wh_ModUninit()</code></strong>: Now properly resets <code>g_retryCount</code> via <code>ResetAllTimers()</code></li>
+<li><strong>Added <code>IS_KEY_PRESSED()</code> macro</strong>: Replaced 40+ occurrences of <code>0x8000</code> magic number</li>
+<li><strong>Added <code>ResetAllTimers()</code> helper</strong>: Unified function for killing all timers and resetting state</li>
+<li><strong>Increased quiet period</strong>: 400ms → 500ms for better safety margin</li>
+<li><strong>Implemented atomic Ctrl+S sending</strong>: Safety checks between each keystroke to prevent race conditions</li>
+<li><strong>Added critical key check after Ctrl press</strong>:</li>
+<li>All letters A-Z (prevents Ctrl+B/I/U/E/L/R/J/A/N/O/P/W, etc.)</li>
+<li>All numbers 0-9 (prevents Ctrl+1/2/5 line spacing)</li>
+<li>Shift key (prevents Ctrl+Shift+S Apply Styles)</li>
+<li>Alt key (prevents Ctrl+Alt combinations)</li>
+<li>Bracket keys [ ] (prevents Ctrl+[/] font size change)</li>
+<li>Function keys F1-F12</li>
+<li><strong>Added <code>SendSingleKey()</code> helper</strong>: Granular keystroke control</li>
+<li><strong>Added <code>ReleaseCtrl()</code> cleanup</strong>: Properly releases Ctrl on abort</li>
+<li><strong>Expanded <code>AreAnyKeysPressed()</code> with 85+ keys</strong>:</li>
+<li>Left/Right Shift, Ctrl, Alt variants</li>
+<li>Caps Lock, Scroll Lock, Num Lock</li>
+<li>Print Screen, Pause/Break, Context Menu</li>
+<li>F13-F24 extended function keys</li>
+<li>All media keys (Volume, Play/Pause, etc.)</li>
+<li>All browser keys (Back, Forward, Refresh, etc.)</li>
+</ul>]]></content>
+        <author>
+            <name>communism420</name>
+            <uri>https://github.com/communism420</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Magnifier Headless Mode 1.0]]></title>
+        <id>https://windhawk.net/mods/magnifier-headless#90157decb7b9647ae233e9e2994a95c8ad417bb3</id>
+        <link href="https://windhawk.net/mods/magnifier-headless"/>
+        <updated>2026-02-18T00:53:38.000Z</updated>
+        <content type="html"><![CDATA[<p>refactor: Remove over-engineering and fix Windhawk compliance issues</p>
+<ul>
+<li>Remove 7 unnecessary API hooks (<code>AnimateWindow</code>, <code>BringWindowToTop</code>,
+<code>SetForegroundWindow</code>, <code>UpdateLayeredWindow</code>, <code>SetLayeredWindowAttributes</code>,
+<code>SetWindowRgn</code>, <code>DwmSetWindowAttribute</code>) — the 4 core hooks
+(<code>CreateWindowExW</code>, <code>ShowWindow</code>, <code>SetWindowPos</code>, <code>SetWindowLongPtrW</code>) fully
+cover all window visibility paths for Magnify.exe</li>
+<li>Remove <code>CallWndProc</code> hook + window subclassing infrastructure (150+ lines)
+that duplicated what the API hooks already handle</li>
+<li>Remove LRU cache (16-entry tick-based eviction for a process with ~5
+windows)</li>
+<li>Remove Safe wrapper functions with retry mechanisms (<code>SafeSetParent Sleep+retry</code>, <code>SafeSetWindowLongPtrW</code>, <code>SafeGetClassName</code>, <code>SafeIsWindow</code>)</li>
+<li>Remove <code>AutoCriticalSection</code> class and CRITICAL_SECTION — no longer needed without subclassing or cache</li>
+<li>Remove <code>CSpNotify</code> and <code>MSCTFIME</code> from <code>IsMagnifierWindow</code> detection — these are system-wide accessibility/IME windows, hiding them breaks accessibility features in an accessibility tool</li>
+<li>Remove GDI+ helper window detection — not Magnifier-specific</li>
+<li>Remove MSVC-only #pragma comment(lib) — Windhawk uses Clang/mingw-w64</li>
+<li>Remove redundant #include directives (<code>windhawk_api.h</code> is auto-included)</li>
+<li>Remove <code>@compilerOptions -lcomctl32</code> (only needed for removed subclassing)</li>
+<li>Fix <code>EnumWindows</code> to scope to current process only via <code>GetCurrentProcessId</code></li>
+<li>Rewrite <code>WindhawkModReadme</code> section to be user-focused instead of implementation docs</li>
+<li>Bump version to 1.0</li>
+</ul>
+<p>fix: Hide Magnifier Touch window from Alt+Tab
+The touch overlay was still appearing in Alt+Tab because <code>ShowWindow_Hook</code> was letting show commands pass through for touch overlay windows.</p>
+<ul>
+<li><code>ShowWindow_Hook</code> blocks show commands for touch overlays (same as magnifier)</li>
+<li><code>SetWindowPos_Hook</code> adds <code>SWP_HIDEWINDOW</code> flag for touch overlays</li>
+<li><code>CreateWindowExW_Hook</code> calls <code>ShowWindow</code> (<code>SW_HIDE</code>) after creating touch overlay</li>
+<li><code>CreateWindowExW_Hook</code> strips <code>WS_VISIBLE</code> from touch overlay before creation</li>
+</ul>]]></content>
+        <author>
+            <name>BCRTVKCS</name>
+            <uri>https://github.com/bcrtvkcs</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Old Logon Fade 1.1]]></title>
-        <id>https://windhawk.net/mods/win7-login-fade#3a51e8fef9e752c5664b1483edae35ea06b79feb</id>
+        <id>https://windhawk.net/mods/win7-login-fade#407aa7889e7c75d5eca0310b16dfc82055846d1a</id>
         <link href="https://windhawk.net/mods/win7-login-fade"/>
-        <updated>2026-02-17T18:01:27.000Z</updated>
-        <content type="html"><![CDATA[<p>Old Logon Fade 1.1</p>]]></content>
+        <updated>2026-02-17T22:48:47.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed the logon fade not respecting and resetting the previous gamma value, including those set by ICC profile, color calibration, some display drivers' color settings, f.lux, etc.</li>
+<li>Removed the 'fade on lock' feature, as it turns out, even Windows 7 did not fade when locking. That feature was also overly complicated and prone to bugs.</li>
+</ul>]]></content>
         <author>
             <name>Ingan121</name>
             <uri>https://github.com/Ingan121</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[HotCorner Hotkeys 2.4]]></title>
+        <id>https://windhawk.net/mods/hotcorner-hotkeys#2968e3cadbc5e7a693eaea64170812608ff8ecc7</id>
+        <link href="https://windhawk.net/mods/hotcorner-hotkeys"/>
+        <updated>2026-02-17T22:36:56.000Z</updated>
+        <content type="html"><![CDATA[<p>add 3 new actions, extended opacity args, cleanup</p>]]></content>
+        <author>
+            <name>webberlv</name>
+            <uri>https://github.com/webberLV</uri>
         </author>
     </entry>
     <entry>
@@ -492,81 +603,6 @@ icon restoration code integrated, so you don't need to use both mods together.</
         <author>
             <name>m417z</name>
             <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar tray auto-hide (show on hover) 1.0]]></title>
-        <id>https://windhawk.net/mods/taskbar-tray-show-on-hover#cf80b958c9c974090ce99d1da49af302b5e614ba</id>
-        <link href="https://windhawk.net/mods/taskbar-tray-show-on-hover"/>
-        <updated>2026-02-14T00:20:40.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="taskbartrayautohideshowonhover">Taskbar tray auto-hide (show on hover)</h1>
-<p>Hide the taskbar tray area when not in use, and show it when hovering the mouse
-over it.</p>
-<p><img src="https://i.imgur.com/uGReVFB.gif" alt="Demonstration" /></p>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar Auto-Hide Instant Show 2.1]]></title>
-        <id>https://windhawk.net/mods/taskbar-autohide-instant-show#9fddc7f33e424cabfaca200627b002cff2cd24b4</id>
-        <link href="https://windhawk.net/mods/taskbar-autohide-instant-show"/>
-        <updated>2026-02-13T20:20:52.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fix fade cleanup flash on hide (alpha set before removing WS<em>EX</em>LAYERED)</li>
-<li>Add animation cancellation to prevent state corruption on rapid show/hide</li>
-<li>Suppress pre-animation flash by updating TrayUI state while window is hidden</li>
-<li>Add mouse edge detection thread for monitors with no visible windows</li>
-</ul>]]></content>
-        <author>
-            <name>Bo0ii</name>
-            <uri>https://github.com/Bo0ii</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar auto-hide custom activation area 1.0]]></title>
-        <id>https://windhawk.net/mods/taskbar-auto-hide-custom-activation-area#dc75ec6a3d28698d3b605f12582e0286c0f1588d</id>
-        <link href="https://windhawk.net/mods/taskbar-auto-hide-custom-activation-area"/>
-        <updated>2026-02-13T19:26:14.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="taskbarautohidecustomactivationarea">Taskbar auto-hide custom activation area</h1>
-<p>Customize the taskbar auto-hide activation area, allowing to limit mouse
-unhiding to specific regions.</p>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Disk Usage Bar in Drive Properties 1.0]]></title>
-        <id>https://windhawk.net/mods/disk-usage-bar-in-drive-properties#c2e624b0ebeb3c649073ec5656655b1bebc65089</id>
-        <link href="https://windhawk.net/mods/disk-usage-bar-in-drive-properties"/>
-        <updated>2026-02-13T17:22:37.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="diskusagebarindriveproperties">Disk Usage Bar in Drive Properties</h1>
-<p>This mod replaces the disk usage pie/donut chart in the drive properties dialog
-with a usage bar.</p>
-<p><img src="https://raw.githubusercontent.com/AromaKitsune/My-Windhawk-Mods/main/screenshots/disk-usage-bar-in-drive-properties.png" alt="" /></p>
-<h2 id="features">Features</h2>
-<ul>
-<li>Replaces the pie/donut chart with a blue usage bar, like in "This PC".</li>
-<li>Switches the bar color to red when the disk is almost full.</li>
-<li>Displays the usage percentage text below the bar.</li>
-</ul>
-<h2 id="supportedwindowsversions">Supported Windows versions</h2>
-<ul>
-<li>Windows 11</li>
-<li>Windows 10</li>
-<li>Windows 8.1</li>
-</ul>
-<h2 id="configuration">Configuration</h2>
-<p>You can enable the option to switch the usage bar color to red when disk usage
-exceeds 90%.</p>
-<hr />
-<p>Based on the "<a href="https://windhawk.net/mods/disk-pie-chart">Disk Pie Chart</a>" mod by
-<strong>aubymori</strong>.</p>]]></content>
-        <author>
-            <name>Kitsune</name>
-            <uri>https://github.com/AromaKitsune</uri>
         </author>
     </entry>
 </feed>

@@ -4106,20 +4106,20 @@
                     2
                 ],
                 "ratingUsers": 3,
-                "updated": 1771231028000,
+                "updated": 1771367816000,
                 "users": 8
             },
             "metadata": {
                 "author": "webberlv",
                 "compilerOptions": "-lcomctl32 -loleaut32 -lole32 -lversion",
-                "description": "Global hotkeys routed by cursor zone (corner/edge) to run different actions; no-match consumes the hotkey.",
+                "description": "Assign configurable keyboard hotkeys to up to 8 actions, gated by cursor zones (four corners + four edges) of the active monitor.",
                 "github": "https://github.com/webberLV",
                 "include": [
                     "explorer.exe"
                 ],
                 "license": "GPL-3.0-only",
                 "name": "HotCorner Hotkeys",
-                "version": "2.0"
+                "version": "2.4"
             }
         },
         "hover-text-magnifier": {
@@ -4874,12 +4874,11 @@
                     6
                 ],
                 "ratingUsers": 7,
-                "updated": 1769374687000,
+                "updated": 1771376018000,
                 "users": 96
             },
             "metadata": {
                 "author": "BCRTVKCS",
-                "compilerOptions": "-lcomctl32",
                 "description": "Blocks the Magnifier window creation, keeping zoom functionality with win+\"-\" and win+\"+\" keyboard shortcuts.",
                 "github": "https://github.com/bcrtvkcs",
                 "homepage": "https://grdigital.pro",
@@ -4888,7 +4887,7 @@
                 ],
                 "name": "Magnifier Headless Mode",
                 "twitter": "https://x.com/bcrtvkcs",
-                "version": "0.9.5.4"
+                "version": "1.0"
             }
         },
         "magnifier-mod": {
@@ -7342,7 +7341,7 @@
                     523
                 ],
                 "ratingUsers": 637,
-                "updated": 1767122451000,
+                "updated": 1771542639000,
                 "users": 49677
             },
             "metadata": {
@@ -7351,13 +7350,13 @@
                 ],
                 "author": "Ph0en1x-dev",
                 "compilerOptions": "-lole32 -loleaut32 -lruntimeobject -lshcore -lwindowsapp -luser32",
-                "description": "Animates taskbar icons on mouse hover like in macOS",
+                "description": "macOS のように、マウスホバーでタスクバーアイコンをアニメーション表示します",
                 "github": "https://github.com/Ph0en1x-dev",
                 "include": [
                     "explorer.exe"
                 ],
-                "name": "Taskbar Dock Animation",
-                "version": "1.7"
+                "name": "タスクバー Dock アニメーション",
+                "version": "1.9.2"
             }
         },
         "taskbar-empty-space-clicks": {
@@ -9627,7 +9626,7 @@
                     2
                 ],
                 "ratingUsers": 3,
-                "updated": 1771351287000,
+                "updated": 1771368527000,
                 "users": 114
             },
             "metadata": {
@@ -9970,7 +9969,7 @@
                     3
                 ],
                 "ratingUsers": 3,
-                "updated": 1769430610000,
+                "updated": 1771479887000,
                 "users": 80
             },
             "metadata": {
@@ -9984,7 +9983,7 @@
                     "WINWORD.EXE"
                 ],
                 "name": "Word Local AutoSave",
-                "version": "1.7"
+                "version": "1.8"
             }
         },
         "xs-discord-control-registered-games": {
