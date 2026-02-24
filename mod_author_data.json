@@ -115,7 +115,9 @@
     "https://github.com/ciizerr": {
         "author": "ciizerr",
         "github": "https://github.com/ciizerr",
-        "homepages": []
+        "homepages": [
+            "https://vlc-rpc.vercel.app/"
+        ]
     },
     "https://github.com/cirn09": {
         "author": "Cirn09",
@@ -244,6 +246,13 @@
         "author": "Joe Ye",
         "github": "https://github.com/JoeYe-233",
         "homepages": []
+    },
+    "https://github.com/jogai": {
+        "author": "Jogai",
+        "github": "https://github.com/Jogai",
+        "homepages": [
+            "https://www.scott-software.nl/"
+        ]
     },
     "https://github.com/kawapure": {
         "author": "Isabella Lulamoon (kawapure)",

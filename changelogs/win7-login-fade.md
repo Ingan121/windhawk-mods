@@ -1,3 +1,7 @@
+## 1.2 ([Feb 24, 2026](https://github.com/ramensoftware/windhawk-mods/blob/4641992000faf4c1aa5dc9906362f154efa1ef7f/mods/win7-login-fade.wh.cpp))
+
+Logon & Sleep Fade Restorer 1.2
+
 ## 1.1 ([Feb 17, 2026](https://github.com/ramensoftware/windhawk-mods/blob/407aa7889e7c75d5eca0310b16dfc82055846d1a/mods/win7-login-fade.wh.cpp))
 
 * Fixed the logon fade not respecting and resetting the previous gamma value, including those set by ICC profile, color calibration, some display drivers' color settings, f.lux, etc.
