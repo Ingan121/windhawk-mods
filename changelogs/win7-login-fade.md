@@ -1,6 +1,12 @@
-## 1.2 ([Feb 24, 2026](https://github.com/ramensoftware/windhawk-mods/blob/4641992000faf4c1aa5dc9906362f154efa1ef7f/mods/win7-login-fade.wh.cpp))
+## 1.3 ([Mar 2, 2026](https://github.com/ramensoftware/windhawk-mods/blob/3a80fd0a2bb8dd9ef7d46c87de57f9d76bcc6b80/mods/win7-login-fade.wh.cpp))
 
-Logon & Sleep Fade Restorer 1.2
+Add workaround for apps turning the monitor off in a hacky way
+
+## 1.2 ([Feb 26, 2026](https://github.com/ramensoftware/windhawk-mods/blob/cfb61a49f07450f896d6598a1a2a18e2af344a5e/mods/win7-login-fade.wh.cpp))
+
+* Add support for fading on sleep, hibernation, and monitor off
+* Add support for setting different duration values on logon/unlock and logoff/shutdown, and optionally keeping the default DWM fade on logon/unlock
+* Add support for using the kernel-mode fade implementation instead of the custom logic in this mod (on supported versions)
 
 ## 1.1 ([Feb 17, 2026](https://github.com/ramensoftware/windhawk-mods/blob/407aa7889e7c75d5eca0310b16dfc82055846d1a/mods/win7-login-fade.wh.cpp))
 

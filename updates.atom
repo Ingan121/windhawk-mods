@@ -2,252 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2026-02-24T20:34:21.000Z</updated>
+    <updated>2026-03-02T09:30:39.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
-        <title type="html"><![CDATA[Logon & Sleep Fade Restorer 1.2]]></title>
-        <id>https://windhawk.net/mods/win7-login-fade#4641992000faf4c1aa5dc9906362f154efa1ef7f</id>
+        <title type="html"><![CDATA[Logon & Sleep Fade Restorer 1.3]]></title>
+        <id>https://windhawk.net/mods/win7-login-fade#3a80fd0a2bb8dd9ef7d46c87de57f9d76bcc6b80</id>
         <link href="https://windhawk.net/mods/win7-login-fade"/>
-        <updated>2026-02-24T20:34:21.000Z</updated>
-        <content type="html"><![CDATA[<p>Logon &amp; Sleep Fade Restorer 1.2</p>]]></content>
+        <updated>2026-03-02T09:30:39.000Z</updated>
+        <content type="html"><![CDATA[<p>Add workaround for apps turning the monitor off in a hacky way</p>]]></content>
         <author>
             <name>Ingan121</name>
             <uri>https://github.com/Ingan121</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[IDM Clear Completed Downloads 0.5.3]]></title>
-        <id>https://windhawk.net/mods/idm-clear-completed-downloads#24542c7a28cb73aa9d8d92f781186deab23f0587</id>
-        <link href="https://windhawk.net/mods/idm-clear-completed-downloads"/>
-        <updated>2026-02-23T22:51:55.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="idmclearcompleteddownloads">IDM Clear Completed Downloads</h1>
-<p>This mod automatically cleans up completed downloads every time you open the <a href="https://www.internetdownloadmanager.com/">Internet Download Manager (IDM)</a> window.</p>
-<h2 id="whatdoesitdo">What Does It Do?</h2>
-<p>When IDM's main window opens, the mod kicks in and automatically performs the following:</p>
-<ol>
-<li><strong>Deletes completed downloads</strong> - Triggers IDM's "Delete completed downloads" command</li>
-<li><strong>Auto-dismisses the confirmation dialog</strong> - Hides the confirmation popup and clicks "Yes"</li>
-<li><strong>Targets only the main window</strong> - Ignores other IDM windows like Settings, download dialogs, etc.</li>
-</ol>
-<h2 id="howitworks">How It Works</h2>
-<p>The mod hooks the <code>ShowWindow</code> function in the Windows API. When IDM makes a window visible:</p>
-<ul>
-<li>Checks if the window's class name is <code>#32770</code> (standard dialog class)</li>
-<li>Verifies the window is <strong>ownerless</strong> (no owner) and <strong>has a menu bar</strong></li>
-<li>Only the IDM main window satisfies both conditions, so other windows are filtered out</li>
-<li>If conditions are met, the cleanup task is launched in a separate thread</li>
-</ul>
-<h2 id="targetprocess">Target Process</h2>
-<ul>
-<li>This mod is only for targets the <code>idman.exe</code> process and does not affect other programs.</li>
-</ul>]]></content>
-        <author>
-            <name>BCRTVKCS</name>
-            <uri>https://github.com/bcrtvkcs</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VLC Discord Rich Presence 1.1.1]]></title>
-        <id>https://windhawk.net/mods/vlc-discord-rpc#77a37e151ece2d18a73ac9e1b3cfab3abac18a6e</id>
-        <link href="https://windhawk.net/mods/vlc-discord-rpc"/>
-        <updated>2026-02-23T22:46:29.000Z</updated>
-        <content type="html"><![CDATA[<p>Metadata &amp; Visuals</p>
-<ul>
-<li><p>External Artwork Fetching (new): If a media file lacks embedded artwork, the mod now seamlessly attempts to find and display relevant cover art or movie posters online.</p></li>
-<li><p>Advanced Metadata Cleaning: Introduced aggressive filtering to remove junk text (like website names, resolutions, or release group tags) from titles and artist names, resulting in a much cleaner Rich Presence.</p></li>
-<li><p>Release Year Parsing: Added support for extracting the release year from filenames to improve metadata accuracy and artwork matching.</p></li>
-</ul>]]></content>
-        <author>
-            <name>ciizerr</name>
-            <uri>https://github.com/ciizerr</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Win10 Taskbar Per-App Volume Control 1.0.1]]></title>
-        <id>https://windhawk.net/mods/win10-taskbar-per-app-volume-control#7810027bbc5e62fd3455a897e2658e17d1815f29</id>
-        <link href="https://windhawk.net/mods/win10-taskbar-per-app-volume-control"/>
-        <updated>2026-02-22T13:31:02.000Z</updated>
-        <content type="html"><![CDATA[<p>Rename mod to 'Win10 Taskbar Per-App Volume Control'</p>]]></content>
+        <title type="html"><![CDATA[Fix language indicator in Win10 taskbar under Win11 24H2+ 1.4.0]]></title>
+        <id>https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator#59966b5a2e2fe7dcdbc6b536b8ba1c20b9cda8e2</id>
+        <link href="https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator"/>
+        <updated>2026-03-02T08:07:56.000Z</updated>
+        <content type="html"><![CDATA[<p>Fix issues with taskbar thicker than 3 rows.</p>]]></content>
         <author>
             <name>Anixx</name>
             <uri>https://github.com/Anixx</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Taskbar Volume Control 1.0.0]]></title>
-        <id>https://windhawk.net/mods/win10-taskbar-per-app-volume-control#207ca90dc7800e6be4e0ad67b6a689b80bb0ba39</id>
-        <link href="https://windhawk.net/mods/win10-taskbar-per-app-volume-control"/>
-        <updated>2026-02-22T09:01:08.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="taskbarvolumecontrol">Taskbar Volume Control</h1>
-<p>Scroll the mouse wheel over an application's taskbar button to adjust its
-volume. A tooltip follows your cursor showing the current volume level.</p>
-<ul>
-<li><strong>Scroll Up</strong>: Increase volume</li>
-<li><strong>Scroll Down</strong>: Decrease volume</li>
-<li>Works with the Windows 10 taskbar running either under Windows 10 or Windows 11</li>
-<li>Only affects apps that have an active audio session</li>
-</ul>]]></content>
-        <author>
-            <name>Anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 95/98/NT 4.0 Open/Save Dialog 1.0.0]]></title>
-        <id>https://windhawk.net/mods/win9x-nt4-open-save-dialog#3310e658993f5cbf956406fc9650bc70008069e1</id>
-        <link href="https://windhawk.net/mods/win9x-nt4-open-save-dialog"/>
-        <updated>2026-02-22T08:58:08.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="windows9598nt40opensavedialog">Windows 95/98/NT 4.0 Open/Save Dialog</h1>
-<p>This mod makes the classic open/save dialog more like the one from Windows 95,
-98, or NT 4.0 by removing the Places Bar and replacing the toolbar items.</p>
-<p>If you want Windows 98's Deskop item, you will need a copy of Windows 98's comdlg32.dll.
-Once you have that, provide a path to it in the mod options.</p>
-<p><strong>NOTE</strong>: This mod only applies to the <em>classic</em> open/save dialogs. To see these changes everywhere,
-you will need <a href="https://windhawk.net/mods/classic-file-picker-dialog">this mod</a>.</p>
-<p><strong>Before</strong>:</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/win9x-nt4-open-save-dialog/before.png" alt="Before" /></p>
-<p><strong>After</strong>:</p>
-<p><img src="https://raw.githubusercontent.com/aubymori/images/refs/heads/main/win9x-nt4-open-save-dialog/after.png" alt="After" /></p>]]></content>
-        <author>
-            <name>aubymori</name>
-            <uri>https://github.com/aubymori</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 7 Style UAC Window Positioning 0.1]]></title>
-        <id>https://windhawk.net/mods/win7-style-uac-pos#e83a16e7ef7ab1ee1828dbae13b23accf3b6d4bc</id>
-        <link href="https://windhawk.net/mods/win7-style-uac-pos"/>
-        <updated>2026-02-21T18:59:43.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="windows7styleuacwindowpositioning">Windows 7 Style UAC Window Positioning</h1>
-<ul>
-<li>Make UAC windows positioned on top of the parent window, just like in Windows 7 and Vista, even in the secure desktop, instead of being centered on the screen as in Windows 8 and later.</li>
-<li><strong>Currently, this mod is only compatible with the classic UAC!</strong> If you are using Windows 10 or later, restore the old one with <a href="https://get-ntmu.github.io/#!/pack/classicuac">this NTMU pack</a> first. The new modern XAML-based UAC is much more difficult to mod and may require a completely different approach, so I have no plans to support it for now.</li>
-<li>It is highly recommended to use this mod together with <a href="https://windhawk.net/mods/win7-style-uac-dim">Windows 7 Style UAC Dim</a> for the best experience.</li>
-</ul>
-<h2 id="importantusagenote">⚠ Important usage note ⚠</h2>
-<p>In order to use this mod, you must allow Windhawk to inject into the <strong>consent.exe</strong>
-system process. To do so, add it to the process inclusion list in the advanced
-settings. If you do not do this, it will silently fail to inject.</p>
-<p><img src="https://i.imgur.com/LRhREtJ.png" alt="Advanced settings screenshot" /></p>]]></content>
-        <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Explorer Up → New Window/Tab (Ctrl-click or Middle-click) 1.4]]></title>
-        <id>https://windhawk.net/mods/explorer-up-new-window#9a735b7426ce7b619456e4528a9b2fdbe87f20a7</id>
-        <link href="https://windhawk.net/mods/explorer-up-new-window"/>
-        <updated>2026-02-21T18:08:26.000Z</updated>
-        <content type="html"><![CDATA[<p>New feature: Added a setting to open parent in new tab instead of new window</p>]]></content>
-        <author>
-            <name>Tobias Lind</name>
-            <uri>https://github.com/TobbeLino</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Window Opacity 0.1.0]]></title>
-        <id>https://windhawk.net/mods/window-opacity#e3e64385b10b0bcaaf1c2c255b35a4848ce23dbb</id>
-        <link href="https://windhawk.net/mods/window-opacity"/>
-        <updated>2026-02-21T17:52:45.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="windowopacityhotkeys">Window Opacity Hotkeys</h1>
-<p>Control any window's transparency with global keyboard shortcuts.</p>
-<h2 id="usage">Usage</h2>
-<ul>
-<li><strong>Modifier+1</strong> through <strong>Modifier+9</strong>: Sets the foreground window to
-10%–90% opacity</li>
-<li><strong>Modifier+0</strong>: Resets the foreground window to 100% (fully opaque)</li>
-<li><strong>Modifier+Minus (-)</strong>: Decreases opacity by 10% (more transparent)</li>
-<li><strong>Modifier+Equals (=)</strong>: Increases opacity by 10% (more visible)</li>
-</ul>
-<p>The default modifier is <strong>Ctrl+Alt</strong>. You can change it in the mod settings.</p>
-<p>The Minus/Equals cycling hotkeys are disabled by default. Enable them in the
-settings by choosing a key pair (Minus/Equals or Page Up/Page Down).</p>
-<h2 id="keyboardlayout">Keyboard layout</h2>
-<p>The hotkeys follow the number row so the layout is intuitive:</p>
-<p>| <code>1</code> | <code>2</code> | <code>3</code> | <code>4</code> | <code>5</code> | <code>6</code> | <code>7</code> | <code>8</code> | <code>9</code> | <code>0</code> | <code>-</code> | <code>=</code> |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| 10% | 20% | 30% | 40% | 50% | 60% | 70% | 80% | 90% | Reset | Step - | Step + |</p>
-<p>The <code>0</code>, <code>-</code> and <code>=</code> keys sit right next to each other at the end of the
-number row, giving you quick access to reset and fine-tune without having to
-remember a specific number.</p>
-<h2 id="howitworks">How it works</h2>
-<p>When a hotkey is pressed, the mod applies the <code>WS_EX_LAYERED</code> window style and
-calls <code>SetLayeredWindowAttributes</code> on the current foreground window. When
-resetting to 100%, the <code>WS_EX_LAYERED</code> style is removed to avoid rendering
-artifacts.</p>
-<p>All modified windows are automatically restored to full opacity when the mod is
-disabled or unloaded.</p>
-<h2 id="notes">Notes</h2>
-<ul>
-<li>Windows that already use <code>WS_EX_LAYERED</code> with <code>LWA_COLORKEY</code> (color-key
-transparency) are skipped to avoid overriding their existing transparency
-mechanism.</li>
-<li>The taskbar and desktop windows are excluded from opacity changes.</li>
-<li>Some UWP/WinUI windows may not respond to layered window attributes due to
-<code>WS_EX_NOREDIRECTIONBITMAP</code>. In that case the hotkey will have no visible
-effect.</li>
-</ul>]]></content>
-        <author>
-            <name>Jogai</name>
-            <uri>https://github.com/Jogai</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar Dock Animation 1.9.2]]></title>
-        <id>https://windhawk.net/mods/taskbar-dock-animation#d23ad55f18703e56934a130555304dbdb78b4dee</id>
-        <link href="https://windhawk.net/mods/taskbar-dock-animation"/>
-        <updated>2026-02-19T23:10:39.000Z</updated>
-        <content type="html"><![CDATA[<p>Added an option to disable animation for system taskbar buttons (Start, Widgets, Task View, Search).</p>
-<p>Added multilingual support.</p>
-<p>Added a smoothing (lerp) setting for the animation (not to be confused with the animation curve types).</p>
-<p>Added dirty-checking to prevent expensive repeated scans of the Windows UI element tree.</p>]]></content>
-        <author>
-            <name>Ph0en1x-dev</name>
-            <uri>https://github.com/Ph0en1x-dev</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Word Local AutoSave 1.8]]></title>
-        <id>https://windhawk.net/mods/word-local-autosave#95b4e5915b916a947210f4b89c88e15674d81f25</id>
+        <title type="html"><![CDATA[Word Local AutoSave 2.0]]></title>
+        <id>https://windhawk.net/mods/word-local-autosave#50ecdda554f97aa7fac4b4f41879e206d11474b1</id>
         <link href="https://windhawk.net/mods/word-local-autosave"/>
-        <updated>2026-02-19T05:44:47.000Z</updated>
+        <updated>2026-03-02T03:17:14.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Version bumped to 1.8</li>
-<li><strong>Fixed dead code</strong>: Ctrl+Shift+Z check was unreachable - now Ctrl+Z handles both undo and redo (with/without Shift)</li>
-<li><strong>Fixed data loss</strong>: <code>minTimeBetweenSaves</code> skip no longer loses changes - now calculates remaining time and schedules deferred save</li>
-<li><strong>Fixed crash risk</strong>: Hook now returns TRUE instead of FALSE when <code>g_originalTranslateMessage</code> is null</li>
-<li><strong>Fixed race condition</strong>: <code>Wh_ModSettingsChanged()</code> now calls <code>ResetAllTimers()</code> before loading new settings</li>
-<li><strong>Removed unused variable</strong>: <code>g_initialized</code> was declared but never used</li>
-<li><strong>Added navigation keys check</strong>: Home, End, Page Up (VK<em>PRIOR), Page Down (VK</em>NEXT)</li>
-<li><strong>Removed redundant checks</strong>: Eliminated double <code>AreAnyKeysPressed()</code> calls in TrySave → SendCtrlS flow</li>
-<li><strong>Added upper limit for <code>minTimeBetweenSaves</code></strong>: MAX<em>MIN</em>TIME<em>BETWEEN</em>SAVES = 300000 (5 minutes)</li>
-<li><strong>Changed <code>ScheduleRetry()</code> return type</strong>: Now returns void instead of ignored bool</li>
-<li><strong>Fixed <code>Wh_ModUninit()</code></strong>: Now properly resets <code>g_retryCount</code> via <code>ResetAllTimers()</code></li>
-<li><strong>Added <code>IS_KEY_PRESSED()</code> macro</strong>: Replaced 40+ occurrences of <code>0x8000</code> magic number</li>
-<li><strong>Added <code>ResetAllTimers()</code> helper</strong>: Unified function for killing all timers and resetting state</li>
-<li><strong>Increased quiet period</strong>: 400ms → 500ms for better safety margin</li>
-<li><strong>Implemented atomic Ctrl+S sending</strong>: Safety checks between each keystroke to prevent race conditions</li>
-<li><strong>Added critical key check after Ctrl press</strong>:</li>
-<li>All letters A-Z (prevents Ctrl+B/I/U/E/L/R/J/A/N/O/P/W, etc.)</li>
-<li>All numbers 0-9 (prevents Ctrl+1/2/5 line spacing)</li>
-<li>Shift key (prevents Ctrl+Shift+S Apply Styles)</li>
-<li>Alt key (prevents Ctrl+Alt combinations)</li>
-<li>Bracket keys [ ] (prevents Ctrl+[/] font size change)</li>
-<li>Function keys F1-F12</li>
-<li><strong>Added <code>SendSingleKey()</code> helper</strong>: Granular keystroke control</li>
-<li><strong>Added <code>ReleaseCtrl()</code> cleanup</strong>: Properly releases Ctrl on abort</li>
-<li><strong>Expanded <code>AreAnyKeysPressed()</code> with 85+ keys</strong>:</li>
-<li>Left/Right Shift, Ctrl, Alt variants</li>
-<li>Caps Lock, Scroll Lock, Num Lock</li>
-<li>Print Screen, Pause/Break, Context Menu</li>
-<li>F13-F24 extended function keys</li>
-<li>All media keys (Volume, Play/Pause, etc.)</li>
-<li>All browser keys (Back, Forward, Refresh, etc.)</li>
+<li>Version bumped to 2.0</li>
+<li>Implemented 8-stage verification system in SendCtrlS() for guaranteed zero false triggers</li>
+<li>Stage 1: Triple pre-check with 10ms delays between checks to catch fast typing</li>
+<li>Stage 2: Final quiet period validation after pre-checks</li>
+<li>Stage 3: Press Ctrl with error handling</li>
+<li>Stage 4: Critical key check + quiet period re-validation after Ctrl press</li>
+<li>Stage 5: Press S with inter-key delay</li>
+<li>Stage 6: Post-S verification to detect any other key pressed during S send</li>
+<li>Stage 7: Release S with retry mechanism</li>
+<li>Stage 8: Release Ctrl with retry mechanism</li>
+<li>Implemented 5 safety checks in TrySave() before calling SendCtrlS()</li>
+<li>Safety check 1: Verify Word is foreground window</li>
+<li>Safety check 2: Verify no keys are currently pressed</li>
+<li>Safety check 3: Verify quiet period has passed</li>
+<li>Safety check 4: Double-check after small delay to catch very fast typing</li>
+<li>Safety check 5: Re-verify Word is still foreground (user might have switched windows)</li>
+<li>Added PRE<em>SEND</em>VERIFY<em>DELAY</em>MS = 10 constant for delay between pre-check verifications</li>
+<li>Added POST<em>CTRL</em>VERIFY<em>DELAY</em>MS = 5 constant for delay after Ctrl press before verification</li>
+<li>Added INTER<em>KEY</em>DELAY_MS = 2 constant for delay between key operations</li>
+<li>Added PRE<em>SEND</em>CHECK_COUNT = 3 constant for number of pre-send verifications</li>
+<li>Added Sleep() calls between all critical operations to allow system to process inputs</li>
+<li>Added post-S letter key scan (A-Z except S) to detect concurrent key presses</li>
+<li>Added quiet period re-validation after Ctrl press</li>
+<li>Added foreground re-validation in TrySave() after delay-based checks</li>
+<li>Updated README with new "Safety Features (v2.0)" section documenting 8-stage verification</li>
+<li>Guarantees zero false shortcut triggers even with minimum 100ms save delay</li>
 </ul>]]></content>
         <author>
             <name>communism420</name>
@@ -255,81 +69,211 @@ effect.</li>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Magnifier Headless Mode 1.0]]></title>
-        <id>https://windhawk.net/mods/magnifier-headless#90157decb7b9647ae233e9e2994a95c8ad417bb3</id>
-        <link href="https://windhawk.net/mods/magnifier-headless"/>
-        <updated>2026-02-18T00:53:38.000Z</updated>
-        <content type="html"><![CDATA[<p>refactor: Remove over-engineering and fix Windhawk compliance issues</p>
+        <title type="html"><![CDATA["Sign in with a passkey" popup blocker 3.1.0]]></title>
+        <id>https://windhawk.net/mods/passkey-popup-blocker#d555d48688bd3e832f9ffef9b012cc236dffbff2</id>
+        <link href="https://windhawk.net/mods/passkey-popup-blocker"/>
+        <updated>2026-03-02T03:16:11.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li><strong>Changed</strong>: Increased default <strong>Interaction Timeout</strong> from <strong>500ms</strong> to <strong>800ms</strong>.</li>
+<li><strong>Improved</strong>: <strong>WebAuthn hook is now initialized first</strong> (before message loop hooks) — mod fails cleanly early if the critical hook can't be established, avoiding partial hook state.</li>
+<li><strong>Improved</strong>: <code>GetLastTick()</code> now uses <code>InterlockedOr(&amp;val, 0)</code> instead of <code>InterlockedCompareExchange</code> for a more correct and idiomatic atomic read on LONG-aligned memory.</li>
+<li><strong>Improved</strong>: <code>SetLastTick()</code> local fallback now also uses <code>InterlockedExchange</code> (was a plain assignment before), making it thread-safe in all cases.</li>
+<li><strong>Fixed</strong>: Removed <code>m-&gt;time</code> as a tick source in message hooks — it was unreliable (can be 0 or stale in some browser message loops). <code>GetTickCount()</code> is now used consistently.</li>
+<li><strong>Code</strong>: Replaced C-style casts with <code>static_cast</code> / <code>reinterpret_cast</code> throughout for cleaner, safer code.</li>
+</ul>]]></content>
+        <author>
+            <name>mode0192</name>
+            <uri>https://github.com/mode0192</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar Shadow & Border 1.0.3]]></title>
+        <id>https://windhawk.net/mods/taskbar-shadow-border#41b22ece71797fbdef290fbc18ece19c1aa8ef40</id>
+        <link href="https://windhawk.net/mods/taskbar-shadow-border"/>
+        <updated>2026-02-28T15:26:54.000Z</updated>
+        <content type="html"><![CDATA[<p>Reworked top-most setting logic and updated Wh_ModTool implementation</p>]]></content>
+        <author>
+            <name>Lockframe</name>
+            <uri>https://github.com/Lockframe</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Explorer Up → New Window/Tab (Ctrl-click or Middle-click) 1.4.1]]></title>
+        <id>https://windhawk.net/mods/explorer-up-new-window#2a2d29687df197f84b6def9da159231ada7cde43</id>
+        <link href="https://windhawk.net/mods/explorer-up-new-window"/>
+        <updated>2026-02-28T12:42:39.000Z</updated>
+        <content type="html"><![CDATA[<p>Fix issue preventing Windhawk from exiting (applied updated "Mods-as-tools"-snippet)</p>]]></content>
+        <author>
+            <name>Tobias Lind</name>
+            <uri>https://github.com/TobbeLino</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Visio: Middle Mouse Pan & Smart Zoom 1.0]]></title>
+        <id>https://windhawk.net/mods/visio-pan-zoom#d506e023b55369144196a4f782ebb91c51b2cce7</id>
+        <link href="https://windhawk.net/mods/visio-pan-zoom"/>
+        <updated>2026-02-28T11:30:51.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="visiomiddlepansmartzoom">Visio: Middle Pan &amp; Smart Zoom</h1>
+<p>This mod brings modern CAD/design software navigation experience to Microsoft Visio, allowing you to navigate the canvas with just <em>one hand</em>.</p>
+<h3 id="features">Features</h3>
 <ul>
-<li>Remove 7 unnecessary API hooks (<code>AnimateWindow</code>, <code>BringWindowToTop</code>,
-<code>SetForegroundWindow</code>, <code>UpdateLayeredWindow</code>, <code>SetLayeredWindowAttributes</code>,
-<code>SetWindowRgn</code>, <code>DwmSetWindowAttribute</code>) — the 4 core hooks
-(<code>CreateWindowExW</code>, <code>ShowWindow</code>, <code>SetWindowPos</code>, <code>SetWindowLongPtrW</code>) fully
-cover all window visibility paths for Magnify.exe</li>
-<li>Remove <code>CallWndProc</code> hook + window subclassing infrastructure (150+ lines)
-that duplicated what the API hooks already handle</li>
-<li>Remove LRU cache (16-entry tick-based eviction for a process with ~5
-windows)</li>
-<li>Remove Safe wrapper functions with retry mechanisms (<code>SafeSetParent Sleep+retry</code>, <code>SafeSetWindowLongPtrW</code>, <code>SafeGetClassName</code>, <code>SafeIsWindow</code>)</li>
-<li>Remove <code>AutoCriticalSection</code> class and CRITICAL_SECTION — no longer needed without subclassing or cache</li>
-<li>Remove <code>CSpNotify</code> and <code>MSCTFIME</code> from <code>IsMagnifierWindow</code> detection — these are system-wide accessibility/IME windows, hiding them breaks accessibility features in an accessibility tool</li>
-<li>Remove GDI+ helper window detection — not Magnifier-specific</li>
-<li>Remove MSVC-only #pragma comment(lib) — Windhawk uses Clang/mingw-w64</li>
-<li>Remove redundant #include directives (<code>windhawk_api.h</code> is auto-included)</li>
-<li>Remove <code>@compilerOptions -lcomctl32</code> (only needed for removed subclassing)</li>
-<li>Fix <code>EnumWindows</code> to scope to current process only via <code>GetCurrentProcessId</code></li>
-<li>Rewrite <code>WindhawkModReadme</code> section to be user-focused instead of implementation docs</li>
-<li>Bump version to 1.0</li>
+<li><strong>Middle-Click Panning:</strong> Press and hold the middle mouse button to freely pan the canvas (replaces the cumbersome <code>Ctrl + Shift + Right Click</code> default).</li>
+<li><strong>Smart Zoom:</strong> Use the mouse scroll wheel to zoom in and out directly (replaces <code>Ctrl + Scroll</code>).</li>
+<li><strong>Horizontal Scroll Kept:</strong> Holding <code>Shift</code> while scrolling will still pan the canvas horizontally.</li>
+<li><strong>Touchpad Perfection:</strong> Intelligently distinguishes between a physical mouse and a Windows Precision Touchpad. Your native two-finger scrolling and pinch-to-zoom gestures are preserved perfectly without interference.</li>
 </ul>
-<p>fix: Hide Magnifier Touch window from Alt+Tab
-The touch overlay was still appearing in Alt+Tab because <code>ShowWindow_Hook</code> was letting show commands pass through for touch overlay windows.</p>
+<h3 id="settingsnote">Settings Note</h3>
+<p>If you are using a mouse with an "infinite / free-spinning / continuous" scroll wheel (like the Logitech MX Master series with MagSpeed), the Smart Zoom might not trigger correctly because the wheel sends micro-signals similar to a touchpad. You can fix this by disabling the <strong>"Preserve Native Touchpad Scroll"</strong> option in the mod's Settings page.</p>
+<hr />
+<h1 id="visio">Visio: 中键平移与智能缩放</h1>
+<p>为 Microsoft Visio 带来类似于 CAD 或设计软件的现代化导航体验，只需使用单手即可进行画布导航，彻底告别反人类的默认快捷键操作。</p>
+<h3 id="">核心功能</h3>
 <ul>
-<li><code>ShowWindow_Hook</code> blocks show commands for touch overlays (same as magnifier)</li>
-<li><code>SetWindowPos_Hook</code> adds <code>SWP_HIDEWINDOW</code> flag for touch overlays</li>
-<li><code>CreateWindowExW_Hook</code> calls <code>ShowWindow</code> (<code>SW_HIDE</code>) after creating touch overlay</li>
-<li><code>CreateWindowExW_Hook</code> strips <code>WS_VISIBLE</code> from touch overlay before creation</li>
+<li><strong>中键平移画布：</strong> 按住鼠标中键即可自由拖拽平移画布（完美替代原生繁琐的 <code>Ctrl + Shift + 右键</code> 操作）。</li>
+<li><strong>滚轮智能缩放：</strong> 直接滚动鼠标滚轮即可进行画布缩放（替代 <code>Ctrl + 滚轮</code>）。</li>
+<li><strong>保留水平滚动：</strong> 按住 <code>Shift</code> 键滚动滚轮，依然可以水平移动画布。</li>
+<li><strong>完美兼容触摸板：</strong> 模块底层内置了智能启发式识别算法，能够精确区分物理鼠标刻度与 Windows 精密触摸板。触摸板原生的双指上下滑动与捏合缩放手势将被完美保留，互不干扰。</li>
+</ul>
+<h3 id="-1">设置项说明</h3>
+<p>如果您使用的是支持“无极滚轮/自由滚轮”的鼠标（例如罗技 MX Master 系列的 MagSpeed），由于其自由滚动模式下产生的微小信号特征与触摸板类似，可能会被算法识别为触摸板导致智能缩放失效。遇到此类情况，请在模块的设置页中关闭【保留原生触摸板滚动】选项。</p>]]></content>
+        <author>
+            <name>Joe Ye</name>
+            <uri>https://github.com/JoeYe-233</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fix language indicator in Win10 taskbar under Win11 24H2+ 1.3.0]]></title>
+        <id>https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator#b50ab73d1bf7a80b4cda5ac8ed366825ec03c138</id>
+        <link href="https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator"/>
+        <updated>2026-02-28T11:16:49.000Z</updated>
+        <content type="html"><![CDATA[<p>Updated version to 1.3.0 and added logic for first BitBlt operation.</p>]]></content>
+        <author>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OneNote Cursor Teleport Fix 2.0]]></title>
+        <id>https://windhawk.net/mods/onenote-cursor-teleport-fix#db533e7279c8362af59299a281dde90763b37968</id>
+        <link href="https://windhawk.net/mods/onenote-cursor-teleport-fix"/>
+        <updated>2026-02-28T09:57:29.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="onenotecursorteleportfixuiprotectionengine">OneNote Cursor Teleport Fix &amp; UI Protection Engine</h1>
+<p>A structural Windhawk modification that resolves hardware desynchronization between pen tablets in mouse mode and Microsoft OneNote's Windows Ink engine. This engine synchronizes the system cursor with the physical pen state</p>
+<p>Compatibility: Designed exclusively for the desktop version of Microsoft OneNote (onenote.exe).</p>
+<h2 id="corefeatures">Core Features</h2>
+<ul>
+<li><strong>Windows Ink Synchronization:</strong> Monitors <code>WM_POINTER</code> events and enforces Win32 system mouse tracking to prevent cursor desynchronization upon pen entry.</li>
+<li><strong>Teleport Interception:</strong> Evaluates the Euclidean distance of <code>WM_MOUSEMOVE</code> events and drops hardware jump packets that exceed the configured threshold.</li>
+<li><strong>Hierarchical UI Exception Engine:</strong> Parses window classes, styles, and ancestry to blacklist transient UI elements (e.g., <code>NetUIPopupWindow</code>, <code>SysShadow</code>). This prevents synthetic mouse events from auto-dismissing ribbon dropdowns or leaving artifacts.</li>
+<li><strong>Thread-Safe Subclassing:</strong> Implements a non-destructive subclassing architecture that safely attaches to OneNote's internal document canvas and active windows while avoiding protected UI layers.</li>
 </ul>]]></content>
         <author>
-            <name>BCRTVKCS</name>
-            <uri>https://github.com/bcrtvkcs</uri>
+            <name>Mohamed Magdy</name>
+            <uri>https://github.com/hamomagdy724</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Old Logon Fade 1.1]]></title>
-        <id>https://windhawk.net/mods/win7-login-fade#407aa7889e7c75d5eca0310b16dfc82055846d1a</id>
-        <link href="https://windhawk.net/mods/win7-login-fade"/>
-        <updated>2026-02-17T22:48:47.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed the logon fade not respecting and resetting the previous gamma value, including those set by ICC profile, color calibration, some display drivers' color settings, f.lux, etc.</li>
-<li>Removed the 'fade on lock' feature, as it turns out, even Windows 7 did not fade when locking. That feature was also overly complicated and prone to bugs.</li>
-</ul>]]></content>
+        <title type="html"><![CDATA[Fix language indicator in Win10 taskbar under Win11 24H2+ 1.2.0]]></title>
+        <id>https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator#42750ed7fdbf87a8777a6ff118b119f20a12e302</id>
+        <link href="https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator"/>
+        <updated>2026-02-28T09:42:13.000Z</updated>
+        <content type="html"><![CDATA[<p>Improve reliability and remove the interim black rectangle</p>]]></content>
         <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[HotCorner Hotkeys 2.4]]></title>
-        <id>https://windhawk.net/mods/hotcorner-hotkeys#2968e3cadbc5e7a693eaea64170812608ff8ecc7</id>
-        <link href="https://windhawk.net/mods/hotcorner-hotkeys"/>
-        <updated>2026-02-17T22:36:56.000Z</updated>
-        <content type="html"><![CDATA[<p>add 3 new actions, extended opacity args, cleanup</p>]]></content>
+        <title type="html"><![CDATA[Win10 taskbar on Win11 24H2 or 25H2 0.1.6]]></title>
+        <id>https://windhawk.net/mods/win10-taskbar-on-win11-24h2#5d6a6214dfee43e3192a8587945094121257a189</id>
+        <link href="https://windhawk.net/mods/win10-taskbar-on-win11-24h2"/>
+        <updated>2026-02-28T09:40:43.000Z</updated>
+        <content type="html"><![CDATA[<p>Update readme</p>]]></content>
         <author>
-            <name>webberlv</name>
-            <uri>https://github.com/webberLV</uri>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Taskbar Volume Control 1.3]]></title>
-        <id>https://windhawk.net/mods/taskbar-volume-control#7514df4a76170d6b3cd9075791227880f2068fb4</id>
-        <link href="https://windhawk.net/mods/taskbar-volume-control"/>
-        <updated>2026-02-16T20:14:11.000Z</updated>
+        <title type="html"><![CDATA[Notepad Multi-Select 5.3]]></title>
+        <id>https://windhawk.net/mods/notepad-multi-select#1f17101c3d58a843cfcdae6bd399df5e5e81176e</id>
+        <link href="https://windhawk.net/mods/notepad-multi-select"/>
+        <updated>2026-02-28T01:23:36.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="notepadmultiselectadvancededitingengine">Notepad Multi-Select &amp; Advanced Editing Engine</h1>
+<p>A professional-grade Windhawk modification that elevates the classic Windows Notepad into a modern, IDE-style text editor. This engine introduces true multi-caret editing, system-native text highlighting, context-aware auto-indentation, automated character pairing, and line duplication, all while strictly preserving the native performance and undo history of the host application.</p>
+<p><strong>️ Compatibility:</strong> This modification is designed exclusively for the classic Win32 Notepad (<code>notepad.exe</code> without tabs). It does not hook into the modern Windows 11 UWP Notepad application.</p>
+<h2 id="corefeatures">Core Features</h2>
+<ul>
+<li><strong>Multi-Caret Editing:</strong> Spawn multiple concurrent cursors to edit, delete, or navigate across adjacent lines simultaneously.</li>
+<li><strong>Line & Selection Duplication:</strong> Press <code>Ctrl + D</code> in single-caret mode to instantly duplicate the current line or highlighted selection inline.</li>
+<li><strong>System-Native Highlighting:</strong> Renders multi-line text selections using standard Windows theme parameters (<code>COLOR_HIGHLIGHT</code>), ensuring visual consistency.</li>
+<li><strong>Automated Character Pairing & Wrap:</strong> Automatically completes structural pairs (<code>()</code>, <code>[]</code>, <code>{}</code>, <code>''</code>, <code>""</code>). If text is selected, it beautifully wraps the text. Features IDE-standard "step-over" logic.</li>
+<li><strong>Context-Aware Auto-Indentation:</strong> Intercepts line breaks (<code>Enter</code>) to dynamically trace and replicate the exact leading whitespace (spaces or tabs) of the preceding logical line.</li>
+<li><strong>Smart Word Navigation:</strong> Enhances <code>Ctrl + Left/Right</code> and <code>Ctrl + Backspace/Delete</code> logic to evaluate text chunks globally, ignoring arbitrary punctuation breaks for cleaner deletion of contiguous strings.</li>
+<li><strong>Intelligent Tab Management:</strong> Standardizes the <code>Tab</code> key to inject a rigid <code>\t</code> character. Introduces <code>Shift + Tab</code> as a non-destructive un-indent command.</li>
+<li><strong>Native Conflict Insulation:</strong> Engineered with strict execution firewalls. When operating in standard single-caret mode, the engine explicitly defers to the native Windows <code>DefSubclassProc</code>, ensuring zero interference with standard undo stacks.</li>
+</ul>
+<h2 id="keybindingsnavigation">️ Keybindings &amp; Navigation</h2>
+<p>| Command | Action |
+| :--- | :--- |
+| <code>Alt + Shift + Up/Down</code> | Spawn an additional caret on the adjacent line above or below. |
+| <code>Shift + Left/Right</code> | Highlight text simultaneously across all active cursors. |
+| <code>Escape</code> or <code>Mouse Click</code> | Terminate multi-select mode and revert to standard single-caret editing. |
+| <code>Ctrl + D</code> | Duplicate the currently selected text, or the entire current line. |
+| <code>Enter</code> | Execute a line break with dynamic replication of previous indentation. |
+| <code>Shift + Tab</code> | Execute a non-destructive reverse jump (un-indent) up to 4 spaces. |
+| <code>Ctrl + Backspace / Delete</code> | Execute contiguous word block deletion, overriding standard punctuation stops. |</p>]]></content>
+        <author>
+            <name>Mohamed Magdy</name>
+            <uri>https://github.com/hamomagdy724</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 10 Taskbar Context Menu Fix for Win11 24H2+ 1.1]]></title>
+        <id>https://windhawk.net/mods/win10-taskbar-context-menu-fix-24h2#d4752edf9c0ec0c4dfbb7589695b6f6d904ca97b</id>
+        <link href="https://windhawk.net/mods/win10-taskbar-context-menu-fix-24h2"/>
+        <updated>2026-02-27T22:30:57.000Z</updated>
+        <content type="html"><![CDATA[<p>Remove the items "tile", "cascade", not functional in Win11</p>]]></content>
+        <author>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fix language indicator in Win10 taskbar under Win11 24H2+ 1.1.0]]></title>
+        <id>https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator#26745de2fff4b3d684ef2b2cae2c5ef43928697c</id>
+        <link href="https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator"/>
+        <updated>2026-02-27T21:57:42.000Z</updated>
+        <content type="html"><![CDATA[<p>Remove hardcoded sizes, support for vertical and multi-row taskbar</p>]]></content>
+        <author>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 Start Menu Power Buttons 1.0.0]]></title>
+        <id>https://windhawk.net/mods/win11-power-buttons#fbc2e4d7d37b92463231f76b217eb1a240f3e6f5</id>
+        <link href="https://windhawk.net/mods/win11-power-buttons"/>
+        <updated>2026-02-27T21:51:42.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="windows11startmenupowerbuttons">Windows 11 Start Menu Power Buttons</h1>
+<p>Adds customizable one-click Shutdown, Restart, Sign out, Sleep, and Hibernate buttons to the Windows 11 Start menu, replacing the default power flyout.</p>
+<p><img src="https://i.imgur.com/M7xcCgb.png" alt="" /></p>
+<hr />
+<p>添加可配置的一键关机/重启/注销/睡眠/休眠按钮到 Windows 11 开始菜单，替换默认的电源按钮二级菜单。</p>]]></content>
+        <author>
+            <name>Hakuuyosei</name>
+            <uri>https://github.com/ahzvenol</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar Scroll Actions 1.2]]></title>
+        <id>https://windhawk.net/mods/taskbar-scroll-actions#a004a92ed65a9e3174df2df8e2131fa1fbb009ff</id>
+        <link href="https://windhawk.net/mods/taskbar-scroll-actions"/>
+        <updated>2026-02-27T13:38:24.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Added an option to scroll anywhere on the screen while holding a configurable combination of modifier keys to change the system volume.</li>
-<li>Added an option to scroll at the taskbar position even when a full screen window covers the taskbar.</li>
-<li>Added an option for custom regions along the taskbar where scrolling will control the system volume. For example, "100-200" (pixels) or "20%-50%" (percentage of taskbar length).</li>
-<li>Improved the volume change step option, which is now compatible with all volume indicators.</li>
-<li>Improved the "No automatic mute toggle" option, which is now compatible with all volume indicators.</li>
+<li>Added an option for custom regions along the taskbar. For example, "100-200" (pixels) or "20%-50%" (percentage of taskbar length).</li>
+<li>It's now possible to define multiple actions in different scroll regions. Note that due to this change, the mod settings have to be configured again.</li>
+<li>Added the DDC/CI brightness control method to support external monitors.</li>
 </ul>]]></content>
         <author>
             <name>m417z</name>
@@ -337,126 +281,98 @@ The touch overlay was still appearing in Alt+Tab because <code>ShowWindow_Hook</
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Keyboard Shortcut Actions 1.0.1]]></title>
-        <id>https://windhawk.net/mods/keyboard-shortcut-actions#8265d3ad06d1ad81e736feadea2264f6b3fa4329</id>
-        <link href="https://windhawk.net/mods/keyboard-shortcut-actions"/>
-        <updated>2026-02-16T18:58:17.000Z</updated>
+        <title type="html"><![CDATA[VLC Discord Rich Presence 1.1.2]]></title>
+        <id>https://windhawk.net/mods/vlc-discord-rpc#e07ad9a662659b593b03547496fb6930809acbab</id>
+        <link href="https://windhawk.net/mods/vlc-discord-rpc"/>
+        <updated>2026-02-27T13:02:31.000Z</updated>
+        <content type="html"><![CDATA[<p><em>Fixes & Performance Improvements</em></p>
+<ul>
+<li>High CPU Usage Fix: Resolved a performance issue introduced in v1.1.1 where the metadata cleaner caused high CPU load. Implemented a state-change cache so the heavy metadata scrubber only runs when the source media actually changes.</li>
+</ul>
+<p><em>Advanced Filtering & Processing</em></p>
+<ul>
+<li>Dynamic Filter Syncing: The metadata cleaner now remotely fetches and locally caches community-maintained junk word and tag filters. This ensures the cleaner stays highly accurate and up-to-date over time without requiring mod updates.</li>
+</ul>
+<p><em>Enhanced Customization</em></p>
+<ul>
+<li>Modular Mod Settings: Added dedicated toggles in the Windhawk settings to individually enable or disable Quality Tags (<code>ShowQualityTags</code>) and the Metadata Cleaner (<code>clean media titles</code>) based on user preference.</li>
+</ul>]]></content>
+        <author>
+            <name>ciizerr</name>
+            <uri>https://github.com/ciizerr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Word Local AutoSave 1.9]]></title>
+        <id>https://windhawk.net/mods/word-local-autosave#11b7ab2210ab196be114e08000e38136265d2d01</id>
+        <link href="https://windhawk.net/mods/word-local-autosave"/>
+        <updated>2026-02-27T12:44:43.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Fixed the mod not initializing properly on system start.</li>
+<li>Version bumped to 1.9</li>
+<li>Fixed SetTimer result not being checked in SaveTimerProc - could silently fail</li>
+<li>Fixed SetTimer result not being checked in ScheduleRetry - added error logging and retry count reset</li>
+<li>Fixed potential underflow in remainingTime calculation - now computed safely after validation</li>
+<li>Fixed incomplete IsAnyCriticalKeyPressed() - was missing VK<em>TAB, VK</em>INSERT, VK_RETURN, Numpad keys</li>
+<li>Added mouse button checks (VK<em>LBUTTON, VK</em>RBUTTON, VK<em>MBUTTON, VK</em>XBUTTON1, VK_XBUTTON2)</li>
+<li>Added Ctrl+Space check (clear formatting shortcut)</li>
+<li>Added Ctrl+Backspace check (delete word shortcut)</li>
+<li>Added Ctrl+Delete check (delete word forward shortcut)</li>
+<li>Added Ctrl+Home/End check (document navigation shortcuts)</li>
+<li>Added Ctrl+Arrows check (word navigation shortcuts)</li>
+<li>Replaced magic number 50 with constant DEFERRED<em>SAVE</em>BUFFER_MS</li>
+<li>Added volatile keyword to g_isSendingCtrlS for thread safety</li>
+<li>Created AbortSendCtrlS() helper function - eliminated duplicate cleanup code</li>
+<li>Changed INPUT initialization to use ZeroMemory() for better compiler compatibility</li>
+<li>Changed IS<em>KEY</em>PRESSED macro to use &lt; 0 instead of &amp; 0x8000 for correct SHORT comparison</li>
+<li>Added Win key (VK<em>LWIN, VK</em>RWIN) check in critical key detection</li>
+<li>Added XButton1/XButton2 mouse button checks</li>
+<li>Fixed key "sticking" issue - created ReleaseKeyWithRetry() with MAX<em>KEY</em>RELEASE_RETRIES=3 attempts</li>
+<li>Fixed deferred save not accounting for new input - added WM_CHAR handling for IME support</li>
+<li>Ctrl+Enter (page break) now triggers autosave</li>
+<li>Ctrl+Shift+Enter (column break) now triggers autosave</li>
+<li>Added VK_CLEAR (Numpad 5 without NumLock) to both key checks</li>
+<li>Added VK_SEPARATOR to both key checks and IsEditingKey</li>
+<li>Fixed ScheduleSave() calling ResetAllTimers() - now only calls KillSaveTimer() to preserve retry state</li>
+<li>Added MAX<em>KEY</em>RELEASE_RETRIES = 3 constant</li>
+<li>Added all OEM keys to IsAnyCriticalKeyPressed()</li>
+<li>Added comprehensive protection for 100+ Word shortcuts based on official Microsoft documentation</li>
+<li>Added protection for Ctrl+A through Ctrl+Z (Select All, Bold, Copy, Font Dialog, Center, Find, Go To, Replace, Italic, Justify, Hyperlink, Left, Indent, New, Open, Print, Remove Format, Right, Hanging Indent, Underline, Paste, Close, Cut, Redo, Undo)</li>
+<li>Added protection for Ctrl+0/1/2/5 (paragraph spacing and line spacing)</li>
+<li>Added protection for Ctrl+[ and Ctrl+] (decrease/increase font size)</li>
+<li>Added protection for Ctrl+= (subscript), Ctrl+- (non-breaking hyphen), Ctrl+; (date), Ctrl+' and Ctrl+` (accents)</li>
+<li>Added protection for Ctrl+F1 through Ctrl+F12 (Ribbon, Print Preview, Close window, Switch windows, Insert field, Maximize, Open)</li>
+<li>Added protection for Ctrl+Shift+S (Styles), Ctrl+Shift+E (Track Changes), Ctrl+Shift+Enter (Column break)</li>
+<li>Added VK<em>LAUNCH</em>MAIL, VK<em>LAUNCH</em>MEDIA<em>SELECT, VK</em>LAUNCH<em>APP1, VK</em>LAUNCH_APP2 to key checks</li>
+<li>Added VK_PAUSE (Ctrl+Break) to critical key check</li>
+<li>Added VK<em>SCROLL and VK</em>CAPITAL to critical key check</li>
+<li>Updated README with comprehensive "Shortcut Protection" section listing all protected shortcuts</li>
+<li>Added detailed comments documenting each key group and corresponding Word shortcuts</li>
 </ul>]]></content>
         <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
+            <name>communism420</name>
+            <uri>https://github.com/communism420</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Virtual Desktop Helper 2.3.0]]></title>
-        <id>https://windhawk.net/mods/virtual-desktop-helper#8df200d486cea8f11c582b906f87689e371a7bc8</id>
-        <link href="https://windhawk.net/mods/virtual-desktop-helper"/>
-        <updated>2026-02-16T18:29:55.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li><p>Removed tiling functionality and all related settings/hotkeys; the mod now focuses only on virtual desktop switching, moving, and pinning.</p></li>
-<li><p>Added “Previous Desktop (Index)” behavior and hotkey handling, plus documentation updates for previous/next/last terminology.</p></li>
-</ul>]]></content>
+        <title type="html"><![CDATA[Smart Copy & Paste 1.3.2]]></title>
+        <id>https://windhawk.net/mods/clipboard-history-upgrade#6b27babfc9ebb5acdb628fe0458222bc3555cd3a</id>
+        <link href="https://windhawk.net/mods/clipboard-history-upgrade"/>
+        <updated>2026-02-27T12:43:46.000Z</updated>
+        <content type="html"><![CDATA[<p>Add extensive localization for the mod (name, descriptions, UI labels, option names, option descriptions and option values) across 14 languages (tr, de, fr, es, pt-BR, it, ru, uk, ja, ko, zh-CN, zh-TW, pl, nl). Update README with a Localization section, bump version to 1.3.2, add a homepage field, and localize many settings (Core, CleanupAndFormatting, Text Cleanup &amp; Formatting, etc.). Changes are limited to metadata, strings, and README; no functional code logic was modified.</p>]]></content>
         <author>
-            <name>u2x1</name>
-            <uri>https://github.com/u2x1</uri>
+            <name>SwiftExplorer567</name>
+            <uri>https://github.com/SwiftExplorer567</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Tiling Helper 1.0.0]]></title>
-        <id>https://windhawk.net/mods/tiling-helper#85e4a6e8b5ce29cc1c26d9da6f343b03e20927ae</id>
-        <link href="https://windhawk.net/mods/tiling-helper"/>
-        <updated>2026-02-16T18:29:34.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="tilinghelper">Tiling Helper</h1>
-<p>A focused window tiling tool for Windows 10/11. Tile windows on the current monitor, cycle layouts, and keep
-resize-adjusted ratios per virtual desktop.</p>
-<h2 id="features">Features</h2>
-<ul>
-<li>Manual tiling hotkey</li>
-<li>Layout cycle hotkey</li>
-<li>6 layouts: Master+Stack (Vertical/Horizontal), Columns, Rows, BSP, Monocle</li>
-<li>Adjustable margin, gap, and master size</li>
-<li>Remembers resize adjustments per virtual desktop + monitor (auto-retile can be disabled)</li>
-<li>Optional capture of current window sizes when tiling (useful if auto-retile is off)</li>
-</ul>
-<h2 id="defaulthotkeys">Default Hotkeys</h2>
-<ul>
-<li>Tile windows: Alt + D</li>
-<li>Cycle layout: Alt + L</li>
-<li>Toggle retile-on-resize + reset memory: Alt + R</li>
-</ul>
-<h2 id="notes">Notes</h2>
-<ul>
-<li>The layout selection is global (one current layout), while the tiling state (ratios/weights) is stored per
-virtual desktop and monitor.</li>
-<li>If Virtual Desktop APIs are unavailable, tiling still works but per-desktop memory is disabled.</li>
-</ul>]]></content>
+        <title type="html"><![CDATA[Smart Copy & Paste 1.3.1]]></title>
+        <id>https://windhawk.net/mods/clipboard-history-upgrade#f75c1e904f5c57cd06f2c371b06d4d44a98052c2</id>
+        <link href="https://windhawk.net/mods/clipboard-history-upgrade"/>
+        <updated>2026-02-26T18:01:47.000Z</updated>
+        <content type="html"><![CDATA[<p>Reorganize Windhawk mod settings into grouped sections (Core, CleanupAndFormatting, DataExtraction, AdvancedConversions) with descriptive labels and emojis. Update LoadSettings to read nested setting keys and move previous flat keys to the new paths. Introduce g<em>smartCasingExcludeUrls (default true) and g</em>markdownToHtml (default true), update their defaults and Wh<em>Get* lookups. Move regex replacement entries to AdvancedConversions.RegexReplacements. Implement URL-aware casing in ApplyCasing so smart casing skips URLs by detecting URL ranges. Gate Markdown-to-HTML clipboard conversion on the new g</em>markdownToHtml flag.</p>]]></content>
         <author>
-            <name>u2x1</name>
-            <uri>https://github.com/u2x1</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Translucent Windows 1.7.4]]></title>
-        <id>https://windhawk.net/mods/translucent-windows#3dc62307b1a820cc2e7646d056d30ef495651ffa</id>
-        <link href="https://windhawk.net/mods/translucent-windows"/>
-        <updated>2026-02-16T18:09:49.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fix black background system colors in some programs (e.g. Office) using mods process ruled settings</li>
-<li>Minor custom theme additions</li>
-</ul>]]></content>
-        <author>
-            <name>Undisputed00x</name>
-            <uri>https://github.com/Undisputed00x</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Caffeine 0.7]]></title>
-        <id>https://windhawk.net/mods/caffeine#4ff0d3c579524082f13600af1a613b893ffe9193</id>
-        <link href="https://windhawk.net/mods/caffeine"/>
-        <updated>2026-02-16T08:39:30.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="caffeine">Caffeine</h1>
-<p>A lightweight system tray utility that prevents your computer from sleeping
-or turning off the display. Toggle it on and off with a single click on the
-tray icon, or right-click to choose a timed duration.</p>
-<h2 id="features">Features</h2>
-<ul>
-<li><strong>One-click toggle</strong>: Left-click the tray icon to activate/deactivate</li>
-<li><strong>Timed activation</strong>: Right-click for duration options (15 min to 4 hours, or indefinite)</li>
-<li><strong>Countdown display</strong>: Tooltip shows remaining time when using timed mode</li>
-<li><strong>Prevent sleep</strong>: Keeps your system from entering sleep mode</li>
-<li><strong>Prevent display off</strong>: Stops the monitor from turning off due to inactivity</li>
-<li><strong>Visual indicators</strong>: Distinct colors for active (caffeinated) and inactive states</li>
-<li><strong>Customizable appearance</strong>: Choose colors, shapes, and icon size</li>
-<li><strong>Auto-start option</strong>: Optionally start in active state when the mod loads</li>
-<li><strong>Lightweight</strong>: Uses the proper Windows API (<code>SetThreadExecutionState</code>) — no fake keypresses</li>
-</ul>
-<h2 id="howitworks">How it works</h2>
-<p>When activated, the mod calls <code>SetThreadExecutionState</code> with
-<code>ES_CONTINUOUS | ES_SYSTEM_REQUIRED | ES_DISPLAY_REQUIRED</code> to tell Windows
-that the system and display should stay on. When deactivated, it clears
-these flags.</p>
-<h2 id="controls">Controls</h2>
-<ul>
-<li><strong>Left-click</strong>: Quick toggle — activates indefinitely if off, deactivates if on</li>
-<li><strong>Right-click</strong>: Context menu with duration options:</li>
-<li>Indefinite (keeps awake forever)</li>
-<li>15 Minutes</li>
-<li>30 Minutes</li>
-<li>1 Hour</li>
-<li>2 Hours</li>
-<li>4 Hours</li>
-<li>Activate / Deactivate (shown based on current state)</li>
-</ul>
-<h2 id="visualindicators">Visual Indicators</h2>
-<ul>
-<li><strong>Active (Caffeinated)</strong>: Bright icon (default: amber/orange ☕)</li>
-<li><strong>Inactive</strong>: Dim icon (default: gray)</li>
-</ul>]]></content>
-        <author>
-            <name>ALMAS CP</name>
-            <uri>https://github.com/almas-cp</uri>
+            <name>SwiftExplorer567</name>
+            <uri>https://github.com/SwiftExplorer567</uri>
         </author>
     </entry>
 </feed>

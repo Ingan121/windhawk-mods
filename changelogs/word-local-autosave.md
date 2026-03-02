@@ -1,3 +1,74 @@
+## 2.0 ([Mar 2, 2026](https://github.com/ramensoftware/windhawk-mods/blob/50ecdda554f97aa7fac4b4f41879e206d11474b1/mods/word-local-autosave.wh.cpp))
+
+- Version bumped to 2.0
+- Implemented 8-stage verification system in SendCtrlS() for guaranteed zero false triggers
+- Stage 1: Triple pre-check with 10ms delays between checks to catch fast typing
+- Stage 2: Final quiet period validation after pre-checks
+- Stage 3: Press Ctrl with error handling
+- Stage 4: Critical key check + quiet period re-validation after Ctrl press
+- Stage 5: Press S with inter-key delay
+- Stage 6: Post-S verification to detect any other key pressed during S send
+- Stage 7: Release S with retry mechanism
+- Stage 8: Release Ctrl with retry mechanism
+- Implemented 5 safety checks in TrySave() before calling SendCtrlS()
+- Safety check 1: Verify Word is foreground window
+- Safety check 2: Verify no keys are currently pressed
+- Safety check 3: Verify quiet period has passed
+- Safety check 4: Double-check after small delay to catch very fast typing
+- Safety check 5: Re-verify Word is still foreground (user might have switched windows)
+- Added PRE_SEND_VERIFY_DELAY_MS = 10 constant for delay between pre-check verifications
+- Added POST_CTRL_VERIFY_DELAY_MS = 5 constant for delay after Ctrl press before verification
+- Added INTER_KEY_DELAY_MS = 2 constant for delay between key operations
+- Added PRE_SEND_CHECK_COUNT = 3 constant for number of pre-send verifications
+- Added Sleep() calls between all critical operations to allow system to process inputs
+- Added post-S letter key scan (A-Z except S) to detect concurrent key presses
+- Added quiet period re-validation after Ctrl press
+- Added foreground re-validation in TrySave() after delay-based checks
+- Updated README with new "Safety Features (v2.0)" section documenting 8-stage verification
+- Guarantees zero false shortcut triggers even with minimum 100ms save delay
+
+## 1.9 ([Feb 27, 2026](https://github.com/ramensoftware/windhawk-mods/blob/11b7ab2210ab196be114e08000e38136265d2d01/mods/word-local-autosave.wh.cpp))
+
+- Version bumped to 1.9
+- Fixed SetTimer result not being checked in SaveTimerProc - could silently fail
+- Fixed SetTimer result not being checked in ScheduleRetry - added error logging and retry count reset
+- Fixed potential underflow in remainingTime calculation - now computed safely after validation
+- Fixed incomplete IsAnyCriticalKeyPressed() - was missing VK_TAB, VK_INSERT, VK_RETURN, Numpad keys
+- Added mouse button checks (VK_LBUTTON, VK_RBUTTON, VK_MBUTTON, VK_XBUTTON1, VK_XBUTTON2)
+- Added Ctrl+Space check (clear formatting shortcut)
+- Added Ctrl+Backspace check (delete word shortcut)
+- Added Ctrl+Delete check (delete word forward shortcut)
+- Added Ctrl+Home/End check (document navigation shortcuts)
+- Added Ctrl+Arrows check (word navigation shortcuts)
+- Replaced magic number 50 with constant DEFERRED_SAVE_BUFFER_MS
+- Added volatile keyword to g_isSendingCtrlS for thread safety
+- Created AbortSendCtrlS() helper function - eliminated duplicate cleanup code
+- Changed INPUT initialization to use ZeroMemory() for better compiler compatibility
+- Changed IS_KEY_PRESSED macro to use < 0 instead of & 0x8000 for correct SHORT comparison
+- Added Win key (VK_LWIN, VK_RWIN) check in critical key detection
+- Added XButton1/XButton2 mouse button checks
+- Fixed key "sticking" issue - created ReleaseKeyWithRetry() with MAX_KEY_RELEASE_RETRIES=3 attempts
+- Fixed deferred save not accounting for new input - added WM_CHAR handling for IME support
+- Ctrl+Enter (page break) now triggers autosave
+- Ctrl+Shift+Enter (column break) now triggers autosave
+- Added VK_CLEAR (Numpad 5 without NumLock) to both key checks
+- Added VK_SEPARATOR to both key checks and IsEditingKey
+- Fixed ScheduleSave() calling ResetAllTimers() - now only calls KillSaveTimer() to preserve retry state
+- Added MAX_KEY_RELEASE_RETRIES = 3 constant
+- Added all OEM keys to IsAnyCriticalKeyPressed()
+- Added comprehensive protection for 100+ Word shortcuts based on official Microsoft documentation
+- Added protection for Ctrl+A through Ctrl+Z (Select All, Bold, Copy, Font Dialog, Center, Find, Go To, Replace, Italic, Justify, Hyperlink, Left, Indent, New, Open, Print, Remove Format, Right, Hanging Indent, Underline, Paste, Close, Cut, Redo, Undo)
+- Added protection for Ctrl+0/1/2/5 (paragraph spacing and line spacing)
+- Added protection for Ctrl+[ and Ctrl+] (decrease/increase font size)
+- Added protection for Ctrl+= (subscript), Ctrl+- (non-breaking hyphen), Ctrl+; (date), Ctrl+' and Ctrl+` (accents)
+- Added protection for Ctrl+F1 through Ctrl+F12 (Ribbon, Print Preview, Close window, Switch windows, Insert field, Maximize, Open)
+- Added protection for Ctrl+Shift+S (Styles), Ctrl+Shift+E (Track Changes), Ctrl+Shift+Enter (Column break)
+- Added VK_LAUNCH_MAIL, VK_LAUNCH_MEDIA_SELECT, VK_LAUNCH_APP1, VK_LAUNCH_APP2 to key checks
+- Added VK_PAUSE (Ctrl+Break) to critical key check
+- Added VK_SCROLL and VK_CAPITAL to critical key check
+- Updated README with comprehensive "Shortcut Protection" section listing all protected shortcuts
+- Added detailed comments documenting each key group and corresponding Word shortcuts
+
 ## 1.8 ([Feb 19, 2026](https://github.com/ramensoftware/windhawk-mods/blob/95b4e5915b916a947210f4b89c88e15674d81f25/mods/word-local-autosave.wh.cpp))
 
 - Version bumped to 1.8
