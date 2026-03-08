@@ -1,6 +1,6 @@
-## 1.3 ([Mar 2, 2026](https://github.com/ramensoftware/windhawk-mods/blob/3a80fd0a2bb8dd9ef7d46c87de57f9d76bcc6b80/mods/win7-login-fade.wh.cpp))
+## 1.3 ([Mar 2, 2026](https://github.com/ramensoftware/windhawk-mods/blob/a77cfa03723dfc97b23c2cd06925ee4d02ad5b3b/mods/win7-login-fade.wh.cpp))
 
-Add workaround for apps turning the monitor off in a hacky way
+Fix the monitor-off fade not working properly when an application uses a hacky way to turn the screen off
 
 ## 1.2 ([Feb 26, 2026](https://github.com/ramensoftware/windhawk-mods/blob/cfb61a49f07450f896d6598a1a2a18e2af344a5e/mods/win7-login-fade.wh.cpp))
 
