@@ -1,3 +1,19 @@
+## 2.4.1 ([Mar 29, 2026](https://github.com/ramensoftware/windhawk-mods/blob/d31cc9caa1d942878e751a16924b51ab1a8a4a90/mods/virtual-desktop-helper.wh.cpp))
+
+Update last desktop tracking when the foreground window changes, so desktop switches triggered by taskbar window activation are recorded correctly.
+
+## 2.4.0 ([Mar 17, 2026](https://github.com/ramensoftware/windhawk-mods/blob/0e5eb31430c7c36664389f737cc3b68fcd50e6d5/mods/virtual-desktop-helper.wh.cpp))
+
+Rename confusingly named cycling functions for clarity:
+- SwitchToPreviousDesktop (toggle last visited) → SwitchToLastDesktop
+- SwitchToPreviousIndexDesktop (idx-1) → SwitchToPreviousDesktop
+- Rename HK_PREV → HK_LAST, HK_PREV_INDEX → HK_PREV
+- Rename settings keys: PrevDesktopKey → LastDesktopKey, PrevIndexKey → PrevDesktopKey
+- Reorder and clarify settings group as [Previous/Next/Last Desktop]
+- Update README with clearer descriptions and add See Also link
+- Customize modifier keys with string 
+- Bump version to 2.4.0
+
 ## 2.3.0 ([Feb 16, 2026](https://github.com/ramensoftware/windhawk-mods/blob/8df200d486cea8f11c582b906f87689e371a7bc8/mods/virtual-desktop-helper.wh.cpp))
 
 - Removed tiling functionality and all related settings/hotkeys; the mod now focuses only on virtual desktop switching, moving, and pinning.

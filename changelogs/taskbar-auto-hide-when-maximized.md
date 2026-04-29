@@ -1,3 +1,13 @@
+## 1.2.6 ([Mar 30, 2026](https://github.com/ramensoftware/windhawk-mods/blob/2a7304911a79819683903696a3a7a34a1bb59633/mods/taskbar-auto-hide-when-maximized.wh.cpp))
+
+* Fixed Alt+Tab always showing the taskbar. Now it no longer affects the taskbar visibility state.
+
+## 1.2.5 ([Mar 29, 2026](https://github.com/ramensoftware/windhawk-mods/blob/4f639bb40e7da9b66efcf03ad36d9ceaf92ebc64/mods/taskbar-auto-hide-when-maximized.wh.cpp))
+
+* Improved Alt+Tab handling which no longer causes the taskbar to be hidden.
+* Improved handling of context menus which no longer cause the taskbar to be hidden.
+* Fixed the taskbar being stuck sometimes after using Win+Tab.
+
 ## 1.2.4 ([Jan 5, 2026](https://github.com/ramensoftware/windhawk-mods/blob/e1771115d4c8ce364c0413eb79e6cd268b98000c/mods/taskbar-auto-hide-when-maximized.wh.cpp))
 
 * Excluded Task Switcher view (Win+Tab), now the taskbar is always visible when Task Switcher is open.

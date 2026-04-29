@@ -1,3 +1,155 @@
+## 3.5 ([Apr 25, 2026](https://github.com/ramensoftware/windhawk-mods/blob/13d66deeb8119d6504e1908a95e4131119c4d82e/mods/word-local-autosave.wh.cpp))
+
+### Improved
+- Refactored the internal runtime state into a more structured and maintainable model with cleaner ownership boundaries.
+- Reworked native Word event handling to reduce coupling between the event sink and global runtime session state.
+- Split autosave and document-state tick capture into more focused paths so each timer flow computes only the state it actually needs.
+- Unified document snapshot loading through a shared plan-based pipeline used by both document-state refresh and save operations.
+- Simplified and strengthened owner-thread handling, scheduler coordination, and reset paths.
+- Expanded internal self-tests covering event routing, snapshot policy, scheduler behavior, owner-thread helpers, and reset helpers.
+
+### Optimized
+- Reduced unnecessary work in the autosave timer path by skipping full owner-thread/UI/input observation when no pending save exists.
+- Removed redundant input-busy checks by reusing already captured tick state where appropriate.
+- Replaced scattered `IID_PPV_ARGS` usage with a typed `QueryInterface` helper to make the COM path cleaner and warning-free.
+- Fixed a signedness conversion in COM dispatch argument setup to keep the code clean under stricter compiler diagnostics.
+
+### Notes
+- v3.5 does not add new user-facing features or settings.
+- This release focuses on internal code quality, maintainability, compile-time cleanliness, and removing remaining performance/architecture debt after v3.4.
+
+## 3.4 ([Apr 16, 2026](https://github.com/ramensoftware/windhawk-mods/blob/c155764bd43a6b348c16015576dc85163f8cb5b9/mods/word-local-autosave.wh.cpp))
+
+### Improved
+- Reduced hot-path overhead in `TranslateMessage` by caching the active Word root window, native object window, and owner UI thread instead of rediscovering them repeatedly.
+- Split the lightweight message path from the heavier timer/runtime path so expensive UI state checks and automation work run less often.
+- Stopped reconnecting native Word events from the per-message path; event connection is now handled on owner-thread adoption and timer-driven recovery paths.
+- Reduced idle document-state polling when native Word events are available, lowering background activity while Word is idle.
+- Kept fast refresh for command-driven changes such as ribbon formatting and similar non-keyboard actions without relying on dense idle polling.
+- Optimized document dirty-state checks so the mod queries `Saved` first and only resolves full metadata when it is actually needed.
+- Reused the cached transition-flush document object before falling back to full document enumeration by path.
+- Reduced timer churn by avoiding unnecessary timer re-arming when an existing timer is already scheduled soon enough.
+- Reduced log noise in normal operation by removing some high-frequency informational messages and routing change detection through deduplicated status logs.
+
+### Fixed
+- Fixed owner-thread/timer coordination so stale timer IDs from a previous owner thread do not interfere after thread re-adoption.
+- Fixed cache invalidation around focus, activation, close, and similar window transitions so cached Word UI context is refreshed when it becomes unreliable.
+- Fixed a potential performance regression where expensive Word window discovery could still be triggered too often after optimization changes.
+- Fixed transition-flush tracking so cached document references and identities are cleared together when the request is reset.
+
+### Notes
+- v3.4 does not add new user-facing features or settings.
+- This release focuses on lower CPU/UI overhead, less background work, and smoother behavior on slower machines.
+
+## 3.3 ([Apr 10, 2026](https://github.com/ramensoftware/windhawk-mods/blob/e524a209a6628714426fe8bec453199be01f3e41/mods/word-local-autosave.wh.cpp))
+
+### Added
+- Added earlier pending-save flushes at natural action boundaries, such as document/window deactivation, focus loss, close/minimize, and other transition points.
+- Added native Word application event handling through COM connection points, with support for `DocumentBeforeSave`, `DocumentBeforeClose`, `DocumentChange`, and `WindowDeactivate`.
+- Added Save As / rename state migration so the tracked document identity can move to the new file name/path without losing autosave context.
+- Added per-document COM identity tracking in addition to path-based tracking, reducing ambiguity when Word changes document identity in-place.
+- Added per-instance Word binding so the mod is more likely to stay attached to the correct `WINWORD.EXE` instance instead of relying on generic global resolution.
+- Added explicit handling for Protected View so autosave is deferred/skipped more cleanly in that mode.
+- Added automation-busy recovery state so pending save work is retried promptly once Word becomes responsive again.
+
+### Improved
+- Improved active document resolution by walking the native object chain more carefully instead of relying only on `Application.ActiveDocument`.
+- Improved handling of multi-window and non-trivial Word UI surfaces by resolving the current document from the active native object, parent chain, and active window context.
+- Improved action coalescing so fast sequences of edits/formatting operations are more likely to collapse into one autosave at the end of the burst.
+- Improved transition flush behavior so pending changes are more reliably saved for the previous document before switching away.
+- Improved document-state polling by combining message-based heuristics with native Word events instead of relying only on one mechanism.
+- Improved busy-state recovery so COM rejection/backoff now feeds into a faster recovery path once Word is available again.
+- Improved status logging by deduplicating repeated messages and making skip/defer reasons clearer.
+- Improved lifecycle cleanup for timers, event connections, status caches, and transient runtime state across init, unload, and settings reload.
+
+### Fixed
+- Fixed document tracking after `Save As` / rename so internal dirty/pending state is not left behind on the old document path.
+- Fixed a class of cross-instance risks where automation could resolve against the wrong Word application instance.
+- Fixed some false-positive edit detections by narrowing `WM_KEYDOWN` handling and leaning more on `WM_CHAR` for printable text.
+- Fixed pending-save handling for cases where Word had already saved the document manually or internally, allowing the mod to clear stale pending work more accurately.
+- Fixed event/timer coordination so document-state refresh and autosave recovery are less likely to fight each other.
+- Fixed cleanup of native Word event subscriptions on unload/settings reload to avoid stale COM event hookups.
+
+### Notes
+- The architecture is now hybrid: native Word events are used where available, while the existing `TranslateMessage`-based logic remains as a fallback.
+- No new settings were added; this update focuses on convenience, correctness, and behavior polish on top of the existing feature set.
+
+## 3.2 ([Apr 2, 2026](https://github.com/ramensoftware/windhawk-mods/blob/986dba20bfaf6c9b4fe1acf7c4c82b1aad598403/mods/word-local-autosave.wh.cpp))
+
+### Improved
+- Reworked active document inspection into a shared snapshot path, removing duplicated COM/Automation logic.
+- Added safer RAII-style wrappers for `IDispatch`, `BSTR`, and `VARIANT` to reduce cleanup mistakes and make the code easier to maintain.
+- Switched document-state monitoring to adaptive polling: faster while edits/saves are active, slower while idle.
+- Added retry backoff for temporary COM/Automation failures instead of retrying at a fixed interval.
+- Throttled repeated failure logs to reduce noise in Windhawk logs.
+
+### Fixed
+- Fixed manual save handling so `Ctrl+S` no longer marks the document as clean before Word actually finishes saving.
+- Fixed internal dirty-state tracking so it is tied to the current document path, avoiding stale state when switching between documents.
+- Improved owner UI thread handling so the mod can re-adopt the active Word UI thread more reliably.
+- Fixed timer behavior so save/state timers are treated as proper one-shot timers and cleaned up correctly after firing.
+- Improved runtime state reset on init, unload, and settings reload to avoid leftover internal state.
+
+## 3.1 ([Mar 26, 2026](https://github.com/ramensoftware/windhawk-mods/blob/1bc0e23eb43c7bad97ad22df81f2a3da9231a605/mods/word-local-autosave.wh.cpp))
+
+- Added detection for paste via the context menu so it also triggers auto-save.
+- Added detection for text formatting changes: font changes, bold, italic, and underline now also trigger auto-save.
+- Expanded keyboard-based change detection to include `Ctrl+B`, `Ctrl+I`, `Ctrl+U`, while keeping support for `Ctrl+V`, `Ctrl+X`, `Ctrl+Y`, `Ctrl+Z`, and `Ctrl+Enter`.
+- Added document dirty-state monitoring via `ActiveDocument.Saved` to catch changes made through the ribbon, context menu, and mouse, not just keyboard input.
+- Replaced dynamic OLE/COM runtime loading with normal linker-based imports via `@compilerOptions -lole32 -loleaut32 -loleacc` for m417z's aesthetic pleasure.
+
+## 3.0 ([Mar 20, 2026](https://github.com/ramensoftware/windhawk-mods/blob/9d08e8f1ebd6a28659c4546c4aa8852f3cec4d21/mods/word-local-autosave.wh.cpp))
+
+- Version bumped to 3.0.
+- Replaced synthetic `Ctrl+S` saving with direct Word automation calls (`Document.Save`).
+- Completely removed `SendInput`-based keyboard injection.
+- Eliminated the root cause of false shortcut triggers at very low save cooldowns.
+- Removed the old “press-state verification” approach that tried to make injected `Ctrl+S` safe.
+- Removed the separate retry/send pipeline built around synthetic key presses.
+- Reworked auto-save execution so it stays on a single owner Word UI thread.
+- Switched save scheduling to a simpler owner-thread timer flow.
+- Added direct access to the active Word object from the active document window via `AccessibleObjectFromWindow`.
+- Added fallback access to Word through the Running Object Table (`GetActiveObject`) if window-based access is unavailable.
+- Added dynamic runtime loading of required OLE/COM functions instead of relying on linker-resolved imports.
+- Preserved the configurable save delay and minimum time between saves.
+- Kept manual `Ctrl+S` detection, but now it only updates internal timing state instead of interacting with synthetic save logic.
+- Kept foreground-window checks so auto-save only runs when the active Word document window is focused.
+- Kept postponing saves while user input is still active or modifiers/mouse buttons are held.
+- Kept skipping unsaved documents to avoid triggering “Save As”.
+- Kept skipping read-only documents.
+- Updated the readme/metadata text to describe the new direct-save architecture and shortcut-safety model.
+
+## 2.1 ([Mar 9, 2026](https://github.com/ramensoftware/windhawk-mods/blob/b470cc70adf572d7d28d329cea2b3e6a66605280/mods/word-local-autosave.wh.cpp))
+
+- Version bumped to 2.1
+- Completely redesigned safety system from timing-based to state-based approach
+- Removed keyboard state snapshot comparison - unnecessary with instant checks
+- Removed message queue checking via PeekMessageW - unnecessary with instant checks
+- Removed HasQuietPeriodPassed() function - no longer needed
+- Removed HasPendingKeyboardMessages() function - no longer needed
+- Removed CaptureKeyboardSnapshot() function - no longer needed
+- Removed HasKeyboardStateChanged() function - no longer needed
+- Removed IsAnyKeyPressedFull() 256-key scan - replaced with targeted IsAnyKeyPhysicallyPressed()
+- Removed AtomicAbort() function - replaced with simple ReleaseAllKeys()
+- Removed g_abortRequested flag - no longer needed
+- Removed g_keyboardSnapshot array - no longer needed
+- Removed all Sleep() calls from critical path for faster execution
+- Removed staged delays (PRE_SEND_VERIFY_DELAY_MS, POST_CTRL_VERIFY_DELAY_MS, INTER_KEY_DELAY_MS, etc.)
+- Removed POST_CTRL_CHECK_COUNT constant - no longer needed
+- Removed PRE_SEND_CHECK_COUNT constant - no longer needed
+- Removed KEYBOARD_SNAPSHOT_DELAY_MS constant - no longer needed
+- Removed MESSAGE_QUEUE_CHECK_DELAY_MS constant - no longer needed
+- Removed POST_RELEASE_DELAY_MS constant - no longer needed
+- Removed QUIET_PERIOD_MS constant - no longer needed
+- Removed verbose security logging with [SECURITY] prefixes - cleaner logs
+- Added ReleaseAllKeys() helper function for simple cleanup
+- Simplified SendCtrlS() to 3 checks: pre-send, post-Ctrl, post-S
+- Simplified TrySave() to 2 checks: foreground and keys pressed
+- Changed RETRY_INTERVAL_MS from 100ms to 50ms for faster recovery
+- Changed MAX_RETRY_COUNT from 100 to 200 (10 seconds total retry time)
+- Reduced code size from ~950 lines to ~450 lines
+- New approach: check physical key state (instant) instead of waiting for timing-based quiet period
+
 ## 2.0 ([Mar 2, 2026](https://github.com/ramensoftware/windhawk-mods/blob/50ecdda554f97aa7fac4b4f41879e206d11474b1/mods/word-local-autosave.wh.cpp))
 
 - Version bumped to 2.0

@@ -1,3 +1,25 @@
+## 2.3 ([Apr 16, 2026](https://github.com/ramensoftware/windhawk-mods/blob/9f6a018d93adf561e55dc5318babf4428073c11c/mods/taskbar-auto-hide-keyboard-only.wh.cpp))
+
+* Fixed a crash on system startup when the "Never" auto-hide mode is used.
+* Improved support for the new taskbar auto-hide animation in Windows 11 preview builds (ViVeTool ID: 41356296).
+
+## 2.2 ([Mar 18, 2026](https://github.com/ramensoftware/windhawk-mods/blob/ccbf8d62b852558521be1be12194cb2f2df85a56/mods/taskbar-auto-hide-keyboard-only.wh.cpp))
+
+* Added an option to configure the time the taskbar stays visible after being shown temporarily.
+* Improved "Show taskbar, open Start menu if already shown" Win key action to always trigger the primary taskbar, and to open the Start menu even if the taskbar wasn't shown by the mod (e.g. by hovering).
+
+## 2.1 ([Mar 18, 2026](https://github.com/ramensoftware/windhawk-mods/blob/20436b3a478ab7a2f7ba4d5e5414bf3abe232de0/mods/taskbar-auto-hide-keyboard-only.wh.cpp))
+
+* Added an option to customize the action to perform when the Win key is pressed: show the taskbar without showing the Start menu, or toggle permanent taskbar visibility.
+* Fixed hotkeys not working on system startup (they only worked if the mod is enabled later on).
+
+## 2.0 ([Mar 17, 2026](https://github.com/ramensoftware/windhawk-mods/blob/b99b0e5e0cfbe608e0657ef8ab21a8f3c555ca8a/mods/taskbar-auto-hide-keyboard-only.wh.cpp))
+
+* Renamed from "Taskbar keyboard-only auto-hide" to "Taskbar auto-hide fine tuning".
+* Added multiple auto-hide modes: Keyboard or mouse click, Keyboard only (previously "Fully hide"), and Never (blocks all unhiding including notifications and Win key).
+* Added configurable hotkeys for showing the taskbar temporarily and toggling permanent visibility (always-show mode).
+* Added a mouse event option (middle click or double click) on the Win11 taskbar to toggle always-show mode.
+
 ## 1.1.2 ([Jul 19, 2025](https://github.com/ramensoftware/windhawk-mods/blob/e857f64901909ed4e2aa2bc83ab06898effdb4a1/mods/taskbar-auto-hide-keyboard-only.wh.cpp))
 
 * Fixed the taskbar unhiding in some cases when the "Fully hide" option is enabled.

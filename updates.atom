@@ -2,500 +2,415 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2026-03-08T09:27:49.000Z</updated>
+    <updated>2026-04-29T20:58:35.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
-        <title type="html"><![CDATA[CEF/Spotify Tweaks 1.7]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#9580e761c8246ecdabb3c5d6b63e237de4a230c6</id>
+        <title type="html"><![CDATA[CEF/Spotify Tweaks 1.8]]></title>
+        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#8506309b7bd5f9503ba93cad81004640f7fa094b</id>
         <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2026-03-08T09:27:49.000Z</updated>
-        <content type="html"><![CDATA[<p>CEF/Spotify Tweaks 1.7</p>]]></content>
+        <updated>2026-04-29T20:58:35.000Z</updated>
+        <content type="html"><![CDATA[<p>Bump CTE version to 1.8 and update supported versions</p>]]></content>
         <author>
             <name>Ingan121</name>
             <uri>https://github.com/Ingan121</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Windows 10 Taskbar Context Menu Fix for Win11 24H2+ 1.2]]></title>
-        <id>https://windhawk.net/mods/win10-taskbar-context-menu-fix-24h2#49305bed9ea78e471a174bc599d3de9d08df0a9a</id>
-        <link href="https://windhawk.net/mods/win10-taskbar-context-menu-fix-24h2"/>
-        <updated>2026-03-05T12:47:19.000Z</updated>
-        <content type="html"><![CDATA[<p>Localize locking the taskbar item</p>]]></content>
-        <author>
-            <name>Anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WinUI Context Menu Animation 1.0]]></title>
-        <id>https://windhawk.net/mods/winui-context-menu-animation#5de798ced9a02dfd9c48f2728fd11ddf9e4acdfa</id>
-        <link href="https://windhawk.net/mods/winui-context-menu-animation"/>
-        <updated>2026-03-05T10:45:51.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/crazyboyybs/assets/refs/heads/main/Menu%20de%20Contexto%20com%20Anima%C3%A7%C3%A3o%20WinUI.gif" alt="Preview" />
-<img src="https://raw.githubusercontent.com/crazyboyybs/assets/refs/heads/main/Menu%20de%20Contexto%202%20com%20Anima%C3%A7%C3%A3o%20WinUI.gif" alt="Preview" /></p>
-<h1 id="winuicontextmenuanimation">WinUI Context Menu Animation</h1>
-<h2 id="english">English</h2>
-<p>This mod brings the smooth vertical slide animation used in modern <strong>WinUI applications</strong>
-to classic <strong>Win32 context menus and popup menus</strong> in Windows 11.</p>
-<p>Instead of appearing instantly, menus smoothly slide into view using a <strong>WinUI-style
-cubic-bezier easing curve</strong> combined with a subtle fade-in.</p>
-<p>Each menu and submenu independently determines whether it should animate <strong>upward or
-downward</strong> based on its actual position on the screen. This ensures consistent behavior
-with how Windows naturally flips menus near screen edges.</p>
-<h3 id="features">Features</h3>
-<p>• Smooth WinUI-style vertical slide animation<br />
-• Configurable animation and fade times<br />
-• Accurate cubic-bezier easing matching modern Windows apps<br />
-• Independent direction detection for menus and submenus<br />
-• Compatible with context menus, menu bars, and nested submenus<br />
-• Lightweight implementation using native Win32 hooks</p>
-<h3 id="credits">Credits</h3>
-<p>This mod is based on the excellent work by <strong>aubymori</strong>:</p>
-<p>Menu/Tooltip Slide Animation<br />
-https://windhawk.net/mods/menu-tooltip-slide-animation</p>
-<p>The original mod restored the classic Windows 98/XP menu animation system.
-This fork adapts the animation engine to replicate the <strong>modern WinUI motion style</strong>
-used throughout Windows 11.</p>
-<p>Changes in this version include:</p>
-<p>• Replacing the classic animation with a WinUI-style vertical easing motion<br />
-• Removing tooltip animation logic<br />
-• Removing horizontal animation<br />
-• Improving submenu direction detection<br />
-• Implementing an accurate cubic-bezier solver for smooth motion</p>
-<hr />
-<h2 id="portugusbrasil">Português (Brasil)</h2>
-<p>Este mod traz a animação suave de <strong>deslizamento vertical usada em aplicativos
-modernos com WinUI</strong> para os <strong>menus de contexto e menus popup clássicos do Win32</strong>
-no Windows 11.</p>
-<p>Em vez de aparecerem instantaneamente, os menus passam a surgir com um movimento
-suave utilizando uma <strong>curva de easing cubic-bezier semelhante à do WinUI</strong>,
-acompanhada por um leve efeito de fade-in.</p>
-<p>Cada menu e submenu determina <strong>de forma independente</strong> se deve animar para cima
-ou para baixo com base em sua posição real na tela. Isso garante um comportamento
-natural quando o menu precisa inverter sua direção próximo às bordas da tela.</p>
-<h3 id="recursos">Recursos</h3>
-<p>• Animação vertical suave inspirada no WinUI<br />
-• Tempo de animação e fade configuráveis<br />
-• Curva de easing cubic-bezier equivalente à usada no Windows moderno<br />
-• Detecção independente de direção para menus e submenus<br />
-• Compatível com menus de contexto, barras de menu e submenus aninhados<br />
-• Implementação leve baseada em hooks nativos do Win32</p>
-<h3 id="crditos">Créditos</h3>
-<p>Este mod é baseado no trabalho de <strong>aubymori</strong>:</p>
-<p>Menu/Tooltip Slide Animation<br />
-https://windhawk.net/mods/menu-tooltip-slide-animation</p>
-<p>O mod original restaurava as animações clássicas de menus do Windows 98/XP.
-Esta versão adapta o mecanismo de animação para reproduzir o <strong>estilo de
-movimento moderno do WinUI presente no Windows 11</strong>.</p>
-<p>Principais mudanças nesta versão:</p>
-<p>• Substituição da animação clássica por movimento vertical estilo WinUI<br />
-• Remoção da animação de tooltips<br />
-• Remoção da animação horizontal<br />
-• Melhoria na detecção de direção de submenus<br />
-• Implementação de um solver cubic-bezier preciso para animação suave</p>
-<hr />
-<h2 id="espaol">Español</h2>
-<p>Este mod añade la animación vertical suave utilizada en las <strong>aplicaciones modernas
-basadas en WinUI</strong> a los <strong>menús de contexto y menús emergentes clásicos de Win32</strong>
-en Windows 11.</p>
-<p>En lugar de aparecer instantáneamente, los menús se deslizan suavemente utilizando
-una <strong>curva de easing cubic-bezier similar a la del WinUI</strong>, combinada con un
-ligero efecto de aparición gradual (fade-in).</p>
-<p>Cada menú y submenú determina <strong>de forma independiente</strong> si debe animarse hacia
-arriba o hacia abajo según su posición real en la pantalla, manteniendo un
-comportamiento natural cuando Windows invierte la dirección cerca de los bordes.</p>
-<h3 id="caractersticas">Características</h3>
-<p>• Animación vertical suave inspirada en WinUI<br />
-• Tiempos de animación y desvanecimiento configurables<br />
-• Curva de easing cubic-bezier equivalente a la usada en Windows moderno<br />
-• Detección independiente de dirección para menús y submenús<br />
-• Compatible con menús de contexto, barras de menú y submenús anidados<br />
-• Implementación ligera basada en hooks nativos de Win32</p>
-<h3 id="crditos-1">Créditos</h3>
-<p>Este mod está basado en el trabajo de <strong>aubymori</strong>:</p>
-<p>Menu/Tooltip Slide Animation<br />
-https://windhawk.net/mods/menu-tooltip-slide-animation</p>
-<p>El mod original restauraba las animaciones clásicas de menús de Windows 98/XP.
-Esta versión adapta el motor de animación para reproducir el <strong>estilo de
-movimiento moderno de WinUI utilizado en Windows 11</strong>.</p>
-<p>Cambios principales en esta versión:</p>
-<p>• Reemplazo de la animación clásica por movimiento vertical estilo WinUI<br />
-• Eliminación de la animación de tooltips<br />
-• Eliminación de la animación horizontal<br />
-• Mejora en la detección de dirección de submenús<br />
-• Implementación precisa de la curva cubic-bezier</p>]]></content>
-        <author>
-            <name>crazyboyybs</name>
-            <uri>https://github.com/crazyboyybs</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Remove Context Menu Items 1.7.1]]></title>
-        <id>https://windhawk.net/mods/remove-context-menu-items#5d5ac123fe3725cd883374758ac47def57af8891</id>
-        <link href="https://windhawk.net/mods/remove-context-menu-items"/>
-        <updated>2026-03-04T18:35:00.000Z</updated>
+        <title type="html"><![CDATA[Explorer TreeLine Killer 1.0.1]]></title>
+        <id>https://windhawk.net/mods/explorer-treeline-killer#cd450a8c33e4b18e4842b53242951f4a21b97de4</id>
+        <link href="https://windhawk.net/mods/explorer-treeline-killer"/>
+        <updated>2026-04-29T20:17:49.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Renamed mod from <code>Remove Unwanted Context Menu Items (Classic Menu Only)</code> back to <code>Remove Context Menu Items</code>.</li>
-<li>Renamed <code>Edit in Notepad++</code> to <code>Edit with Notepad++</code> throughout.</li>
-<li>Cleaned up minor description and formatting inconsistencies.</li>
+<li>Fixed the README section.</li>
 </ul>]]></content>
         <author>
-            <name>Armaninyow</name>
-            <uri>https://github.com/armaninyow</uri>
+            <name>Languster</name>
+            <uri>https://github.com/Languster</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Legacy (Win32) sound volume flyout 2.0.0]]></title>
-        <id>https://windhawk.net/mods/legacy-sound-flyout#211f737a1a4504166562f3782db20c86eec52a84</id>
-        <link href="https://windhawk.net/mods/legacy-sound-flyout"/>
-        <updated>2026-03-04T17:58:39.000Z</updated>
-        <content type="html"><![CDATA[<p>New method, support for 24h2 and later</p>]]></content>
-        <author>
-            <name>Anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Remove UWP titlebars Lite 1.0.0]]></title>
-        <id>https://windhawk.net/mods/native-titlebars-uwp-lite#f2218777d0edd317dcebe26e444176231202e103</id>
-        <link href="https://windhawk.net/mods/native-titlebars-uwp-lite"/>
-        <updated>2026-03-04T17:54:41.000Z</updated>
-        <content type="html"><![CDATA[<p>Replaces the UWP titlebars with native Win32 titlebars.</p>
-<p>This mod is focused on the Classic theme, so may produce sub-optimal results in other cases.</p>
-<p><img src="https://i.imgur.com/Pf6RQTk.png" alt="Screenshot" /></p>]]></content>
-        <author>
-            <name>Anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Non-Immersive Taskbar Context Menu Lite 1.0.0]]></title>
-        <id>https://windhawk.net/mods/classic-taskbar-context-menu-lite#61e6b2c04ace5ab9ec784db42fd702d88b98cb29</id>
-        <link href="https://windhawk.net/mods/classic-taskbar-context-menu-lite"/>
-        <updated>2026-03-04T13:52:43.000Z</updated>
-        <content type="html"><![CDATA[<p>Compared to the other mod <code>Non-Immersive Taskbar Context Menu</code> this one has simplier code and supports
-the second-level menus.</p>
-<p>Unlike <code>Eradicate immersive menus</code> it does not download symbols.</p>
-<p>Intended for Win10 taskbar running either under Win10 or Win11.</p>]]></content>
-        <author>
-            <name>Anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[File Explorer WinUI-Like Content Animation 1.0]]></title>
-        <id>https://windhawk.net/mods/file-explorer-content-animation#d474c7f1b77392ec9794d915f1b707a54e81164d</id>
-        <link href="https://windhawk.net/mods/file-explorer-content-animation"/>
-        <updated>2026-03-04T01:12:08.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/crazyboyybs/assets/refs/heads/main/file-explorer-content-animation.gif" alt="Preview" /></p>
-<hr />
-<h2 id="english">English</h2>
-<p>A smooth, WinUI-inspired slide animation for the File Explorer content area on Windows 11.</p>
-<p>This mod enhances folder navigation with a subtle motion design approach, similar to modern WinUI transitions, while preserving system stability and performance.</p>
-<h3 id="features">✨ Features</h3>
-<ul>
-<li>Smooth slide animation with refined easing</li>
-<li>Per-window first open delay (optional)</li>
-<li>Navigation delay to hide the "Working on it…" message</li>
-<li>Zero flicker</li>
-<li>No black flashes</li>
-<li>No interference with thumbnails</li>
-<li>No DirectComposition breakage</li>
-<li>Lightweight and CPU-friendly</li>
-<li>Compatible with the Translucent Windows mod</li>
-</ul>
-<h3 id="howitworks">🧠 How It Works</h3>
-<ul>
-<li>The mod temporarily offsets the content view outside the visible area</li>
-<li>Waits for layout stabilization</li>
-<li>Restores position</li>
-<li>Plays a smooth eased slide animation</li>
-</ul>
-<p>This approach keeps the DirectComposition pipeline intact, ensuring stability even on recent Windows 11 builds (including 25H2).</p>
-<h3 id="settings">⚙️ Settings</h3>
-<ul>
-<li><strong>Animation Duration</strong> – Controls how long the slide lasts.</li>
-<li><strong>Slide Distance</strong> – Controls how far the content moves before settling.</li>
-<li><strong>First Open Delay</strong> – Applies only when a new Explorer window is opened.</li>
-<li><strong>Navigation Delay</strong> – Brief delay during folder switching to hide loading text.</li>
-</ul>
-<hr />
-<h2 id="portugus">Português</h2>
-<p>Uma animação suave de deslizamento inspirada no WinUI para a área de conteúdo do Explorador de Arquivos no Windows 11.</p>
-<p>Este mod aprimora a navegação entre pastas com um movimento sutil e moderno, mantendo estabilidade total do sistema e ótimo desempenho.</p>
-<h3 id="recursos">✨ Recursos</h3>
-<ul>
-<li>Animação suave com easing refinado</li>
-<li>Delay opcional na primeira abertura de cada janela</li>
-<li>Delay durante navegação para esconder o "Trabalhando nisso…"</li>
-<li>Sem flicker</li>
-<li>Sem flash preto</li>
-<li>Não interfere em miniaturas</li>
-<li>Não quebra o DirectComposition</li>
-<li>Leve e eficiente</li>
-<li>Compatível com o mod Translucent Windows</li>
-</ul>
-<h3 id="comofunciona">🧠 Como Funciona</h3>
-<ul>
-<li>O mod move temporariamente a área de conteúdo para fora da área visível</li>
-<li>Aguarda estabilização do layout</li>
-<li>Restaura a posição original</li>
-<li>Executa uma animação suave com easing inspirado no WinUI</li>
-</ul>
-<p>Isso mantém o pipeline de renderização intacto e estável mesmo nas builds mais recentes do Windows 11 (incluindo 25H2).</p>
-<h3 id="configuraes">⚙️ Configurações</h3>
-<ul>
-<li><strong>Duração da Animação</strong> – Define quanto tempo a animação leva.</li>
-<li><strong>Distância do Slide</strong> – Define o deslocamento inicial.</li>
-<li><strong>Delay na Primeira Abertura</strong> – Aplicado apenas ao abrir uma nova janela.</li>
-<li><strong>Delay ao Trocar de Pasta</strong> – Pequeno atraso para esconder o texto de carregamento.</li>
-</ul>
-<hr />
-<h2 id="espaol">Español</h2>
-<p>Una animación suave de deslizamiento inspirada en WinUI para el área de contenido del Explorador de Archivos en Windows 11.</p>
-<p>Este mod mejora la navegación entre carpetas con un movimiento moderno y sutil, manteniendo total estabilidad del sistema y un excelente rendimiento.</p>
-<h3 id="caractersticas">✨ Características</h3>
-<ul>
-<li>Animación suave con easing refinado</li>
-<li>Retraso opcional en la primera apertura de cada ventana</li>
-<li>Retraso durante la navegación para ocultar "Trabajando en ello…"</li>
-<li>Sin parpadeos</li>
-<li>Sin flashes negros</li>
-<li>No interfiere con miniaturas</li>
-<li>No rompe DirectComposition</li>
-<li>Ligero y eficiente</li>
-<li>Compatible con el mod Translucent Windows</li>
-</ul>
-<h3 id="cmofunciona">🧠 Cómo Funciona</h3>
-<ul>
-<li>El mod mueve temporalmente el área de contenido fuera del área visible</li>
-<li>Espera a que el layout se estabilice</li>
-<li>Restaura la posición original</li>
-<li>Ejecuta una animación suave inspirada en WinUI</li>
-</ul>
-<p>Esto mantiene intacto el pipeline de renderizado incluso en builds recientes de Windows 11 (incluyendo 25H2).</p>
-<h3 id="configuracin">⚙️ Configuración</h3>
-<ul>
-<li><strong>Duración de la Animación</strong> – Controla cuánto dura el efecto.</li>
-<li><strong>Distancia del Deslizamiento</strong> – Define el desplazamiento inicial.</li>
-<li><strong>Retraso en la Primera Apertura</strong> – Solo al abrir una nueva ventana.</li>
-<li><strong>Retraso al Cambiar de Carpeta</strong> – Pequeño retraso para ocultar el texto de carga.</li>
-</ul>]]></content>
-        <author>
-            <name>crazyboyybs</name>
-            <uri>https://github.com/crazyboyybs</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Better Dialogs 1.0]]></title>
-        <id>https://windhawk.net/mods/better-dialogs#46b704d449ad5b1960f330e8fcf6c8626c86512f</id>
-        <link href="https://windhawk.net/mods/better-dialogs"/>
-        <updated>2026-03-04T00:39:57.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="betterdialogs">Better Dialogs</h1>
-<p>This mod improves certain Windows dialogs. It also re-translates messages for those dialogs to make sure that apps that expect the original dialogs still work properly.</p>
-<p>More dialogs coming soon! (or maybe not so soon, just in the future)</p>
-<h2 id="dialogschanged">Dialogs changed</h2>
-<ul>
-<li>Message boxes changed to Task Dialogs</li>
-<li>Legacy folder picker replaced with modern directory selector</li>
-</ul>]]></content>
-        <author>
-            <name>FireBlade</name>
-            <uri>https://github.com/FireBlade211</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11 Start Menu Power Buttons 1.0.1]]></title>
-        <id>https://windhawk.net/mods/win11-power-buttons#0ee1b2a4f3f4611c9150e46f6f9cbce0d012e8dc</id>
-        <link href="https://windhawk.net/mods/win11-power-buttons"/>
-        <updated>2026-03-03T14:41:55.000Z</updated>
-        <content type="html"><![CDATA[<p>Add Lock button option</p>]]></content>
-        <author>
-            <name>Hakuuyosei</name>
-            <uri>https://github.com/ahzvenol</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Remove Unwanted Context Menu Items (Classic Menu Only) 1.7.0]]></title>
-        <id>https://windhawk.net/mods/remove-context-menu-items#efc613f8a1e849205871cfa07708a2cf82b96fb1</id>
-        <link href="https://windhawk.net/mods/remove-context-menu-items"/>
-        <updated>2026-03-03T05:16:21.000Z</updated>
+        <title type="html"><![CDATA[Explorer Navigation Tree Offset 1.1]]></title>
+        <id>https://windhawk.net/mods/explorer-navigation-pane-tweaks#e938aa724ca3199a2913bc62812fc5f45e7d9a99</id>
+        <link href="https://windhawk.net/mods/explorer-navigation-pane-tweaks"/>
+        <updated>2026-04-29T19:58:58.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>Added <code>WinRAR Extension Filtering</code> toggle under the newly improved <code>Extension Filtering</code> section. When enabled alongside the WinRAR removal toggle, the WinRAR context menu item will only appear for archive/compressed files (.zip, .rar, .7z, .iso, .tar, .gzip, .xz, .zst, .cab). It is hidden for all other file types.</li>
-<li>Added a new <code>Modifier Key Override</code> section. When enabled, holding a modifier key (Ctrl, Alt, or Both) while right-clicking temporarily bypasses the mod and shows all original context menu items. Useful for accessing a hidden item without changing settings. (thanks, Schleifenkratzer!)</li>
-<li>Renamed and reorganized the <code>Extension Filtering</code> section to accommodate both Notepad and WinRAR filtering, with improved descriptions throughout.</li>
+<li>Fixed the indent parameter behavior: changing the indent value now works correctly and no longer depends on whether the expandable folder glyph is hidden.</li>
+<li>Fixed the child tree indent relative to the main tree when expanding a folder.</li>
+<li>Renamed mod settings for clarity.</li>
+<li>Renamed the mod from Explorer Navigation Pane Tweaks to Explorer Navigation Tree Offset.</li>
+<li>IMPORTANT! Reconfigure the mod after updating. The improved mechanics may cause behavior differences with the same parameter values.</li>
 </ul>]]></content>
         <author>
-            <name>Armaninyow</name>
-            <uri>https://github.com/armaninyow</uri>
+            <name>Languster</name>
+            <uri>https://github.com/Languster</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Logon & Sleep Fade Restorer 1.3]]></title>
-        <id>https://windhawk.net/mods/win7-login-fade#a77cfa03723dfc97b23c2cd06925ee4d02ad5b3b</id>
-        <link href="https://windhawk.net/mods/win7-login-fade"/>
-        <updated>2026-03-02T16:27:33.000Z</updated>
-        <content type="html"><![CDATA[<p>Fix the monitor-off fade not working properly when an application uses a hacky way to turn the screen off</p>]]></content>
+        <title type="html"><![CDATA[Disable Windows Shortcuts 1.1.1]]></title>
+        <id>https://windhawk.net/mods/disable-windows-shortcuts#00f99498b90b44630ab4e46c10038c3e3000a663</id>
+        <link href="https://windhawk.net/mods/disable-windows-shortcuts"/>
+        <updated>2026-04-29T19:47:29.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added new shortcuts (<a href="https://github.com/ramensoftware/windhawk-mods/issues/3880">#3880</a>)</li>
+<li>Standard: <code>Win+Q</code>, <code>Win+Ctrl+F</code>, <code>Alt+Shift</code>, <code>Ctrl+Esc</code>, <code>Win</code></li>
+<li>Special: <code>Win+/</code> </li>
+<li>Fixed an issue where after re-enabling the mod, it won't apply the settings. It shows an explorer restart prompt to re-apply the settings correctly now</li>
+<li>Fixed mod un-initialization and re-initialization delay</li>
+<li>Fixed <code>Win+Space</code> which refused to get blocked in the earlier versions</li>
+</ul>]]></content>
         <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
+            <name>Lone</name>
+            <uri>https://github.com/Louis047</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Fix language indicator in Win10 taskbar under Win11 24H2+ 1.4.0]]></title>
-        <id>https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator#59966b5a2e2fe7dcdbc6b536b8ba1c20b9cda8e2</id>
-        <link href="https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator"/>
-        <updated>2026-03-02T08:07:56.000Z</updated>
-        <content type="html"><![CDATA[<p>Fix issues with taskbar thicker than 3 rows.</p>]]></content>
+        <title type="html"><![CDATA[Paste Clipboard Content to Explorer 1.4]]></title>
+        <id>https://windhawk.net/mods/paste-clipboard-content-to-explorer#ec8fe4493d189fe53c06583b6f7ddcfde24b810a</id>
+        <link href="https://windhawk.net/mods/paste-clipboard-content-to-explorer"/>
+        <updated>2026-04-29T19:43:29.000Z</updated>
+        <content type="html"><![CDATA[<p>Don't paste a new file if Ctrl+V is pressed during editing file name</p>]]></content>
         <author>
             <name>Anixx</name>
             <uri>https://github.com/Anixx</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Word Local AutoSave 2.0]]></title>
-        <id>https://windhawk.net/mods/word-local-autosave#50ecdda554f97aa7fac4b4f41879e206d11474b1</id>
-        <link href="https://windhawk.net/mods/word-local-autosave"/>
-        <updated>2026-03-02T03:17:14.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Version bumped to 2.0</li>
-<li>Implemented 8-stage verification system in SendCtrlS() for guaranteed zero false triggers</li>
-<li>Stage 1: Triple pre-check with 10ms delays between checks to catch fast typing</li>
-<li>Stage 2: Final quiet period validation after pre-checks</li>
-<li>Stage 3: Press Ctrl with error handling</li>
-<li>Stage 4: Critical key check + quiet period re-validation after Ctrl press</li>
-<li>Stage 5: Press S with inter-key delay</li>
-<li>Stage 6: Post-S verification to detect any other key pressed during S send</li>
-<li>Stage 7: Release S with retry mechanism</li>
-<li>Stage 8: Release Ctrl with retry mechanism</li>
-<li>Implemented 5 safety checks in TrySave() before calling SendCtrlS()</li>
-<li>Safety check 1: Verify Word is foreground window</li>
-<li>Safety check 2: Verify no keys are currently pressed</li>
-<li>Safety check 3: Verify quiet period has passed</li>
-<li>Safety check 4: Double-check after small delay to catch very fast typing</li>
-<li>Safety check 5: Re-verify Word is still foreground (user might have switched windows)</li>
-<li>Added PRE<em>SEND</em>VERIFY<em>DELAY</em>MS = 10 constant for delay between pre-check verifications</li>
-<li>Added POST<em>CTRL</em>VERIFY<em>DELAY</em>MS = 5 constant for delay after Ctrl press before verification</li>
-<li>Added INTER<em>KEY</em>DELAY_MS = 2 constant for delay between key operations</li>
-<li>Added PRE<em>SEND</em>CHECK_COUNT = 3 constant for number of pre-send verifications</li>
-<li>Added Sleep() calls between all critical operations to allow system to process inputs</li>
-<li>Added post-S letter key scan (A-Z except S) to detect concurrent key presses</li>
-<li>Added quiet period re-validation after Ctrl press</li>
-<li>Added foreground re-validation in TrySave() after delay-based checks</li>
-<li>Updated README with new "Safety Features (v2.0)" section documenting 8-stage verification</li>
-<li>Guarantees zero false shortcut triggers even with minimum 100ms save delay</li>
+        <title type="html"><![CDATA[Audio Output Device Switcher 1.0]]></title>
+        <id>https://windhawk.net/mods/audio-scroll-switcher#d9349ff002901d3deca3ac680de0059ee97bc7c6</id>
+        <link href="https://windhawk.net/mods/audio-scroll-switcher"/>
+        <updated>2026-04-28T08:49:13.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="audiooutputdeviceswitcher">Audio Output Device Switcher</h1>
+<p>Quickly switch between audio output devices by holding <strong>Ctrl</strong> and scrolling
+the mouse wheel over the taskbar.</p>
+<h2 id="howtouse">How to use</h2>
+<ol>
+<li>Hold <strong>Ctrl</strong> and scroll up/down over the taskbar</li>
+<li>Your audio output device will switch to the next/previous device</li>
+<li>A notification popup shows the newly selected device</li>
+</ol>
+<h2 id="features">Features</h2>
+<ul>
+<li>Works on Windows 10 and Windows 11</li>
+<li>Supports multiple monitors (works on all taskbars)</li>
+<li>Modern Windows 11-style notification popup</li>
+<li>Configurable notification duration</li>
+</ul>
+<h2 id="settings">Settings</h2>
+<ul>
+<li><strong>Show notification</strong>: Enable/disable the popup notification</li>
+<li><strong>Notification duration</strong>: How long the popup stays visible (in milliseconds)</li>
 </ul>]]></content>
         <author>
-            <name>communism420</name>
-            <uri>https://github.com/communism420</uri>
+            <name>Georgi AI</name>
+            <uri>https://github.com/georgiai1</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA["Sign in with a passkey" popup blocker 3.1.0]]></title>
-        <id>https://windhawk.net/mods/passkey-popup-blocker#d555d48688bd3e832f9ffef9b012cc236dffbff2</id>
-        <link href="https://windhawk.net/mods/passkey-popup-blocker"/>
-        <updated>2026-03-02T03:16:11.000Z</updated>
+        <title type="html"><![CDATA[Paste Clipboard Content to Explorer 1.3]]></title>
+        <id>https://windhawk.net/mods/paste-clipboard-content-to-explorer#2c7d5188338a6ec528397db14efd2336a9485bea</id>
+        <link href="https://windhawk.net/mods/paste-clipboard-content-to-explorer"/>
+        <updated>2026-04-27T20:51:24.000Z</updated>
+        <content type="html"><![CDATA[<p>Fix regression in the previous version (greyed menus after Explorer's restart)</p>]]></content>
+        <author>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Paste Clipboard Content to Explorer 1.2]]></title>
+        <id>https://windhawk.net/mods/paste-clipboard-content-to-explorer#2eee59d291d0265584eb4beb8bf7faaf0d67dc2f</id>
+        <link href="https://windhawk.net/mods/paste-clipboard-content-to-explorer"/>
+        <updated>2026-04-26T19:06:16.000Z</updated>
+        <content type="html"><![CDATA[<p>Add support for pull-down menus</p>]]></content>
+        <author>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Disable Taskbar Thumbnails 1.2]]></title>
+        <id>https://windhawk.net/mods/taskbar-thumbnails#92d307593c5b7accafdb2bb3cf34df6f36d050c6</id>
+        <link href="https://windhawk.net/mods/taskbar-thumbnails"/>
+        <updated>2026-04-26T18:30:13.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li><strong>Changed</strong>: Increased default <strong>Interaction Timeout</strong> from <strong>500ms</strong> to <strong>800ms</strong>.</li>
-<li><strong>Improved</strong>: <strong>WebAuthn hook is now initialized first</strong> (before message loop hooks) — mod fails cleanly early if the critical hook can't be established, avoiding partial hook state.</li>
-<li><strong>Improved</strong>: <code>GetLastTick()</code> now uses <code>InterlockedOr(&amp;val, 0)</code> instead of <code>InterlockedCompareExchange</code> for a more correct and idiomatic atomic read on LONG-aligned memory.</li>
-<li><strong>Improved</strong>: <code>SetLastTick()</code> local fallback now also uses <code>InterlockedExchange</code> (was a plain assignment before), making it thread-safe in all cases.</li>
-<li><strong>Fixed</strong>: Removed <code>m-&gt;time</code> as a tick source in message hooks — it was unreliable (can be 0 or stale in some browser message loops). <code>GetTickCount()</code> is now used consistently.</li>
-<li><strong>Code</strong>: Replaced C-style casts with <code>static_cast</code> / <code>reinterpret_cast</code> throughout for cleaner, safer code.</li>
+<li>Added an option to disable the virtual desktop switcher flyout that appears when hovering over the Task View button on the taskbar.</li>
+<li>Added an option to disable thumbnails on hover while having a list on click.</li>
+<li>Fixed compatibility with new insider Windows 11 builds.</li>
 </ul>]]></content>
         <author>
-            <name>mode0192</name>
-            <uri>https://github.com/mode0192</uri>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Taskbar Shadow & Border 1.0.3]]></title>
-        <id>https://windhawk.net/mods/taskbar-shadow-border#41b22ece71797fbdef290fbc18ece19c1aa8ef40</id>
-        <link href="https://windhawk.net/mods/taskbar-shadow-border"/>
-        <updated>2026-02-28T15:26:54.000Z</updated>
-        <content type="html"><![CDATA[<p>Reworked top-most setting logic and updated Wh_ModTool implementation</p>]]></content>
+        <title type="html"><![CDATA[Taskbar classic context menu 1.0.3]]></title>
+        <id>https://windhawk.net/mods/taskbar-classic-menu#ec07df1fb22a03f159a88f5c817e3f8420bee634</id>
+        <link href="https://windhawk.net/mods/taskbar-classic-menu"/>
+        <updated>2026-04-26T18:02:01.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed compatibility with new insider Windows 11 builds.</li>
+</ul>]]></content>
         <author>
-            <name>Lockframe</name>
-            <uri>https://github.com/Lockframe</uri>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Explorer Up → New Window/Tab (Ctrl-click or Middle-click) 1.4.1]]></title>
-        <id>https://windhawk.net/mods/explorer-up-new-window#2a2d29687df197f84b6def9da159231ada7cde43</id>
-        <link href="https://windhawk.net/mods/explorer-up-new-window"/>
-        <updated>2026-02-28T12:42:39.000Z</updated>
-        <content type="html"><![CDATA[<p>Fix issue preventing Windhawk from exiting (applied updated "Mods-as-tools"-snippet)</p>]]></content>
+        <title type="html"><![CDATA[osu!Profile in Taskbar 3.9.1]]></title>
+        <id>https://windhawk.net/mods/osu-tray-profile#df4a9446ecc3ecb93ff8848e8d0d6aa8cc3c2605</id>
+        <link href="https://windhawk.net/mods/osu-tray-profile"/>
+        <updated>2026-04-26T08:49:16.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>After restarting the computer, the mod displayed an "error" message, which was resolved by "enabling/disabling" the mod. Now, after restarting the PC, the mod works correctly.</li>
+</ul>]]></content>
         <author>
-            <name>Tobias Lind</name>
-            <uri>https://github.com/TobbeLino</uri>
+            <name>antoshika</name>
+            <uri>https://github.com/Antoshika</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Visio: Middle Mouse Pan & Smart Zoom 1.0]]></title>
-        <id>https://windhawk.net/mods/visio-pan-zoom#d506e023b55369144196a4f782ebb91c51b2cce7</id>
-        <link href="https://windhawk.net/mods/visio-pan-zoom"/>
-        <updated>2026-02-28T11:30:51.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="visiomiddlepansmartzoom">Visio: Middle Pan &amp; Smart Zoom</h1>
-<p>This mod brings modern CAD/design software navigation experience to Microsoft Visio, allowing you to navigate the canvas with just <em>one hand</em>.</p>
-<h3 id="features">Features</h3>
+        <title type="html"><![CDATA[Explorer TreeItem Tweaker 1.0.0]]></title>
+        <id>https://windhawk.net/mods/explorer-treeitem-tweaker#f92ee2f2618c2b8bb41bd9422270347a4a47e88b</id>
+        <link href="https://windhawk.net/mods/explorer-treeitem-tweaker"/>
+        <updated>2026-04-25T22:39:53.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="explorertreeitemtweaker">Explorer TreeItem Tweaker</h1>
+<p><strong>Explorer TreeItem Tweaker</strong> is a Windhawk mod that customizes the appearance of tree items in the left navigation pane of Windows Explorer.</p>
+<p>It is designed for people who want the navigation tree to look cleaner, more polished, and more comfortable to use.</p>
+<h2 id="importantdarkthemedefaults">⚠️ Important: dark theme defaults</h2>
+<p><strong>The default settings are designed for the dark Windows system theme.</strong></p>
+<p>For a correct and clean appearance on the light Windows theme, adjust the mod settings manually, especially the text color.</p>
+<p>For example, for light theme text, try:</p>
+<p><code>R = 0, G = 0, B = 0</code></p>
+<h2 id="features">Features</h2>
 <ul>
-<li><strong>Middle-Click Panning:</strong> Press and hold the middle mouse button to freely pan the canvas (replaces the cumbersome <code>Ctrl + Shift + Right Click</code> default).</li>
-<li><strong>Smart Zoom:</strong> Use the mouse scroll wheel to zoom in and out directly (replaces <code>Ctrl + Scroll</code>).</li>
-<li><strong>Horizontal Scroll Kept:</strong> Holding <code>Shift</code> while scrolling will still pan the canvas horizontally.</li>
-<li><strong>Touchpad Perfection:</strong> Intelligently distinguishes between a physical mouse and a Windows Precision Touchpad. Your native two-finger scrolling and pinch-to-zoom gestures are preserved perfectly without interference.</li>
+<li>customize background, border, and text colors for these states:</li>
+<li>Hot</li>
+<li>Selected</li>
+<li>Selected Not Focus</li>
+<li>Hot Selected</li>
+<li>Normal Text</li>
+<li>adjust:</li>
+<li>width</li>
+<li>corner radius</li>
+<li>vertical insets</li>
+<li>item height</li>
+<li>icon size</li>
+<li>icon-text gap</li>
+<li>color</li>
+<li>background opacity</li>
+<li>border opacity</li>
+<li>text color</li>
 </ul>
-<h3 id="settingsnote">Settings Note</h3>
-<p>If you are using a mouse with an "infinite / free-spinning / continuous" scroll wheel (like the Logitech MX Master series with MagSpeed), the Smart Zoom might not trigger correctly because the wheel sends micro-signals similar to a touchpad. You can fix this by disabling the <strong>"Preserve Native Touchpad Scroll"</strong> option in the mod's Settings page.</p>
-<hr />
-<h1 id="visio">Visio: 中键平移与智能缩放</h1>
-<p>为 Microsoft Visio 带来类似于 CAD 或设计软件的现代化导航体验，只需使用单手即可进行画布导航，彻底告别反人类的默认快捷键操作。</p>
-<h3 id="">核心功能</h3>
+<h2 id="whythisisbetterthaneditingmsstyles">Why this is better than editing msstyles</h2>
+<p>Editing <code>msstyles</code> does not come close to this level of flexibility.</p>
+<p>With this mod, you can:</p>
 <ul>
-<li><strong>中键平移画布：</strong> 按住鼠标中键即可自由拖拽平移画布（完美替代原生繁琐的 <code>Ctrl + Shift + 右键</code> 操作）。</li>
-<li><strong>滚轮智能缩放：</strong> 直接滚动鼠标滚轮即可进行画布缩放（替代 <code>Ctrl + 滚轮</code>）。</li>
-<li><strong>保留水平滚动：</strong> 按住 <code>Shift</code> 键滚动滚轮，依然可以水平移动画布。</li>
-<li><strong>完美兼容触摸板：</strong> 模块底层内置了智能启发式识别算法，能够精确区分物理鼠标刻度与 Windows 精密触摸板。触摸板原生的双指上下滑动与捏合缩放手势将被完美保留，互不干扰。</li>
+<li>change settings directly in Windhawk</li>
+<li>control colors, opacity, and states much more precisely</li>
+<li>get cleaner shapes and smoother rounded corners</li>
+<li>avoid editing system theme resources</li>
 </ul>
-<h3 id="-1">设置项说明</h3>
-<p>如果您使用的是支持“无极滚轮/自由滚轮”的鼠标（例如罗技 MX Master 系列的 MagSpeed），由于其自由滚动模式下产生的微小信号特征与触摸板类似，可能会被算法识别为触摸板导致智能缩放失效。遇到此类情况，请在模块的设置页中关闭【保留原生触摸板滚动】选项。</p>]]></content>
+<p>In practice, this is a much faster, more convenient, and more powerful way to customize the navigation tree.</p>
+<h2 id="recommendedsetup">Recommended setup</h2>
+<p>For the best Explorer navigation pane experience, it is recommended to use this mod together with <strong>Explorer TreeLine Killer</strong> and <strong>Explorer Navigation Pane Tweaks</strong>.</p>
+<h2 id="compatibility">Compatibility</h2>
+<p>Tested and confirmed compatible with <strong>Windows 11 versions 23H2 through 25H2</strong>.
+Other versions have not been tested.</p>
+<h2 id="important">Important</h2>
+<ul>
+<li>this mod changes only the tree view in the left navigation pane of Explorer</li>
+<li>it does not change the Explorer window background</li>
+<li>background, border, and text can be customized independently</li>
+<li>optional layout controls can change item height, icon size, and icon-text gap</li>
+<li><strong>Item Height</strong> changes the total row height of tree items</li>
+<li><strong>Icon Size</strong> changes the width and height of the navigation icons</li>
+<li><strong>Icon-Text Gap</strong> adds space between the icon and the text</li>
+</ul>
+<h2 id="layoutcontrols">Layout controls</h2>
+<ul>
+<li><strong>Item Height</strong> increases or decreases the total height of each navigation row</li>
+<li><strong>Icon-Text Gap</strong> controls the horizontal spacing between the icon and the text</li>
+<li><strong>Icon Size</strong> controls the width and height of navigation icons</li>
+</ul>
+<p>Each option has its own enable switch.
+When a switch is off, that option is not applied.</p>
+<h2 id="beforeafter">Before / After</h2>
+<p><strong>Before</strong></p>
+<p><img src="https://raw.githubusercontent.com/Languster/windhawk-mods/main/mods_assets/explorer-treeitem-tweaker-before.jpg" alt="Before" /></p>
+<p><strong>After</strong></p>
+<p><img src="https://raw.githubusercontent.com/Languster/windhawk-mods/main/mods_assets/explorer-treeitem-tweaker-after.jpg" alt="After" /></p>
+<h2 id="credits">Credits</h2>
+<p>Thanks to <a href="https://github.com/crazyboyybs">crazyboyybs</a> for extending the functionality.</p>]]></content>
+        <author>
+            <name>Languster</name>
+            <uri>https://github.com/Languster</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar height and icon size 1.3.7]]></title>
+        <id>https://windhawk.net/mods/taskbar-icon-size#5d70208acc5a1f46d1c28439cb21c13f1079ec1d</id>
+        <link href="https://windhawk.net/mods/taskbar-icon-size"/>
+        <updated>2026-04-25T21:07:42.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed compatibility with new insider Windows 11 builds.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Explorer TreeLine Killer 1.0.0]]></title>
+        <id>https://windhawk.net/mods/explorer-treeline-killer#ba1ed54ac2d7bf5ebfe2cc323e880128344217ca</id>
+        <link href="https://windhawk.net/mods/explorer-treeline-killer"/>
+        <updated>2026-04-25T19:58:32.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="explorertreelinekiller">Explorer TreeLine Killer</h1>
+<p><strong>Explorer TreeLine Killer</strong> is a Windhawk mod for Windows Explorer that hides the built-in separator lines in the left navigation pane and lets you switch the upper and lower spacing between standard and compact behavior.</p>
+<p>It is useful if you want the navigation pane to look cleaner, tighter, and more visually consistent.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>hide the built-in separator lines used by Explorer</li>
+<li>remove the upper empty space between the Home/Gallery block and the pinned items list</li>
+<li>remove the lower empty space between the pinned items list and <strong>This PC</strong></li>
+<li>choose between tighter compact spacing and more standard Windows-like spacing for each section</li>
+</ul>
+<h2 id="recommendedsetup">Recommended setup</h2>
+<p>For the best Explorer navigation pane experience, it is recommended to use this mod together with <strong>Explorer TreeItem Tweaker</strong> and <strong>Explorer Navigation Pane Tweaks</strong>.</p>
+<h2 id="compatibility">Compatibility</h2>
+<p>Tested and confirmed compatible with <strong>Windows 11 versions 23H2 through 25H2</strong>.
+Other versions have not been tested.</p>
+<h2 id="whattheoptionsdo">What the options do</h2>
+<ul>
+<li><p><strong>Fully hide system separator lines</strong>
+Hides the default separator line used by Explorer in the lower special container.</p></li>
+<li><p><strong>Remove upper empty space</strong>
+Removes the gap between the Home/Gallery block (when those entries are visible) and the pinned items list.
+Enabled = compact mode. Disabled = standard spacing.</p></li>
+<li><p><strong>Remove lower empty space</strong>
+Removes the gap between the pinned items list and <strong>This PC</strong>.
+Enabled = compact mode. Disabled = standard spacing.</p></li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>the upper option matters only when the Home/Gallery block is visible</li>
+<li>the lower option controls the spacing before <strong>This PC</strong></li>
+<li>this mod is designed only for Explorer's left navigation pane</li>
+</ul>
+<h2 id="beforeafter">Before / After</h2>
+<p><strong>Before</strong></p>
+<p><img src="https://raw.githubusercontent.com/Languster/windhawk-mods/main/mods_assets/explorer-treeline-killer-before.jpg" alt="Before" /></p>
+<p><strong>After</strong></p>
+<p><img src="https://raw.githubusercontent.com/Languster/windhawk-mods/main/mods_assets/explorer-treeline-killer-after.jpg" alt="After" /></p>]]></content>
+        <author>
+            <name>Languster</name>
+            <uri>https://github.com/Languster</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Aero Peek on "Show desktop" button hover 1.0.2]]></title>
+        <id>https://windhawk.net/mods/taskbar-show-desktop-button-aero-peek#9cbb60401acaf5a46e7df2dcb5b62cb656507d3f</id>
+        <link href="https://windhawk.net/mods/taskbar-show-desktop-button-aero-peek"/>
+        <updated>2026-04-25T16:54:52.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed compatibility with new insider Windows 11 builds.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar tray system icon tweaks 1.3]]></title>
+        <id>https://windhawk.net/mods/taskbar-tray-system-icon-tweaks#09fd5526dd87977cebb04f6734cfbb0e6aba48e7</id>
+        <link href="https://windhawk.net/mods/taskbar-tray-system-icon-tweaks"/>
+        <updated>2026-04-25T16:27:22.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added an option for a grayscale battery icon instead of its colored (e.g. green/yellow) variant.</li>
+<li>Added an option to hide the Recall icon.
+Fixed compatibility with new insider Windows 11 builds.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Word OfficeMath EditBox Shade Fix 1.0.0]]></title>
+        <id>https://windhawk.net/mods/word-omath-shade-fix#62d458d095e604fc6a305176822d19e9ec2ca7f1</id>
+        <link href="https://windhawk.net/mods/word-omath-shade-fix"/>
+        <updated>2026-04-25T15:41:26.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="wordofficematheditboxshadefix">Word OfficeMath EditBox Shade Fix</h1>
+<p>This mod fixes the issue where the shade color of OfficeMath equation edit boxes does not change according to the theme (light/dark) in Microsoft Word. It achieves this by hooking into the <code>DrawMathShd</code> function in <code>wwlib.dll</code>, which is responsible for drawing the shade, and dynamically patching the hardcoded color value based on the current theme (can be customized in the settings).</p>
+<p><em>Note: this mod needs pdb symbol of <code>wwlib.dll</code> to work. The symbol file is expected to be a bit large (~90MB in size). Windhawk will download it automatically when you launch Word first time after you installed the mod (the popup at right bottom corner of your screen, please make sure that it shows percentage like "Loading symbols… 0% (wwlib.dll)", wait until it reaches 100% and the pop up disappears, otherwise please switch your network and try again) please wait patiently and make sure to <strong>relaunch Word AS ADMINISTRATOR at least once</strong> after it finishes, this is to write symbols being used to SymbolCache, which speeds up launching later on.</em></p>
+<h2 id="note">⚠️ Note:</h2>
+<ul>
+<li>It is advised to <strong>turn off automatic updates</strong> for Office applications, as PDB may need to be downloaded every time after updates.</li>
+<li>Please relaunch Word as administrator <em>at least once</em> after installing the mod and wait for symbol download to complete, this is to write symbols being used to SymbolCache, which speeds up launching later on.</li>
+</ul>
+<p><em>This mod is part of <strong>The Ultimate Office Dark Mode Project</strong></em></p>
+<h1 id="beforevsafter">Before vs After</h1>
+<p><img src="https://raw.githubusercontent.com/JoeYe-233/images/refs/heads/main/word-omath-shade-fix-before-vs-after.png" alt="Before-After" /></p>]]></content>
         <author>
             <name>Joe Ye</name>
             <uri>https://github.com/JoeYe-233</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Fix language indicator in Win10 taskbar under Win11 24H2+ 1.3.0]]></title>
-        <id>https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator#b50ab73d1bf7a80b4cda5ac8ed366825ec03c138</id>
-        <link href="https://windhawk.net/mods/fix-legacy-taskbar-tray-input-indicator"/>
-        <updated>2026-02-28T11:16:49.000Z</updated>
-        <content type="html"><![CDATA[<p>Updated version to 1.3.0 and added logic for first BitBlt operation.</p>]]></content>
+        <title type="html"><![CDATA[Disk Usage Bar Color 1.1.0]]></title>
+        <id>https://windhawk.net/mods/disk-usage-bar-color#d9e2c14c876da8f9de4910d217adf43e4fc85bfb</id>
+        <link href="https://windhawk.net/mods/disk-usage-bar-color"/>
+        <updated>2026-04-25T15:38:48.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="diskusagebarcolor">Disk Usage Bar Color</h1>
+<p>Customizes the color of the disk usage progress bars shown in File Explorer's
+<strong>This PC</strong> view.</p>
+<h2 id="settings">Settings</h2>
+<ul>
+<li><strong>Bar Color (Normal)</strong>: Hex color for drives with normal usage (default: <code>60CDFF</code>)</li>
+<li><strong>Bar Color (Full/Warning)</strong>: Hex color for drives that are nearly full,
+shown in red by default (default: <code>E81123</code>)</li>
+</ul>
+<p>Enter colors as 6-digit hex codes without the <code>#</code> prefix (e.g. <code>60CDFF</code>).</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Only drive bars in the <strong>This PC</strong> view are affected. File copy/move progress
+bars are filtered out using window ancestry checks.</li>
+</ul>]]></content>
         <author>
-            <name>Anixx</name>
-            <uri>https://github.com/Anixx</uri>
+            <name>dirtyrazkl</name>
+            <uri>https://github.com/dirtyrazkl</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[OneNote Cursor Teleport Fix 2.0]]></title>
-        <id>https://windhawk.net/mods/onenote-cursor-teleport-fix#db533e7279c8362af59299a281dde90763b37968</id>
-        <link href="https://windhawk.net/mods/onenote-cursor-teleport-fix"/>
-        <updated>2026-02-28T09:57:29.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="onenotecursorteleportfixuiprotectionengine">OneNote Cursor Teleport Fix &amp; UI Protection Engine</h1>
-<p>A structural Windhawk modification that resolves hardware desynchronization between pen tablets in mouse mode and Microsoft OneNote's Windows Ink engine. This engine synchronizes the system cursor with the physical pen state</p>
-<p>Compatibility: Designed exclusively for the desktop version of Microsoft OneNote (onenote.exe).</p>
-<h2 id="corefeatures">Core Features</h2>
-<ul>
-<li><strong>Windows Ink Synchronization:</strong> Monitors <code>WM_POINTER</code> events and enforces Win32 system mouse tracking to prevent cursor desynchronization upon pen entry.</li>
-<li><strong>Teleport Interception:</strong> Evaluates the Euclidean distance of <code>WM_MOUSEMOVE</code> events and drops hardware jump packets that exceed the configured threshold.</li>
-<li><strong>Hierarchical UI Exception Engine:</strong> Parses window classes, styles, and ancestry to blacklist transient UI elements (e.g., <code>NetUIPopupWindow</code>, <code>SysShadow</code>). This prevents synthetic mouse events from auto-dismissing ribbon dropdowns or leaving artifacts.</li>
-<li><strong>Thread-Safe Subclassing:</strong> Implements a non-destructive subclassing architecture that safely attaches to OneNote's internal document canvas and active windows while avoiding protected UI layers.</li>
+        <title type="html"><![CDATA[Taskbar Clock Customization 1.7.4]]></title>
+        <id>https://windhawk.net/mods/taskbar-clock-customization#00185dce0fd0a9b71e0fdaa09b0611224dfaa022</id>
+        <link href="https://windhawk.net/mods/taskbar-clock-customization"/>
+        <updated>2026-04-25T14:15:46.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Minor improvements to system performance metrics collection.</li>
+<li>Fixed unnecessarily frequent refreshes if seconds, system metrics, and web content are all unused.</li>
+<li>Fixed compatibility with new insider Windows 11 builds.</li>
 </ul>]]></content>
         <author>
-            <name>Mohamed Magdy</name>
-            <uri>https://github.com/hamomagdy724</uri>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar tray icon spacing and grid 1.3.1]]></title>
+        <id>https://windhawk.net/mods/taskbar-notification-icon-spacing#924426711ad95bf5c6947842def94e251177dd15</id>
+        <link href="https://windhawk.net/mods/taskbar-notification-icon-spacing"/>
+        <updated>2026-04-25T13:35:29.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added an option for column-first, bottom-to-top, right-to-left grid arrangement.</li>
+<li>Fixed compatibility with new insider Windows 11 builds.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
         </author>
     </entry>
 </feed>

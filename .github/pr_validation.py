@@ -9,7 +9,9 @@ import json
 import os
 import re
 import sys
+import unicodedata
 import urllib.error
+import urllib.parse
 import urllib.request
 from functools import cache
 from io import StringIO
@@ -163,6 +165,18 @@ def get_mod_file_metadata(
     return properties, warnings
 
 
+def get_mod_file_readme(source: str) -> Optional[str]:
+    """Extract the README block body from mod source, or None if absent."""
+    readme_block_re = re.compile(
+        r'^//[ \t]+==WindhawkModReadme==[ \t]*$'
+        r'\s*/\*\s*([\s\S]+?)\s*\*/\s*'
+        r'^//[ \t]+==/WindhawkModReadme==[ \t]*$',
+        re.MULTILINE,
+    )
+    match = readme_block_re.search(source)
+    return match.group(1) if match else None
+
+
 @cache
 def get_mod_author_data():
     url = 'https://raw.githubusercontent.com/ramensoftware/windhawk-mods/refs/heads/pages/mod_author_data.json'
@@ -186,7 +200,7 @@ def is_valid_license_identifier(license_id: str):
 def get_existing_mod_metadata(mod_id: str) -> Optional[dict]:
     """Fetch existing mod metadata from mods.windhawk.net, or None if mod doesn't exist."""
     try:
-        url = f'https://raw.githubusercontent.com/ramensoftware/windhawk-mods/refs/heads/pages/mods/{mod_id}.wh.cpp'
+        url = f'https://raw.githubusercontent.com/ramensoftware/windhawk-mods/refs/heads/pages/mods/{urllib.parse.quote(mod_id)}.wh.cpp'
         response = urllib.request.urlopen(url)
         content = response.read().decode('utf-8')
 
@@ -211,7 +225,7 @@ def get_existing_mod_metadata(mod_id: str) -> Optional[dict]:
 def get_existing_mod_versions(mod_id: str) -> Optional[list[str]]:
     """Fetch list of existing versions for a mod, or None if mod doesn't exist."""
     try:
-        url = f'https://raw.githubusercontent.com/ramensoftware/windhawk-mods/refs/heads/pages/mods/{mod_id}/versions.json'
+        url = f'https://raw.githubusercontent.com/ramensoftware/windhawk-mods/refs/heads/pages/mods/{urllib.parse.quote(mod_id)}/versions.json'
         response = urllib.request.urlopen(url)
         data = json.loads(response.read())
         return [item['version'] for item in data]
@@ -350,21 +364,28 @@ class ModMetadataValidator:
             if prop.value != self.existing_metadata['github']:
                 prop.warn(
                     '@@ cannot be changed for existing mods. Expected'
-                    f' "{self.existing_metadata["github"]}", got "{prop.value}"'
+                    f' "{self.existing_metadata["github"]}", got "{prop.value}"\n'
+                    'Note that only the original author of the mod is allowed to'
+                    ' submit updates.\n'
+                    'If you are not the original author, you might want to contact'
+                    ' them to submit the update instead.\n'
+                    'For more information about submitting a mod update, refer to the'
+                    ' "Submitting a Mod Update" section in the repository\'s README.md.'
                 )
 
         expected = f'https://github.com/{self.expected_author}'
         if not prop.value.startswith('https://github.com/'):
-            prop.warn('@@ must start with "https://github.com/"')
+            prop.warn('@@ must start with https://github.com/')
         elif prop.value != expected and prop.value.lower() == expected.lower():
-            prop.warn(f'Expected @@ to be "{expected}" (case-sensitive)')
+            prop.warn(f'Expected @@ to be {expected} (case-sensitive)')
         elif prop.value == expected + '/':
-            prop.warn(f'Expected @@ to be "{expected}" (no trailing slash)')
+            prop.warn(f'Expected @@ to be {expected} (no trailing slash)')
         elif prop.value.startswith(expected + '/'):
-            prop.warn(f'Expected @@ to be "{expected}" (user profile URL only)')
+            prop.warn(f'Expected @@ to be {expected} (user profile URL only)')
         elif prop.value != expected:
             prop.warn(
-                f'Expected @@ to be "{expected}".\n'
+                f'Expected @@ ({prop.value}) to match the pull request author'
+                f' ({expected}).\n'
                 'Note that only the original author of the mod is allowed to submit'
                 ' updates.\n'
                 'If you are not the original author, you might want to contact them to'
@@ -485,7 +506,20 @@ class ModMetadataValidator:
                     break
             else:
                 # Not used by anyone else, still requires manual verification
-                prop.warn('@@ requires manual verification')
+                prop.warn(
+                    '@@ requires manual verification\n\n'
+                    'To verify your X (Twitter) account, please send me'
+                    ' (https://x.com/m417z) a direct message with the following'
+                    ' content:\n\n'
+                    'I attest that I\'m the sole owner of both this Twitter account'
+                    f' ({prop.value}) and the following GitHub account:'
+                    f' {self.github_url}'
+                )
+
+        if not re.match(r'https://(x|twitter)\.com/', prop.value):
+            prop.warn('@@ must start with https://x.com/ or https://twitter.com/')
+        elif not re.match(r'https://(x|twitter)\.com/[^/]+$', prop.value):
+            prop.warn('@@ must be an X (Twitter) profile URL with no extra slashes')
 
     def validate_homepage(self):
         """Validate homepage URL."""
@@ -603,14 +637,23 @@ class ModMetadataValidator:
 
 
 def validate_metadata(path: Path, expected_author: str) -> int:
-    with path.open(encoding='utf-8') as file:
-        properties, initial_warnings = get_mod_file_metadata(
-            file, warn_callback=lambda line, msg: add_warning(path, line, msg)
-        )
+    source = path.read_text(encoding='utf-8', errors='ignore')
+
+    properties, initial_warnings = get_mod_file_metadata(
+        StringIO(source),
+        warn_callback=lambda line, msg: add_warning(path, line, msg),
+    )
 
     # Validate metadata properties
     validator = ModMetadataValidator(path, properties, expected_author)
     metadata_warnings = validator.validate_all()
+
+    # Validate README presence
+    readme_warnings = 0
+    if get_mod_file_readme(source) is None:
+        readme_warnings += add_warning(
+            path, 1, 'Mod source must contain a README block (==WindhawkModReadme==)'
+        )
 
     # Validate file path
     file_warnings = 0
@@ -619,7 +662,7 @@ def validate_metadata(path: Path, expected_author: str) -> int:
     if path.parent != Path('mods'):
         file_warnings += add_warning(path, 1, 'File is not placed in the mods folder')
 
-    return initial_warnings + metadata_warnings + file_warnings
+    return initial_warnings + metadata_warnings + readme_warnings + file_warnings
 
 
 @cache
@@ -677,7 +720,7 @@ def get_target_modules_from_previous_line(previous_line: str):
 def validate_symbol_hooks(path: Path):
     warnings = 0
 
-    mod_source = path.read_text(encoding='utf-8')
+    mod_source = path.read_text(encoding='utf-8', errors='ignore')
     mod_source_lines = mod_source.splitlines()
 
     p = r'^[ \t]*(?:(?:static|const)[ \t]+)*(?:WindhawkUtils::)?SYMBOL_HOOK[ \t]+(\w+)'
@@ -733,11 +776,28 @@ def validate_symbol_hooks(path: Path):
     return warnings
 
 
+def validate_encoding(path: Path):
+    """Validate that the file is valid UTF-8 without BOM."""
+    raw = path.read_bytes()
+
+    try:
+        raw.decode('utf-8')
+    except UnicodeDecodeError as e:
+        return add_warning(path, 1, f'File is not valid UTF-8: {e}')
+
+    warnings = 0
+
+    if raw.startswith(b'\xef\xbb\xbf'):
+        warnings += add_warning(path, 1, 'File must not start with a UTF-8 BOM')
+
+    return warnings
+
+
 def validate_specific_keywords(path: Path):
     """Check for specific keywords in mod source code."""
     warnings = 0
 
-    mod_source = path.read_text(encoding='utf-8')
+    mod_source = path.read_text(encoding='utf-8', errors='ignore')
     mod_source_lines = mod_source.splitlines()
 
     # Words to check (pattern, description)
@@ -745,8 +805,8 @@ def validate_specific_keywords(path: Path):
         (r'InternalWh', 'InternalWh'),
         (r'WH_EDITING', 'WH_EDITING'),
         (r'\bWH_MOD\b', 'WH_MOD'),
-        (r'GWL_WNDPROC', 'GWL_WNDPROC'),
-        (r'GWLP_WNDPROC', 'GWLP_WNDPROC'),
+        (r'(^|,)\s*GWL_WNDPROC', 'GWL_WNDPROC'),
+        (r'(^|,)\s*GWLP_WNDPROC', 'GWLP_WNDPROC'),
         (r'Wh_FindFirstSymbol', 'Wh_FindFirstSymbol'),
         (r'Wh_FindNextSymbol', 'Wh_FindNextSymbol'),
         (r'Wh_FindCloseSymbol', 'Wh_FindCloseSymbol'),
@@ -765,6 +825,21 @@ def validate_specific_keywords(path: Path):
                     path, line_num, f'Line requires manual inspection for "{word}"'
                 )
 
+        hidden_ws = [
+            c
+            for c in line
+            if unicodedata.category(c) == 'Cf'
+            or (unicodedata.category(c) == 'Zs' and c != ' ')
+        ]
+        if hidden_ws:
+            chars = ', '.join(f'U+{ord(c):04X}' for c in set(hidden_ws))
+            warnings += add_warning(
+                path,
+                line_num,
+                f'Line contains {len(hidden_ws)} non-standard whitespace characters'
+                f' ({chars}), requires manual inspection',
+            )
+
     return warnings
 
 
@@ -776,7 +851,7 @@ def test_run():
     print('Test run: Validating single file...')
     path = Path(sys.argv[1])
     pr_author = sys.argv[2]
-    warnings = 0
+    warnings = validate_encoding(path)
     warnings += validate_metadata(path, pr_author)
     warnings += validate_symbol_hooks(path)
     warnings += validate_specific_keywords(path)
@@ -816,7 +891,8 @@ def main():
     for path in paths:
         print(f'Checking {path=}')
 
-        path_warnings = validate_metadata(path, pr_author)
+        path_warnings = validate_encoding(path)
+        path_warnings += validate_metadata(path, pr_author)
         path_warnings += validate_symbol_hooks(path)
         path_warnings += validate_specific_keywords(path)
         warnings += path_warnings

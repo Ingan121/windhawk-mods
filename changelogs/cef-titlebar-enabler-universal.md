@@ -1,6 +1,11 @@
-## 1.7 ([Mar 8, 2026](https://github.com/ramensoftware/windhawk-mods/blob/9580e761c8246ecdabb3c5d6b63e237de4a230c6/mods/cef-titlebar-enabler-universal.wh.cpp))
+## 1.8 ([Apr 29, 2026](https://github.com/ramensoftware/windhawk-mods/blob/8506309b7bd5f9503ba93cad81004640f7fa094b/mods/cef-titlebar-enabler-universal.wh.cpp))
 
-CEF/Spotify Tweaks 1.7
+Bump CTE version to 1.8 and update supported versions
+
+## 1.7 ([Mar 8, 2026](https://github.com/ramensoftware/windhawk-mods/blob/fd34fadeb640a2fcee887aa02773f8c66c35f6aa/mods/cef-titlebar-enabler-universal.wh.cpp))
+
+* Add support for Spotify 1.2.81 to 1.2.85 (CEF 144)
+* Add proper support for the ARM64 version of the Spotify client, including the transparent rendering feature
 
 ## 1.6 ([Dec 28, 2025](https://github.com/ramensoftware/windhawk-mods/blob/b10d6bd9375f96e105e8b13d2db6a2a75b4868bf/mods/cef-titlebar-enabler-universal.wh.cpp))
 
