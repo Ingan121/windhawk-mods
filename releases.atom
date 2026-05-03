@@ -2,12 +2,199 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk New Mod Releases</title>
-    <updated>2026-04-28T08:49:13.000Z</updated>
+    <updated>2026-05-02T19:13:37.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>New mods in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
+    <entry>
+        <title type="html"><![CDATA[Enhanced Disk Usage 1.0]]></title>
+        <id>https://windhawk.net/mods/enhanced-disk-usage#9ffbf99e36e4479e9dcd8a14026aee1840c5abcf</id>
+        <link href="https://windhawk.net/mods/enhanced-disk-usage"/>
+        <updated>2026-05-02T19:13:37.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/bbmaster123/FWFU/refs/heads/main/Assets/screenshot.png" alt="Screenshot" /></p>
+<p>Enables the ability to customize the disk drive tiles in explorer, targeting the
+disk's usage bar, as well as the details that appear below.</p>
+<ul>
+<li>custom colors with transparency for disk usage, track (background/unused), and
+outline</li>
+<li>separate disk colors for when drive is near full</li>
+<li>linear gradient support with configurable direction</li>
+<li>rounded corners</li>
+<li>glossy overlay toggle option (for a more Windows Aero-ish looking aesthetic)</li>
+<li>height/width controls (inset) controls for disk bar and track</li>
+<li>custom disk usage text with font size adjustment, multi-line support,
+line-height adjustment, and more</li>
+</ul>
+<p>ex.
+100GB free | 100GB/200GB</p>]]></content>
+        <author>
+            <name>bbmaster123</name>
+            <uri>https://github.com/bbmaster123</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MicroSwap 1.0.0]]></title>
+        <id>https://windhawk.net/mods/microswap#d464024830ea0879a2e1f89c6d5be2769be2ba4c</id>
+        <link href="https://windhawk.net/mods/microswap"/>
+        <updated>2026-05-02T14:19:27.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="micswap">MicSwap</h1>
+<p>Instantly toggle between two audio input devices (microphones) from your system tray — no diving into Sound settings.</p>
+<hr />
+<h2 id="howtouse">How to Use</h2>
+<ol>
+<li><strong>Choose Icons</strong> — Open the <strong>Settings</strong> tab and pick an icon for each of your two devices.</li>
+<li><strong>Select Your Devices</strong> — Right-click the tray icon. Use <strong>Set as Input 1</strong> and <strong>Set as Input 2</strong> to assign your inputs from the live device list.</li>
+<li><strong>Toggle</strong> — Left-click the tray icon at any time to swap between the two devices instantly.</li>
+</ol>
+<blockquote>
+  <p>The tray tooltip always shows the active input. On first run it will read <em>"Right-click to configure"</em> until both devices are assigned.</p>
+</blockquote>
+<hr />
+<h2 id="changelog">Changelog</h2>
+<h3 id="v100">v1.0.0</h3>
+<ul>
+<li>Initial release. Mirrors AudioSwap but targets audio input/capture devices.</li>
+<li>Right-click context menu auto-detects all active audio inputs and lets you assign Input 1 and Input 2 from a live list.</li>
+<li>Device selections persist across restarts.</li>
+<li>Toggle matches devices by their unique system ID for reliable switching regardless of device naming.</li>
+</ul>]]></content>
+        <author>
+            <name>BlackPaw</name>
+            <uri>https://github.com/BlackPaw21</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Move Window to Monitor 1.1.0]]></title>
+        <id>https://windhawk.net/mods/move-window-to-monitor#f0ef9faeba5aac55e931e6603bf30066d2e4a7f3</id>
+        <link href="https://windhawk.net/mods/move-window-to-monitor"/>
+        <updated>2026-05-02T14:15:39.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="movewindowtomonitor">Move Window to Monitor</h1>
+<p>Moves the active window to a specific monitor using configurable hotkeys.</p>
+<h2 id="defaultshortcutctrlaltarrowkeys">Default Shortcut: Ctrl+Alt+Arrow keys</h2>
+<h2 id="setup">Setup</h2>
+<p>Monitors are numbered automatically, sorted <strong>left to right, then top to bottom</strong>
+based on their physical position in your Windows display layout.</p>
+<p><strong>Example for a setup with 3 monitors on the bottom and 1 on top center:</strong></p>
+<pre><code>        [ 1 ]
+[ 0 ]   [ 2 ]   [ 3 ]
+</code></pre>
+<p>Set: UP=1, LEFT=0, DOWN=2, RIGHT=3</p>
+<p>Use <strong>-1</strong> to keep automatic geometric detection for a direction.</p>
+<p>When the active window is already on the target monitor, the hotkey does nothing.</p>
+<p>The <strong>Center window</strong> option centers the window on the target monitor instead
+of preserving its relative position. Works independently of <strong>Keep window size</strong>.</p>]]></content>
+        <author>
+            <name>TomberWolf</name>
+            <uri>https://github.com/TomberWolf</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ultimate Custom Tray 1.0]]></title>
+        <id>https://windhawk.net/mods/ultimate-custom-tray#7f92885de8e49e5169175fd8adcdc46854a938e4</id>
+        <link href="https://windhawk.net/mods/ultimate-custom-tray"/>
+        <updated>2026-05-02T14:13:45.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="ultimatecustomtray">Ultimate Custom Tray</h1>
+<p>Adds your own icons to the system tray. Each icon can run an
+action on left-click and/or show a context menu on right-click.</p>
+<hr />
+<h2 id="quickstart">Quick start</h2>
+<ol>
+<li>Open Windhawk settings for this mod.</li>
+<li>Add one or more <strong>Items</strong> to the list.</li>
+<li>Fill in <strong>Label</strong>, <strong>Icon</strong> and <strong>Action</strong> for each item.</li>
+<li>Save — the icons appear in the tray immediately.</li>
+</ol>
+<hr />
+<h2 id="actionformats">Action formats</h2>
+<p>Actions run on <strong>left-click</strong> (or from a context menu item).</p>
+<p>| Prefix | Example | Description |
+|--------|---------|-------------|
+| <code>" "</code> | <code>"C:\Program Files\app.exe"</code> | Opens a file or folder by absolute path. |
+| <code>~</code> | <code>~Downloads</code> | Opens a folder or file by name. |
+| <code>cmd:</code> | <code>cmd:control</code> | Runs a command through <code>cmd.exe</code>. |
+| <code>shell:</code> | <code>shell:shutdown /r /f /t 0</code> | Runs through <code>powershell.exe</code>. |
+| <code>web:</code> | <code>web:https://windhawk.net/</code> | Opens a URL in the default browser. |
+| <code>ms-settings:</code> | <code>ms-settings:bluetooth</code> | Opens a Windows Settings page. |</p>
+<hr />
+<h2 id="iconfield">Icon field</h2>
+<p>| Type | Example | Description |
+|---|---|---|
+| <strong>Glyph</strong> | <code>E774</code> | Hex code of a <a href="https://learn.microsoft.com/en-us/windows/apps/design/iconography/segoe-ui-symbol-font">Segoe Fluent Icons</a> glyph. 4-digit hex only, no <code>\u</code> prefix. |
+| <strong>Image file</strong> | <code>C:\Icons\name.png</code> | Full path to an image. Supported: <code>.png</code> <code>.ico</code> <code>.jpg</code> <code>.bmp</code>. Recommended: 32x32 px, transparent background. |</p>
+<hr />
+<h2 id="iconcolor">Icon color</h2>
+<p>Use the <strong>Icon color</strong> setting to choose <strong>White</strong> (for dark taskbar) or <strong>Black</strong> (for light taskbar).</p>
+<hr />
+<h2 id="contextmenus">Context menus</h2>
+<p>Each tray icon can show a right-click context menu.</p>
+<ul>
+<li>Add items under <strong>Context menu</strong> for the icon.</li>
+<li>Each item has its own <strong>Name</strong>, <strong>Icon</strong> and <strong>Action</strong>.</li>
+<li>If no items are defined, right-clicking does nothing.</li>
+<li>Left-click always runs the main <strong>Action</strong>, regardless of whether a context menu exists.</li>
+</ul>]]></content>
+        <author>
+            <name>Salyts</name>
+            <uri>https://github.com/Salyts</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Explorer Taskbar Overlay Icon 1.0]]></title>
+        <id>https://windhawk.net/mods/explorer-taskbar-overlay-icon#205ef84100133d3a9d4d48de951cb77d2b5fb6a6</id>
+        <link href="https://windhawk.net/mods/explorer-taskbar-overlay-icon"/>
+        <updated>2026-05-02T13:51:31.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="explorertaskbaroverlayicon">Explorer Taskbar Overlay Icon</h1>
+<p>Shows a taskbar overlay icon on Explorer windows that displays the icon of the current directory.</p>
+<p><img src="https://raw.githubusercontent.com/FireBlade211/FireBlade211/refs/heads/main/WindhawkModReadmeImages/ExplorerTaskbarOverlayIcon/screenshot.png" alt="Screenshot" /></p>]]></content>
+        <author>
+            <name>FireBlade</name>
+            <uri>https://github.com/FireBlade211</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Replace the buggy SDHC card drive icon 1.0]]></title>
+        <id>https://windhawk.net/mods/replace-buggy-sdhc-icon#7a2c107289cd17a9b4a24a476102fb0faffd1308</id>
+        <link href="https://windhawk.net/mods/replace-buggy-sdhc-icon"/>
+        <updated>2026-04-29T21:40:06.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="replacethebuggysdhccarddriveicon">Replace the buggy SDHC card drive icon</h1>
+<p>Replace the buggy SDHC card drive icon which MS does not bother to fix since before Windows 8.</p>
+<p><img src="https://i.imgur.com/6BKSRQR.png" alt="Screenshot" /></p>]]></content>
+        <author>
+            <name>Anixx</name>
+            <uri>https://github.com/Anixx</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chrome PiP Alt+Tab Window Hider 1.0.0]]></title>
+        <id>https://windhawk.net/mods/chrome-pip-alt-tab-window-hider#0359476256587e4e3ae4d16881057a2b09eb2d79</id>
+        <link href="https://windhawk.net/mods/chrome-pip-alt-tab-window-hider"/>
+        <updated>2026-04-29T21:32:26.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="chromepipalttabwindowhider">Chrome PiP Alt+Tab Window Hider</h1>
+<p>Removes Chrome Picture-in-Picture windows from the Alt+Tab switcher and Win+Tab,
+while keeping them fully functional (always-on-top, playback controls, etc.).</p>
+<h2 id="howitworks">How it works</h2>
+<p>Chrome PiP windows are identified by three concurrent traits:</p>
+<ul>
+<li>Window class: <code>Chrome_WidgetWin_1</code></li>
+<li>Extended style: <code>WS_EX_TOPMOST</code> set</li>
+<li>No owner window</li>
+<li>Size smaller than 50% of the primary monitor in both dimensions</li>
+</ul>
+<p>When a matching window is found, <code>WS_EX_TOOLWINDOW</code> is added and
+<code>WS_EX_APPWINDOW</code> is removed — the standard Win32 technique for hiding
+a window from Alt+Tab and the taskbar.</p>
+<h2 id="compatibility">Compatibility</h2>
+<ul>
+<li>Windows 10 and Windows 11</li>
+<li>Targets <code>chrome.exe</code> only</li>
+</ul>]]></content>
+        <author>
+            <name>BCRTVKCS</name>
+            <uri>https://github.com/bcrtvkcs</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Audio Output Device Switcher 1.0]]></title>
         <id>https://windhawk.net/mods/audio-scroll-switcher#d9349ff002901d3deca3ac680de0059ee97bc7c6</id>
@@ -433,237 +620,6 @@ default blue.</p>
         <author>
             <name>FireBlade</name>
             <uri>https://github.com/FireBlade211</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Disable accidental Office KeyTips in Word 1.0]]></title>
-        <id>https://windhawk.net/mods/disable-office-keytips-word#f5efc1b4c2f922c64dd67dcdf5e469b896dbd261</id>
-        <link href="https://windhawk.net/mods/disable-office-keytips-word"/>
-        <updated>2026-04-12T22:16:04.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="disableaccidentalofficekeytipsinword">Disable accidental Office KeyTips in Word</h1>
-<p>Prevent Microsoft Word from entering the yellow Office KeyTips overlay
-accidentally during keyboard layout or language switching, or due to stray
-Alt-related state transitions.</p>
-<h2 id="whatitdoes">What it does</h2>
-<p>This mod is intended for cases where Word unexpectedly enters ribbon keyboard
-navigation mode and shows the yellow KeyTips boxes while you're editing text.</p>
-<p>The implementation uses a conservative prevention-based approach:</p>
-<ul>
-<li>Tracks modifier-key transitions that commonly lead to accidental KeyTips
-activation.</li>
-<li>Suppresses isolated Alt activation when configured.</li>
-<li>Suppresses layout-switch artifacts after <code>Ctrl+Shift</code>, <code>Alt+Shift</code>, and
-<code>Win+Space</code>.</li>
-<li>Blocks suspicious menu activation paths such as <code>SC_KEYMENU</code> when they match
-an accidental pattern.</li>
-</ul>
-<p>The mod is scoped to <code>WINWORD.EXE</code> and does <strong>not</strong> disable Alt globally or
-blindly swallow all <code>WM_SYS*</code> messages.</p>
-<h2 id="settings">Settings</h2>
-<ul>
-<li><strong>Suppress single Alt activation</strong>: Blocks obvious isolated Alt-triggered
-KeyTips activation.</li>
-<li><strong>Suppress layout switch artifacts</strong>: Suppresses KeyTips activation patterns
-caused by layout/language switching side effects.</li>
-<li><strong>Preserve intentional Alt navigation</strong>: Allows plain Alt ribbon navigation
-when possible. Disabled by default to prioritize suppression of accidental
-KeyTips.</li>
-<li><strong>Suppress menu activation paths</strong>: Blocks suspicious menu/system activation
-paths such as <code>SC_KEYMENU</code>.</li>
-</ul>
-<h2 id="notes">Notes</h2>
-<p>With the default settings, deliberate plain-Alt ribbon navigation may be
-reduced. This is intentional: the primary goal is to stop unwanted KeyTips
-activation while keeping normal typing and common Ctrl shortcuts stable.</p>
-<h2 id="screenshotoftheproblem">Screenshot of the problem</h2>
-<p><img src="https://raw.githubusercontent.com/communism420/Media-Host-For-My-Windhawk-Mods/refs/heads/main/disable%20office%20keytips.png" alt="Word KeyTips" /></p>]]></content>
-        <author>
-            <name>communism420</name>
-            <uri>https://github.com/communism420</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Custom Window Corner Radius 1.0]]></title>
-        <id>https://windhawk.net/mods/custom-corner-radius#cae0950522f4f4165a223da43bb1ad3936f6b1f2</id>
-        <link href="https://windhawk.net/mods/custom-corner-radius"/>
-        <updated>2026-04-11T18:57:31.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="customwindowcornerradius">Custom Window Corner Radius</h1>
-<p>Customizes Windows 11 app window corner radius. Make corners more rounded than
-the default 8px, or reduce the radius for less rounded or completely sharp
-corners.</p>
-<p>The mod was <a href="https://github.com/ramensoftware/windhawk-mods/pull/3587">originally
-submitted</a> by
-<a href="https://github.com/kanak-buet19">Kanak415</a>.</p>
-<p><img src="https://i.imgur.com/mMGkBwc.png" alt="Screenshot" /></p>
-<h2 id="importantusagenote">⚠ Important usage note ⚠</h2>
-<p>This mod needs to hook into <code>dwm.exe</code> to work. Please navigate to Windhawk's
-Settings &gt; Advanced settings &gt; More advanced settings &gt; Process inclusion list,
-and make sure that <code>dwm.exe</code> is in the list.</p>
-<p><img src="https://i.imgur.com/LRhREtJ.png" alt="Advanced settings screenshot" /></p>
-<h2 id="additionalnotes">Additional notes</h2>
-<ul>
-<li>Popups and flyouts (taskbar, wifi, volume, context menus) use a smaller radius
-(4px) and are unaffected by this mod. Some of them can be customized using
-other mods, such as Windows 11 Taskbar Styler.</li>
-<li>Disabling the mod instantly restores default behavior — no system files are
-modified.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Explorer Navigation Pane Tweaks 1.0]]></title>
-        <id>https://windhawk.net/mods/explorer-navigation-pane-tweaks#d208454541569598e6b5979b89ab1c22fea4fd1c</id>
-        <link href="https://windhawk.net/mods/explorer-navigation-pane-tweaks"/>
-        <updated>2026-04-11T14:39:24.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="explorernavigationpanetweaks">Explorer Navigation Pane Tweaks</h1>
-<p>Adjusts the indentation and visual tree style of the navigation pane in Windows Explorer.</p>
-<h2 id="beforeafter">Before / After</h2>
-<h3 id="defaultexplorer">Default Explorer</h3>
-<p><img src="https://raw.githubusercontent.com/Languster/ExplorerNavHook/main/screenshots/before.jpg" alt="Before" /></p>
-<h3 id="withexplorernavigationpanetweaks">With Explorer Navigation Pane Tweaks</h3>
-<p><img src="https://raw.githubusercontent.com/Languster/ExplorerNavHook/main/screenshots/after.jpg" alt="After" /></p>
-<h2 id="features">Features</h2>
-<ul>
-<li>changes the navigation tree indent</li>
-<li>can remove expand/collapse buttons</li>
-<li>can remove connector lines</li>
-<li>can remove root lines</li>
-</ul>
-<h2 id="settings">Settings</h2>
-<ul>
-<li><strong>Target indent</strong>: controls how far the tree items are shifted</li>
-<li><strong>Remove TVS_HASBUTTONS</strong>: removes tree buttons</li>
-<li><strong>Remove TVS_HASLINES</strong>: removes connector lines</li>
-<li><strong>Remove TVS_LINESATROOT</strong>: removes root lines</li>
-</ul>
-<h2 id="compatibility">Compatibility</h2>
-<ul>
-<li>designed for Windows Explorer (<code>explorer.exe</code>)</li>
-<li>tested with the original ExplorerNavHook behavior migrated to Windhawk</li>
-<li>behavior may vary between different Windows builds and Explorer variants</li>
-</ul>
-<h2 id="notes">Notes</h2>
-<ul>
-<li>targets <code>explorer.exe</code></li>
-<li>based on the original ExplorerNavHook project</li>
-<li>changes apply to the Explorer navigation tree</li>
-</ul>
-<h2 id="limitations">Limitations</h2>
-<ul>
-<li>this mod targets the navigation tree in Explorer, not every tree view in the system</li>
-<li>some Explorer variants or future Windows updates may behave differently</li>
-<li>visual results depend on the current Explorer implementation</li>
-</ul>]]></content>
-        <author>
-            <name>Languster</name>
-            <uri>https://github.com/Languster</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Word Image Resize Anti-Flip 1.0.0]]></title>
-        <id>https://windhawk.net/mods/word-image-resize-anti-flip#aa61501fa7e0eef8ee2ab6463635a0f9a45dea8d</id>
-        <link href="https://windhawk.net/mods/word-image-resize-anti-flip"/>
-        <updated>2026-04-10T10:28:17.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="wordimageresizeantiflip">Word Image Resize Anti-Flip</h1>
-<p>This mod fixes the long-standing issue of images being flipped unexpectedly when resizing via dragging the image handles in Word. Before, once the user dragged the resize handles past the anchor point in any direction, the image would flip unexpectedly. The mod works by intercepting the drag update function and dynamically clamping the mouse position parameter to prevent crossing over the anchor point, which is the root cause of the flipping behavior. It also includes an "anti-flip" feature that detects the original drag direction and maintains it even if the user tries to cross over the anchor point, providing a more intuitive resizing experience.</p>
-<p><em>Note: this mod needs pdb symbol of <code>oart.dll</code> to work. The symbol file is expected to be ~35MB in size. Windhawk will download it automatically when you launch Word first time after you installed the mod (the popup at right bottom corner of your screen, please make sure that it shows percentage like "Loading symbols… 0% (oart.dll)", wait until it reaches 100% and the pop up disappear, otherwise please switch your network and try again) please wait patiently and <strong>relaunch Word AS ADMINISTRATOR at least once</strong> after it finishes, this is to write symbols being used to SymbolCache, which speeds up launching later on.</em></p>
-<h2 id="note">⚠️ Note:</h2>
-<ul>
-<li>It is advised to <strong>turn off automatic updates</strong> for Office applications, as PDB may need to be downloaded every time after updates.</li>
-<li>Please relaunch Word as administrator <em>at least once</em> after installing the mod and wait for symbol download to complete, this is to write symbols being used to SymbolCache, which speeds up launching later on.</li>
-</ul>
-<h1 id="before">Before</h1>
-<p><img src="https://raw.githubusercontent.com/JoeYe-233/images/refs/heads/main/word-image-resize-anti-flip-before.gif" alt="Before" /></p>
-<h1 id="after">After</h1>
-<p><img src="https://raw.githubusercontent.com/JoeYe-233/images/refs/heads/main/word-image-resize-anti-flip-after.gif" alt="After" /></p>
-<p>(Image courtesy of <a href="https://pixabay.com/photos/love-valentines-day-dice-game-9344644/">Ralf1403</a> from Pixabay)</p>]]></content>
-        <author>
-            <name>Joe Ye</name>
-            <uri>https://github.com/JoeYe-233</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AudioSwap 1.0]]></title>
-        <id>https://windhawk.net/mods/audioswap#de26d434714384dc9cab67fa36a08a5399276e64</id>
-        <link href="https://windhawk.net/mods/audioswap"/>
-        <updated>2026-04-08T18:02:39.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="audiooutputswitcher">Audio Output Switcher</h1>
-<p>A lightning-fast audio toggle right in your taskbar! 🎧🔊</p>
-<h2 id="howtouseit">📖 How to Use It</h2>
-<ol>
-<li>⚙️ <strong>Configure Your Devices:</strong> Go to the <strong>Settings</strong> tab. </li>
-</ol>
-<ul>
-<li>Type the Name of your device names (e.g., "Headphones" and "Speakers").</li>
-<li>Select an icon for each device from the dropdown menus.</li>
-</ul>
-<ol>
-<li>🔍 <strong>Find the Icon:</strong> Look in your system tray. The icon will change based on which device is currently active!</li>
-<li>🎯 <strong>Click to Toggle:</strong> A single click swaps your audio and updates the icon instantly.</li>
-</ol>]]></content>
-        <author>
-            <name>BlackPaw</name>
-            <uri>https://github.com/BlackPaw21</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[File Explorer Toolbar Position Fix 1.0]]></title>
-        <id>https://windhawk.net/mods/fix-file-explorer-toolbar-position#716e9dc4d3c64b227586c985e4aa6968b47b9cb9</id>
-        <link href="https://windhawk.net/mods/fix-file-explorer-toolbar-position"/>
-        <updated>2026-04-06T23:19:11.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="fileexplorertoolbarpositionfix">File Explorer Toolbar Position Fix</h1>
-<p>This mod fixes an issue with file explorer toolbars not setting the position correctly when opening explorer.</p>
-<p><strong>Before</strong><br />
-After opening explorer, all of the toolbars will be forced to be on a new line, ignoring the previous position and style.
-<img src="https://i.imgur.com/v8bj787.png" alt="Before" /></p>
-<p><strong>After</strong><br />
-Now the toolbars will respect the previous position and style when opening explorer.
-<img src="https://i.imgur.com/zGqzAfz.png" alt="After" /></p>]]></content>
-        <author>
-            <name>xalejandro</name>
-            <uri>https://github.com/tetawaves</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Pre-Vista Explorer Status Bar 2.0.0]]></title>
-        <id>https://windhawk.net/mods/prevista-explorer-statusbar#04e0523bdf54399ff52631138d50dba606d9a5eb</id>
-        <link href="https://windhawk.net/mods/prevista-explorer-statusbar"/>
-        <updated>2026-04-06T18:06:36.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="previstaexplorerstatusbar">Pre-Vista Explorer Status Bar</h1>
-<p>Adds a classic status bar to Windows Explorer with selectable pane styles
-matching different Windows versions. Based on the other status bar mod by Anixx,
-rewritten from XP SP1 / Win2K / 98 source code and decompilations.</p>
-<p>Note: Windows already has a built-in status bar, Hide it in folder options for this mod to look proper.</p>
-<h2 id="panestyles">Pane Styles</h2>
-<ul>
-<li><strong>Windows XP</strong> — Per-filetype infotip on single select (reads <code>HKCR\{ext}\InfoTip</code>),
-dynamic pane widths, security zone icon + name</li>
-<li><strong>Windows 2000</strong> — Simpler infotip (<code>Type;Author;Title;Subject;Comment;Size</code>),
-same layout as XP</li>
-<li><strong>Windows 98</strong> — Fixed-width left/right panes, always shows object count in pane 0,
-file size or drive capacity in pane 1</li>
-<li><strong>Windows 95/NT4</strong> — Two panes only (count + size), no zone pane, no infotip</li>
-</ul>
-<h2 id="screenshots">Screenshots</h2>
-<p><strong>XP/2000 style:</strong>
-<img src="https://i.imgur.com/5ZmPXuc.png" alt="XP/2000 style" /></p>
-<p><strong>98 style:</strong>
-<img src="https://i.imgur.com/lpHSWgY.png" alt="98 style" /></p>
-<p><strong>95/NT4 style:</strong>
-<img src="https://i.imgur.com/dmcjYwW.png" alt="95/NT4 style" /></p>
-<h2 id="features">Features</h2>
-<ul>
-<li>Three-pane layout: object count / file size / security zone</li>
-<li>Locale-aware number formatting with thousands separators</li>
-<li>Hidden file count display (XP/2000 no-selection state)</li>
-<li>Disk free space in explorer mode (tree pane visible)</li>
-</ul>]]></content>
-        <author>
-            <name>arceus413</name>
-            <uri>https://github.com/arceuss</uri>
         </author>
     </entry>
 </feed>
