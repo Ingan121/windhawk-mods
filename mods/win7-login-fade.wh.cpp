@@ -125,7 +125,7 @@
 #endif
 
 #define WM_MONOFFTASK (WM_USER + 1)
-#define OVERLAY_WIN_CLASS L"LogonSleepFadeOverlay"\
+#define OVERLAY_WIN_CLASS L"LogonSleepFadeOverlay"
 
 #define ZBID_LOCK 17
 
@@ -433,7 +433,6 @@ NtPowerInformation_t NtPowerInformation_original;
 typedef HWND (WINAPI* CreateWindowInBand_t)(DWORD dwExStyle, LPCWSTR lpClassName, LPCWSTR lpWindowName, DWORD dwStyle, int X, int Y, int nWidth, int nHeight, HWND hWndParent, HMENU hMenu, HINSTANCE hInstance, LPVOID lpParam, DWORD dwBand);
 CreateWindowInBand_t CreateWindowInBand;
 
-// Restore the pre-fade gamma ramps and turn off the monitor, and also clean up the monitor info data.
 bool TurnOffMonitor() {
     NTSTATUS res = NtPowerInformation_original(ScreenOff, NULL, 0, NULL, 0);
     Wh_Log(L"Called original NtPowerInformation with ScreenOff, result=0x%X", res);
@@ -456,6 +455,7 @@ bool TurnOffMonitor() {
     return true;
 }
 
+// Restore the pre-fade gamma ramps and turn off the monitor, and also clean up the monitor info data.
 void RestoreGammaAndMonitorOff() {
     if (g_monitorOffFadeData.monitors) {
         for (int i = 0; i < g_monitorOffFadeData.monitorCount; i++) {
@@ -514,6 +514,7 @@ HWND CreateOverlayWindow() {
         // CWIB does not even work in ordinary processes. It's just for some low possibility cases of this logic running in LockApp.exe or something like that
         // So that the overlay window can still be visible over the higher band windows like the lock screen
         // AAAnd LockApp.exe (probably) only accepts CWIB with ZBID_LOCK band. ZBID_UIACCESS doesn't work
+        // explorer.exe and ApplicationFrameHost.exe work fine with ZBID_LOCK too
         HWND hWnd = CreateWindowInBand(WS_EX_TOPMOST | WS_EX_TOOLWINDOW, OVERLAY_WIN_CLASS, L"", WS_POPUP, 0, 0, 0, 0, NULL, NULL, wc.hInstance, NULL, ZBID_LOCK);
         if (hWnd) {
             Wh_Log(L"Created overlay window with CreateWindowInBand");
@@ -630,7 +631,7 @@ NTSTATUS NTAPI NtPowerInformation_hook(POWER_INFORMATION_LEVEL InformationLevel,
 };
 
 // From aubymori's MinMax mod
-// Return controls the hook behavior below
+// Return controls the DWP hook behavior below
 bool SleepFadeWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
     if (!g_settings.sleepFadeEnabled) {
