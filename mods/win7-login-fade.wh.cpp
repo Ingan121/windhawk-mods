@@ -48,6 +48,7 @@
 * Turning off the monitor with the power button action (or sleeping on Modern Standby devices) will not trigger the sleep fade effect, as it is handled internally by the kernel without notifying a user-mode component before initiating the action.
   * Monitor off initiated by the idle timer can have fade added as usual.
 * Only `Gamma (Kernel)` and `DWM (Original)` logon/logoff fade types are supported on Windows 8 for now, to avoid critical issues that I have observed. Early Windows 10 versions have not been thoroughly tested, so it is recommended to avoid `None` and `Gamma (Reimplemented)` modes on those versions as a precaution, until I can confirm their stability.
+* The monitor off fade effect in the Windows 10+ lock screen may have a brief flash at the end of the fade when turning off the monitor.
 * On 32-bit systems, only the monitor off and sleep/hibernation fades are supported, as this mod was never tested on 32-bit Windows systems.
 ## Miscellaneous
 * To allow fading in the logon screen when turning off the monitor with the idle timer, you must allow Windhawk to inject into the **LogonUI.exe**.
@@ -127,8 +128,6 @@
 #define WM_MONOFFTASK (WM_USER + 1)
 #define OVERLAY_WIN_CLASS L"LogonSleepFadeOverlay"
 
-#define ZBID_LOCK 17
-
 enum FadeType {
     None,
     Gamma,
@@ -151,7 +150,6 @@ HANDLE g_fadeMutex = NULL;
 std::atomic<bool> g_isFadeInProgress = false;
 std::atomic<bool> g_isExiting = false;
 std::atomic<HANDLE> g_monitorOffThread = NULL;
-std::atomic<HWND> g_lastMonitorOffInitiatorWindow = NULL;
 std::atomic<bool> g_keepOrigWndProc = false;
 
 typedef struct _MONITOR_INFO {
@@ -433,30 +431,29 @@ NtPowerInformation_t NtPowerInformation_original;
 typedef HWND (WINAPI* CreateWindowInBand_t)(DWORD dwExStyle, LPCWSTR lpClassName, LPCWSTR lpWindowName, DWORD dwStyle, int X, int Y, int nWidth, int nHeight, HWND hWndParent, HMENU hMenu, HINSTANCE hInstance, LPVOID lpParam, DWORD dwBand);
 CreateWindowInBand_t CreateWindowInBand;
 
-bool TurnOffMonitor() {
+bool TurnOffMonitor(HWND initiatorWindow) {
     NTSTATUS res = NtPowerInformation_original(ScreenOff, NULL, 0, NULL, 0);
     Wh_Log(L"Called original NtPowerInformation with ScreenOff, result=0x%X", res);
     if (res != 0) {
         Wh_Log(L"NtPowerInformation failed to turn off the monitor");
-        HWND lastInitiatorWindow = g_lastMonitorOffInitiatorWindow.exchange(NULL);
-        if (lastInitiatorWindow && IsWindow(lastInitiatorWindow)) {
+        if (initiatorWindow && IsWindow(initiatorWindow)) {
             // Some sandboxed/immersive processes like LockApp.exe may fail to call NtPowerInformation(ScreenOff)
             g_keepOrigWndProc.store(true);
-            if (!PostMessage(lastInitiatorWindow, WM_SYSCOMMAND, SC_MONITORPOWER, 2)) {
+            if (!PostMessage(initiatorWindow, WM_SYSCOMMAND, SC_MONITORPOWER, 2)) {
                 g_keepOrigWndProc.store(false);
                 Wh_Log(L"Failed to post WM_SYSCOMMAND to last initiator window");
                 return false;
             }
+            g_keepOrigWndProc.store(false);
             return true;
         }
         return false;
     }
-    g_lastMonitorOffInitiatorWindow.store(NULL);
     return true;
 }
 
 // Restore the pre-fade gamma ramps and turn off the monitor, and also clean up the monitor info data.
-void RestoreGammaAndMonitorOff() {
+void RestoreGammaAndMonitorOff(HWND initiatorWindow) {
     if (g_monitorOffFadeData.monitors) {
         for (int i = 0; i < g_monitorOffFadeData.monitorCount; i++) {
             if (g_monitorOffFadeData.monitors[i].hDC) {
@@ -468,7 +465,7 @@ void RestoreGammaAndMonitorOff() {
         g_monitorOffFadeData.monitors = NULL;
         g_monitorOffFadeData.monitorCount = 0;
     }
-    TurnOffMonitor();
+    TurnOffMonitor(initiatorWindow);
 }
 
 LRESULT WINAPI OverlayWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
@@ -479,9 +476,10 @@ LRESULT WINAPI OverlayWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam
         case WM_MONOFFTASK:
             Wh_Log(L"OverlayWndProc WM_MONOFFTASK");
             Sleep(100); // Needed to prevent flashing when monitor fade is started multiple times in the same process
-            RestoreGammaAndMonitorOff();
+            RestoreGammaAndMonitorOff((HWND)lParam);
             return 0;
         case WM_LBUTTONDOWN:
+            Wh_Log(L"OverlayWndProc WM_LBUTTONDOWN");
             DestroyWindow(hWnd);
             return 0;
         case WM_SETCURSOR:
@@ -492,6 +490,7 @@ LRESULT WINAPI OverlayWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam
             DestroyWindow(hWnd);
             return 0;
         case WM_DESTROY:
+            Wh_Log(L"OverlayWndProc WM_DESTROY");
             PostQuitMessage(0);
             return 0;
         default:
@@ -500,7 +499,7 @@ LRESULT WINAPI OverlayWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam
     return DefWindowProc(hWnd, uMsg, wParam, lParam);
 }
 
-HWND CreateOverlayWindow() {
+HWND CreateOverlayWindow(HWND initiatorWindow) {
     WNDCLASSW wc = { 0 };
     wc.lpfnWndProc = OverlayWndProc;
     wc.hInstance = GetModuleHandleW(NULL);
@@ -510,31 +509,34 @@ HWND CreateOverlayWindow() {
         Wh_Log(L"RegisterClassW failed, GLE=%d", GetLastError());
         return NULL;
     }
-    if (CreateWindowInBand) {
-        // CWIB does not even work in ordinary processes. It's just for some low possibility cases of this logic running in LockApp.exe or something like that
-        // So that the overlay window can still be visible over the higher band windows like the lock screen
-        // AAAnd LockApp.exe (probably) only accepts CWIB with ZBID_LOCK band. ZBID_UIACCESS doesn't work
-        // explorer.exe and ApplicationFrameHost.exe work fine with ZBID_LOCK too
-        HWND hWnd = CreateWindowInBand(WS_EX_TOPMOST | WS_EX_TOOLWINDOW, OVERLAY_WIN_CLASS, L"", WS_POPUP, 0, 0, 0, 0, NULL, NULL, wc.hInstance, NULL, ZBID_LOCK);
-        if (hWnd) {
-            Wh_Log(L"Created overlay window with CreateWindowInBand");
-            return hWnd;
-        }
-    }
-    return CreateWindowExW(WS_EX_TOPMOST | WS_EX_TOOLWINDOW, OVERLAY_WIN_CLASS, L"", WS_POPUP, 0, 0, 0, 0, NULL, NULL, wc.hInstance, NULL);
+    return CreateWindowExW(WS_EX_TOPMOST | WS_EX_TOOLWINDOW, OVERLAY_WIN_CLASS, L"", WS_POPUP, 0, 0, 0, 0, NULL, NULL, wc.hInstance, (LPVOID)initiatorWindow);
 }
 
 DWORD WINAPI MonitorOffThreadProc(LPVOID lpParameter) {
+    HWND initiatorWindow = (HWND)lpParameter;
     if (BeginFade()) {
-        Wh_Log(L"Initiating monitor off fade...");
+        Wh_Log(L"Initiating monitor off fade from window 0x%p...", initiatorWindow);
         int refreshRate = GetDeviceRefreshRate();
         if (!GetMonitorsInfo(&g_monitorOffFadeData.monitors, &g_monitorOffFadeData.monitorCount)) {
             EndFade();
-            TurnOffMonitor();
+            TurnOffMonitor(initiatorWindow);
             return 1;
         }
 
-        HWND overlayWnd = CreateOverlayWindow();
+        HWND overlayWnd = NULL;
+
+        if (initiatorWindow && IsWindow(initiatorWindow)) {
+            wchar_t title[256];
+            GetWindowTextW(initiatorWindow, title, 256);
+            // Disable the overlay mechanism for LockApp.exe as it often gets suspended when the monitor is off or after unlocking
+            // which makes hiding the overlay at the right time hard. If failed, it will get stuck on the screen, as LockApp is kept suspended even after unlocking
+            if (wcscmp(title, L"Windows Default Lock Screen") != 0) {
+                overlayWnd = CreateOverlayWindow(initiatorWindow);
+            }
+        } else {
+            // From NtPowerInformation hook, no initiator window
+            overlayWnd = CreateOverlayWindow(NULL);
+        }
 
         // Unfortunately, monitor off APIs are all asynchronous and there is no reliable way to determine when the monitor is actually off
         // If we immediately restore the gamma right after calling the API, the screen will briefly flash back to normal brightness before turning off
@@ -551,7 +553,7 @@ DWORD WINAPI MonitorOffThreadProc(LPVOID lpParameter) {
             SetWindowPos(overlayWnd, HWND_TOPMOST, 0, 0, GetSystemMetrics(SM_CXSCREEN), GetSystemMetrics(SM_CYSCREEN), SWP_SHOWWINDOW);
             if (!SetTimer(overlayWnd, 1, 1500, NULL)) {
                 Wh_Log(L"SetTimer failed, GLE=%d", GetLastError());
-                RestoreGammaAndMonitorOff();
+                RestoreGammaAndMonitorOff(initiatorWindow);
                 DestroyWindow(overlayWnd);
                 EndFade();
                 return 1;
@@ -572,23 +574,23 @@ DWORD WINAPI MonitorOffThreadProc(LPVOID lpParameter) {
             if (g_monitorOffFadeData.monitors) {
                 // Somehow window message stuff failed
                 Wh_Log(L"Overlay window message loop ended unexpectedly, restoring gamma ramps...");
-                RestoreGammaAndMonitorOff();
+                RestoreGammaAndMonitorOff(initiatorWindow);
             }
         } else {
             Wh_Log(L"Failed to create overlay window, GLE=%d", GetLastError());
             // Just do the fade without the overlay, which will make the screen flash
             FadeDesktop(refreshRate, g_settings.sleepDuration, true, g_monitorOffFadeData.monitors, g_monitorOffFadeData.monitorCount);
-            RestoreGammaAndMonitorOff();
+            RestoreGammaAndMonitorOff(initiatorWindow);
         }
         EndFade();
         return 0;
     } else {
-        TurnOffMonitor();
+        TurnOffMonitor(initiatorWindow);
     }
     return 1;
 }
 
-bool CreateMonitorOffThread() {
+bool CreateMonitorOffThread(HWND initiatorWindow = NULL) {
     if (g_settings.sleepFadeEnabled && !IsFadeInProgress()) {
         // Both NtPowerInformation and DefWindowProc WM_SYSCOMMAND is asynchronous so do it in a separate thread
         HANDLE monitorOffThread = g_monitorOffThread.exchange(NULL);
@@ -606,7 +608,7 @@ bool CreateMonitorOffThread() {
             }
             CloseHandle(monitorOffThread);
         }
-        monitorOffThread = CreateThread(NULL, 0, MonitorOffThreadProc, NULL, 0, NULL);
+        monitorOffThread = CreateThread(NULL, 0, MonitorOffThreadProc, initiatorWindow, 0, NULL);
         if (!monitorOffThread) {
             Wh_Log(L"Failed to create monitor off thread, GLE=%d", GetLastError());
             return false;
@@ -649,15 +651,13 @@ bool SleepFadeWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
                 {
                     if (lParam == 2) { // Monitor off
                         Wh_Log(L"WM_SYSCOMMAND SC_MONITORPOWER 2 received");
-                        if (g_keepOrigWndProc.exchange(false)) {
+                        if (g_keepOrigWndProc.load()) {
                             Wh_Log(L"Bypassing SC_MONITORPOWER hooks as g_keepOrigWndProc is set");
                             return false;
                         }
-                        g_lastMonitorOffInitiatorWindow.store(hWnd);
-                        if (CreateMonitorOffThread()) {
+                        if (CreateMonitorOffThread(hWnd)) {
                             return true;
                         }
-                        g_lastMonitorOffInitiatorWindow.store(NULL);
                         return false;
                     }
                 }
@@ -990,7 +990,6 @@ BOOL Wh_ModInit() {
             Wh_Log(L"Wh_SetFunctionHook ExitProcess failed");
             // Not that critical, everything that doesn't immediately exit after initiating sleep/hibernate/monitor off will still work fine
         }
-        CreateWindowInBand = (CreateWindowInBand_t)GetProcAddress(user32, "CreateWindowInBand"); // Also not critical
     }
 
     g_fadeMutex = CreateFadeMutex();
