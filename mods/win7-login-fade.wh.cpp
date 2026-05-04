@@ -146,6 +146,7 @@ struct settings {
 } g_settings;
 
 bool g_isWinlogon = false;
+bool g_isLockApp = false;
 HANDLE g_fadeMutex = NULL;
 std::atomic<bool> g_isFadeInProgress = false;
 std::atomic<bool> g_isExiting = false;
@@ -428,9 +429,6 @@ __int64 __fastcall SwitchDesktopWithFade_hook(HDESK hDesktop, DWORD duration, DW
 typedef NTSTATUS (NTAPI* NtPowerInformation_t)(POWER_INFORMATION_LEVEL, PVOID, ULONG, PVOID, ULONG);
 NtPowerInformation_t NtPowerInformation_original;
 
-typedef HWND (WINAPI* CreateWindowInBand_t)(DWORD dwExStyle, LPCWSTR lpClassName, LPCWSTR lpWindowName, DWORD dwStyle, int X, int Y, int nWidth, int nHeight, HWND hWndParent, HMENU hMenu, HINSTANCE hInstance, LPVOID lpParam, DWORD dwBand);
-CreateWindowInBand_t CreateWindowInBand;
-
 bool TurnOffMonitor(HWND initiatorWindow) {
     NTSTATUS res = NtPowerInformation_original(ScreenOff, NULL, 0, NULL, 0);
     Wh_Log(L"Called original NtPowerInformation with ScreenOff, result=0x%X", res);
@@ -439,13 +437,9 @@ bool TurnOffMonitor(HWND initiatorWindow) {
         if (initiatorWindow && IsWindow(initiatorWindow)) {
             // Some sandboxed/immersive processes like LockApp.exe may fail to call NtPowerInformation(ScreenOff)
             g_keepOrigWndProc.store(true);
-            if (!PostMessage(initiatorWindow, WM_SYSCOMMAND, SC_MONITORPOWER, 2)) {
-                g_keepOrigWndProc.store(false);
-                Wh_Log(L"Failed to post WM_SYSCOMMAND to last initiator window");
-                return false;
-            }
+            SendMessage(initiatorWindow, WM_SYSCOMMAND, SC_MONITORPOWER, 2);
             g_keepOrigWndProc.store(false);
-            return true;
+            return true; // Assume it worked lol
         }
         return false;
     }
@@ -499,7 +493,7 @@ LRESULT WINAPI OverlayWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam
     return DefWindowProc(hWnd, uMsg, wParam, lParam);
 }
 
-HWND CreateOverlayWindow(HWND initiatorWindow) {
+HWND CreateOverlayWindow() {
     WNDCLASSW wc = { 0 };
     wc.lpfnWndProc = OverlayWndProc;
     wc.hInstance = GetModuleHandleW(NULL);
@@ -509,7 +503,7 @@ HWND CreateOverlayWindow(HWND initiatorWindow) {
         Wh_Log(L"RegisterClassW failed, GLE=%d", GetLastError());
         return NULL;
     }
-    return CreateWindowExW(WS_EX_TOPMOST | WS_EX_TOOLWINDOW, OVERLAY_WIN_CLASS, L"", WS_POPUP, 0, 0, 0, 0, NULL, NULL, wc.hInstance, (LPVOID)initiatorWindow);
+    return CreateWindowExW(WS_EX_TOPMOST | WS_EX_TOOLWINDOW, OVERLAY_WIN_CLASS, L"", WS_POPUP, 0, 0, 0, 0, NULL, NULL, wc.hInstance, NULL);
 }
 
 DWORD WINAPI MonitorOffThreadProc(LPVOID lpParameter) {
@@ -523,20 +517,9 @@ DWORD WINAPI MonitorOffThreadProc(LPVOID lpParameter) {
             return 1;
         }
 
-        HWND overlayWnd = NULL;
-
-        if (initiatorWindow && IsWindow(initiatorWindow)) {
-            wchar_t title[256];
-            GetWindowTextW(initiatorWindow, title, 256);
-            // Disable the overlay mechanism for LockApp.exe as it often gets suspended when the monitor is off or after unlocking
-            // which makes hiding the overlay at the right time hard. If failed, it will get stuck on the screen, as LockApp is kept suspended even after unlocking
-            if (wcscmp(title, L"Windows Default Lock Screen") != 0) {
-                overlayWnd = CreateOverlayWindow(initiatorWindow);
-            }
-        } else {
-            // From NtPowerInformation hook, no initiator window
-            overlayWnd = CreateOverlayWindow(NULL);
-        }
+        // Disable the overlay mechanism for LockApp.exe as it often gets suspended when the monitor is off or after unlocking
+        // which makes hiding the overlay at the right time hard
+        HWND overlayWnd = g_isLockApp ? NULL : CreateOverlayWindow();
 
         // Unfortunately, monitor off APIs are all asynchronous and there is no reliable way to determine when the monitor is actually off
         // If we immediately restore the gamma right after calling the API, the screen will briefly flash back to normal brightness before turning off
@@ -558,7 +541,7 @@ DWORD WINAPI MonitorOffThreadProc(LPVOID lpParameter) {
                 EndFade();
                 return 1;
             }
-            PostMessageW(overlayWnd, WM_MONOFFTASK, 0, 0);
+            PostMessageW(overlayWnd, WM_MONOFFTASK, 0, (LPARAM)initiatorWindow);
 
             // I don't want extra hassle of managing another thread for the overlay window lol; just make sure the following order of operations is correct:
             // Fade out -> Show overlay -> Restore gamma -> Monitor off -> Wait for monitor off with arbitrary delay -> Hide overlay
@@ -945,6 +928,7 @@ BOOL Wh_ModInit() {
     wchar_t exeName[MAX_PATH];
     GetModuleFileNameW(NULL, exeName, MAX_PATH);
     g_isWinlogon = wcsstr(_wcsupr(exeName), L"\\WINLOGON.EXE") != NULL;
+    g_isLockApp = wcsstr(exeName, L"\\LOCKAPP.EXE") != NULL;
     if (g_isWinlogon) {
 #ifdef ENABLE_WINLOGON_HOOKS
         Wh_Log(L"Running in winlogon.exe");
