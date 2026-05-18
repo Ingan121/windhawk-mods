@@ -2,241 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://windhawk.net/</id>
     <title>Windhawk Mod Updates</title>
-    <updated>2026-05-03T17:56:19.000Z</updated>
+    <updated>2026-05-18T18:44:22.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://windhawk.net/"/>
     <subtitle>Updates in the official collection of Windhawk mods</subtitle>
     <icon>https://windhawk.net/favicon.ico</icon>
     <rights>Ramen Software</rights>
     <entry>
-        <title type="html"><![CDATA[Logon & Sleep Fade Restorer 1.4]]></title>
-        <id>https://windhawk.net/mods/win7-login-fade#6ea069b00ab5ca75b740c08f955a49ddd9197fe3</id>
-        <link href="https://windhawk.net/mods/win7-login-fade"/>
-        <updated>2026-05-03T17:56:19.000Z</updated>
-        <content type="html"><![CDATA[<p>Logon &amp; Sleep Fade Restorer 1.4</p>]]></content>
-        <author>
-            <name>Ingan121</name>
-            <uri>https://github.com/Ingan121</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Enhanced Disk Usage 1.0]]></title>
-        <id>https://windhawk.net/mods/enhanced-disk-usage#9ffbf99e36e4479e9dcd8a14026aee1840c5abcf</id>
-        <link href="https://windhawk.net/mods/enhanced-disk-usage"/>
-        <updated>2026-05-02T19:13:37.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/bbmaster123/FWFU/refs/heads/main/Assets/screenshot.png" alt="Screenshot" /></p>
-<p>Enables the ability to customize the disk drive tiles in explorer, targeting the
-disk's usage bar, as well as the details that appear below.</p>
+        <title type="html"><![CDATA[MSHTML Tweaks 1.0]]></title>
+        <id>https://windhawk.net/mods/mshtml-native-controls#8f361961eafe8c01792e48d1987477218b389d5e</id>
+        <link href="https://windhawk.net/mods/mshtml-native-controls"/>
+        <updated>2026-05-18T18:44:22.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="mshtmltweaks">MSHTML Tweaks</h1>
 <ul>
-<li>custom colors with transparency for disk usage, track (background/unused), and
-outline</li>
-<li>separate disk colors for when drive is near full</li>
-<li>linear gradient support with configurable direction</li>
-<li>rounded corners</li>
-<li>glossy overlay toggle option (for a more Windows Aero-ish looking aesthetic)</li>
-<li>height/width controls (inset) controls for disk bar and track</li>
-<li>custom disk usage text with font size adjustment, multi-line support,
-line-height adjustment, and more</li>
+<li>Various tweaks for Internet Explorer and all the other apps using its engine (Trident/MSHTML), such as HTML Help, HelpPane, MSHTA, MMC, etc.</li>
+<li>This mod can bring back old controls, customize the font smoothing type (disable the forced ClearType), and disable the DirectComposition rendering.</li>
+<li>Special thanks to @xalejandro for the ClearType disabler.</li>
 </ul>
-<p>ex.
-100GB free | 100GB/200GB</p>]]></content>
-        <author>
-            <name>bbmaster123</name>
-            <uri>https://github.com/bbmaster123</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MicroSwap 1.0.0]]></title>
-        <id>https://windhawk.net/mods/microswap#d464024830ea0879a2e1f89c6d5be2769be2ba4c</id>
-        <link href="https://windhawk.net/mods/microswap"/>
-        <updated>2026-05-02T14:19:27.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="micswap">MicSwap</h1>
-<p>Instantly toggle between two audio input devices (microphones) from your system tray — no diving into Sound settings.</p>
-<hr />
-<h2 id="howtouse">How to Use</h2>
-<ol>
-<li><strong>Choose Icons</strong> — Open the <strong>Settings</strong> tab and pick an icon for each of your two devices.</li>
-<li><strong>Select Your Devices</strong> — Right-click the tray icon. Use <strong>Set as Input 1</strong> and <strong>Set as Input 2</strong> to assign your inputs from the live device list.</li>
-<li><strong>Toggle</strong> — Left-click the tray icon at any time to swap between the two devices instantly.</li>
-</ol>
-<blockquote>
-  <p>The tray tooltip always shows the active input. On first run it will read <em>"Right-click to configure"</em> until both devices are assigned.</p>
-</blockquote>
-<hr />
-<h2 id="changelog">Changelog</h2>
-<h3 id="v100">v1.0.0</h3>
+<h2 id="notesregardingtheoldcontrolstyles">Notes regarding the old control styles</h2>
 <ul>
-<li>Initial release. Mirrors AudioSwap but targets audio input/capture devices.</li>
-<li>Right-click context menu auto-detects all active audio inputs and lets you assign Input 1 and Input 2 from a live list.</li>
-<li>Device selections persist across restarts.</li>
-<li>Toggle matches devices by their unique system ID for reliable switching regardless of device naming.</li>
-</ul>]]></content>
-        <author>
-            <name>BlackPaw</name>
-            <uri>https://github.com/BlackPaw21</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Move Window to Monitor 1.1.0]]></title>
-        <id>https://windhawk.net/mods/move-window-to-monitor#f0ef9faeba5aac55e931e6603bf30066d2e4a7f3</id>
-        <link href="https://windhawk.net/mods/move-window-to-monitor"/>
-        <updated>2026-05-02T14:15:39.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="movewindowtomonitor">Move Window to Monitor</h1>
-<p>Moves the active window to a specific monitor using configurable hotkeys.</p>
-<h2 id="defaultshortcutctrlaltarrowkeys">Default Shortcut: Ctrl+Alt+Arrow keys</h2>
-<h2 id="setup">Setup</h2>
-<p>Monitors are numbered automatically, sorted <strong>left to right, then top to bottom</strong>
-based on their physical position in your Windows display layout.</p>
-<p><strong>Example for a setup with 3 monitors on the bottom and 1 on top center:</strong></p>
-<pre><code>        [ 1 ]
-[ 0 ]   [ 2 ]   [ 3 ]
-</code></pre>
-<p>Set: UP=1, LEFT=0, DOWN=2, RIGHT=3</p>
-<p>Use <strong>-1</strong> to keep automatic geometric detection for a direction.</p>
-<p>When the active window is already on the target monitor, the hotkey does nothing.</p>
-<p>The <strong>Center window</strong> option centers the window on the target monitor instead
-of preserving its relative position. Works independently of <strong>Keep window size</strong>.</p>]]></content>
-        <author>
-            <name>TomberWolf</name>
-            <uri>https://github.com/TomberWolf</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ultimate Custom Tray 1.0]]></title>
-        <id>https://windhawk.net/mods/ultimate-custom-tray#7f92885de8e49e5169175fd8adcdc46854a938e4</id>
-        <link href="https://windhawk.net/mods/ultimate-custom-tray"/>
-        <updated>2026-05-02T14:13:45.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="ultimatecustomtray">Ultimate Custom Tray</h1>
-<p>Adds your own icons to the system tray. Each icon can run an
-action on left-click and/or show a context menu on right-click.</p>
-<hr />
-<h2 id="quickstart">Quick start</h2>
-<ol>
-<li>Open Windhawk settings for this mod.</li>
-<li>Add one or more <strong>Items</strong> to the list.</li>
-<li>Fill in <strong>Label</strong>, <strong>Icon</strong> and <strong>Action</strong> for each item.</li>
-<li>Save — the icons appear in the tray immediately.</li>
-</ol>
-<hr />
-<h2 id="actionformats">Action formats</h2>
-<p>Actions run on <strong>left-click</strong> (or from a context menu item).</p>
-<p>| Prefix | Example | Description |
-|--------|---------|-------------|
-| <code>" "</code> | <code>"C:\Program Files\app.exe"</code> | Opens a file or folder by absolute path. |
-| <code>~</code> | <code>~Downloads</code> | Opens a folder or file by name. |
-| <code>cmd:</code> | <code>cmd:control</code> | Runs a command through <code>cmd.exe</code>. |
-| <code>shell:</code> | <code>shell:shutdown /r /f /t 0</code> | Runs through <code>powershell.exe</code>. |
-| <code>web:</code> | <code>web:https://windhawk.net/</code> | Opens a URL in the default browser. |
-| <code>ms-settings:</code> | <code>ms-settings:bluetooth</code> | Opens a Windows Settings page. |</p>
-<hr />
-<h2 id="iconfield">Icon field</h2>
-<p>| Type | Example | Description |
-|---|---|---|
-| <strong>Glyph</strong> | <code>E774</code> | Hex code of a <a href="https://learn.microsoft.com/en-us/windows/apps/design/iconography/segoe-ui-symbol-font">Segoe Fluent Icons</a> glyph. 4-digit hex only, no <code>\u</code> prefix. |
-| <strong>Image file</strong> | <code>C:\Icons\name.png</code> | Full path to an image. Supported: <code>.png</code> <code>.ico</code> <code>.jpg</code> <code>.bmp</code>. Recommended: 32x32 px, transparent background. |</p>
-<hr />
-<h2 id="iconcolor">Icon color</h2>
-<p>Use the <strong>Icon color</strong> setting to choose <strong>White</strong> (for dark taskbar) or <strong>Black</strong> (for light taskbar).</p>
-<hr />
-<h2 id="contextmenus">Context menus</h2>
-<p>Each tray icon can show a right-click context menu.</p>
+<li>Note that this mod only restores IE11's built-in Windows 7 behavior for old control styling, which uses hardcoded/fake Aero styles that do not actually match the current system theme.</li>
+<li>Only the scrollbar will use actual bitmaps from the current visual style (or classic); however, they may look glitchy, especially on HiDPI displays.</li>
+<li>You may want to disable the visual styles for controls in Internet Options (<code>inetcpl.cpl</code>) -&gt; Advanced -&gt; <code>Enable visual styles on buttons and controls in web pages</code> to make them look better on older themes such as XP.
+<img src="https://raw.githubusercontent.com/Ingan121/files/refs/heads/master/ie_fakeaero.png" alt="Comparison of fake and real control styles" /></li>
+</ul>
+<h2 id="ifinternetexplorerhangsonstartup">If Internet Explorer hangs on startup</h2>
 <ul>
-<li>Add items under <strong>Context menu</strong> for the icon.</li>
-<li>Each item has its own <strong>Name</strong>, <strong>Icon</strong> and <strong>Action</strong>.</li>
-<li>If no items are defined, right-clicking does nothing.</li>
-<li>Left-click always runs the main <strong>Action</strong>, regardless of whether a context menu exists.</li>
-</ul>]]></content>
-        <author>
-            <name>Salyts</name>
-            <uri>https://github.com/Salyts</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Explorer Taskbar Overlay Icon 1.0]]></title>
-        <id>https://windhawk.net/mods/explorer-taskbar-overlay-icon#205ef84100133d3a9d4d48de951cb77d2b5fb6a6</id>
-        <link href="https://windhawk.net/mods/explorer-taskbar-overlay-icon"/>
-        <updated>2026-05-02T13:51:31.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="explorertaskbaroverlayicon">Explorer Taskbar Overlay Icon</h1>
-<p>Shows a taskbar overlay icon on Explorer windows that displays the icon of the current directory.</p>
-<p><img src="https://raw.githubusercontent.com/FireBlade211/FireBlade211/refs/heads/main/WindhawkModReadmeImages/ExplorerTaskbarOverlayIcon/screenshot.png" alt="Screenshot" /></p>]]></content>
-        <author>
-            <name>FireBlade</name>
-            <uri>https://github.com/FireBlade211</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cycle taskbar buttons with mouse wheel 1.1.11]]></title>
-        <id>https://windhawk.net/mods/taskbar-wheel-cycle#b16d7ec62e9c985480bf5d9800afd4754738fb51</id>
-        <link href="https://windhawk.net/mods/taskbar-wheel-cycle"/>
-        <updated>2026-05-01T21:20:20.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added an option for customizing scroll regions, can be useful for using this mod with other taskbar scrolling mods such as Taskbar Volume Control or Taskbar Scroll Actions.</li>
-<li>Fixed compatibility with update KB5083631 for Windows 11 version 25H2.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Paste Clipboard Content to Explorer 1.5]]></title>
-        <id>https://windhawk.net/mods/paste-clipboard-content-to-explorer#2e793d254614b2390b602eeebf8fad6193c95ae2</id>
-        <link href="https://windhawk.net/mods/paste-clipboard-content-to-explorer"/>
-        <updated>2026-05-01T16:28:35.000Z</updated>
-        <content type="html"><![CDATA[<p>Add options for chosing encoding and disabling text paste</p>]]></content>
-        <author>
-            <name>Anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Explorer TreeItem Tweaker 1.1.1]]></title>
-        <id>https://windhawk.net/mods/explorer-treeitem-tweaker#e40aee3bada07d63e308854363a2287cb94a6960</id>
-        <link href="https://windhawk.net/mods/explorer-treeitem-tweaker"/>
-        <updated>2026-05-01T16:18:15.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed clipping of long menu item names when using the Italic font style</li>
-</ul>]]></content>
-        <author>
-            <name>Languster</name>
-            <uri>https://github.com/Languster</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AudioSwap 1.1.1]]></title>
-        <id>https://windhawk.net/mods/audioswap#795240a56bf0287788c83bd16e5f76245a8e37f5</id>
-        <link href="https://windhawk.net/mods/audioswap"/>
-        <updated>2026-05-01T16:12:19.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>New icons in the settings</li>
-<li>Can now open Windhawk directly from the mod icon</li>
-</ul>]]></content>
-        <author>
-            <name>BlackPaw</name>
-            <uri>https://github.com/BlackPaw21</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar Thumbnail Reorder 1.1.4]]></title>
-        <id>https://windhawk.net/mods/taskbar-thumbnail-reorder#3abf6a1bb79cd33592be254be9a2f37fefd198e0</id>
-        <link href="https://windhawk.net/mods/taskbar-thumbnail-reorder"/>
-        <updated>2026-05-01T16:03:38.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed: If labels are shown, each reordering operation caused the thumbnail previews to be closed.</li>
-<li>Fixed compatibility with update KB5083631 for Windows 11 version 25H2.</li>
-</ul>]]></content>
-        <author>
-            <name>m417z</name>
-            <uri>https://github.com/m417z</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CEF/Spotify Tweaks 1.8]]></title>
-        <id>https://windhawk.net/mods/cef-titlebar-enabler-universal#c181c73c73038b460b0af0dc691c08037b047973</id>
-        <link href="https://windhawk.net/mods/cef-titlebar-enabler-universal"/>
-        <updated>2026-04-30T07:03:24.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Add support for Spotify 1.2.88 (CEF 146)</li>
+<li>Internet Explorer (<code>iexplore.exe</code>) uses a 32-bit subprocess by default, and the subprocess will fail to save its symbol downloaded from the Windhawk server.</li>
+<li>To fix this, please run the following in the run dialog (Win+R) to launch a 32-bit MSHTML as a main process to load the symbols:</li>
+<li><code>C:\Windows\SysWOW64\hh.exe http://www.ingan121.com/</code> (or any other <code>http</code> URL that isn't <code>https</code>)</li>
 </ul>]]></content>
         <author>
             <name>Ingan121</name>
@@ -244,150 +38,548 @@ action on left-click and/or show a context menu on right-click.</p>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Explorer TreeItem Tweaker 1.1]]></title>
-        <id>https://windhawk.net/mods/explorer-treeitem-tweaker#2b49d734ff0ed063869998c475ddde5ee1d2dc70</id>
-        <link href="https://windhawk.net/mods/explorer-treeitem-tweaker"/>
-        <updated>2026-04-29T21:42:21.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed an issue with child tree backgrounds in Width Mode = 2.</li>
-<li>Added an option to hide pinned item icons, based on functionality by <a href="https://github.com/valinet">valinet</a>.</li>
-<li>Added font style settings for menu item text.</li>
-</ul>]]></content>
-        <author>
-            <name>Languster</name>
-            <uri>https://github.com/Languster</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Replace the buggy SDHC card drive icon 1.0]]></title>
-        <id>https://windhawk.net/mods/replace-buggy-sdhc-icon#7a2c107289cd17a9b4a24a476102fb0faffd1308</id>
-        <link href="https://windhawk.net/mods/replace-buggy-sdhc-icon"/>
-        <updated>2026-04-29T21:40:06.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="replacethebuggysdhccarddriveicon">Replace the buggy SDHC card drive icon</h1>
-<p>Replace the buggy SDHC card drive icon which MS does not bother to fix since before Windows 8.</p>
-<p><img src="https://i.imgur.com/6BKSRQR.png" alt="Screenshot" /></p>]]></content>
-        <author>
-            <name>Anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Chrome PiP Alt+Tab Window Hider 1.0.0]]></title>
-        <id>https://windhawk.net/mods/chrome-pip-alt-tab-window-hider#0359476256587e4e3ae4d16881057a2b09eb2d79</id>
-        <link href="https://windhawk.net/mods/chrome-pip-alt-tab-window-hider"/>
-        <updated>2026-04-29T21:32:26.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="chromepipalttabwindowhider">Chrome PiP Alt+Tab Window Hider</h1>
-<p>Removes Chrome Picture-in-Picture windows from the Alt+Tab switcher and Win+Tab,
-while keeping them fully functional (always-on-top, playback controls, etc.).</p>
+        <title type="html"><![CDATA[Start Search Bing Redirector 1.0.0]]></title>
+        <id>https://windhawk.net/mods/start-search-bing-redirector#a6800ed0793157681e68ef726fcb595b16a4b3d9</id>
+        <link href="https://windhawk.net/mods/start-search-bing-redirector"/>
+        <updated>2026-05-16T16:25:26.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="startsearchbingredirector">Start Search Bing Redirector</h1>
+<p>When you click a web result in the Windows Start menu search, Windows forces
+the URL through <code>microsoft-edge:?url=https://www.bing.com/search?q=...</code> so it
+always opens in Edge with Bing.</p>
+<p>This mod intercepts that hand-off, extracts the search query, and redirects
+it to your chosen engine. The <code>microsoft-edge:</code> wrapper is dropped so the
+URL opens in your <strong>default browser</strong>.</p>
 <h2 id="howitworks">How it works</h2>
-<p>Chrome PiP windows are identified by three concurrent traits:</p>
+<p>Hooks <code>WindowsCreateString</code> in <code>combase.dll</code> inside <code>SearchHost.exe</code>. When the
+HSTRING being constructed is the click activation URL, the URL is rewritten
+in place before it reaches the WinRT URI launcher.</p>
+<p>The in-flyout result previews (the right panel) are <strong>not</strong> changed. Those
+are rendered from Bing's JSON API and would need a full API proxy to swap.
+Only the click hand-off is redirected.</p>
+<h2 id="logs">Logs</h2>
+<p>Open Windhawk's log viewer and filter for <code>[BingRedirector]</code>.</p>]]></content>
+        <author>
+            <name>takattowo</name>
+            <uri>https://github.com/takattowo</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ExplorerPatcher Taskbar Button Width 1.0.0]]></title>
+        <id>https://windhawk.net/mods/ep-taskbar-button-width#7036416753c22f8b60d43cedd65848fd88c77a15</id>
+        <link href="https://windhawk.net/mods/ep-taskbar-button-width"/>
+        <updated>2026-05-16T15:31:51.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="explorerpatchertaskbarbuttonwidth">ExplorerPatcher Taskbar Button Width</h1>
+<p>This mod lets you change the width of taskbar items when using ExplorerPatcher's Windows 10 taskbar on Windows 11.</p>
+<p>Before:</p>
+<p><img src="https://i.imgur.com/r82ISo3.png" alt="Before" /></p>
+<p>After (120%):</p>
+<p><img src="https://i.imgur.com/qHaRdVt.png" alt="After" /></p>
+<p>The item scales as a percentage from a pre-computed base value not exposed by EP.</p>
+<p>(The registry hack at
+<code>HKCU\Control Panel\Desktop\WindowMetrics\MinWidth</code> doesn't work with
+ExplorerPatcher.)</p>
+<p><strong>Requirements:</strong> Windows 11 with ExplorerPatcher, using the Windows 10 taskbar.</p>]]></content>
+        <author>
+            <name>Rod Boev</name>
+            <uri>https://github.com/rodboev</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Word Local AutoSave 3.7]]></title>
+        <id>https://windhawk.net/mods/word-local-autosave#78ca8b502a30cf518a14cfe95a228e1580a18c09</id>
+        <link href="https://windhawk.net/mods/word-local-autosave"/>
+        <updated>2026-05-16T12:37:52.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>Fixed</strong></p>
 <ul>
-<li>Window class: <code>Chrome_WidgetWin_1</code></li>
-<li>Extended style: <code>WS_EX_TOPMOST</code> set</li>
-<li>No owner window</li>
-<li>Size smaller than 50% of the primary monitor in both dimensions</li>
+<li>Fixed startup initialization so the mod no longer relies on changing settings to refresh its runtime state.</li>
+<li>Isolated internal self-tests from the live runtime initialization path.</li>
+<li>Reset runtime state after self-tests before loading real user settings and activating the mod.</li>
+<li>Added a safe one-shot startup bootstrap that pings the Word UI thread when Word’s window already exists during mod initialization.</li>
 </ul>
-<p>When a matching window is found, <code>WS_EX_TOOLWINDOW</code> is added and
-<code>WS_EX_APPWINDOW</code> is removed — the standard Win32 technique for hiding
-a window from Alt+Tab and the taskbar.</p>
-<h2 id="compatibility">Compatibility</h2>
+<p><strong>Improved</strong></p>
 <ul>
-<li>Windows 10 and Windows 11</li>
-<li>Targets <code>chrome.exe</code> only</li>
-</ul>]]></content>
-        <author>
-            <name>BCRTVKCS</name>
-            <uri>https://github.com/bcrtvkcs</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Explorer TreeLine Killer 1.0.1]]></title>
-        <id>https://windhawk.net/mods/explorer-treeline-killer#cd450a8c33e4b18e4842b53242951f4a21b97de4</id>
-        <link href="https://windhawk.net/mods/explorer-treeline-killer"/>
-        <updated>2026-04-29T20:17:49.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed the README section.</li>
-</ul>]]></content>
-        <author>
-            <name>Languster</name>
-            <uri>https://github.com/Languster</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Explorer Navigation Tree Offset 1.1]]></title>
-        <id>https://windhawk.net/mods/explorer-navigation-pane-tweaks#e938aa724ca3199a2913bc62812fc5f45e7d9a99</id>
-        <link href="https://windhawk.net/mods/explorer-navigation-pane-tweaks"/>
-        <updated>2026-04-29T19:58:58.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Fixed the indent parameter behavior: changing the indent value now works correctly and no longer depends on whether the expandable folder glyph is hidden.</li>
-<li>Fixed the child tree indent relative to the main tree when expanding a folder.</li>
-<li>Renamed mod settings for clarity.</li>
-<li>Renamed the mod from Explorer Navigation Pane Tweaks to Explorer Navigation Tree Offset.</li>
-<li>IMPORTANT! Reconfigure the mod after updating. The improved mechanics may cause behavior differences with the same parameter values.</li>
-</ul>]]></content>
-        <author>
-            <name>Languster</name>
-            <uri>https://github.com/Languster</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Disable Windows Shortcuts 1.1.1]]></title>
-        <id>https://windhawk.net/mods/disable-windows-shortcuts#00f99498b90b44630ab4e46c10038c3e3000a663</id>
-        <link href="https://windhawk.net/mods/disable-windows-shortcuts"/>
-        <updated>2026-04-29T19:47:29.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>Added new shortcuts (<a href="https://github.com/ramensoftware/windhawk-mods/issues/3880">#3880</a>)</li>
-<li>Standard: <code>Win+Q</code>, <code>Win+Ctrl+F</code>, <code>Alt+Shift</code>, <code>Ctrl+Esc</code>, <code>Win</code></li>
-<li>Special: <code>Win+/</code> </li>
-<li>Fixed an issue where after re-enabling the mod, it won't apply the settings. It shows an explorer restart prompt to re-apply the settings correctly now</li>
-<li>Fixed mod un-initialization and re-initialization delay</li>
-<li>Fixed <code>Win+Space</code> which refused to get blocked in the earlier versions</li>
-</ul>]]></content>
-        <author>
-            <name>Lone</name>
-            <uri>https://github.com/Louis047</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Paste Clipboard Content to Explorer 1.4]]></title>
-        <id>https://windhawk.net/mods/paste-clipboard-content-to-explorer#ec8fe4493d189fe53c06583b6f7ddcfde24b810a</id>
-        <link href="https://windhawk.net/mods/paste-clipboard-content-to-explorer"/>
-        <updated>2026-04-29T19:43:29.000Z</updated>
-        <content type="html"><![CDATA[<p>Don't paste a new file if Ctrl+V is pressed during editing file name</p>]]></content>
-        <author>
-            <name>Anixx</name>
-            <uri>https://github.com/Anixx</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Audio Output Device Switcher 1.0]]></title>
-        <id>https://windhawk.net/mods/audio-scroll-switcher#d9349ff002901d3deca3ac680de0059ee97bc7c6</id>
-        <link href="https://windhawk.net/mods/audio-scroll-switcher"/>
-        <updated>2026-04-28T08:49:13.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="audiooutputdeviceswitcher">Audio Output Device Switcher</h1>
-<p>Quickly switch between audio output devices by holding <strong>Ctrl</strong> and scrolling
-the mouse wheel over the taskbar.</p>
-<h2 id="howtouse">How to use</h2>
-<ol>
-<li>Hold <strong>Ctrl</strong> and scroll up/down over the taskbar</li>
-<li>Your audio output device will switch to the next/previous device</li>
-<li>A notification popup shows the newly selected device</li>
-</ol>
-<h2 id="features">Features</h2>
+<li>Made first-run owner-thread adoption more tolerant when Word is already open or still finishing UI startup.</li>
+<li>Reduced the difference between normal startup and settings reload behavior.</li>
+<li>Added internal self-test coverage for startup owner-thread adoption policy.</li>
+</ul>
+<p><strong>Notes</strong></p>
 <ul>
-<li>Works on Windows 10 and Windows 11</li>
-<li>Supports multiple monitors (works on all taskbars)</li>
-<li>Modern Windows 11-style notification popup</li>
-<li>Configurable notification duration</li>
+<li>v3.7 does not add new user-facing settings or features.</li>
+<li>This release focuses on startup reliability and preserving the existing autosave behavior from v3.6.</li>
+</ul>]]></content>
+        <author>
+            <name>communism420</name>
+            <uri>https://github.com/communism420</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 Taskbar Styler 1.7]]></title>
+        <id>https://windhawk.net/mods/windows-11-taskbar-styler#cf0c6b1d2269380846d0da868898d35fc8678c06</id>
+        <link href="https://windhawk.net/mods/windows-11-taskbar-styler"/>
+        <updated>2026-05-15T16:09:18.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Updated the following themes: SunValley, Windows7, WindowGlass (all variants), Oversimplified&amp;Accentuated, Luminosity (all variants), LayerMicaUI, Fluid, TintedGlass, UltraWideFriendly, LiquidGlass (both variants), Borderless.</li>
+<li>Among notable fixes: Alt+Tab not responding to mouse hover and click events in multiple themes.</li>
+<li>Fixed broken taskbar layout in some cases when multiple monitors are used. Mostly affects WindowGlass and UltraWideFriendly.</li>
+<li>Added style variables that allow to observe a control's property value and use it in other controls or styles. Refer to the mod description for details.</li>
+<li>Added a way to match any number of intermediate parent controls, for example:&nbsp;<code>ParentClass &gt; * &gt; Class#Name</code>.</li>
+<li>Added a way to match root controls, for example:&nbsp;<code>:root &gt; Class#Name</code>.</li>
+<li>Added&nbsp;<code>FallbackColor</code>&nbsp;property to&nbsp;<code>WindhawkBlur</code>.</li>
+<li>Improved property matching which now works for more properties.</li>
+<li><code>WindhawkBlur</code> is no longer supported with the <code>Style=Value</code> syntax, the <code>Style:=Value</code> syntax must be used like with the other styler mods.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[UWP Assets Redirect 1.1]]></title>
+        <id>https://windhawk.net/mods/uwp-assets-redirect#7480b0e749aa7109e23cd6655b869cc94c380c72</id>
+        <link href="https://windhawk.net/mods/uwp-assets-redirect"/>
+        <updated>2026-05-15T11:44:24.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added support for .ico redirections:</li>
+<li>You can now provide the path to an .ico file, and assets will be automatically generated,</li>
+<li>You can find more information in the mod's details tab under "Applying redirections".</li>
+<li>Fixed WindowsApps read permissions that caused the mod to hang on loading</li>
+<li>Added dialogs during Icon themes download or when an error occurs</li>
+<li>Added "Luna" theme</li>
+</ul>]]></content>
+        <author>
+            <name>ferrys</name>
+            <uri>https://github.com/atferrys</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Virtual Desktop Preserve Taskbar Order 1.0.5]]></title>
+        <id>https://windhawk.net/mods/virtual-desktop-taskbar-order#22ec4510d1db5a2a0734427f8aff7592aa254bda</id>
+        <link href="https://windhawk.net/mods/virtual-desktop-taskbar-order"/>
+        <updated>2026-05-15T10:26:45.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Fixed compatibility with recent Windows 11 versions.</li>
+</ul>]]></content>
+        <author>
+            <name>m417z</name>
+            <uri>https://github.com/m417z</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CrystalDiskInfo Smart Auto-Refresh 1.0]]></title>
+        <id>https://windhawk.net/mods/crystaldiskinfo-smart-auto-refresh#b6f9529af93c2bdde4ce2b9e70abff1fce8683a7</id>
+        <link href="https://windhawk.net/mods/crystaldiskinfo-smart-auto-refresh"/>
+        <updated>2026-05-14T20:37:57.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="crystaldiskinfosmartautorefresh">CrystalDiskInfo Smart Auto-Refresh</h1>
+<p>CrystalDiskInfo includes an optional Auto-Refresh feature that updates disk
+information at specified intervals, which is useful for background monitoring
+while the application is minimized to the system tray. However, when the
+application's main window is visible, automatic refreshes can interfere with the
+analysis of current disk status, as shifting attribute values make tracking
+specific metrics more difficult.</p>
+<p>This mod temporarily pauses the Auto-Refresh function by blocking its disk
+polling cycle whenever the application's main window is visible, allowing for an
+uninterrupted analysis of current disk status.</p>
+<p>The Auto-Refresh function resumes once the application is minimized to the
+taskbar or system tray.</p>
+<p><strong>Note:</strong> If CrystalDiskInfo is already running when the mod is loaded, pick one
+of the following options to activate it:</p>
+<ul>
+<li>Restart the application completely.</li>
+<li>Select an interval in <strong>Function</strong> → <strong>Auto Refresh</strong>, including the one
+currently set.</li>
+</ul>]]></content>
+        <author>
+            <name>Kitsune</name>
+            <uri>https://github.com/AromaKitsune</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Theme Toggler Tray 1.2.1]]></title>
+        <id>https://windhawk.net/mods/theme-toggler-tray#acfafad42bba74504b8d8556fc7fe148aa512344</id>
+        <link href="https://windhawk.net/mods/theme-toggler-tray"/>
+        <updated>2026-05-14T19:46:02.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="themetogglertraystandalonemode">Theme Toggler Tray (Standalone Mode)</h1>
+<p>This mod now runs in a dedicated Windhawk process for better stability.
+Click the tray icon to instantly toggle between Dark and Light mode.</p>]]></content>
+        <author>
+            <name>Husam-Abdulraheem</name>
+            <uri>https://github.com/Husam-Abdulraheem</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Expanded Clipboard (Win+V) 0.7.1]]></title>
+        <id>https://windhawk.net/mods/expanded-clipboard#baa1a76097e8116eb1d7582a91ef90e80058227a</id>
+        <link href="https://windhawk.net/mods/expanded-clipboard"/>
+        <updated>2026-05-14T19:08:25.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="expandedclipboardwinv">Expanded Clipboard (Win+V)</h1>
+<p>Raises the 25-entry cap on Windows 11 clipboard history (the list shown by
+<strong>Win+V</strong>) and lifts the per-item size cap so large image entries are kept.</p>
+<h2 id="hooktargets">Hook targets</h2>
+<p>Hosted in <code>cbdhsvc.dll</code> (per-user <code>svchost.exe</code>, service group
+<code>UnistackSvcGroup</code>). All hooks are virtual COM methods on <code>ClipboardSettingsImpl</code>
+plus one static helper:</p>
+<ul>
+<li><code>get_ClipboardHistoryMaxItemsCount</code>: entry-count cap (default 25).</li>
+<li><code>get_ClipboardHistoryMaxItemSizeInBytes</code>: per-item byte cap (default 4 MiB).</li>
+<li><code>get_ClipboardHistoryMaxSizeInBytes</code>: total in-memory buffer cap. Empirically
+this is the gate the inner add path checks first.</li>
+<li><code>DataPackageHelper::CanIncludeInClipboardHistory</code>: opt-in override of the
+per-item allow check.</li>
+</ul>
+<h2 id="configuration">Configuration</h2>
+<ul>
+<li><code>maxItems</code> (default 100, range 25..5000): entry cap.</li>
+<li><code>maxItemSizeMB</code> (default 256, range 4..4096): per-item and total buffer byte
+cap, in MB. Both caps share this value.</li>
+<li><code>forceIncludeAll</code> (default off): when on, force the allow check to true so
+items marked "do not include in history" by their source app still land in
+Win+V.</li>
+</ul>
+<h2 id="logs">Logs</h2>
+<p>Open Windhawk Logs. Filter <code>[ExpandedClipboard]</code>.</p>]]></content>
+        <author>
+            <name>takattowo</name>
+            <uri>https://github.com/takattowo</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Monitor Sleep Button 1.0.0]]></title>
+        <id>https://windhawk.net/mods/monitor-sleep-button#bba2b04e3327bb83eb2c37a9725e0782be23fb4d</id>
+        <link href="https://windhawk.net/mods/monitor-sleep-button"/>
+        <updated>2026-05-14T17:39:39.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="monitorsleepbutton">Monitor Sleep Button</h1>
+<p>Adds a small tray icon for turning off the monitor.</p>
+<h2 id="usage">Usage</h2>
+<ul>
+<li>Left-click the tray icon.</li>
+<li>A countdown appears on the screen.</li>
+<li>After the countdown, the monitor turns off.</li>
+<li>Move the mouse or press any key to wake the monitor again.</li>
 </ul>
 <h2 id="settings">Settings</h2>
+<p>The countdown duration can be configured in the mod settings.</p>
+<p>Available values:</p>
 <ul>
-<li><strong>Show notification</strong>: Enable/disable the popup notification</li>
-<li><strong>Notification duration</strong>: How long the popup stays visible (in milliseconds)</li>
+<li>1 second</li>
+<li>2 seconds</li>
+<li>3 seconds</li>
+<li>5 seconds</li>
+<li>10 seconds</li>
+<li>15 seconds</li>
+<li>30 seconds</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<p>This mod does not shut down, suspend, or lock the computer. It only sends the Windows monitor power-off command.</p>
+<p>Useful as a quick replacement for desktop shortcuts or batch files.</p>
+<p>This is useful when long-running downloads, renders, AI model installs, or other background tasks are running and the monitor should be turned off without putting the PC to sleep.</p>]]></content>
+        <author>
+            <name>SilverAmd</name>
+            <uri>https://github.com/SilverAmd</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Files 2 Folders 1.2]]></title>
+        <id>https://windhawk.net/mods/files-2-folders#f97bd370462cef10e23fea9e699a2debfaf651ec</id>
+        <link href="https://windhawk.net/mods/files-2-folders"/>
+        <updated>2026-05-14T16:57:19.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="files2folders">Files 2 Folders</h1>
+<p>Inspired by <a href="https://www.dcmembers.com/skwire/download/files-2-folder/">Files 2 Folder</a>
+by Jody Holmes (Skwire Empire).</p>
+<p>When one or more items are selected in an Explorer window, adds a
+<strong>Files 2 Folder…</strong> entry to the right-click context menu. Choosing it opens
+a dialog with four options for moving the selection into a new subfolder:</p>
+<ol>
+<li>Move the selection into a subfolder with a fixed name (e.g. <code>folder</code>).</li>
+<li>Move each file into a subfolder named after the file (without extension):
+<code>Good.bat</code> -&gt; <code>.\Good\Good.bat</code>. With a single file selected, this just
+creates one folder around that file.</li>
+<li>Move each file into a subfolder named after its extension
+(e.g. all <code>.txt</code> files into <code>.\txt\</code>). With a single file selected, this
+creates one folder named after that file's extension.</li>
+<li>Move the selection into a subfolder named with the current date/time,
+formatted using the date format from settings.</li>
+</ol>
+<p>Folders inside the selection are skipped for modes 2 and 3 (they only make
+sense for files); they are still moved for modes 1 and 4.</p>
+<h2 id="fastvsslowmode">Fast vs. slow mode</h2>
+<p>By default the mod uses <code>MoveFileExW</code> directly, which is essentially instant
+for same-volume moves. Enable <strong>Slow mode (shell-integrated)</strong> in settings to
+route moves through <code>IFileOperation</code> instead — that gives you the standard
+Windows progress dialog, <strong>Ctrl+Z undo</strong>, UAC elevation prompts for protected
+paths, and conflict-resolution dialogs, at the cost of significantly slower
+operation on large selections.</p>
+<h2 id="workaroundforotherprograms">Workaround for other programs</h2>
+<p>A configurable global hotkey (default <strong>Ctrl+Alt+F</strong>) makes the mod usable
+from any file manager (Total Commander, Directory Opus, Files, XYplorer,
+Q-Dir, etc.):</p>
+<ol>
+<li>Select one or more files in the other program.</li>
+<li>Press <strong>Ctrl+C</strong> (or <strong>Ctrl+X</strong>) to put the file paths on the clipboard.</li>
+<li>Press the hotkey. The dialog appears, the files get moved into the chosen
+subfolder under their parent directory.</li>
+</ol>
+<p>Toggle <strong>Silent</strong> to suppress the help popup when the clipboard is empty.</p>
+<h2 id="dateformat">Date format</h2>
+<p>Uses the same tokens as Win32 <code>GetDateFormat</code> / <code>GetTimeFormat</code>:
+<code>yyyy MM dd HH mm ss</code> etc. Example: <code>yyyy-MM-dd-HH-mm</code>.</p>
+<p>Forbidden characters in folder names (<code>* : ? " &lt; &gt; | / \</code>) are replaced with
+<code>_</code> automatically.</p>]]></content>
+        <author>
+            <name>tria</name>
+            <uri>https://github.com/triatomic</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar Desktop Indicator 1.3]]></title>
+        <id>https://windhawk.net/mods/taskbar-desktop-indicator#cca00be44cb57cc49644279f551f0a499f97f874</id>
+        <link href="https://windhawk.net/mods/taskbar-desktop-indicator"/>
+        <updated>2026-05-13T16:18:10.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added a desktop name indicator mode, closes <a href="https://github.com/ramensoftware/windhawk-mods/issues/3574">#3574</a></li>
+<li>The desktop number is used as a fallback if a desktop name is not available</li>
 </ul>]]></content>
         <author>
-            <name>Georgi AI</name>
-            <uri>https://github.com/georgiai1</uri>
+            <name>Simon Benedict</name>
+            <uri>https://github.com/simon-ami</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[File Explorer Details Auto-Fit Columns 1.0.0]]></title>
+        <id>https://windhawk.net/mods/file-explorer-details-autofit-columns#3c4c5577e21c347a98f10a986e4ea252156f2b63</id>
+        <link href="https://windhawk.net/mods/file-explorer-details-autofit-columns"/>
+        <updated>2026-05-12T22:06:03.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="fileexplorerdetailsautofitcolumns">File Explorer Details Auto-Fit Columns</h1>
+<p>Automatically fits all visible column widths to their content whenever a folder is opened or refreshed in <code>Details view</code>, eliminating truncated text and ellipsis (<code>...</code>).</p>
+<p><img src="https://raw.githubusercontent.com/armaninyow/Remove-Context-Menu-Items/refs/heads/main/FEDAFC.gif" alt="File Explorer Details Auto-Fit Columns" /></p>
+<h2 id="triggers">Triggers</h2>
+<ul>
+<li>Opening or navigating to a folder</li>
+<li>Minimizing and restoring the Explorer window</li>
+<li><code>Ctrl + R</code></li>
+<li><code>F5</code></li>
+<li>Right-click context menu → Refresh</li>
+<li>The refresh button in the toolbar</li>
+</ul>
+<p>Only affects <code>Details view</code>. Other view modes (Icons, Tiles, List, etc.) are untouched.</p>
+<h2 id="settings">Settings</h2>
+<p><code>Refresh Delay (ms)</code>: How long the mod waits before auto-fitting columns. The default is 400ms, which gives Explorer enough time to finish loading files before measuring content width. If you notice columns fitting too early in large folders, increase this value. If you want a snappier response in small folders, decrease it.</p>]]></content>
+        <author>
+            <name>Armaninyow</name>
+            <uri>https://github.com/armaninyow</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Per-Monitor Scale Switcher 1.0]]></title>
+        <id>https://windhawk.net/mods/per-monitor-scale-switcher#2297cc0989a319d4826dff57f17e83acdf5df2fd</id>
+        <link href="https://windhawk.net/mods/per-monitor-scale-switcher"/>
+        <updated>2026-05-12T16:53:53.000Z</updated>
+        <content type="html"><![CDATA[<p>Automatically applies per-monitor DPI scaling based on monitor friendly names
+(e.g. "BOE0998"). Each monitor can have independent scales for single and
+multi-monitor setups. Monitors not listed in settings are left untouched.</p>]]></content>
+        <author>
+            <name>jtnqr</name>
+            <uri>https://github.com/jtnqr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taskbar Desktop Indicator 1.2.3]]></title>
+        <id>https://windhawk.net/mods/taskbar-desktop-indicator#b02a1ae38487f5c013e9197b2c7ba8098c8d3e0e</id>
+        <link href="https://windhawk.net/mods/taskbar-desktop-indicator"/>
+        <updated>2026-05-12T13:45:58.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>Added an option to hide the indicator when only one virtual desktop exists, closes <a href="https://github.com/ramensoftware/windhawk-mods/issues/3634">#3634</a></li>
+</ul>]]></content>
+        <author>
+            <name>Simon Benedict</name>
+            <uri>https://github.com/simon-ami</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hide Titlebar Icon and Text 1.0]]></title>
+        <id>https://windhawk.net/mods/hide-titlebar-elements#d98197019252c77368c7437824031b3978cbf62c</id>
+        <link href="https://windhawk.net/mods/hide-titlebar-elements"/>
+        <updated>2026-05-12T08:44:58.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="hidetitlebaricontext">Hide Titlebar Icon/Text</h1>
+<p>Hides certain elements in window titlebars</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><p>Hide titlebar icon
+<img src="https://i.imgur.com/phtVQdl.png" alt="hide icon preview" /></p></li>
+<li><p>Hide titlebar text
+<img src="https://i.imgur.com/G1biOig.png" alt="hide text preview" /></p></li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Implemented through overriding the <code>dwAttributes</code> argument of the <code>SetWindowThemeNonClientAttributes</code> function and
+applied to windows and dialogs that receive the <code>WM_NCCREATE</code> system message.</li>
+</ul>
+<h2 id="credits">Credits</h2>
+<ul>
+<li>Inspired by an AutoHotKey script: <a href="https://www.autohotkey.com/board/topic/78706-tbariconblanker/">TBarIconBlanker</a></li>
+<li>Some other mods were used as reference:<ul>
+<li><a href="https://windhawk.net/mods/auto-custom-titlebar-colors">auto-custom-titlebar-colors</a></li>
+<li><a href="https://windhawk.net/mods/aerexplorer">aerexplorer</a></li>
+<li><a href="https://windhawk.net/mods/translucent-windows">translucent-windows</a></li></ul></li>
+</ul>]]></content>
+        <author>
+            <name>darkthemer</name>
+            <uri>https://github.com/darkthemer</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[VLC Discord Rich Presence 1.1.5]]></title>
+        <id>https://windhawk.net/mods/vlc-discord-rpc#b2662eeac6b52ea789b3647dd224b0c42a19b05a</id>
+        <link href="https://windhawk.net/mods/vlc-discord-rpc"/>
+        <updated>2026-05-12T08:40:32.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="new">New</h3>
+<ul>
+<li>Music activity on Discord now shows:  </li>
+<li><strong>Listening to [Song title]</strong>  </li>
+<li><strong>Listening to [Artist]</strong>  </li>
+<li><strong>Listening to [Album]</strong>  </li>
+<li>VLC port is detected in most setups, so you don’t need to enter the port number manually.  </li>
+<li>The mod now reads your VLC Lua HTTP password directly, so you can use any password without extra setup.  </li>
+</ul>
+<h3 id="fixes">Fixes</h3>
+<ul>
+<li>Toast notifications no longer repeat or display the wrong track.  </li>
+<li>The image scraper now provides more accurate artwork instead of random results.  </li>
+<li>Port detection works correctly across different VLC configurations, including non‑default ports.  </li>
+</ul>
+<h3 id="improvements">Improvements</h3>
+<ul>
+<li>Added <code>wh_log()</code> entries to make debugging and tracking media simpler.  </li>
+<li>Artwork handling has been refined for sharper and more consistent images.  </li>
+</ul>
+<p>Special thanks to <strong>@josephct</strong> for suggesting the music activity feature and for identifying the VLC port issue that could stop Rich Presence from working.</p>]]></content>
+        <author>
+            <name>ciizerr</name>
+            <uri>https://github.com/ciizerr</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[UWP Assets Redirect 1.0]]></title>
+        <id>https://windhawk.net/mods/uwp-assets-redirect#536e0c3b2ceabf3bd065c386c8ea420d43511a0f</id>
+        <link href="https://windhawk.net/mods/uwp-assets-redirect"/>
+        <updated>2026-05-12T08:31:16.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="uwpassetsredirect">UWP Assets Redirect</h1>
+<p>Replace UWP app assets (such as icons) without worrying about updates
+or modifying system files permissions.</p>
+<h2 id="examplebeforeandafter">Example: Before and After</h2>
+<p><img src="https://raw.githubusercontent.com/atferrys/uwp-assets-redirect/main/docs-assets/example-before-after.png" alt="Before and after comparison of some applications" /></p>
+<h1 id="iconthemes">Icon themes</h1>
+<p>You can apply Icon themes directly from the <strong>Settings</strong> tab by selecting one from the list.
+The theme will be automatically downloaded and applied. You can see the full list of themes
+and their previews in the <a href="https://github.com/atferrys/uwp-assets-redirect/tree/main/themes">theme repository</a>.</p>
+<p><em>To contribute a new theme to the theme repository, follow the instructions
+<a href="https://github.com/atferrys/uwp-assets-redirect/blob/main/themes/README.md#contributing-new-themes">here</a>.</em></p>
+<h1 id="findingtheapplicationbundleandassets">Finding the Application bundle and assets</h1>
+<p>You can quickly identify both the application bundle and its Assets folder using Task Manager.</p>
+<ol>
+<li><p>Open the application you want to redirect assets for. Then open Task Manager,
+right-click the application process, and select "<strong>Open file location</strong>":</p>
+<p><img src="https://raw.githubusercontent.com/atferrys/uwp-assets-redirect/main/docs-assets/task-manager-open-location.png" alt="Task Manager right-click context menu on &quot;Microsoft Store&quot; with &quot;Open file location&quot; hovered" /></p></li>
+<li><p>A File Explorer window will open with the application's folder highlighted:</p>
+<p><img src="https://raw.githubusercontent.com/atferrys/uwp-assets-redirect/main/docs-assets/application-folder.png" alt="Application folder highlighted in File Explorer with the bundle identifier shown" /></p></li>
+<li><p>The application bundle is the part of the folder name that comes before the first underscore,
+in this case "<code>Microsoft.WindowsStore</code>".</p></li>
+</ol>
+<p>If Assets Redirect can't automatically locate the Assets folder, you can browse the application directory to manually find it.
+In this example, although it was detected automatically, the assets were located in "<code>Assets\AppTiles</code>":</p>
+<p><img src="https://raw.githubusercontent.com/atferrys/uwp-assets-redirect/main/docs-assets/assets-folder.png" alt="The path to the assets folder" /></p>
+<p>You can specify them in the application bundle using this format:
+"<code>&lt;application bundle&gt;</code>|<code>&lt;assets folder&gt;</code>", and in this case "<code>Microsoft.WindowsStore|Assets\AppTiles</code>".</p>
+<h1 id="creatingcustomassets">Creating custom assets</h1>
+<p>You can manually create replacement assets by copying the original Assets folder, removing any files you don't
+want to replace, and editing the remaining ones making sure to preserve the original file resolutions.</p>
+<p>A quicker and easier approach is to use something like <a href="https://tilegen.ferrys.it/assets-redirect">TileGen</a>, an open-source tool that
+generates the required assets from a single image or an <code>.ico</code> file.
+<em>Using an .ico file is recommended, as it already contains multiple resolutions.</em></p>
+<p><em>Keep in mind that even if File Explorer doesn't show the non-redirected assets after you've applied them,
+they're still present. This is only a visual issue caused by how File Explorer loads folder contents.</em></p>
+<h1 id="themepaths">Theme paths</h1>
+<p>Theme paths can be set in the settings.
+Each theme path can be a folder with custom assets files and a <code>theme.ini</code> file that contains redirection rules, or the <code>.ini</code> theme file itself.</p>
+<p>For example, the <code>theme.ini</code> file may contain the following redirection rules:</p>
+<h2 id="windowsappsandsystemappsredirections">WindowsApps and SystemApps redirections</h2>
+<p>For apps found in "<code>C:\Program Files\WindowsApps</code>" and in "<code>C:\Windows\SystemApps</code>",
+you can use respectively the <code>[windows-apps]</code> and <code>[system-apps]</code> headers.</p>
+<p>Each rule should be provided in this format: "<code>&lt;application bundle&gt;</code>=<code>&lt;redirection folder&gt;</code>".
+The application bundle can be easily found by following <a href="#finding-the-application-bundle-and-assets">the guide above</a>.</p>
+<h3 id="exampleconfig">Example config</h3>
+<pre><code>[windows-apps]
+Microsoft.WindowsStore=.\Microsoft Store
+Microsoft.WindowsCalculator=.\Calculator
+</code></pre>
+<p>Most of the time, Assets Redirect can automatically locate the bundle's Assets folder.
+However, some applications use the same application bundle as other apps, which can prevent Assets Redirect
+from identifying the correct folder.
+In these cases, you can manually specify the Assets folder within the application bundle using the
+following format: "<code>&lt;application bundle&gt;</code>|<code>&lt;assets folder&gt;</code>" (an example is shown below in <code>[system-apps]</code>).</p>
+<h3 id="exampleconfig-1">Example config</h3>
+<pre><code>[system-apps]
+MicrosoftWindows.Client.CBS|WindowsBackup\Assets=.\Windows Backup
+Microsoft.PPIProjection=.\Wireless Display
+</code></pre>
+<h2 id="customredirections">Custom redirections</h2>
+<p>For apps that aren't found in common folders like <code>WindowsApps</code> or <code>SystemApps</code>,
+like <em>Settings</em>, you can use the <code>[custom]</code> header.</p>
+<p>Each rule should be provided in this format: "<code>&lt;assets folder&gt;</code>=<code>&lt;redirection folder&gt;</code>".</p>
+<h3 id="exampleconfig-2">Example config</h3>
+<pre><code>[custom]
+%SystemRoot%\ImmersiveControlPanel\images=.\Settings
+</code></pre>
+<h1 id="injectingintootherprocesses">Injecting into other processes</h1>
+<p>By default, Assets Redirect only targets the processes that most commonly use these assets, such as File Explorer and the Start Menu.
+As a result, UWP applications are not affected by asset redirection out of the box.</p>
+<p>You can change this behavior using the "Custom process inclusion list" in the Advanced tab and doing one of the following:</p>
+<ul>
+<li>Include a specific application's executable name or path like "<code>WinStore.App.exe</code>" (you can find this in the Details tab of Task Manager).</li>
+<li>Include the entire applications directories: "<code>C:\Program Files\WindowsApps\*</code>" and "<code>C:\Windows\SystemApps\*</code>".</li>
+<li>Or, if you're willing to risk system stability, include all processes using "<code>*</code>".</li>
+</ul>
+<p>Doing this applies your asset changes not only to the Windows shell,
+but also to the applications themselves, changing their look as well (like the splash screen).</p>
+<h1 id="contributions">Contributions</h1>
+<p>You can contribute to the mod development by opening a pull request <a href="https://github.com/atferrys/uwp-assets-redirect/pulls">here</a>.</p>]]></content>
+        <author>
+            <name>ferrys</name>
+            <uri>https://github.com/atferrys</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ctrl+Backspace Fix for Win32 Text Boxes 1.0]]></title>
+        <id>https://windhawk.net/mods/ctrl-backspace-fix-for-win32-text-boxes#acc8f118a355bb4d3e49fb0531e85b7c2f1c83ee</id>
+        <link href="https://windhawk.net/mods/ctrl-backspace-fix-for-win32-text-boxes"/>
+        <updated>2026-05-11T20:51:55.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="ctrlbackspacefixforwin32textboxes">Ctrl+Backspace Fix for Win32 Text Boxes</h1>
+<p>Win32 text boxes often lack previous-word deletion functionality, resulting in
+the <code>Ctrl+Backspace</code> hotkey inserting the <code>Delete</code> control character instead of
+deleting the previous word.</p>
+<p>This mod resolves this behavior by adding previous-word deletion functionality
+to those <code>Edit</code> controls.</p>
+<p>It also supports wrapped <code>Edit</code> controls used in .NET WinForms and Delphi VCL
+applications.</p>
+<p>| Before |
+| :----- |
+| <img src="https://raw.githubusercontent.com/AromaKitsune/My-Windhawk-Mods/main/screenshots/ctrl-backspace-fix-for-win32-text-boxes_before.gif" alt="" /> |</p>
+<p>| After |
+| :---- |
+| <img src="https://raw.githubusercontent.com/AromaKitsune/My-Windhawk-Mods/main/screenshots/ctrl-backspace-fix-for-win32-text-boxes_after.gif" alt="" /> |</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>In hotkey text boxes, pressing <code>Ctrl+Backspace</code> deletes the text instead of
+assigning the hotkey.</li>
+<li>In masked text boxes, pressing <code>Ctrl+Backspace</code> deletes the placeholder
+characters, breaking the input mask and preventing further input into those
+missing slots.</li>
+<li>Custom-drawn text boxes, such as those in Qt applications, are unaffected
+because they do not utilize standard Win32 <code>Edit</code> controls. Most custom-drawn
+UI frameworks already handle their own previous-word deletion functionality.</li>
+</ul>]]></content>
+        <author>
+            <name>Kitsune</name>
+            <uri>https://github.com/AromaKitsune</uri>
         </author>
     </entry>
 </feed>

@@ -1,3 +1,17 @@
+## 1.3 ([May 13, 2026](https://github.com/ramensoftware/windhawk-mods/blob/cca00be44cb57cc49644279f551f0a499f97f874/mods/taskbar-desktop-indicator.wh.cpp))
+
+* Added a desktop name indicator mode, closes [#3574](https://github.com/ramensoftware/windhawk-mods/issues/3574)
+* The desktop number is used as a fallback if a desktop name is not available
+
+## 1.2.3 ([May 12, 2026](https://github.com/ramensoftware/windhawk-mods/blob/b02a1ae38487f5c013e9197b2c7ba8098c8d3e0e/mods/taskbar-desktop-indicator.wh.cpp))
+
+* Added an option to hide the indicator when only one virtual desktop exists, closes [#3634](https://github.com/ramensoftware/windhawk-mods/issues/3634)
+
+## 1.2.2 ([May 5, 2026](https://github.com/ramensoftware/windhawk-mods/blob/c76d030cf7c5848b97696ce764c1f5ec7db9d049/mods/taskbar-desktop-indicator.wh.cpp))
+
+* Added support for newer Windows 11 builds where taskbar SystemTray symbols are in SystemTray.dll.
+* Kept fallback support for older Taskbar.View.dll and ExplorerExtensions.dll builds.
+
 ## 1.2.1 ([Mar 10, 2026](https://github.com/ramensoftware/windhawk-mods/blob/d205b0c73e8dacf528c684eac03b444da31b803a/mods/taskbar-desktop-indicator.wh.cpp))
 
 Fixes the case where taskbar-desktop-indicator can stop updating after explorer.exe restarts if notification registration initially fails and polling fallback is disabled.

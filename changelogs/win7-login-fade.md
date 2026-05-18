@@ -1,6 +1,7 @@
-## 1.4 ([May 3, 2026](https://github.com/ramensoftware/windhawk-mods/blob/6ea069b00ab5ca75b740c08f955a49ddd9197fe3/mods/win7-login-fade.wh.cpp))
+## 1.4 ([May 4, 2026](https://github.com/ramensoftware/windhawk-mods/blob/930fda20adf00a5f1f789d3b4ffcb6eb949119e8/mods/win7-login-fade.wh.cpp))
 
-Logon & Sleep Fade Restorer 1.4
+* Fix monitor not turning off when the Windows 10+ lock screen is being displayed
+* Fix monitor-off fade not working when a 32-bit app's window is focused
 
 ## 1.3 ([Mar 2, 2026](https://github.com/ramensoftware/windhawk-mods/blob/a77cfa03723dfc97b23c2cd06925ee4d02ad5b3b/mods/win7-login-fade.wh.cpp))
 
