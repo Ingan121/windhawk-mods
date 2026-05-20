@@ -2,7 +2,7 @@
 // @id              titlebar-for-everyone
 // @name            Titlebar For Everyone
 // @description     Force native title bars and frames for various programs
-// @version         0.4
+// @version         0.5
 // @author          Ingan121
 // @github          https://github.com/Ingan121
 // @twitter         https://twitter.com/Ingan121
@@ -33,6 +33,9 @@
 // @include         ms-teams.exe
 // @compilerOptions -lcomctl32 -luxtheme -lgdi32 -lshlwapi
 // ==/WindhawkMod==
+// @setting excludeProcesses - Excluded processes (comma-separated)
+// @default ""
+
 
 // ==WindhawkModReadme==
 /*
@@ -130,6 +133,10 @@
 - notoolwinsteam: true
   $name: Steam - Hide tool window frames
   $name:ko-KR: Steam - 도구 창 테두리 숨기기
+
+-  excludeList: ""
+   $name: Excluded processes
+   $description: Comma-separated list of executables to skip (e.g. winword.exe, WebViewHost.exe)
 */
 // ==/WindhawkModSettings==
 
@@ -142,6 +149,45 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <vector>
+
+
+
+//// ADD HERE — exclusion list storage + loader
+
+std::vector<std::wstring> excludedProcesses;
+
+void LoadExclusionList() {
+    std::wstring list = Wh_GetStringSetting(L"excludeList");
+    std::wstringstream ss(list);
+    std::wstring item;
+
+    while (std::getline(ss, item, L',')) {
+        // trim whitespace
+        item.erase(0, item.find_first_not_of(L" \t"));
+        item.erase(item.find_last_not_of(L" \t") + 1);
+        if (!item.empty()) {
+            excludedProcesses.push_back(item);
+        }
+    }
+}
+
+bool IsProcessExcluded() {
+    wchar_t exePath[MAX_PATH];
+    GetModuleFileNameW(NULL, exePath, MAX_PATH);
+
+    std::wstring exeName = exePath;
+    exeName = exeName.substr(exeName.find_last_of(L"\\") + 1);
+
+    for (auto& ex : excludedProcesses) {
+        if (_wcsicmp(exeName.c_str(), ex.c_str()) == 0) {
+            Wh_Log(L"Excluded process: %s", exeName.c_str());
+            return true;
+        }
+    }
+    return false;
+}
+
 
 #ifndef WS_EX_NOREDIRECTIONBITMAP // WH 1.4
 #define WS_EX_NOREDIRECTIONBITMAP 0x00200000L
@@ -640,7 +686,12 @@ void LoadSettings() {
 
 // The mod is being initialized, load settings, hook functions, and do other
 // initialization stuff if required.
-BOOL Wh_ModInit() {
+BOOL Wh_ModInit() {    LoadExclusionList();
+    if (IsProcessExcluded()) {
+        Wh_Log(L"Process excluded — skipping all modifications");
+        return TRUE;
+    }
+
     #ifdef _WIN64
         Wh_Log(L"Init - x86_64");
     #else
